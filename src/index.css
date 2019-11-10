@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: local('ProximaNova'), url(../src/proxima.otf) format('truetype');
+}
+body {
+  font-family: 'ProximaNova' !important;
+}

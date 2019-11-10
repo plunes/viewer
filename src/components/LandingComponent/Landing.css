@@ -1,0 +1,343 @@
+.logo{
+    margin-top: 20px;
+}
+.procedureListClass{
+    /* float : left; */
+    margin-top: 15px;
+}
+.selectedProceduresList{
+     border: 1.5px solid #e4e4e4;
+     /* height : 150px; */
+     width: 590px;
+     position: relative;
+     left: 103px;
+     margin-top: 23px;
+     margin-bottom : 15px;
+     border-radius : 15px !important;
+}
+.proceedButton{
+    /* position: relative; */
+    position: relative;
+    /* top: 80px; */
+    /* left: -300%; */
+    top: 10px;
+    left: 220px;
+    height: 35px;
+    border-radius: 20px !important;
+    width: 300px;
+}
+.searchDropdown{
+    height: 200px;
+    position: relative;
+    left: 103px;
+    overflow-y: auto;
+    border-radius : 15px !important;
+    border: 1.5px solid #01d35a;
+    width: 590px;
+    margin-top: 10px
+    /* display: none !important; */
+}
+
+.signupButton{
+    width:180px;
+    height:40px;
+}
+
+.btn-outline-transparent{
+    border-radius: 11px !important;
+}
+
+.horizontal-menu{
+ width: 1000px;
+
+}
+
+#demo{
+    width: 1000px;
+    margin-top: 50px;
+
+}
+
+.carousel-inner  {
+    left: 100px;
+
+    /* width: 100%; */
+    /* height: 100%; */
+  }
+
+ .carousel-control-prev{
+     /* background-color: #01d35a */
+     /* left: 200%; */
+     left: -87px !important;
+
+ }
+
+ .carousel-control-next{
+    /* background-color: #01d35a */
+    left: 104%;
+
+}
+
+.viewMoreButton{
+    background-color: #01d35a;
+    color: #ffffff;
+    height: 35px;
+    width: 130px;
+    border: none;
+    border-radius: 111px !important;
+
+}
+/* .scrollComponent{
+    width: 100px;
+} */
+
+.downloadButton{
+    border-color: white !important;
+    height: 35px !important;
+    margin-top: 28px !important;
+    width: 25% !important;
+    margin-left: 30px !important;
+    margin-right: 15px !important;
+    border-radius: 40px !important;
+
+    /* padding-bottom : 20px  !important;  */
+
+}
+
+.hrClass{
+margin-top: 70px !important
+}
+
+.btn-outline-primary {
+    color: #848484 !important;
+    border-color: #848484 !important;
+    height : 30px !important;
+    border-radius: 70px solid !important;
+
+}
+.btn-outline-primary:hover {
+    outline: #01d35a !important;
+}
+
+.btn-success{
+    background-color: #01d35a !important;
+    outline: none !important;
+    border-color: none;
+
+}
+
+.headerDetail{
+    margin-top: 15px;
+    display: flex;
+    padding: 15px;
+    font-size: 20px;
+    color: #5C5C5C;
+}
+
+.medicalProcedures{
+    position: relative;
+    left: 100px;
+}
+.topRightHeader{
+    position: relative;
+    left: 188px;
+}
+
+.navButton{
+    width: 20%;
+    margin: 15px;
+    height: 32px !important;
+    margin-top: 30px;
+    margin-left: 8px;
+    border: 1px solid #b8b8b8 !important;
+    border-radius: 22px !important;
+
+}
+.navButton:hover{
+    background-color: #01d35a !important;
+    color: white !important;
+    outline: #01d35a !important;
+}
+.linkClass{
+    color: black;
+    position: relative;
+    /* margin-bottom: 10px; */
+    top: -3px;
+}
+.linkClass:hover{
+    color:white
+}
+.discountHeading{
+    font-size: 31px;
+    position: relative;
+    left: 265px;
+    color: #343434;
+}
+
+.headingFooter{
+    font-size: 16px;
+    color:#343434
+}
+
+.icon{
+padding-right: 10px;
+}
+
+.cardRow{
+    margin-top: 5%;
+    width: 100%;
+}
+
+.arrowClass{
+    padding-top: 12%;
+    position: relative !important;
+    left: -10px;
+}
+
+.card{
+    border: none !important;
+}
+
+.card-title{
+    font-size: 22px;
+    color: #343434;
+}
+.card-text{
+    color: #727272;
+}
+.landingTopRow{
+    margin-top: 60px;
+    position: relative;
+}
+.landingCenterHeading{
+    font-size: 35px;
+    color: #343434;
+    padding-left: 12%;
+
+}
+
+.dentistClass{
+    height: 313px !important;
+    width:350px !important;
+}
+.orthopedicsClass{
+    height: 313px !important;
+    width:328px !important;
+}
+
+.landingCentre{
+    /* background-color: #8C8C8C; */
+    margin-top: 8%;
+}
+.card-img-top{
+    height: 250px;
+}
+
+.hr{
+    margin-top: 3rem !important;
+}
+
+.landingFooter{
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+footer{
+    margin-left: 30%;
+    margin-top: 15px;
+}
+
+.viewMore{
+    background-color: #01d35a !important;
+    border-color: white !important;
+    border-radius: 111px  !important;
+
+}
+
+
+.searchBar{
+    border-color: 1px solid #5C5C5C
+}
+
+.loginInput{
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #5C5C5C;
+    width: 400px;
+    height: 75px;
+    padding-top: 30px;
+}
+.rowButton{
+    padding-top: 40px;
+    margin:0;
+}
+.loginButton{
+    width:180px;
+    height:40px;
+}
+
+.searchInput{
+    margin-top: 20px;
+    margin-left: 87px;
+    height: 53px;
+    width: 80%;
+    border: 1.5px solid #01d35a;
+    border-radius: 27px;
+    font-size: 19px;
+    padding-left: 25px;
+    padding-right: 90px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.searchImage{
+    position: relative;
+    top: 34px;
+    right: 53px;
+    /* margin-top: 32px;
+    margin-left: -50px; */
+}
+.signUp{
+    /* background-color: #5C5C5C; */
+    position: relative;
+    
+}
+.signUpContainer{
+    padding-top: 100px;
+}
+.form{
+    padding-top: 40px;
+}
+.buttonSignUp{
+    padding-top: 10px;
+    /* height: 50px; */
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  i {
+    border: solid grey;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .backButton{
+    display: flex;
+    flex-direction: row;
+    padding-left: 150px;
+    padding-top: 10px;
+  }
+
+  /* @media only screen and (max-width: 500px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+    body{
+        background-color: aqua;
+    }
+  }  */
+
+  
