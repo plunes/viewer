@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import LoginContainer from '../LoginComponent/LoginContainer'
 import axios from 'axios'
 import { Redirect } from 'react-router'
-
 
 export default class LoginComponent extends Component {
     constructor(props) {
@@ -76,41 +76,42 @@ export default class LoginComponent extends Component {
             }} />;
         }
         return (
-            <div className='container'>
-                <LandingHeader root={this.root} />
-                <div className='row'>
-                    <div className='col-md-4'></div>
-                    <div className='col-md-4' className='login' style={{ marginTop: '100px' }}>
-                        <form onSubmit={this.handleSubmit}>
-                            <div className='row' style={{ paddingLeft: '150px' }}>
-                                <h1>Login</h1>
-                            </div>
-                            <div className="form-group">
-                                <label >Email</label>
-                                <input type="text" className="form-control" name="emailId" onChange={this.handleChange} />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="formGroupExampleInput2"  >Password</label>
-                                <input type="password" className="form-control" onChange={this.handleChange} name="password" />
-                            </div>
-                            {/* <div className='row'>
-                                    <input type="text" className="loginInput" placeholder="Password" name='password' onChange={this.handleChange} />
-                                </div> */}
-                            <div className='row rowButton'>
-                                <div className='col-md-6 '>
-                                    <button type="submit" className="btn btn-success loginButton">Login</button>
-                                </div>
-                                <div className='col-md-6 '>
-                                    <button type="submit" className="btn btn-light loginButton"><a href = '/signup' style={{color: 'black'}}>Sign up</a></button>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-
-                    <div className='col-md-4'></div>
-                </div>
+            <div class="container-fluid">
+                <LandingHeader root = {this.root}/>
+                <LoginContainer root = {this.root} />
             </div>
         )
     }
 }
+
+
+ {/* <div className='container'>
+                <LandingHeader root={this.root} />
+                 <div className='row'>
+                    <div className='col-md-4'></div>
+                     <div className='col-md-4' className='login' style={{ marginTop: '100px' }}>
+                         <form onSubmit={this.handleSubmit}>
+                             <div className='row' style={{ paddingLeft: '150px' }}>
+                                 <h1>Login</h1>
+                             </div>
+                             <div className="form-group">
+                                 <label >Email</label>
+                                 <input type="text" className="form-control" name="emailId" onChange={this.handleChange} />
+                             </div>
+                             <div className="form-group">
+                                 <label htmlFor="formGroupExampleInput2"  >Password</label>
+                                 <input type="password" className="form-control" onChange={this.handleChange} name="password" />
+                             </div>
+                             <div className='row rowButton'>
+                                 <div className='col-md-6 '>
+                                     <button type="submit" className="btn btn-success loginButton">Login</button>
+                                 </div>
+                                 <div className='col-md-6 '>
+                                     <button type="submit" className="btn btn-light loginButton"><a href = '/signup' style={{color: 'black'}}>Sign up</a></button>
+                                 </div>
+                             </div>
+                         </form>
+                     </div>
+                     <div className='col-md-4'></div>
+                 </div>
+             </div> */}

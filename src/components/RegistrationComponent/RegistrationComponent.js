@@ -13,7 +13,7 @@ class RegistrationComponent extends React.Component {
         this.root = props.root
     }
     render() {
-        return <div className = 'container'>
+        return <div className = 'container-fluid'>
            <LandingHeader root = {this.root}/>
            <RegistrationContainer root = {this.root}/>
         </div>

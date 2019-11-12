@@ -1,0 +1,23 @@
+.signUpText{
+    font-size: 1.5rem;
+    margin-top: 150px;
+    padding-left: 14px;
+    margin-bottom: 20px;
+}
+.buttonSignUp{
+    padding-top: 10px;
+    /* height: 10px !important; */
+    /* height: 40px !important; */
+}
+.btn-block{
+    border-radius: 31px !important;
+    outline: none !important;
+    height: 45px !important;
+}
+@media(max-width: 576px){
+
+    .signImage{
+    
+      width:390px !important;
+    }
+}
