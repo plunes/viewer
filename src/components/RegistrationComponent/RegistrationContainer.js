@@ -33,12 +33,8 @@ class RegistrationComponent extends React.Component {
     }
 
     handleChange(e){
-        //console.log(e.target.value)
-        // this.setState({
-        //     selectedValue : e.target.value
-        // })
         let selectedValue = e.target.value;
-        // console.log(this.state.selectedValue, 'aaaaaaaa')
+            
         switch(selectedValue){
             case 'userForm':
                 this.setState({

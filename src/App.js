@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import axios from 'axios'
 import './App.css';
 import LandingPage from './components/LandingComponent/LandingPage';
 import { Route, Switch } from 'react-router-dom';
@@ -10,6 +10,7 @@ import ConfirmBookingComponent from './components/ConfirmBooking/ConfirmBookingC
 import Post from './components/ReduxComponent/Post'
 import EnquiryComponent from './components/EnquiryComponent/EnquiryComponent'
 import EnquiryResultComponent from './components/EnquiryComponent/EnquiryResultComponent'
+
 // import PreviousEnquiryComponent from './components/EnquiryComponent/PreviousEnquiryComponent'
 import LoginComponent from './components/LoginComponent/LoginComponent'
 
@@ -37,17 +38,29 @@ export default class App extends React.Component {
     this.root = {
       isAuth: false,
       doctorList: [],
-      docDetail:{}
+      docDetail:{},
+      baseUrl: 'http://13.233.151.26:8000/',
+      serviceList: []
     };
+    
   }
 
-  componentDidMount(){
-
+  async componentDidMount(){
     if(localStorage.getItem('token')){
       this.root.isAuth = false;
     }else{
       this.root.isAuth = false;
     }
+    return  await axios.get(this.root.baseUrl + 'catalogue')
+    .then(({ data }) => {
+        console.log(data, "catalogue")
+        if (data.err) {
+            console.log(data.err)
+        }else {
+        //  this.root.catalogue = data;     
+        }
+    })
+
   }
 
   render() {

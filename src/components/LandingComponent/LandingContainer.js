@@ -16,7 +16,7 @@ class LandingContainer extends React.Component {
             filter: '',
             emailid: '',
             password: '',
-            proceduresList: [],
+            proceduresList: [],    
             selectedData: [],
             docList: [],
             showDropdown: false,

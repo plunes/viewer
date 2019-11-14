@@ -16,7 +16,7 @@ class SolutionSearchComponent extends React.Component {
             docList : [],
             proceduresList: []
         }
-        this.baseUrl = 'https://plunes.co/v3/'
+        // this.baseUrl = 'https://plunes.co/v3/'
         this.data = [];
         this.selectedProcedures = [];
         this.showForm = false;
@@ -31,19 +31,19 @@ class SolutionSearchComponent extends React.Component {
     async componentDidMount() {
         console.log("procedure listL ",this.root.procedureList)
 
-     return  await axios.get(this.baseUrl + 'bidding/list_of_procedures')
-            .then(({ data }) => {
-                console.log(data)
-                if (data.err) {
-                    console.log(data.err)
-                }
-                else {
-                    // console.log(data, 'list of procedures');
-                    //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
-               this.root.procedureList = data.user;     
-               this.setState({proceduresList : data.user});
-                }
-            })
+    //  return  await axios.get(this.baseUrl + 'bidding/list_of_procedures')
+    //         .then(({ data }) => {
+    //             console.log(data)
+    //             if (data.err) {
+    //                 console.log(data.err)
+    //             }
+    //             else {
+    //                 // console.log(data, 'list of procedures');
+    //                 //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
+    //            this.root.procedureList = data.user;     
+    //            this.setState({proceduresList : data.user});
+    //             }
+    //         })
     }
 
    async viewAllBid(id){
