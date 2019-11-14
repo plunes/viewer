@@ -14,19 +14,26 @@
 .ftr{    height: 40px;
     width: 40px;
     margin-top: 15px !important;
-    margin-left: 243px; 
+    margin-left: 221px; 
   
+  }
+  .navbar-toggler{
+    width: 15% !important;
   }
   .owl-prev {
     width: 56px !important;
+    outline: none !important;
   }
   .footerfont{
-    font-size: 24px !important;
+    
+    font-size: 15px !important;
+    margin-right: 47px !important;
+    padding-top: 6px !important;
   }
   
   .owl-next{
     width:45px ;
-    
+    outline: none !important;
     right: 20px;
 
   }
@@ -38,7 +45,7 @@
     overflow-y: auto;
     border-radius: 15px !important;
     border: 1.5px solid #01d35a;
-    width: 353px !important;
+    width: 340px !important;
     margin-top: 10px;
     bottom: 160px;
 }
@@ -63,27 +70,28 @@
     .h11{
             font-size: 24px !important;
             font-weight: 400;
+            width: 105%;
     }
 
 .ftr2{
     height: 40px;
     width: 40px;
     margin-top: -61px !important;
-    margin-left: 198px;
+    margin-left: 175px;
 }
 .ftr3{
-    margin-left: 198px !important;
+    margin-left: 179px !important;
     margin-top: -55px !important;
 }
     .header{
         
            text-align: center;
-    width: 100%;
+    width: 99% !important;
     display: block;
     margin: auto;
-    font-size: 24px;
+    font-size: 26px;
     color: #343434;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 140px; 
         
     }  
@@ -97,8 +105,8 @@
       word-wrap: break-word;
       background-clip: border-box;
       border-radius: .25rem;
-      width: 80% !important;
-      margin-left: 30px !important;
+      width: 95% !important;
+      margin-left: 23px !important;
       padding-left: 0px !important;
   }
     
@@ -115,12 +123,12 @@
     background-image: url(/search.png);
     background-position: 95%;
     background-repeat: no-repeat;
-    padding: 10px 55px 12px 25px;
+    padding: 14px 55px 12px 9px !important;
     outline: none;
-    margin-left: 2px;
+    margin-left: 17px;
     width: 100% !important;
         margin-top: 11px;
-        
+        background-size: 27px 27px !important;
     
     margin-right: 150px;
 }
@@ -150,9 +158,10 @@
 }
 
 .navbar-nav .nav-link{
-    
+      width: 89% !important;
         padding-left: 44px;
     margin-left: 23px;
+    margin-top: 10px;
 }
     .footer-pic{
         height: 65px;
@@ -172,6 +181,9 @@
             text-align: center;
             margin-bottom: 20px;
             font-size: 13px;
+        }
+        .navbar-nav{
+          margin-top: 10px;
         }
 
   
@@ -195,7 +207,7 @@
 
     }
     .nav2 nav3{
-      width: 93%;
+      width: 94% !important;
     }
 
     
@@ -203,28 +215,27 @@
 
 /* mediaquery done */
 
-  
-  
+ 
   .carousel-header{
   
     text-align: center !important;
   }
   .card{
        border: none;
-       width: 45%;
+       width: 70%;
       padding-left: 105px;
       margin-left: 122px;
       background-color: #f2f2f2 !important;
-
-
-      } 
+      margin-bottom: 48px;
+      margin-top: 0px;
+    } 
   
   .cardItemsRow
   {
     
     padding-top: 55px;
        
-    margin-bottom:140px;
+    margin-bottom:100px;
   }
   .header 
   {
@@ -232,10 +243,10 @@
      width: 42%; 
      display: block; 
      margin: auto ;
-     font-size: 28px;
+     font-size: 26px;
      color: #343434;
-     font-weight: 400;
-     margin-top: 140px;
+     font-weight: 500;
+    padding-top: 100px;
   }
   
   .logo
@@ -282,7 +293,7 @@
     margin-left: 20px;
     font-size: 14px;
     height: 31px;
-    width: 80px;
+    width: 90%;
   }
   
   .nav33 {
@@ -322,9 +333,9 @@
       padding-right:55px;
   }
   input[type=text] {
-      width: 100% !important;
+      width: 90% !important;
       box-sizing: border-box;
-      border: 2px solid #01d35a;
+      border: 1.5px solid #01d35a;
       border-radius: 40px;
       font-size: 16px;
       background-color: white !important;
@@ -334,7 +345,7 @@
       padding:24px 20px 24px 25px;
       outline: none;
       margin-top: 11px;
-      background-size: 30px 30px;
+      background-size: 27px 27px;
       margin-bottom: 170px;
       
   }
@@ -355,10 +366,11 @@
   }
   .h11{
     font-size: 35px !important;
-    font-weight: 350;
-    margin-top: 105px;
+    font-weight: 500;
+    margin-top: 210px;
      font-size: 35px;
     color: #343434;
+    margin-bottom: 12px;
   }
   .services
   {
@@ -431,12 +443,15 @@
   .main-content .owl-theme .custom-nav .owl-prev i, .main-content .owl-theme .custom-nav .owl-next i {
     font-size: 2.5rem;
     color: #cecece;
+    outline: none !important;
   }
   .main-content .owl-theme .custom-nav .owl-prev {
     left: 0;
+    outline: none !important;
   }
   .main-content .owl-theme .custom-nav .owl-next {
     right: 0;
+    outline: none !important;
   }
   
   
@@ -552,7 +567,9 @@
   }
   
       
-  
+  .owl-stage-outer{
+    overflow:  hidden !important;
+  }
   
   .k{
     margin-left: 25px;
@@ -627,7 +644,8 @@
       margin-top: 40px;
     }
     .footer{
-      padding-top: 50px;
+      padding-top: 0px;
+      margin-top: -24px;
     }
     .footerfont{
       font-family: proxima;
@@ -636,10 +654,14 @@
     .footerele{
       font-size: 13px;
       margin-top:14px
-    }.footerlast{
+    }
+    
+    .footerlast{
       font-family: proxima;
       margin-top: 25px !important;
         margin-bottom: 50px !important;
+        font-size: 13px;
+        
     }
     .carousel-item1{
       background-color:white;display: block;margin: 0 auto ;font-size:46px;
@@ -720,7 +742,7 @@
       
   }
       input[type=text] {
-       width: 550px !important;   
+       width: 570px !important;   
       }
   }
   
@@ -910,6 +932,14 @@ margin-top: 70px !important
 .icon{
 padding-right: 10px;
 }
+.footer-margin{
+
+  margin-top: 18px;
+}
+.footer-margin2{
+  margin-top: -12px;
+
+}
 
 .cardRow 
 {
@@ -926,6 +956,7 @@ padding-right: 10px;
 .card{
     border: none !important;
     
+    
 }
 
 .card-title{
@@ -934,6 +965,7 @@ padding-right: 10px;
 }
 .card-text{
     color: #727272;
+    font-size: 20px !important;
 }
 .landingTopRow{
     margin-top: 60px;
@@ -960,7 +992,12 @@ padding-right: 10px;
     margin-top: 8%;
 }
 .card-img-top{
+    
     height: 250px;
+    width: 270px !important;
+    margin-top: 23px;
+    margin-left: 10px;
+
 }
 
 .hr{
@@ -1084,4 +1121,7 @@ footer{
   margin-Left:1px ;
    margin-Right : 11px;
   
+  }
+  .text-center{
+    margin-top: -20px;
   }

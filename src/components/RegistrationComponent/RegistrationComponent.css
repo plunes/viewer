@@ -1,6 +1,6 @@
 .signUpText{
     font-size: 1.5rem;
-    margin-top: 150px;
+    margin-top: 65px;
     padding-left: 14px;
     margin-bottom: 20px;
 }
@@ -10,9 +10,11 @@
     /* height: 40px !important; */
 }
 .btn-block{
-    border-radius: 31px !important;
-    outline: none !important;
-    height: 45px !important;
+    border-radius: 44px !important;
+   
+    height: 40px !important;
+    width: 123% !important;
+    
 }
 @media(max-width: 576px){
 

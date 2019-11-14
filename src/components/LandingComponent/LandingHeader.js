@@ -31,10 +31,10 @@ class LandingHeader extends React.Component {
             </div>
         </li>
         <li class="nav-item nav2">
-          <a class="nav-link nav3" href="login.html">Login</a>
+          <a class="nav-link nav3" href="/login">Login</a>
         </li>
         <li class="nav-item nav2">
-          <a class="nav-link nav3" href="#">Signup</a>
+          <a class="nav-link nav3" href="/signup">Signup</a>
         </li>
 
       </ul>

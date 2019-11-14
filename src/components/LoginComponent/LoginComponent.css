@@ -94,13 +94,14 @@
       border-color: #01de5a;
   }
   .button-login{
-      margin-top: 11px;
-      width: 250px;
+      margin-top: 21px;
+      width: 307px;
       text-transform: none;
       height: 38px;
-      border-radius: 44px;
+      border-radius: 44px !important;
       background-color: #01de5a;
       border: thin;
+      color: white;
        
   }
   .login-text{
@@ -118,14 +119,18 @@
   .inputLogin{
 
     margin: 0 !important;
-
+    margin-top: 21px !important;
+    
   }
   .forgotPassword{
-padding-left: 65px;
+padding-left: 97px;
   }
   .signupClass{
 
     font-size: 15px;
-    padding-left: 22px;
+    padding-left: 55px;
+    margin-top: 23px;
   }
-  
+  .form-control{
+    width: 120% !important;
+  }

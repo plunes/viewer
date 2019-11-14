@@ -4,7 +4,7 @@ import '../LandingComponent/Landing.css';
 // import RegistrationContainer from '../RegistrationComponent/'
 import axios from 'axios';
 // import Redirect from 'react-dom'
-import  { Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 import './RegistrationComponent.css'
 
 class RegistrationComponent extends React.Component {
@@ -18,17 +18,47 @@ class RegistrationComponent extends React.Component {
             phoneNumber: '',
             password: '',
             gender: '',
-            showLogin: false
+            showLogin: false,
+            showGeneralUserForm: true,
+            showDoctorForm: false,
+            showHospitalForm: false,
+            form: ''
         };
 
         // this.baseUrl = 'https://plunes.co/v3/';
         this.baseUrl = 'http://10.34.18.136:8000/'
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleForm =  this.handleForm.bind(this)
     }
+
+    handleForm(e){
+        this.setState({
+            form : e.target.value
+        })
+        switch(this.state.form){
+            case 'userForm':
+                this.state.showGeneralUserForm = true;
+                this.state.showDoctorForm = false;
+                this.state.showHospitalForm = false
+                break;
+            case 'docForm':
+                this.state.showDoctorForm = true;
+                this.state.showGeneralUserForm = false;
+                this.state.showHospitalForm = false
+                break;
+            case 'hospitalForm':
+                this.state.showHospitalForm = true;
+                this.state.showDoctorForm = false;
+                this.state.showGeneralUserForm = false;
+                break;    
+        }
+    }
+
     handleChange(e) {
         //console.log(this.state)
         this.setState({ [e.target.name]: e.target.value })
+        
     }
 
     handleSubmit(event) {
@@ -73,7 +103,7 @@ class RegistrationComponent extends React.Component {
                     console.log(data.err)
                 }
                 else {
-                    this.setState({ showLogin : true})
+                    this.setState({ showLogin: true })
                 }
             })
     }
@@ -83,98 +113,70 @@ class RegistrationComponent extends React.Component {
     render() {
         const { showLogin } = this.state
 
-        if(showLogin){
-             return <Redirect to='/login'  />
+        if (showLogin) {
+            return <Redirect to='/login' />
         }
 
-        return(
+        return (
             <div className="container">
-                <div className = 'row'>
-                    <div className = 'col-md-6'>
-                    <img className="signImage" style={{marginTop: '80px'}} src="signup.png" />
-
+                <div className='row'>
+                    <div className='col-md-6'>
+                        <img className="signImage" style={{ marginTop: '80px' }} src="signup.png" />
                     </div>
-                    <div className = 'col-md-6'>
-                     <div className = 'col-md-1'>
+                    <div className='col-md-6'>
+                        <div className='col-md-1'>
 
-                     </div>
-                     <div className="col-md-6 signupContainer">
-                     <div className='row'>
-                     <h4 class="signUpText">Sign up</h4>
-        </div>
-                        <form>
-                            
-                        <div className="form-group">
-                <label >Full Name</label>
-                <input className="form-control" name="fullName" onChange={this.handleChange} />
-            </div>
-            <div className="form-group">
-                <label >Email</label>
-                <input  className="form-control" name="emailId" onChange={this.handleChange} />
-            </div>
-            <div className="form-group">
-                <label>Mobile Number</label>
-                <input  className="form-control" name="phoneNumber" onChange={this.handleChange} />
-            </div>
-            <div className="form-group">
-                <label htmlFor="formGroupExampleInput2"  >Password</label>
-                <input type="password" className="form-control" onChange={this.handleChange} name="password" />
-            </div>
-            <div className="form-group" className='buttonSignUp'>
-                <button type="submit" className="btn btn-success btn-lg btn-block">Sign Up</button>
-            </div>
-                        </form>
-                        {/* <div  className='row backButton'>
-            <p> <i className="arrow left"></i></p>
-            <a href='/' style={{ color: 'grey' }}>Back</a>
-        </div> */}
+                        </div>
 
+                        <div className="col-md-6 signupContainer">
+                            <div className='row'>
+                                <h4 class="signUpText">Sign up</h4>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" name='form' onChange = {this.handleForm}>
+                                    <option value= 'userForm'>1</option>
+                                    <option value= 'docForm'>2</option>
+                                    <option value= 'hospitalForm'>3</option>
+                                </select>
+                            </div>
+                            {this.state.showGeneralUserForm ?
+                                // <form>
+                                //     <div className="form-group">
+                                //         <label >Full Name</label>
+                                //         <input className="form-control" name="fullName" onChange={this.handleChange} />
+                                //     </div>
+                                //     <div className="form-group">
+                                //         <label >Email</label>
+                                //         <input className="form-control" name="emailId" onChange={this.handleChange} />
+                                //     </div>
+                                //     <div className="form-group">
+                                //         <label>Mobile Number</label>
+                                //         <input className="form-control" name="phoneNumber" onChange={this.handleChange} />
+                                //     </div>
+                                //     <div className="form-group">
+                                //         <label htmlFor="formGroupExampleInput2"  >Password</label>
+                                //         <input type="password" className="form-control" onChange={this.handleChange} name="password" />
+                                //     </div>
+                                //     <div className="form-group" className='buttonSignUp'>
+                                //         <button type="submit" className="btn btn-success btn-lg btn-block">Sign Up</button>
+                                //     </div>
+                                // </form> 
+                                <div>General Form</div>: null
+                            }
+                            {
+                                this.state.showDoctorForm ? 
+                                <div>Doctor Sign Up</div> : null
+
+                            }
+                            {
+                                this.state.showHospitalForm ?
+                                <div>Hospital Sign up</div> : null 
+                            }
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         )
     }
 }
 export default RegistrationComponent
-
-{/* <div className='container'>
-<div class="row signUpContainer" >
-    <div class="col-sm">
-
-    </div>
-    <div class="col-sm signUp">
-        <div className='row' style={{ paddingLeft: '100px' }}>
-            <h1>Sign Up</h1>
-        </div>
-        <form className='form' onSubmit={this.handleSubmit}>
-            <div className="form-group">
-                <label >Full Name</label>
-                <input type="text" className="form-control" name="fullName" onChange={this.handleChange} />
-            </div>
-            <div className="form-group">
-                <label >Email</label>
-                <input type="text" className="form-control" name="emailId" onChange={this.handleChange} />
-            </div>
-            <div className="form-group">
-                <label>Mobile Number</label>
-                <input type="password" className="form-control" name="phoneNumber" onChange={this.handleChange} />
-            </div>
-            <div className="form-group">
-                <label htmlFor="formGroupExampleInput2"  >Password</label>
-                <input type="text" className="form-control" onChange={this.handleChange} name="password" />
-            </div>
-            <div className="form-group" className='buttonSignUp'>
-                <button type="submit" className="btn btn-success btn-lg btn-block">Sign Up</button>
-            </div>
-        </form>
-        <div  className='row backButton'>
-            <p> <i className="arrow left"></i></p>
-            <a href='/' style={{ color: 'grey' }}>Back</a>
-        </div>
-    </div>
-    <div class="col-sm">
-
-    </div>
-</div>
-</div> */}
