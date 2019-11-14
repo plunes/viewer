@@ -42,20 +42,6 @@ class LandingHeader extends React.Component {
     </div>
   </nav>
 </div>
-// </header>
-            {/* <div className='col-md-2 logo'>
-                <img src='./logo.png' height='60px' width='150px' alt = 'no image' />
-            </div>
-            <div className='col-md-3'>
-            </div>
-            <div className='col-md-6' >
-                <div className='row topRightHeader'>
-                    <button type="button" className="btn btn-success downloadButton "><a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en" style = {{color: 'white', paddingBottom : '10px'}}>Download App</a></button>
-                    <button type="button" className="btn  navButton"> <Link to="/login" className = 'linkClass' >Login</Link></button>
-                    <button type="button" className="btn navButton"><Link to="/signup" className = 'linkClass'>Sign up</Link></button>
-                </div>
-            </div> */}
-            // </div>
     }
 }
 

@@ -1,12 +1,9 @@
 import React from 'react';
 import './Landing.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import ScrollMenu from 'react-horizontal-scrolling-menu';
-
 import RegistrationContainer from '../RegistrationComponent/RegistrationComponent'
 import axios from 'axios';
 import { Redirect } from 'react-router'
-import ScrollProfileComponent from './ScrollProfileComponent'
 
 
 class LandingContainer extends React.Component {
