@@ -28,7 +28,7 @@ class LoginContainer extends Component {
                           <button class="button-login">Login</button>
                       </div>
                     </form>
-                    <a href="/signup" ><h6 className="forgotPassword" >Forgot Password?</h6></a>
+                    <a href="/forgot_password" ><h6 className="forgotPassword" >Forgot Password?</h6></a>
                     <h6 className="signupClass" >Don't have an account?<a href="#" >Signup</a> </h6>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ import './RegistrationComponent.css'
 class RegistrationComponent extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props.root, "Registration")
+        // console.log(props.root, "Registration")
         this.root = props.root
         this.state = {
             fullName: '',
@@ -23,10 +23,7 @@ class RegistrationComponent extends React.Component {
             showGeneralUserForm: true,
             showDoctorForm: false,
             showHospitalForm: false,
-            // selectedValue: ''
         };
-
-        // this.baseUrl = 'https://plunes.co/v3/';
         this.baseUrl = 'http://10.34.18.136:8000/'
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,7 +31,7 @@ class RegistrationComponent extends React.Component {
 
     handleChange(e){
         let selectedValue = e.target.value;
-            
+
         switch(selectedValue){
             case 'userForm':
                 this.setState({

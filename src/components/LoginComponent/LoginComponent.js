@@ -17,16 +17,12 @@ export default class LoginComponent extends Component {
         }
         // this.baseUrl = 'https://plunes.co/v3/';
         this.baseUrl = 'http://10.34.18.136:8000/'
-
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleChange(e) {
-        // console.log(e.target.name)
-
         this.setState({ [e.target.name]: e.target.value })
-        // console.log(this.state)
     }
 
     handleSubmit(event) {

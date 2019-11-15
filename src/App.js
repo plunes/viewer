@@ -11,14 +11,17 @@ import Post from './components/ReduxComponent/Post'
 import EnquiryComponent from './components/EnquiryComponent/EnquiryComponent'
 import EnquiryResultComponent from './components/EnquiryComponent/EnquiryResultComponent'
 
+
 // import PreviousEnquiryComponent from './components/EnquiryComponent/PreviousEnquiryComponent'
 import LoginComponent from './components/LoginComponent/LoginComponent'
+import ForgotPasswordComponent from './components/LoginComponent/ForgotPassword'
 
 import ProfileComponent from './components/ProfileComponent/ProfileComponent'
 
 export default class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    // console.log(this.props , 'Anshul')
     //   this is the application object which contains all the info related to render and the logic
     //   this object shud be passed to each component , so that component can have the data to render
     //   while adding the keys/ objects/ payload , you shud consider the path 
@@ -47,17 +50,16 @@ export default class App extends React.Component {
 
   async componentDidMount(){
     if(localStorage.getItem('token')){
-      this.root.isAuth = false;
+      this.root.isAuth = true;
     }else{
       this.root.isAuth = false;
     }
     return  await axios.get(this.root.baseUrl + 'catalogue')
     .then(({ data }) => {
-        console.log(data, "catalogue")
         if (data.err) {
             console.log(data.err)
         }else {
-        //  this.root.catalogue = data;     
+          this.root.serviceList = [1,2,3,4,5];
         }
     })
 
@@ -70,6 +72,7 @@ export default class App extends React.Component {
           <Route exact path='/' component={() => (<LandingPage root={this.root} />)} />
           <Route exact path='/signup' component={() => (<RegistrationComponent root={this.root} />)} />
           <Route exact path='/login' component={() => (<LoginComponent root={this.root} />)} />
+          <Route exact path='/forgot_password' component={() => (<ForgotPasswordComponent root={this.root} />)} />
           <Route exact path='/dashboard' component={() => (<DashboardComponent root={this.root} />)} />
           <Route exact path='/solutionResult' component={() => (<SolutionResultComponent root={this.root} />)} />
           <Route exact path='/confirmBooking' component={() => (<ConfirmBookingComponent root={this.root}  />)} />

@@ -1,6 +1,20 @@
 import React, { Component } from 'react';
 
 class UserRegistrationForm extends Component {
+    componentDidMount() {
+        // this._isMounted = true;
+        // window.onpopstate = ()=> {
+        //   if(this._isMounted) {
+        //     const { hash } = location;
+        //     if(hash.indexOf('home')>-1 && this.state.value!==0)
+        //       this.setState({value: 0})
+        //     if(hash.indexOf('users')>-1 && this.state.value!==1)
+        //       this.setState({value: 1})
+        //     if(hash.indexOf('data')>-1 && this.state.value!==2)
+        //       this.setState({value: 2})
+        //   }
+        // }
+      }
     render() {
         return (
             <div className='container-fluid'>
