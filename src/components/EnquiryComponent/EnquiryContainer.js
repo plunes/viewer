@@ -11,7 +11,8 @@ class EnquiryContainer extends Component {
         this.state = {
             searchDoctor: false,
             enquiryInput : '',
-            specialities : [{
+            specialities : [
+            {
                 specialityId : '1',
                 speciality : 'Dentist'
             },
@@ -27,10 +28,21 @@ class EnquiryContainer extends Component {
             selectedSpecialityId:''
         }
         this.baseUrl = 'http://10.34.18.136:8000/'
-        this.data = []
-        this.handleChange = this.handleChange.bind(this)
+        this.data = [];
+        this.handleChange = this.handleChange.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.getAllSpecialities = this.getAllSpecialities.bind(this);
+    }
 
+    getAllSpecialities(){
+       
+        return new Promise(async (resolve, reject) => {
+            try{
+
+            }catch{
+
+            }
+        })
     }
 
     handleChange(e){
@@ -52,33 +64,24 @@ class EnquiryContainer extends Component {
             });
             this.data = filteredData
         }
-
     }
 
     handleClick(e){
-        
         let selectedId = e.currentTarget.dataset.value;
         this.setState({
             selectedSpecialityId : selectedId,
             searchDoctor: true
         })
         this.root.selectedEnquiryId = selectedId
-
-
     }
-    // async componentDidMount() {
 
-    //  return  await axios.get(this.baseUrl + 'getAllSpecialities')
-    //         .then(({ data }) => {
-    //             console.log(data)
-    //             if (data.err) {
-    //                 console.log(data.err)
-    //             }
-    //             else {
 
-    //             }
-    //         })
-    // }
+    async componentDidMount() {
+        console.log(this.root.serviceList, 'anshul')
+        // console.log(this.props.root, 'verma')
+        await this.getAllSpecialities()
+        console.log(1)
+    }
 
 
 
@@ -96,7 +99,6 @@ class EnquiryContainer extends Component {
         return (
             <div className='row'>
                 <div className='col-md-2'>
-
                 </div>
                 <div className='col-md-7 enquiryContainer'>
                     <div className='row enquiryHeading'>
@@ -108,11 +110,10 @@ class EnquiryContainer extends Component {
 
                     </div>
                     <div className = 'row'>
-                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" onChange = {this.handleChange}/>
+                        <input type="text" className="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" onChange = {this.handleChange}/>
                         <div className='row'>
                             <ul>
                                 {
-
                                     this.data.map((item, i) => (
                                         <li key={i} data-value={item.specialityId} onClick={this.handleClick} >
                                             {item.speciality}
@@ -122,10 +123,8 @@ class EnquiryContainer extends Component {
                             </ul>
                         </div>
                     </div>
-
                 </div>
                 <div className='col-md-3'>
-
                 </div>
             </div>
         )

@@ -36,6 +36,7 @@ class DoctorRegistrationForm extends Component {
                     </div>
                     
                 </form>
+
             </div>
         );
     }

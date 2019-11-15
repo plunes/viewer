@@ -16,7 +16,7 @@ class SolutionSearchComponent extends React.Component {
             docList : [],
             proceduresList: []
         }
-        this.baseUrl = 'https://plunes.co/v3/'
+        // this.baseUrl = 'https://plunes.co/v3/'
         this.data = [];
         this.selectedProcedures = [];
         this.showForm = false;
@@ -31,19 +31,19 @@ class SolutionSearchComponent extends React.Component {
     async componentDidMount() {
         console.log("procedure listL ",this.root.procedureList)
 
-     return  await axios.get(this.baseUrl + 'bidding/list_of_procedures')
-            .then(({ data }) => {
-                console.log(data)
-                if (data.err) {
-                    console.log(data.err)
-                }
-                else {
-                    // console.log(data, 'list of procedures');
-                    //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
-               this.root.procedureList = data.user;     
-               this.setState({proceduresList : data.user});
-                }
-            })
+    //  return  await axios.get(this.baseUrl + 'bidding/list_of_procedures')
+    //         .then(({ data }) => {
+    //             console.log(data)
+    //             if (data.err) {
+    //                 console.log(data.err)
+    //             }
+    //             else {
+    //                 // console.log(data, 'list of procedures');
+    //                 //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
+    //            this.root.procedureList = data.user;     
+    //            this.setState({proceduresList : data.user});
+    //             }
+    //         })
     }
 
    async viewAllBid(id){
@@ -96,14 +96,10 @@ class SolutionSearchComponent extends React.Component {
         }
        let response = await axios.post(this.baseUrl + 'bidding/setting_bid', body )
              .then(({ data }) => {
-                // console.log(data);
                 if (data.err) {
-                    //message.error(data.msg);
                     console.log(data.err)
                 }
                 else {
-                    console.log('anshul')
-                    console.log(data)
                     return data
                 }
             })
@@ -181,10 +177,50 @@ class SolutionSearchComponent extends React.Component {
         }
 
     return <div className='container' >
-             <div className='row' bg-primary>
-        
-                
-
+            <div className='row'>
+                <div className='col-md-3'></div>
+                <div className='col-md-6'>
+                    <div className='row centerContent'>
+                        <div className='row'>
+                            <h2>
+                                Find the best offers on Diagnotic <br />
+                                Tests & Medical Procedures.<br />
+                            </h2>
+                        </div>
+                        <div className="row rowSolution">
+                            <input type="text" className='solutionSearch' placeholder="Name the procedure or test here..." onChange={this.onSearchQuery} >
+                            </input>
+                            <img src='./search.png' className='searchImgDashboard' alt='Search Img' height='40px' width='40px'></img>
+                        </div>
+                        <div className='row'>
+                            <ul>
+                                {
+                                    this.data.map(item => (
+                                        <li key='' data-value={item.procedure} onClick={this.handleClick} >
+                                            {item.procedure}
+                                        </li>
+                                    ))
+                                    }
+                            </ul>
+                        </div>
+                        <div className='row'>
+                            <ul>
+                                {
+                                    this.showForm ? <form onSubmit={this.handleSubmit}>
+                                        {
+                                            this.state.selectedData.map(item =>
+                                                (
+                                                    <li key=''>{item}</li>
+                                                ))
+                                        }
+                                        <button type='submit' > Proceed </button>
+                                    </form> : null
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className='col-md-3'></div>
             </div>
         </div>
     }

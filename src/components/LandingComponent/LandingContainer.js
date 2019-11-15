@@ -1,12 +1,9 @@
 import React from 'react';
 import './Landing.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import ScrollMenu from 'react-horizontal-scrolling-menu';
-
 import RegistrationContainer from '../RegistrationComponent/RegistrationComponent'
 import axios from 'axios';
 import { Redirect } from 'react-router'
-import ScrollProfileComponent from './ScrollProfileComponent'
 
 
 class LandingContainer extends React.Component {
@@ -19,7 +16,7 @@ class LandingContainer extends React.Component {
             filter: '',
             emailid: '',
             password: '',
-            proceduresList: [],
+            proceduresList: [],    
             selectedData: [],
             docList: [],
             showDropdown: false,
@@ -114,7 +111,7 @@ class LandingContainer extends React.Component {
     }
 
 
-    async handleSubmit(e) {
+    async handleSubmit(e) {     
         e.preventDefault();
         console.log(this.state.selectedData);
 
@@ -148,19 +145,19 @@ class LandingContainer extends React.Component {
     
         // document.body.appendChild(script);
 
-        return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
-            .then(({ data }) => {
-                console.log(data)
-                if (data.err) {
-                    console.log(data.err)
-                }
-                else {
-                    // console.log(data, 'list of procedures');
-                    //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
+        // return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
+        //     .then(({ data }) => {
+        //         console.log(data)
+        //         if (data.err) {
+        //             console.log(data.err)
+        //         }
+        //         else {
+        //             // console.log(data, 'list of procedures');
+        //             //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
 
-                    this.setState({ proceduresList: data.user })
-                }
-            })
+        //             this.setState({ proceduresList: data.user })
+        //         }
+        //     })
     }
 
     handleClick(e) {
