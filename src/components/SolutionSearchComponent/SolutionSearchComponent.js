@@ -96,7 +96,9 @@ class SolutionSearchComponent extends React.Component {
         }
        let response = await axios.post(this.baseUrl + 'bidding/setting_bid', body )
              .then(({ data }) => {
+                // console.log(data);
                 if (data.err) {
+                    //message.error(data.msg);
                     console.log(data.err)
                 }
                 else {
@@ -195,6 +197,7 @@ class SolutionSearchComponent extends React.Component {
                         <div className='row'>
                             <ul>
                                 {
+
                                     this.data.map(item => (
                                         <li key='' data-value={item.procedure} onClick={this.handleClick} >
                                             {item.procedure}
@@ -216,13 +219,14 @@ class SolutionSearchComponent extends React.Component {
                                         <button type='submit' > Proceed </button>
                                     </form> : null
                                 }
+
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div className='col-md-3'></div>
             </div>
-        </div>
+                    </div>
     }
 }
 
