@@ -9,12 +9,6 @@
     /* height: 10px !important; */
     /* height: 40px !important; */
 }
-.form-text-location{
-
-height: 88px  !important;
-
-
-}
 .btn-block{
     border-radius: 44px !important;
    
@@ -22,28 +16,6 @@ height: 88px  !important;
     width: 123% !important;
     
 }
-.btn-lg{
-    font-size: 18px !important;
-}
-.last-text{
-    text-align: center;
-
-    padding-left: 46px;
-    font-size: 14px;
-    margin-top: 10px;
-}
-.address-input{
-     height:90px !important;
-   
-}
-.hospital-text{
-     text-align: center;
-    font-size: 14px;
-    margin-left: 52px;
-    margin-bottom: 0px;
-
-}
-
 @media(max-width: 576px){
 
     .signImage{

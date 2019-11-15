@@ -11,7 +11,7 @@ class LandingHeader extends React.Component {
     render() {
         // console.log(this.root.isAuth, "Anshul")
         return <div className = 'container-fluid'>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+  <nav class="navbar navbar-expand-lg navbar-light  ">
     <a class="navbar-brand" href="#"><img style={{height:'52px', width:'130px'}} src="logo.png" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,20 +42,7 @@ class LandingHeader extends React.Component {
     </div>
   </nav>
 </div>
-// </header>
-            {/* <div className='col-md-2 logo'>
-                <img src='./logo.png' height='60px' width='150px' alt = 'no image' />
-            </div>
-            <div className='col-md-3'>
-            </div>
-            <div className='col-md-6' >
-                <div className='row topRightHeader'>
-                    <button type="button" className="btn btn-success downloadButton "><a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en" style = {{color: 'white', paddingBottom : '10px'}}>Download App</a></button>
-                    <button type="button" className="btn  navButton"> <Link to="/login" className = 'linkClass' >Login</Link></button>
-                    <button type="button" className="btn navButton"><Link to="/signup" className = 'linkClass'>Sign up</Link></button>
-                </div>
-            </div> */}
-            // </div>
+
     }
 }
 

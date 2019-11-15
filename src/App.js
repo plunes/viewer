@@ -4,7 +4,7 @@ import './App.css';
 import LandingPage from './components/LandingComponent/LandingPage';
 import { Route, Switch } from 'react-router-dom';
 import RegistrationComponent from './components/RegistrationComponent/RegistrationComponent';
-import RegistrationHospitalComponent from './components/RegistrationComponent/RegistrationHospitalComponent';
+// import RegistrationHospitalComponent from './components/RegistrationComponent/RegistrationHospitalComponent';
 import DashboardComponent from './components/DashboardComponent/DashboardComponent'
 import SolutionResultComponent from './components/SolutionSearchComponent/SolutionResultComponent'
 import ConfirmBookingComponent from './components/ConfirmBooking/ConfirmBookingComponent'
@@ -58,7 +58,7 @@ export default class App extends React.Component {
           <Route exact path='/' component={() => (<LandingPage root={this.root} />)} />
           <Route exact path='/signup' component={() => (<RegistrationComponent root={this.root} />)} />
           <Route exact path='/login' component={() => (<LoginComponent root={this.root} />)} />
-          <Route exact path='/hospitalsignup' component={() => (<RegistrationHospitalComponent root={this.root} />)} />
+          {/* <Route exact path='/hospitalsignup' component={() => (<RegistrationHospitalComponent root={this.root} />)} /> */}
           <Route exact path='/dashboard' component={() => (<DashboardComponent root={this.root} />)} />
           <Route exact path='/solutionResult' component={() => (<SolutionResultComponent root={this.root} />)} />
           <Route exact path='/confirmBooking' component={() => (<ConfirmBookingComponent root={this.root}  />)} />

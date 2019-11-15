@@ -1,23 +1,4 @@
-.centerContent{
-    margin-top: 40%
-}
-.rowSolution{
-    width: 100%;
-
-}
-.solutionSearch{
-    margin-top: 20px;
-    height: 60px;
-    width: 82%;
-    border: 1px solid #01d35a;
-    border-radius: 10px;
-    font-size: 19px;
-    padding-left: 25px;
-    padding-right: 90px;
-}
-
-.searchImgDashboard{
-    position: relative;
-    top: 29px;
-    left: -59px;
+.link
+{
+margin-top: 91px;
 }

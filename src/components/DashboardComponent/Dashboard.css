@@ -1,16 +1,59 @@
+.dashbord-input
+{
+    border-radius: 35px;
+    outline: none;
+    background-color: white;
+    border: 1px solid #707070;
+    height: 33px;
+    width: 310px;
+    background-image: url(/search.png);
+    background-position-x: 1px;
+    background-position-y: 1px;
+    background-position: 93%;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    margin-left: 185px;
+}
 .logo{
-    margin-top: 20px;
+    
+margin-left: -132px;
+height:52px;
+width: 130px;
+
+margin-top:-7px;
+
 }
-.headerDetail{
-    margin-top: 15px;
-    display: flex;
-    padding: 15px;
-    font-size: 20px;
-    color: #5C5C5C;
+.sol-img{
+height: 35px;
+width: 35px;
+position: relative;
+    left: 60px;
+
+
+
 }
-.downloadButton{
-    height: 50px;
-    margin-top: 20px;
-    width:30%;
-    margin-left: 30px;
+.dropdown-align{
+    margin-left: 71px;
 }
+.nav2{
+    font-size: 12px;
+}
+.sol-img2{
+    height: 35px;
+    width: 35px;
+    margin-left: 69px;
+    
+    
+    }
+    .sol-img3{
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        right:71px;
+    }
+    .solution-text{
+   
+
+
+
+    }

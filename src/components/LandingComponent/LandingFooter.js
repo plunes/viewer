@@ -19,11 +19,11 @@ export default class LandingFooter extends Component {
           </li>
           <li style={{display: 'inline-block'}}>
             <span style={{fontSize:'11px'}}>
-              <a href="#"><img class="ftr1" src="instagram.png" /><br /></a></span>
+              <a href="#"><img class="ftr1" src="Instagram.png" /><br /></a></span>
           </li>
           <li style={{display: 'inline-block'}}>
             <span style={{fontSize:'11px'}}>
-              <a href="#"><img class="ftr2" src="facebook.png" /><br /></a></span>
+              <a href="#"><img class="ftr2" src="Facebook.png" /><br /></a></span>
           </li>
         </ul>
       </div>

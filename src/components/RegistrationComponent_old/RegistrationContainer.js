@@ -1,11 +1,10 @@
 import React from 'react';
 import '../LandingComponent/Landing.css';
+// import LandingHeader from '../LandingComponent/LandingHeader'
+// import RegistrationContainer from '../RegistrationComponent/'
 import axios from 'axios';
-import { Redirect } from 'react-router-dom';
-import UserRegistrationForm from "../RegistrationComponent/UserRegistrationForm";
-import DoctorRegistrationForm from "../RegistrationComponent/DoctorRegistrationForm";
-import HospitalRegistrationForm from '../RegistrationComponent/HospitalRegistrationForm'
-
+// import Redirect from 'react-dom'
+import { Redirect } from 'react-router-dom'
 import './RegistrationComponent.css'
 
 class RegistrationComponent extends React.Component {
@@ -23,44 +22,45 @@ class RegistrationComponent extends React.Component {
             showGeneralUserForm: true,
             showDoctorForm: false,
             showHospitalForm: false,
-            // selectedValue: ''
+            form: ''
         };
 
         // this.baseUrl = 'https://plunes.co/v3/';
         this.baseUrl = 'http://10.34.18.136:8000/'
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleForm =  this.handleForm.bind(this)
     }
 
-    handleChange(e){
-        let selectedValue = e.target.value;
-            
-        switch(selectedValue){
+    handleForm(e){
+        this.setState({
+            form : e.target.value
+        })
+        switch(this.state.form){
             case 'userForm':
-                this.setState({
-                    showGeneralUserForm : true,
-                    showDoctorForm : false,
-                    showHospitalForm : false
-                })
+                this.state.showGeneralUserForm = true;
+                this.state.showDoctorForm = false;
+                this.state.showHospitalForm = false
                 break;
             case 'docForm':
-                    this.setState({
-                        showGeneralUserForm : false,
-                        showDoctorForm : true,
-                        showHospitalForm : false
-                    })
+                this.state.showDoctorForm = true;
+                this.state.showGeneralUserForm = false;
+                this.state.showHospitalForm = false
                 break;
             case 'hospitalForm':
-                    this.setState({
-                        showGeneralUserForm : false,
-                        showDoctorForm : false,
-                        showHospitalForm : true
-                    })
+                this.state.showHospitalForm = true;
+                this.state.showDoctorForm = false;
+                this.state.showGeneralUserForm = false;
                 break;    
         }
     }
 
-   
+    handleChange(e) {
+        //console.log(this.state)
+        this.setState({ [e.target.name]: e.target.value })
+        
+    }
+
     handleSubmit(event) {
         console.log("Anshul")
 
@@ -125,29 +125,52 @@ class RegistrationComponent extends React.Component {
                     </div>
                     <div className='col-md-6'>
                         <div className='col-md-1'>
+
                         </div>
+
                         <div className="col-md-6 signupContainer">
                             <div className='row'>
                                 <h4 class="signUpText">Sign up</h4>
                             </div>
                             <div class="form-group">
-                                <select class="form-control" onChange = {this.handleChange}>
-                                    <option value= 'userForm'>General User</option>
-                                    <option value= 'docForm'>Doctors</option>
-                                    <option value= 'hospitalForm'>Hospitals</option>
+                                <select class="form-control" name='form' onChange = {this.handleForm}>
+                                    <option value= 'userForm'>1</option>
+                                    <option value= 'docForm'>2</option>
+                                    <option value= 'hospitalForm'>3</option>
                                 </select>
                             </div>
-                            {
-                                this.state.showGeneralUserForm ?
-                                <UserRegistrationForm /> : null
+                            {this.state.showGeneralUserForm ?
+                                // <form>
+                                //     <div className="form-group">
+                                //         <label >Full Name</label>
+                                //         <input className="form-control" name="fullName" onChange={this.handleChange} />
+                                //     </div>
+                                //     <div className="form-group">
+                                //         <label >Email</label>
+                                //         <input className="form-control" name="emailId" onChange={this.handleChange} />
+                                //     </div>
+                                //     <div className="form-group">
+                                //         <label>Mobile Number</label>
+                                //         <input className="form-control" name="phoneNumber" onChange={this.handleChange} />
+                                //     </div>
+                                //     <div className="form-group">
+                                //         <label htmlFor="formGroupExampleInput2"  >Password</label>
+                                //         <input type="password" className="form-control" onChange={this.handleChange} name="password" />
+                                //     </div>
+                                //     <div className="form-group" className='buttonSignUp'>
+                                //         <button type="submit" className="btn btn-success btn-lg btn-block">Sign Up</button>
+                                //     </div>
+                                // </form> 
+                                <div>General Form</div>: null
                             }
                             {
                                 this.state.showDoctorForm ? 
-                                <DoctorRegistrationForm /> : null
+                                <div>Doctor Sign Up</div> : null
+
                             }
                             {
                                 this.state.showHospitalForm ?
-                                <HospitalRegistrationForm /> : null 
+                                <div>Hospital Sign up</div> : null 
                             }
                         </div>
                     </div>
