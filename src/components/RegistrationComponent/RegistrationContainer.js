@@ -23,10 +23,6 @@ class RegistrationComponent extends React.Component {
             showGeneralUserForm: true,
             showDoctorForm: false,
             showHospitalForm: false,
-<<<<<<< HEAD
-            // selectedValue: ''
-=======
->>>>>>> 9084be6cc5f6c6b0c39b6681faf4ac5a941fa0bb
         };
         this.baseUrl = 'http://10.34.18.136:8000/'
         this.handleChange = this.handleChange.bind(this);
@@ -35,11 +31,6 @@ class RegistrationComponent extends React.Component {
 
     handleChange(e){
         let selectedValue = e.target.value;
-<<<<<<< HEAD
-            
-=======
-
->>>>>>> 9084be6cc5f6c6b0c39b6681faf4ac5a941fa0bb
         switch(selectedValue){
             case 'userForm':
                 this.setState({
