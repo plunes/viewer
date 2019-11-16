@@ -10,6 +10,7 @@ import ConfirmBookingComponent from './components/ConfirmBooking/ConfirmBookingC
 import Post from './components/ReduxComponent/Post'
 import EnquiryComponent from './components/EnquiryComponent/EnquiryComponent'
 import EnquiryResultComponent from './components/EnquiryComponent/EnquiryResultComponent'
+// import ProfileComponent from './components/ProfileComponent/ProfileComponent'
 
 
 // import PreviousEnquiryComponent from './components/EnquiryComponent/PreviousEnquiryComponent'
@@ -78,6 +79,7 @@ export default class App extends React.Component {
           <Route exact path='/confirmBooking' component={() => (<ConfirmBookingComponent root={this.root}  />)} />
           <Route exact path='/enquiry' component={() => (<EnquiryComponent root={this.root} />)} />
           <Route exact path='/enquiryresult' component={() => (<EnquiryResultComponent root={this.root} />)} />
+          <Route exact path='/profile' component={() => (<ProfileComponent root={this.root} />)} />
         </Switch>
       </div>
     )

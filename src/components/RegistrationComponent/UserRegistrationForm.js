@@ -1,67 +1,95 @@
 import React, { Component } from 'react';
-import { link } from 'fs';
-import { tsUndefinedKeyword } from '@babel/types';
+import axios from 'axios'
 
 class UserRegistrationForm extends Component {
-    componentDidMount() {
-        this._isMounted = true;
-        window.onpopstate = () => {
-
-            //   if(this._isMounted) {
-            //     const { hash } = location;
-            //     if(hash.indexOf('home')>-1 && this.state.value!==0)
-            //       this.setState({value: 0})
-            //     if(hash.indexOf('users')>-1 && this.state.value!==1)
-            //       this.setState({value: 1})
-            //     if(hash.indexOf('data')>-1 && this.state.value!==2)
-            //       this.setState({value: 2})
-            //   }
+    constructor(props) {
+        super(props)
+        // console.log(this.props.userType)
+        this.state = {
+            fullName: '',
+            emailId: '',
+            password: '',
+            phoneNumber: '',
+            dob: '',
+            refCode: '',
+            gender: '',
+            userType: 'User',
+            redirect: false
         }
+        this.baseUrl ='http://13.233.151.26:8000/';
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
+
+    handleChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        let data = {
+            'email': this.state.emailId,
+            'mobileNumber': this.state.phoneNumber,
+            'password': this.state.password,
+            'name': this.state.fullName,
+            'address': this.state.address,
+            'userType': this.state.userType,
+            'birthDate': this.state.dob,
+            'gender': this.state.gender,
+        }
+        console.log(data)
+        axios.post(this.baseUrl + 'user/register', data)
+            .then(({ data }) => {
+                console.log(data);
+                if (data.err) {
+                    //message.error(data.msg);
+                    console.log(data.err)
+                }
+                else {
+                    
+                    this.setState({ showLogin: true })
+                }
+            })
+    }
+
     render() {
         return (
             <div >
-
-                <input type="radio" name="gender" value="male" /> Male
-                 <input type="radio" name="gender" value="female" /> Female
-
-
-
-                <form>
-
-
-
+                <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-
-
                         <input className="form-control" name="fullName" placeholder="Name" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group">
-
-                        <input className="form-control" name="emailId" placeholder="Mobile Number" onChange={this.handleChange} required />
+                        <input className="form-control" name="phoneNumber" placeholder="Mobile Number" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group">
-
-                        <input className="form-control" name="phoneNumber" placeholder="Email id" onChange={this.handleChange} required />
+                        <input className="form-control" name="emailId" placeholder="Email id" onChange={this.handleChange} required />
                     </div>
-                    <div className="form-group">
-
-                        <input type="password" className="form-control" placeholder="Date of birth" onChange={this.handleChange} name="password" required />
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value='M' name="gender" onChange={this.handleChange} />Male
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value='F' name="gender" onChange={this.handleChange} />Female
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type='date' name='dob' id="example-datetime-local-input" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group"><span>
-                        <img src="eye.png" />
+                        {/* <img src="eye.png" /> */}
                         <input type="password" className="form-control" placeholder="Password" onChange={this.handleChange} name="password" required /></span>
                     </div>
-                    <div className="form-group">
-
-                        <input type="password" className="form-control form-text-location" placeholder="Location" onChange={this.handleChange} name="password" required />
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder='Address' name = 'address' onChange={this.handleChange}></textarea>
                     </div>
                     <div className="form-group">
-
-                        <input type="password" className="form-control " placeholder="Enter Referal Code (Optional)" onChange={this.handleChange} name="password" required />
+                        <input className="form-control " placeholder="Enter Referal Code (Optional)" onChange={this.handleChange} name="refCode" />
                     </div>
-
-
                     <div className="form-group" className='buttonSignUp'>
                         <button type="submit" className="btn btn-success btn-lg btn-block">Sign Up</button>
                     </div>

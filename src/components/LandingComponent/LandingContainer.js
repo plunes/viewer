@@ -138,26 +138,21 @@ class LandingContainer extends React.Component {
     }
 
     async componentDidMount() {
-        // const script = document.createElement("script");
+     
 
-        // script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
-        // script.async = true;
-    
-        // document.body.appendChild(script);
+        return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
+            .then(({ data }) => {
+                console.log(data)
+                if (data.err) {
+                    console.log(data.err)
+                }
+                else {
+                    // console.log(data, 'list of procedures');
+                    //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
 
-        // return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
-        //     .then(({ data }) => {
-        //         console.log(data)
-        //         if (data.err) {
-        //             console.log(data.err)
-        //         }
-        //         else {
-        //             // console.log(data, 'list of procedures');
-        //             //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
-
-        //             this.setState({ proceduresList: data.user })
-        //         }
-        //     })
+                    this.setState({ proceduresList: data.user })
+                }
+            })
     }
 
     handleClick(e) {

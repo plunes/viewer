@@ -62,36 +62,15 @@ class SolutionResultContainer extends React.Component {
             </div>
         }
 
-        return <div className='container' >
-            <div className="row">
-                <div className="col-md-2" ></div>
-                <div className="col-md-6" >
-                    <div className='row'>
-                        <div className='col-md-5'>
-                            <div className='row'>
-                                <p>
-                                    Results for: {this.state.searchQueryInput}
-                                </p>
-                            </div>
-                        </div>
-                        <div className='col-md-2'>
-                        </div>
-                        <div className='col-md-5'>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class='col-md-4'>
-                </div>
+        return <div className='container-fluid'>
+            <div>
+                Anshul
             </div>
-            <div className = 'profileComponent'>
                 {
                     this.state.data.map((pdata) => {
                         return <ProfileComponent key={pdata.name} data={pdata} root = {this.root} />
                     })
                 }
-            </div>
         </div>
     }
 }

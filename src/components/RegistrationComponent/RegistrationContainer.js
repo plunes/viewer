@@ -14,11 +14,7 @@ class RegistrationComponent extends React.Component {
         // console.log(props.root, "Registration")
         this.root = props.root
         this.state = {
-            fullName: '',
-            emailId: '',
-            phoneNumber: '',
-            password: '',
-            gender: '',
+            userType:'',
             showLogin: false,
             showGeneralUserForm: true,
             showDoctorForm: false,
@@ -26,7 +22,6 @@ class RegistrationComponent extends React.Component {
         };
         this.baseUrl = 'http://10.34.18.136:8000/'
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(e){
@@ -36,74 +31,31 @@ class RegistrationComponent extends React.Component {
                 this.setState({
                     showGeneralUserForm : true,
                     showDoctorForm : false,
-                    showHospitalForm : false
+                    showHospitalForm : false,
+                    userType: 'User'
                 })
                 break;
             case 'docForm':
                     this.setState({
                         showGeneralUserForm : false,
                         showDoctorForm : true,
-                        showHospitalForm : false
+                        showHospitalForm : false,
+                        userType: 'Doctor'
                     })
                 break;
             case 'hospitalForm':
                     this.setState({
                         showGeneralUserForm : false,
                         showDoctorForm : false,
-                        showHospitalForm : true
+                        showHospitalForm : true,
+                        userType: 'Hospital'
                     })
                 break;    
         }
     }
 
    
-    handleSubmit(event) {
-        console.log("Anshul")
-
-        event.preventDefault();
-
-
-        //Api for Registration
-        let data = {
-            'email': this.state.emailId,
-            'mobileNumber': this.state.phoneNumber,
-            'password': this.state.password,
-            'name': this.state.fullName,
-            'address': 'XXXXXXX',
-            // 'userType': 'General User',
-            // 'dateOfBirth' : Date.now(),
-            // 'latitude': this.root.latitude,
-            // 'longitude': this.root.longitude,
-            // 'qualification': '',
-            // 'imageUrl': '',
-            // 'user_location': this.root.address,
-            // 'experience': '',
-            'gender': 'M',
-            // 'specialist': '',
-            // 'specialistbio': '',
-            // 'commondisease': '',
-            // 'specialistservices': '',
-            // 'symptoms': '',
-            // 'referral_code': ''
-
-        }
-
-        // this.props.history.push("/dashboard");
-        // console.log(history, "Anshul")
-
-        axios.post(this.baseUrl + 'user/register', data)
-            .then(({ data }) => {
-                console.log(data);
-                if (data.err) {
-                    //message.error(data.msg);
-                    console.log(data.err)
-                }
-                else {
-                    this.setState({ showLogin: true })
-                }
-            })
-    }
-
+  
 
 
     render() {
@@ -129,21 +81,21 @@ class RegistrationComponent extends React.Component {
                             <div class="form-group">
                                 <select class="form-control" onChange = {this.handleChange}>
                                     <option value= 'userForm'>General User</option>
-                                    <option value= 'docForm'>Doctors</option>
-                                    <option value= 'hospitalForm'>Hospitals</option>
+                                    {/* <option value= 'docForm'>Doctors</option>
+                                    <option value= 'hospitalForm'>Hospitals</option> */}
                                 </select>
                             </div>
                             {
                                 this.state.showGeneralUserForm ?
-                                <UserRegistrationForm /> : null
+                                <UserRegistrationForm userType = {this.state.userType} /> : null
                             }
                             {
                                 this.state.showDoctorForm ? 
-                                <DoctorRegistrationForm /> : null
+                                <DoctorRegistrationForm userType = {this.state.userType} /> : null
                             }
                             {
                                 this.state.showHospitalForm ?
-                                <HospitalRegistrationForm /> : null 
+                                <HospitalRegistrationForm userType = {this.state.userType}/> : null 
                             }
                         </div>
                     </div>

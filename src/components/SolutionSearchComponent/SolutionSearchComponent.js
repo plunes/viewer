@@ -60,7 +60,6 @@ class SolutionSearchComponent extends React.Component {
                     })
                     // console.log(response)
                     return response;
-                 
                 }
 
    async  viewBidsProcedures(bidId){
@@ -197,13 +196,12 @@ class SolutionSearchComponent extends React.Component {
                         <div className='row'>
                             <ul>
                                 {
-
                                     this.data.map(item => (
                                         <li key='' data-value={item.procedure} onClick={this.handleClick} >
                                             {item.procedure}
                                         </li>
                                     ))
-                                    }
+                                }
                             </ul>
                         </div>
                         <div className='row'>
@@ -226,7 +224,7 @@ class SolutionSearchComponent extends React.Component {
                 </div>
                 <div className='col-md-3'></div>
             </div>
-                    </div>
+        </div>
     }
 }
 
