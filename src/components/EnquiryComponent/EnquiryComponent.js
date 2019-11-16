@@ -9,7 +9,7 @@ import EnquiryContainer from "./EnquiryContainer";
      }
     render() {
         return (
-            <div className = 'container'>
+            <div className = 'container-fluid'>
                 <DashboardHeader root = {this.root} />
                 <EnquiryContainer root = {this.root}/>
             </div>

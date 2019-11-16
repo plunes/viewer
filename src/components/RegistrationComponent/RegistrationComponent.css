@@ -50,4 +50,9 @@ height: 88px  !important;
     
       width:390px !important;
     }
+    .form-control{
+
+
+        width: 100% !important;
+    }
 }

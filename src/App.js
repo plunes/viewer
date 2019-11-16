@@ -12,7 +12,6 @@ import EnquiryComponent from './components/EnquiryComponent/EnquiryComponent'
 import EnquiryResultComponent from './components/EnquiryComponent/EnquiryResultComponent'
 // import ProfileComponent from './components/ProfileComponent/ProfileComponent'
 
-
 // import PreviousEnquiryComponent from './components/EnquiryComponent/PreviousEnquiryComponent'
 import LoginComponent from './components/LoginComponent/LoginComponent'
 import ForgotPasswordComponent from './components/LoginComponent/ForgotPassword'

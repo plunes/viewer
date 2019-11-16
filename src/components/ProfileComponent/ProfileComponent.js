@@ -22,7 +22,7 @@ class ProfileComponent extends React.Component {
 
         this.state = {
             confirmBooking: false,
-            data: this.props.data
+            // data: this.props.data
         }
         this.baseUrl = 'https://plunes.co/v3/'
         this.onClick = this.onClick.bind(this)
@@ -32,17 +32,17 @@ class ProfileComponent extends React.Component {
 
     onClick(){
         // const {professionalId} = this.props.data;
-        console.log(this.props.data , 'DocProfileComponent')
-        this.root.selectedDocDetails = this.props.data;
+        // console.log(this.props.data , 'DocProfileComponent')
+        // this.root.selectedDocDetails = this.props.data;
 
 
-        this.setState({
-            confirmBooking : true
-        });
+        // this.setState({
+        //     confirmBooking : true
+        // });
     }
    
     render() {
-        const { finalPrice, rating, actualPrice, name, location, clinicName } = this.props.data;
+        // const { finalPrice, rating, actualPrice, name, location, clinicName } = this.props.data;
     // console.log(this.state.data, "aaaaaaaaaaaaaaa")
         const {confirmBooking} = this.state
         if(confirmBooking){
@@ -54,10 +54,8 @@ class ProfileComponent extends React.Component {
 
         
         return (
-            <div className='row rowpdiv'>
-                {/* <div className='col-md-1'>
-                </div> */}
-                <div className='profileContainer'>
+            <div className='row'>
+                {/* <div className='profileContainer'>
                     <div className='row'>
                         <div className='col-md-1 profileImageDiv'>
                             <img src="./profile.jpg" className="imgAvatar" alt="prf" />
@@ -92,11 +90,15 @@ class ProfileComponent extends React.Component {
 
                         </div>
                     </div>
-                </div>
+                </div
                 <div className='col-md-3'>
 
                 </div>
                 <div className='bottomBorder'>
+                </div> */}
+                <div>
+                kkkkkkkkkkkkkaaaaaaaaakkakkk
+
                 </div>
             </div>
         )
