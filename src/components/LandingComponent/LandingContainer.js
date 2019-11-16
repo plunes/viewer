@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import RegistrationContainer from '../RegistrationComponent/RegistrationComponent'
+// import RegistrationContainer from '../RegistrationComponent/RegistrationComponent'
 import axios from 'axios';
 import { Redirect } from 'react-router'
 
@@ -175,7 +175,7 @@ class LandingContainer extends React.Component {
         // console.log(e.target.value);
         this.setState({ filter: e.target.value });
 
-        if (this.state.filter.length > 1) {
+        if (this.state.filter.length > 0) {
             const { filter, proceduresList } = this.state;
             const lowercasedFilter = filter.toLowerCase();
             const filteredData = proceduresList.filter(item => {
