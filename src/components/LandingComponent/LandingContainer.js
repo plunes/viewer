@@ -138,8 +138,6 @@ class LandingContainer extends React.Component {
     }
 
     async componentDidMount() {
-     
-
         return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
             .then(({ data }) => {
                 console.log(data)
@@ -147,9 +145,6 @@ class LandingContainer extends React.Component {
                     console.log(data.err)
                 }
                 else {
-                    // console.log(data, 'list of procedures');
-                    //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
-
                     this.setState({ proceduresList: data.user })
                 }
             })
