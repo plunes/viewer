@@ -100,17 +100,13 @@ class EnquiryContainer extends Component {
             <div className='row'>
                 <div className='col-md-2'>
                 </div>
-                <div className='col-md-7 enquiryContainer'>
-                    <div className='row enquiryHeading'>
-                        <h4>
-                            Post your Enquiries to the Professionals.
-                        </h4>
-                    </div>
+                <div className='col-md-7 '>
+                   
                     <div className = 'row'>
 
                     </div>
                     <div className = 'row'>
-                        <input type="text" className="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" onChange = {this.handleChange}/>
+                        <input className="form-controll" placeholder="Choose Speciality" aria-label="Username" aria-describedby="basic-addon1" onChange = {this.handleChange}/>
                         <div className='row'>
                             <ul>
                                 {
@@ -125,6 +121,7 @@ class EnquiryContainer extends Component {
                     </div>
                 </div>
                 <div className='col-md-3'>
+                    <button>Solution Activities</button>
                 </div>
             </div>
         )
