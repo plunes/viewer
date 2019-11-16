@@ -17,6 +17,9 @@
     margin-left: 221px; 
   
   }
+  .ios{
+    margin-left: -34px !important;
+  }
   .navbar-toggler{
     width: 15% !important;
   }
@@ -147,7 +150,7 @@
     .nav33{
     
       
-    width: 93% !important;
+    width: 215px !important;
         padding-left: 80px !important;
    text-align: left !important;
 }
@@ -164,7 +167,7 @@
     border-radius: 20px;
     margin-left: 20px;
     font-size: 14px;
-    width: 197px;
+    width: 215px;
     height: 34px;
 }
 
@@ -319,7 +322,7 @@
     border-radius: 20px;
     margin-left: 20px;
     font-size: 14px;
-    width: 197px;
+    width: 215px !important;
       height: 34px;
   }
   .nav333
@@ -410,6 +413,19 @@
   text-align: left;
   
   
+  }
+  .android{
+
+    height: 20px;
+    width: 20px;
+    
+     margin-left: 3px;
+  }
+  .ios{
+    height: 20px;
+     width :20px ;
+     float:"left";
+      margin-left: 9px;
   }
   .bg-blue-ui {
     background-color:  #01d35a !important;

@@ -23,9 +23,9 @@ class LandingHeader extends React.Component {
         <li class="nav2 nav-item active">
           <div class="nav333">
             <a class="nav33  nav-link _app " href="#">
-              <h6 class="nn "><span><img src="iOS.png"
-                    style={{height: '20px', width :'20px' , float:'left', marginLeft: '9px'}} />
-                  <img src="Android.png" style={{height: '20px', width: '20px', float: 'left', marginLeft: '3px' }}/> Download App</span>
+              <h6 class="nn "><span><img className="ios" src="iOS.png"
+                  />
+                  <img className="android" src="Android.png" /> Download App</span>
                   </h6>
             </a>
             </div>
