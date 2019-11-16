@@ -1,8 +1,8 @@
 import React from 'react';
-import '../LandingComponent/Landing.css';
 import DashboardHeader from '../DashboardComponent/DashboardHeader'
 import DashboardContainer from '../DashboardComponent/DashboardContainer'
-
+import LandingHeader from '../LandingComponent/LandingHeader'
+import './Dashboard.css'
 class DashboardComponent extends React.Component {
     constructor(props){
         super(props);
@@ -16,6 +16,7 @@ class DashboardComponent extends React.Component {
 
         return <div className = 'container-fluid'>
                 <DashboardHeader root = {this.root}/>
+                {/* <LandingHeader root={this.root} /> */}
                 <DashboardContainer root = {this.root}/>
         </div>
     }

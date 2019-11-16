@@ -60,7 +60,6 @@ class SolutionSearchComponent extends React.Component {
                     })
                     // console.log(response)
                     return response;
-                 
                 }
 
    async  viewBidsProcedures(bidId){
@@ -186,50 +185,53 @@ class SolutionSearchComponent extends React.Component {
 
 export default SolutionSearchComponent
 
-{/* <div className='row'>
-                <div className='col-md-3'></div>
-                <div className='col-md-6'>
-                    <div className='row centerContent'>
-                        <div className='row'>
-                            <h2>
-                                Find the best offers on Diagnotic <br />
-                                Tests & Medical Procedures.<br />
-                            </h2>
-                        </div>
-                        <div className="row rowSolution">
-                            <input type="text" className='solutionSearch' placeholder="Name the procedure or test here..." onChange={this.onSearchQuery} >
-                            </input>
-                            <img src='./search.png' className='searchImgDashboard' alt='Search Img' height='40px' width='40px'></img>
-                        </div>
-                        <div className='row'>
-                            <ul>
-                                {
+//  <div className='row'>
+//                 <div className='col-md-3'></div>
+//                 <div className='col-md-6'>
+//                     <div className='row centerContent'>
+//                         <div className='row'>
+//                             <h2>
+//                                 Find the best offers on Diagnotic <br />
+//                                 Tests & Medical Procedures.<br />
+//                             </h2>
+//                         </div>
+//                         <div className="row rowSolution">
+//                             <input type="text" className='solutionSearch' placeholder="Name the procedure or test here..." onChange={this.onSearchQuery} >
+//                             </input>
+//                             <img src='./search.png' className='searchImgDashboard' alt='Search Img' height='40px' width='40px'></img>
+//                         </div>
+//                         <div className='row'>
+//                             <ul>
+//                                 {
+//                                     this.data.map(item => (
+//                                         <li key='' data-value={item.procedure} onClick={this.handleClick} >
+//                                             {item.procedure}
+//                                         </li>
+//                                     ))
+//                                 }
+//                             </ul>
+//                         </div>
+//                         <div className='row'>
+//                             <ul>
+//                                 {
+//                                     this.showForm ? <form onSubmit={this.handleSubmit}>
+//                                         {
+//                                             this.state.selectedData.map(item =>
+//                                                 (
+//                                                     <li key=''>{item}</li>
+//                                                 ))
+//                                         }
+//                                         <button type='submit' > Proceed </button>
+//                                     </form> : null
+//                                 }
 
-                                    this.data.map(item => (
-                                        <li key='' data-value={item.procedure} onClick={this.handleClick} >
-                                            {item.procedure}
-                                        </li>
-                                    ))
-                                    }
-                            </ul>
-                        </div>
-                        <div className='row'>
-                            <ul>
-                                {
-                                    this.showForm ? <form onSubmit={this.handleSubmit}>
-                                        {
-                                            this.state.selectedData.map(item =>
-                                                (
-                                                    <li key=''>{item}</li>
-                                                ))
-                                        }
-                                        <button type='submit' > Proceed </button>
-                                    </form> : null
-                                }
+//                             </ul>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div className='col-md-3'></div>
+//             </div>
+//         </div>
+//     }
+// }
 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className='col-md-3'></div>
-            </div> */}

@@ -8,7 +8,7 @@ class DashboardHeader extends React.Component {
 
     render() {
         return <div className="container-fluid">
-           { 
+           
            <div className="container-fluid">
            <nav class="navbar navbar-expand-lg navbar-light  ">
     <a class="navbar-brand" href="#"><img className="logo" src="logo.png" /></a>
