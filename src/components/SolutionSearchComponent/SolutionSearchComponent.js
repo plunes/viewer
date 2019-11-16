@@ -179,7 +179,14 @@ class SolutionSearchComponent extends React.Component {
         }
 
     return <div className='container' >
-            <div className='row'>
+           
+                    </div>
+    }
+}
+
+export default SolutionSearchComponent
+
+{/* <div className='row'>
                 <div className='col-md-3'></div>
                 <div className='col-md-6'>
                     <div className='row centerContent'>
@@ -225,9 +232,4 @@ class SolutionSearchComponent extends React.Component {
                     </div>
                 </div>
                 <div className='col-md-3'></div>
-            </div>
-                    </div>
-    }
-}
-
-export default SolutionSearchComponent
+            </div> */}

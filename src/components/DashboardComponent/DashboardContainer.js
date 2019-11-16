@@ -12,7 +12,13 @@ class  DashboardComponent extends React.Component {
     
 
     render() {
-        return <div className = 'row'>
+        return <div className = "container-fluid">
+            <div>
+                
+
+
+            </div>
+
             <SolutionSearchComponent root = {this.root} />
         </div>
             

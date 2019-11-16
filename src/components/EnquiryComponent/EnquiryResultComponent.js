@@ -41,7 +41,7 @@ class EnquiryResultComponent extends Component {
     render() {
         console.log(this.root, 'enquiry result container')
         return (
-            <div className = 'container'>
+            <div className = 'container-fluid'>
                 <div className = 'profileComponent'>
                 {
                     this.docList.map((pdata) => {

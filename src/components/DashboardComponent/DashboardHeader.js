@@ -7,7 +7,9 @@ class DashboardHeader extends React.Component {
     }
 
     render() {
-        return <div className='container'>
+        return <div className="container-fluid">
+           { 
+           <div className="container-fluid">
            <nav class="navbar navbar-expand-lg navbar-light  ">
     <a class="navbar-brand" href="#"><img className="logo" src="logo.png" /></a>
     <div>
@@ -30,7 +32,7 @@ class DashboardHeader extends React.Component {
 
           <div>
             <a class=" nav-link " href="#">
-              <span><img className="sol-img" src="solution.png"></img></span>solution
+                <img className="sol-img" src="solution.png"></img><span className="top-img">solution</span>
                 
             </a>
             </div>
@@ -43,25 +45,25 @@ class DashboardHeader extends React.Component {
         </li>
             <li>  
             <div class="dropdown">
-  <button class="btn  dropdown-toggle dropdown-align" type="button" data-toggle="dropdown">
-         <img className="sol-img2" src="image.png"/> john doe</button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</div>
-
-                </li>
-
-
-      </ul>
+              <button class="btn  dropdown-toggle dropdown-align" type="button" data-toggle="dropdown">
+                 <img className="sol-img2" src="image.png"/> john doe</button>
+                      <ul class="dropdown-menu">
+                       <li><a href="#">HTML</a></li>
+                         <li><a href="#">CSS</a></li>
+                               <li><a href="#">JavaScript</a></li>
+                      </ul>
+           </div>
+             </li>
+        </ul>
 
     </div>
   </nav>
-</div>
+  
 
-    }
-}
+  </div>
+     } </div>
+ 
+  
+    }}
 
 export default DashboardHeader

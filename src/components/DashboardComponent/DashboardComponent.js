@@ -14,7 +14,7 @@ class DashboardComponent extends React.Component {
     render() {
         // const { latitude, longitude } = this.state
 
-        return <div className = 'container'>
+        return <div className = 'container-fluid'>
                 <DashboardHeader root = {this.root}/>
                 <DashboardContainer root = {this.root}/>
         </div>

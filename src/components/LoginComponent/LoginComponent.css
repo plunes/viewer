@@ -10,6 +10,10 @@
 
   width:390px !important;
 }
+.inputLogin{
+
+  width: 100% !important;
+}
 
 
 
@@ -123,7 +127,7 @@
     
   }
   .forgotPassword{
-padding-left: 97px;
+   padding-left: 97px;
   }
   .signupClass{
 
@@ -132,5 +136,5 @@ padding-left: 97px;
     margin-top: 23px;
   }
   .form-control{
-    width: 120% !important;
+    width: 120%  !important ;
   }
