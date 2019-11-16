@@ -81,8 +81,8 @@ class RegistrationComponent extends React.Component {
                             <div class="form-group">
                                 <select class="form-control" onChange = {this.handleChange}>
                                     <option value= 'userForm'>General User</option>
-                                    {/* <option value= 'docForm'>Doctors</option>
-                                    <option value= 'hospitalForm'>Hospitals</option> */}
+                                    <option value= 'docForm'>Doctors</option>
+                                    <option value= 'hospitalForm'>Hospitals</option>
                                 </select>
                             </div>
                             {

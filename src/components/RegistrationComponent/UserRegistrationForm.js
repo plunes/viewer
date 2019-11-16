@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import { Redirect } from 'react-router'
 
 class UserRegistrationForm extends Component {
     constructor(props) {
@@ -14,7 +15,7 @@ class UserRegistrationForm extends Component {
             refCode: '',
             gender: '',
             userType: 'User',
-            redirect: false
+            showLogin: false
         }
         this.baseUrl ='http://13.233.151.26:8000/';
         this.handleChange = this.handleChange.bind(this);
@@ -55,6 +56,13 @@ class UserRegistrationForm extends Component {
     }
 
     render() {
+        const {showLogin} = this.state
+        if(showLogin){
+            return <Redirect to={{
+                pathname: "/login",
+
+            }} />;
+        }
         return (
             <div >
                 <form onSubmit={this.handleSubmit}>
