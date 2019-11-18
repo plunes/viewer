@@ -423,14 +423,14 @@ class LandingContainer extends React.Component {
                                     <div className="row">
                                         <div className="col-sm-6">
                                             <img className="download-app-pic" src="Category.png"/>
-                                            <img className="download-app-pic2" src="Search.png"/>
+                                            <img className="download-app-pic2" src="mobail.png"/>
 
                                         </div>
                                             <div className="col-sm-6">
                                                 <p> Download Plunes App Now!  </p>
                                                 <p>Book Procedures, Medical Tests & Appointments</p>
                                                 <p>Get the link to download link</p>
-                                                <input class="Number-text" name="number" placeholder="Enter your Number" id="myInput"></input>
+                                                <input type="tel" placeholder="Enter your Number" name="usrtel"></input>
                                                 <img className="download-logo" src="app-store.png"/>
                                             <img className="download-logo" src="Play-store.png"/>
 
