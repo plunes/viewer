@@ -56,7 +56,7 @@ class DashboardHeader extends React.Component {
         </nav>
       </div>
     </div>
+    }
   }
-}
 
 export default DashboardHeader

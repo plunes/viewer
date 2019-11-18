@@ -72,10 +72,10 @@ handleSubmit(event) {
                     <h4 class="login-text">Login</h4>
                      <form action="" onSubmit ={this.handleSubmit}>
                       <div  class=" form-group">
-                        <input class="form-control inputLogin"   name="emailId" placeholder="Email id or Phone Number" onChange={this.handleChange} id="myInput" />
+                        <input class="form-controlll inputLogin"   name="emailId" placeholder="Email id or Phone Number" onChange={this.handleChange} id="myInput" />
                       </div>
                       <div  class="form-group">
-                        <input class="form-control inputLogin" type='password' name="password" placeholder="Password" onChange = {this.handleChange} id="myInput" />
+                        <input class="form-controlll inputLogin" type='password' name="password" placeholder="Password" onChange = {this.handleChange} id="myInput" />
                           <button class="button-login" type='submit'>Login</button>
                       </div>
                     </form>

@@ -67,13 +67,13 @@ class UserRegistrationForm extends Component {
             <div >
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <input className="form-control" name="fullName" placeholder="Name" onChange={this.handleChange} required />
+                        <input className="form-control2" name="fullName" placeholder="Name" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group">
-                        <input className="form-control" name="phoneNumber" placeholder="Mobile Number" onChange={this.handleChange} required />
+                        <input className="form-control2" name="phoneNumber" placeholder="Mobile Number" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group">
-                        <input className="form-control" name="emailId" placeholder="Email id" onChange={this.handleChange} required />
+                        <input className="form-control2" name="emailId" placeholder="Email id" onChange={this.handleChange} required />
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
@@ -86,17 +86,17 @@ class UserRegistrationForm extends Component {
                         </label>
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type='date' name='dob' id="example-datetime-local-input" onChange={this.handleChange} required />
+                        <input class="form-control2" type='date' name='dob' id="example-datetime-local-input" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group"><span>
                         {/* <img src="eye.png" /> */}
-                        <input type="password" className="form-control" placeholder="Password" onChange={this.handleChange} name="password" required /></span>
+                        <input type="password" className="form-control2" placeholder="Password" onChange={this.handleChange} name="password" required /></span>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" rows="3" placeholder='Address' name = 'address' onChange={this.handleChange}></textarea>
+                        <textarea class="form-control2" rows="3" placeholder='Address' name = 'address' onChange={this.handleChange}></textarea>
                     </div>
                     <div className="form-group">
-                        <input className="form-control " placeholder="Enter Referal Code (Optional)" onChange={this.handleChange} name="refCode" />
+                        <input className="form-control2 " placeholder="Enter Referal Code (Optional)" onChange={this.handleChange} name="refCode" />
                     </div>
                     <div className="form-group" className='buttonSignUp'>
                         <button type="submit" className="btn btn-success btn-lg btn-block">Sign Up</button>

@@ -127,6 +127,7 @@ class EnquiryContainer extends Component {
                     <h3>Previous Enquiry</h3>
                 </div>
             </div>
+            
         )
     }
 }

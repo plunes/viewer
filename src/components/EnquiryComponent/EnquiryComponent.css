@@ -18,11 +18,34 @@
     background-repeat: no-repeat;
     padding: 24px 20px 24px 25px;
     outline: none;
-    margin-top: 290px;
+    margin-top: 295px;
     background-size: 27px 27px;
     margin-bottom: 129px;
-    margin-left: 244px;
+    margin-left: 93px;
     width: 565px !important;
     height: 55px;
+
+}
+.row{
+
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+}
+.button-nav{
+    display: inline-block;
+    font-weight: 300;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-size: 35px;
+     margin-left: 220px;
+    
+   white-space: nowrap;
 
 }

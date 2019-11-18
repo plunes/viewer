@@ -14,7 +14,7 @@
 .ftr{    height: 40px;
     width: 40px;
     margin-top: 15px !important;
-    margin-left: 221px; 
+    margin-left: 216px !important; 
   
   }
   .ios{
@@ -30,7 +30,7 @@
   .footerfont{
     
     font-size: 15px !important;
-    margin-right: 47px !important;
+    margin-right: 16px !important;
     padding-top: 6px !important;
   }
   
@@ -40,12 +40,7 @@
     right: 20px;
 
   }
-  .card-img-top{
-
-   height: 210px !important;
-   width: 220px !important;
-    margin-left: 25px !important;
-  }
+  
 
   .searchDropdown {
     height: 200px;
@@ -74,7 +69,7 @@
         height: 40px;
         width: 40px;
         
-        margin-left: 6px;
+        margin-left: 1px;
     }
     .h11{
             font-size: 24px !important;
@@ -99,11 +94,15 @@
     display: block;
     margin: auto;
     font-size: 26px;
-    color: #343434;
+    color: #343434; 
     font-weight: 500;
     margin-top: 140px; 
+   
         
     }  
+    .navbar-light .navbar-toggler{
+      outline: none !important;
+    }
 
 
 
@@ -117,14 +116,11 @@
     word-wrap: break-word !important;
     background-clip: border-box !important;
     border-radius: .25rem !important;
-    width: 110% !important;
-    margin-left: -22px !important;
-    padding-left: 30px !important;
-    padding-right: 0% !important;
+    width: 100% !important;
+   
     overflow:  hidden !important;
   }
-    
-    
+  
     
     
     input[type=text] {
@@ -172,7 +168,7 @@
 }
 
 .navbar-nav .nav-link{
-      width: 89% !important;
+      width: 109% !important;
         padding-left: 44px;
     margin-left: 23px;
     margin-top: 10px;
@@ -190,12 +186,7 @@
         margin-bottom: 1rem;
             font-size: 13px}
         
-        
-        .carousel-text{
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 13px;
-        }
+       
         .navbar-nav{
           margin-top: 10px;
         }
@@ -230,18 +221,13 @@
 /* mediaquery done */
 
  
-  .carousel-header{
-  
-    text-align: center !important;
-  }
   .card{
        border: none;
-       width: 70%;
-      padding-left: 105px;
-      margin-left: 122px;
-      background-color: #f2f2f2 !important;
+       width: 100%;
+     margin-left: 30px;
+      
       margin-bottom: 48px;
-      margin-top: 0px;
+      margin-top: 11px;
     } 
   
   .cardItemsRow
@@ -263,11 +249,13 @@
      color: #343434;
      font-weight: 500;
     padding-top: 100px;
+    margin-bottom: 61px;
   }
   
   .logo
     {
      width:10%;
+     margin-left: 11px;
     }
   
   
@@ -434,193 +422,25 @@
   
   figure img{width:300px;
   }
-  
-  #blog {
-    padding-bottom: 100px;
+  .card-item-top{
+    width: 250px !important;
+   height: 230px !important;
+   margin-left: 81px;
   }
-  
-  .blog .carousel-indicators {
-    left: 0;
     
-  }
+  
+  
   .footer-pic img{
       height:65px;
       width:60px ;
       margin-top:-7px ;
   }
-  
-  
-  .main-content {
-    position: relative;
-  }
-  .main-content .owl-theme .custom-nav {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    right: 0;
-  }
-  .main-content .owl-theme .custom-nav .owl-prev, .main-content .owl-theme .custom-nav .owl-next {
-    position: absolute;
-    height: 50px;
-    color: inherit;
-    background-color: #f2f2f2;
-    border: none;
-    z-index: 100;
-    /* right: 10px; */
-    /* width: 50%; */
-  }
-  .main-content .owl-theme .custom-nav .owl-prev i, .main-content .owl-theme .custom-nav .owl-next i {
-    font-size: 2.5rem;
-    color: #cecece;
-    outline: none !important;
-  }
-  .main-content .owl-theme .custom-nav .owl-prev {
-    left: 0;
-    outline: none !important;
-  }
-  .main-content .owl-theme .custom-nav .owl-next {
-    right: 0;
-    outline: none !important;
+  textarea{
+
+    height: 85px !important;
   }
   
   
-  .blog .carousel-indicators li {
-    background: #708198;
-    border-radius: 50%;
-    width: 17px;
-    height: 0px;
-  }
-  
-  .blog .carousel-indicators .active {
-    background: #0fc9af;
-  }
-  
-  
-  
-  
-  .item-carousel-blog-block {
-    outline: medium none;
-    padding: 15px;
-  }
-  
-  .item-box-blog {
-   
-    
-    z-index: 4;
-    padding: 40px;
-  }
-  
-  .item-box-blog-image {
-    position: relative;
-  }
-  
-  .item-box-blog-image figure img {
-    width: 60%;
-    height: auto;
-    object-fit:cover;
-        display: block;
-      margin: 0 auto;
-  }
-  
-  .item-box-blog-date {
-    position: absolute;
-    z-index: 5;
-    padding: 4px 20px;
-    top: -20px;
-    right: 8px;
-    background-color: #41cb52;
-  }
-  
-  .item-box-blog-date span {
-    color: #fff;
-    display: block;
-    text-align: center;
-    line-height: 1.2;
-  }
-  
-  .item-box-blog-date span.mon {
-    font-size: 18px;
-  }
-  
-  .item-box-blog-date span.day {
-    font-size: 16px;
-  }
-  
-  .item-box-blog-body {
-    padding: 10px;
-    padding-left: 90px;
-  }
-  
-  .item-heading-blog a h5 {
-    margin: 0;
-    line-height: 1;
-    text-decoration:none;
-    transition: color 0.3s;
-  }
-  
-  .item-box-blog-heading a {
-      text-decoration: none;
-  }
-  
-  .item-box-blog-data p {
-    font-size: 13px;
-  }
-  
-  .item-box-blog-data p i {
-    font-size: 12px;
-  }
-  
-  .item-box-blog-text {
-    max-height: 100px;
-    overflow: hidden;
-        text-align: left;
-  }
-  
-  .mt-10 {
-    float: left;
-    margin-top: -10px;
-    padding-top: 10px;
-  }
-  
-  .btn.bg-blue-ui.white.read {
-    cursor: pointer;
-    padding: 4px 20px;
-    float: left;
-    margin-top: 10px;
-    text-align:left !important;
-    
-  }
-  
-  .btn.bg-blue-ui.white.read:hover {
-    box-shadow: 0px 5px 15px inset #4d5f77;
-  }
-  
-      
-  .owl-stage-outer{
-    overflow:  hidden !important;
-  }
-  
-  .k{
-    margin-left: 25px;
-    font-size: 11px;
-    margin-top: 8px;
-  }
-  .b{
-    
-  background-color: transparent !important;
-          box-shadow: 0px 0px 3px 0px #888888;
-  }
-  
-  ._app{
-  
-    background-color: #41cb52;
-  }
-  
-  .carousel-text{
-  
-    text-align: center;
-    margin-bottom: 20px;
-  }
   .button-view
   
   {
@@ -629,6 +449,7 @@
     border-radius: 25px !important;
     width: 130px;
     color:white !important;
+    margin-left: 125px;
   }
   
   
@@ -677,7 +498,7 @@
       margin-top: -24px;
     }
     .footerfont{
-      font-family: proxima;
+    
       font-size:14px ;
     }
     .footerele{
@@ -692,14 +513,6 @@
         font-size: 13px;
         
     }
-    .carousel-item1{
-      background-color:white;display: block;margin: 0 auto ;font-size:46px;
-            
-    }
-  
-  
-  
-  
   
   
   
@@ -747,20 +560,7 @@
       margin-bottom: -16px;
   }
   
-  /*when hovering an item:*/
-  /*
-  .autocomplete-items div:hover {
-    background-color: #e9e9e9; 
-  }
-  */
   
-  /*when navigating through the items using the arrow keys:*/
-  /*
-  .autocomplete-active {
-    background-color: DodgerBlue !important; 
-    color: #ffffff; 
-  }
-  */
   
   .form-control:focus{box-shadow:none !important;border-color:#01d35a !important;}
   
@@ -812,7 +612,7 @@
     overflow-y: auto;
     border-radius : 15px !important;
     border: 1.5px solid #01d35a;
-    width: 559px;
+    width: 550px;
     margin-top: 10px;
      bottom:  160px;
 }
@@ -836,27 +636,6 @@
     margin-top: 50px;
 
 }
-
-.carousel-inner  {
-    left: 100px;
-
-    /* width: 100%; */
-    /* height: 100%; */
-  }
-
- .carousel-control-prev{
-     /* background-color: #01d35a */
-     /* left: 200%; */
-     left: -87px !important;
-
- }
-
- .carousel-control-next{
-    /* background-color: #01d35a */
-    left: 104%;
-
-}
-
 .viewMoreButton{
     background-color: #01d35a;
     color: #ffffff;
@@ -995,10 +774,12 @@ padding-right: 10px;
 .card-title{
     font-size: 22px;
     color: #343434;
+    text-align: center !important;
 }
 .card-text{
     color: #727272;
     font-size: 20px !important;
+    text-align: center;
 }
 .landingTopRow{
     margin-top: 60px;
@@ -1021,17 +802,10 @@ padding-right: 10px;
 }
 
 .landingCentre{
-    /* background-color: #8C8C8C; */
+  
     margin-top: 8%;
 }
-.card-img-top{
-    
-    height: 265px;
-    width: 270px ;
-    margin-top: 23px;
-    margin-left: 10px;
 
-}
 
 .hr{
     margin-top: 3rem !important;
@@ -1157,4 +931,39 @@ footer{
   }
   .text-center{
     margin-top: -20px;
+  }
+  .row{
+    margin-bottom: 16px;
+    
+  }
+  .download-app{
+    margin-left: 99px;
+  }
+  .footer-padding{
+
+    padding-top: 120px;
+  }
+  .m-0 {
+    margin: 0!important;
+    padding-top: 80px;
+    padding-bottom: 49px;
+}
+.download-app-pic{
+height: 500px;
+width: 330px;
+}
+.download-app-pic2{
+  height: 500px;
+  width: 330px;
+  position: absolute !important;
+  left: 244px;
+    top: 51px;
+
+  }
+  .download-logo{
+    width: 100px;
+    height: 35px;
+    margin-left: 11px;
+
+
   }

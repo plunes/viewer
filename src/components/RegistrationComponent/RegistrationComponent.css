@@ -1,7 +1,7 @@
 .signUpText{
     font-size: 1.5rem;
     margin-top: 65px;
-    padding-left: 14px;
+    
     margin-bottom: 20px;
 }
 .buttonSignUp{
@@ -14,6 +14,13 @@
 height: 88px  !important;
 
 
+}
+.form-control2{
+    width: 282px;
+    outline: none;
+    background-color: #ffffff;
+   border:  1px solid #ced4da;
+    height: 40px;
 }
 .btn-block{
     border-radius: 44px !important;
@@ -48,11 +55,16 @@ height: 88px  !important;
 
     .signImage{
     
-      width:390px !important;
+      width:295px !important;
     }
-    .form-control{
+    .form-control2{
 
 
         width: 100% !important;
     }
+    .btn-block
+    {
+        width: 100% !important;
+    }
+    
 }
