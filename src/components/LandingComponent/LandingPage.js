@@ -66,20 +66,17 @@ class LandingPage extends React.Component {
         this.setState({ latitude: 'err-latitude', longitude: 'err-longitude' })
       })
     }
-
   }
-
+  
   render() {
     const { latitude, longitude, position } = this.state
     // console.log(position);
     // console.log(latitude, longitude)
     return <div className='container-fluid' >
-      <LandingHeader root={this.root} />
-      <LandingContainer root={this.root} />
-     
-      <LandingFooter root={this.root} />
-
-    </div>
+            <LandingHeader root={this.root} />
+            <LandingContainer root={this.root} />
+            <LandingFooter root={this.root} />
+          </div>
   }
 }
 export default LandingPage;

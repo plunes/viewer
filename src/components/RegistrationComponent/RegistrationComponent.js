@@ -11,8 +11,11 @@ class RegistrationComponent extends React.Component {
         super(props);
         this.root = props.root
     }
+    
     render() {
-        // console.log(this.root.serviceList, "asdfghjk")
+        console.log(this.root , "asdfghjk")
+        // const { serviceList } = this.root
+        // console.log(serviceList)
         return <div className = 'container-fluid'>
            <LandingHeader root = {this.root}/>
            <RegistrationContainer root = {this.root}/>

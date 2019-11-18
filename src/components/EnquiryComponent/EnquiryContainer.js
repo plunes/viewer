@@ -5,60 +5,68 @@ import { Redirect } from 'react-router'
 
 
 class EnquiryContainer extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.root = props.root;
         this.state = {
             searchDoctor: false,
-            enquiryInput : '',
-            specialities : [
-            {
-                specialityId : '1',
-                speciality : 'Dentist'
-            },
-            {
-                specialityId : '2',
-                speciality : 'Dentist2'
-            },
-            {
-                specialityID : '3',
-                speciality : 'Dentist3'
-            }
-            ],
-            selectedSpecialityId:''
+            enquiryInput: '',
+            specialities: [],
+            selectedSpecialityId: ''
         }
-        this.baseUrl = 'http://10.34.18.136:8000/'
         this.data = [];
         this.handleChange = this.handleChange.bind(this);
         this.handleClick = this.handleClick.bind(this);
         this.getAllSpecialities = this.getAllSpecialities.bind(this);
+        this.getAllEnquiries = this.getAllEnquiries.bind(this)
     }
 
-    getAllSpecialities(){
-       
+    getAllEnquiries() {
+        // console.log('anshu');
         return new Promise(async (resolve, reject) => {
-            try{
+                let enquiries = await axios.get('http://13.233.151.26:8000/enquiry', {
+                    headers: {
+                        'authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGQyNzk4ZmVkZTQ0MDQ5ZmU3MDU4NzQiLCJpYXQiOjE1NzQwNzg5ODF9.LqOooiVJf7YsuaVZAxGRJeBzOZcjZXYoqhq2TTxanTE',
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    }
+                    })
+                    .then(response => {
+                        console.log(response, 'responseList')
+                        resolve(response)
+                    })
+                    .catch((error) => {
+                        reject(error);
+                    });
+        })
+    }
 
-            }catch{
-
+    getAllSpecialities(list) {
+        return new Promise(async (resolve, reject) => {
+            try {
+                this.setState({
+                    specialities: list
+                })
+                resolve();
+            } catch (error) {
+                console.log(error)
+                reject();
             }
         })
     }
 
-    handleChange(e){
-        this.setState({ enquiryInput : e.target.value });
+    handleChange(e) {
+        this.setState({ enquiryInput: e.target.value });
         if (this.state.enquiryInput.length > 1) {
             const { enquiryInput, specialities } = this.state;
             const lowercasedFilter = enquiryInput.toLowerCase();
             const filteredData = specialities.filter(item => {
                 let result = false;
                 Object.keys(item).forEach(key => {
-                    // if (key == 'procedure' || key == 'tag') {
-                        let smallData = item[key].toString().toLowerCase();
-                        if (smallData.includes(lowercasedFilter)) {
-                            result = true;
-                        }
-                    // }
+                    let smallData = item[key].toString().toLowerCase();
+                    if (smallData.includes(lowercasedFilter)) {
+                        result = true;
+                    }
                 });
                 return result;
             });
@@ -66,10 +74,10 @@ class EnquiryContainer extends Component {
         }
     }
 
-    handleClick(e){
+    async handleClick(e) {
         let selectedId = e.currentTarget.dataset.value;
         this.setState({
-            selectedSpecialityId : selectedId,
+            selectedSpecialityId: selectedId,
             searchDoctor: true
         })
         this.root.selectedEnquiryId = selectedId
@@ -77,14 +85,10 @@ class EnquiryContainer extends Component {
 
 
     async componentDidMount() {
-        console.log(this.root.serviceList, 'anshul')
-        // console.log(this.props.root, 'verma')
-        await this.getAllSpecialities()
-        console.log(1)
+        let serviceList = this.root.serviceList;
+        await this.getAllSpecialities(serviceList);
+        await this.getAllEnquiries();
     }
-
-
-
 
     render() {
         const { searchDoctor } = this.state;
@@ -92,36 +96,35 @@ class EnquiryContainer extends Component {
         if (searchDoctor) {
             return <Redirect to={{
                 pathname: "/enquiryResult/",
-
             }} />;
         }
 
         return (
-            <div className='row'>
-                <div className='col-md-2'>
-                </div>
-                <div className='col-md-7 '>
-                   
-                    <div className = 'row'>
-
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-md-2'>
                     </div>
-                    <div className = 'row'>
-                        <input className="form-controll" placeholder="Choose Speciality" aria-label="Username" aria-describedby="basic-addon1" onChange = {this.handleChange}/>
+                    <div className='col-md-6'>
                         <div className='row'>
-                            <ul>
-                                {
-                                    this.data.map((item, i) => (
-                                        <li key={i} data-value={item.specialityId} onClick={this.handleClick} >
-                                            {item.speciality}
-                                        </li>
-                                    ))
+                            <input className="form-control" placeholder="Choose Speciality" aria-label="Username" aria-describedby="basic-addon1" onChange={this.handleChange} />
+                            <div className='row'>
+                                <ul>
+                                    {
+                                        this.data.map((item, i) => (
+                                            <li key={i} data-value={item.specialityId} onClick={this.handleClick} >
+                                                {item.speciality}
+                                            </li>
+                                        ))
                                     }
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <div className='col-md-4'>
+                    </div>
                 </div>
-                <div className='col-md-3'>
-                    <button>Solution Activities</button>
+                <div className='row'>
+                    <h3>Previous Enquiry</h3>
                 </div>
             </div>
         )

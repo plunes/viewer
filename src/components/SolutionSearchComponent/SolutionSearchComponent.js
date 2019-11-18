@@ -13,14 +13,12 @@ class SolutionSearchComponent extends React.Component {
             filter: "",
             searchInput: false,
             selectedData: [],
-            docList : [],
+            docList: [],
             proceduresList: []
         }
-        // this.baseUrl = 'https://plunes.co/v3/'
         this.data = [];
         this.selectedProcedures = [];
         this.showForm = false;
-        // this._handleKeyDown = this._handleKeyDown.bind(this)
         this.onSearchQuery = this.onSearchQuery.bind(this);
         this.handleClick = this.handleClick.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -29,56 +27,55 @@ class SolutionSearchComponent extends React.Component {
     }
 
     async componentDidMount() {
-        console.log("procedure listL ",this.root.procedureList)
-
-    //  return  await axios.get(this.baseUrl + 'bidding/list_of_procedures')
-    //         .then(({ data }) => {
-    //             console.log(data)
-    //             if (data.err) {
-    //                 console.log(data.err)
-    //             }
-    //             else {
-    //                 // console.log(data, 'list of procedures');
-    //                 //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
-    //            this.root.procedureList = data.user;     
-    //            this.setState({proceduresList : data.user});
-    //             }
-    //         })
+        console.log("procedure list ", this.root.procedureList)
+        //  return  await axios.get(this.baseUrl + 'bidding/list_of_procedures')
+        //         .then(({ data }) => {
+        //             console.log(data)
+        //             if (data.err) {
+        //                 console.log(data.err)
+        //             }
+        //             else {
+        //                 // console.log(data, 'list of procedures');
+        //                 //Copy from NoSQLBooster for MongoDB free edition. This message does not appear if you are using a registered version.
+        //            this.root.procedureList = data.user;     
+        //            this.setState({proceduresList : data.user});
+        //             }
+        //         })
     }
 
-   async viewAllBid(id){
-    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZGI5MmYyZDVlYTYzYTIzMjMwMWFjMTgiLCJpYXQiOjE1NzI2MTYzNDN9.GmQ7IVX9EJWFDndjdHBVEIKMndynAnKT4qGvFjGKOvY'
-        let response =  await axios.get(this.baseUrl + 'bidding/view_bids/' + id, { headers: {"Authorization" : `Bearer ${token}`} })
-                    .then(({data}) => {
-                        // console.log(data);
-                        if(data.err){
-                            console.log(data.err)
-                        }else{
-                            console.log(data)
-                            return data
-                        }
-                    })
-                    // console.log(response)
-                    return response;
+    async viewAllBid(id) {
+        let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZGI5MmYyZDVlYTYzYTIzMjMwMWFjMTgiLCJpYXQiOjE1NzI2MTYzNDN9.GmQ7IVX9EJWFDndjdHBVEIKMndynAnKT4qGvFjGKOvY'
+        let response = await axios.get(this.baseUrl + 'bidding/view_bids/' + id, { headers: { "Authorization": `Bearer ${token}` } })
+            .then(({ data }) => {
+                // console.log(data);
+                if (data.err) {
+                    console.log(data.err)
+                } else {
+                    console.log(data)
+                    return data
                 }
+            })
+        // console.log(response)
+        return response;
+    }
 
-   async  viewBidsProcedures(bidId){
-    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZGI5MmYyZDVlYTYzYTIzMjMwMWFjMTgiLCJpYXQiOjE1NzI2MTYzNDN9.GmQ7IVX9EJWFDndjdHBVEIKMndynAnKT4qGvFjGKOvY'
-    let response =  await axios.get(this.baseUrl + 'bidding/view_bids_of_procedure/' + bidId, { headers: {"Authorization" : `Bearer ${token}`} })
-    .then(({data}) => {
-        // console.log(data);
-        if(data.err){
-            console.log(data.err)
-        }else{
-            // console.log(data)
-            return data
-        }
-    })
-    // console.log(response)
-    return response;
-   }            
+    async  viewBidsProcedures(bidId) {
+        let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZGI5MmYyZDVlYTYzYTIzMjMwMWFjMTgiLCJpYXQiOjE1NzI2MTYzNDN9.GmQ7IVX9EJWFDndjdHBVEIKMndynAnKT4qGvFjGKOvY'
+        let response = await axios.get(this.baseUrl + 'bidding/view_bids_of_procedure/' + bidId, { headers: { "Authorization": `Bearer ${token}` } })
+            .then(({ data }) => {
+                // console.log(data);
+                if (data.err) {
+                    console.log(data.err)
+                } else {
+                    // console.log(data)
+                    return data
+                }
+            })
+        // console.log(response)
+        return response;
+    }
 
-  async settingBid(proceduresArray){
+    async settingBid(proceduresArray) {
         // console.log(proceduresArray);
         let proceduresString = proceduresArray.join();
         // console.log(proceduresString);
@@ -93,8 +90,8 @@ class SolutionSearchComponent extends React.Component {
             "Images": "",
             "Quantity": "1"
         }
-       let response = await axios.post(this.baseUrl + 'bidding/setting_bid', body )
-             .then(({ data }) => {
+        let response = await axios.post(this.baseUrl + 'bidding/setting_bid', body)
+            .then(({ data }) => {
                 // console.log(data);
                 if (data.err) {
                     //message.error(data.msg);
@@ -104,29 +101,29 @@ class SolutionSearchComponent extends React.Component {
                     return data
                 }
             })
-            return response;
+        return response;
     }
 
-    
 
-   async handleSubmit(e) {
-       e.preventDefault();
-    //    let settingBid = await this.settingBid(this.state.selectedData);
-       let userId = '5db92f2d5ea63a232301ac18';
-       let viewBids = await this.viewAllBid(userId)  ;
-       
-       //  put the bid ids in local storage
+
+    async handleSubmit(e) {
+        e.preventDefault();
+        //    let settingBid = await this.settingBid(this.state.selectedData);
+        let userId = '5db92f2d5ea63a232301ac18';
+        let viewBids = await this.viewAllBid(userId);
+
+        //  put the bid ids in local storage
         // console.log(viewBids)
-       let bidId = viewBids.user[0]._id
-       let viewBidsOfProcedures = await this.viewBidsProcedures(bidId);
-       let listOfDoc = viewBidsOfProcedures.user.data;
+        let bidId = viewBids.user[0]._id
+        let viewBidsOfProcedures = await this.viewBidsProcedures(bidId);
+        let listOfDoc = viewBidsOfProcedures.user.data;
 
-       this.root.doctorList =listOfDoc 
-            
+        this.root.doctorList = listOfDoc
 
-       this.setState({
-        searchInput : true
-       })
+
+        this.setState({
+            searchInput: true
+        })
     }
 
     handleClick(e) {
@@ -164,7 +161,7 @@ class SolutionSearchComponent extends React.Component {
         }
     }
 
-    
+
 
 
 
@@ -177,61 +174,55 @@ class SolutionSearchComponent extends React.Component {
             }} />;
         }
 
-    return <div className='container' >
-           
+        return <div className='container-fluid' >
+            <div className='row'>
+                <div className='col-md-3'></div>
+                <div className='col-md-6'>
+                    <div className='row centerContent'>
+                        <div className='row'>
+                            <h2>
+                                Find the best offers on Diagnotic <br />
+                                Tests & Medical Procedures.<br />
+                            </h2>
+                        </div>
+                        <div className="row rowSolution">
+                            <input type="text" className='solutionSearch' placeholder="Name the procedure or test here..." onChange={this.onSearchQuery} >
+                            </input>
+                            <img src='./search.png' className='searchImgDashboard' alt='Search Img' height='40px' width='40px'></img>
+                        </div>
+                        <div className='row'>
+                            <ul>
+                                {
+                                    this.data.map(item => (
+                                        <li key='' data-value={item.procedure} onClick={this.handleClick} >
+                                            {item.procedure}
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                        <div className='row'>
+                            <ul>
+                                {
+                                    this.showForm ? <form onSubmit={this.handleSubmit}>
+                                        {
+                                            this.state.selectedData.map(item =>
+                                                (
+                                                    <li key=''>{item}</li>
+                                                ))
+                                        }
+                                        <button type='submit' > Proceed </button>
+                                    </form> : null
+                                }
+
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div className='col-md-3'></div>
+            </div>
+        </div>
     }
 }
 
 export default SolutionSearchComponent
-
-//  <div className='row'>
-//                 <div className='col-md-3'></div>
-//                 <div className='col-md-6'>
-//                     <div className='row centerContent'>
-//                         <div className='row'>
-//                             <h2>
-//                                 Find the best offers on Diagnotic <br />
-//                                 Tests & Medical Procedures.<br />
-//                             </h2>
-//                         </div>
-//                         <div className="row rowSolution">
-//                             <input type="text" className='solutionSearch' placeholder="Name the procedure or test here..." onChange={this.onSearchQuery} >
-//                             </input>
-//                             <img src='./search.png' className='searchImgDashboard' alt='Search Img' height='40px' width='40px'></img>
-//                         </div>
-//                         <div className='row'>
-//                             <ul>
-//                                 {
-//                                     this.data.map(item => (
-//                                         <li key='' data-value={item.procedure} onClick={this.handleClick} >
-//                                             {item.procedure}
-//                                         </li>
-//                                     ))
-//                                 }
-//                             </ul>
-//                         </div>
-//                         <div className='row'>
-//                             <ul>
-//                                 {
-//                                     this.showForm ? <form onSubmit={this.handleSubmit}>
-//                                         {
-//                                             this.state.selectedData.map(item =>
-//                                                 (
-//                                                     <li key=''>{item}</li>
-//                                                 ))
-//                                         }
-//                                         <button type='submit' > Proceed </button>
-//                                     </form> : null
-//                                 }
-
-//                             </ul>
-//                         </div>
-//                     </div>
-//                 </div>
-//                 <div className='col-md-3'></div>
-//             </div>
-//         </div>
-//     }
-// }
-

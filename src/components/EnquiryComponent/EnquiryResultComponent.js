@@ -1,52 +1,49 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import ProfileEnquiryComponent from '../ProfileComponent/ProfileEnquiryComponent'
+import DashboardHeader from '../DashboardComponent/DashboardHeader';
 
 class EnquiryResultComponent extends Component {
     constructor(props){
         super(props);
         this.root = props.root
         this.state = {
-            selectedId: ''
+            selectedId: '',
+            docList:[]
         }
-        this.docList = [{
-            'name': 'Dr. Anshul Verma',
-            'id': '1'
-        }];
-        // this.getAllDoctors = this.getAllDoctors.bind(this);
+        this.getAllDoctors = this.getAllDoctors.bind(this);
     }
     
-    // async getAllDoctors(id){
-    //     // let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZGI5MmYyZDVlYTYzYTIzMjMwMWFjMTgiLCJpYXQiOjE1NzI2MTYzNDN9.GmQ7IVX9EJWFDndjdHBVEIKMndynAnKT4qGvFjGKOvY'
-    //     let response =  await axios.get(this.baseUrl + 'bidding/view_bids_of_procedure/' + bidId, { headers: {"Authorization" : `Bearer ${token}`} })
-    //     .then(({data}) => {
-    //         // console.log(data);
-    //         if(data.err){
-    //             console.log(data.err)
-    //         }else{
-    //             // console.log(data)
-    //             return data
-    //         }
-    //     })
-    //     // console.log(response)
-    //     return response;    
-    // }
+    async getAllDoctors(id){
+        return new Promise(async (resolve, reject) => {
+            try{
+                const response = await axios.get('http://13.233.151.26:8000/user?specialityId=' + id);
+                // console.log(response.data, 'specialityId');
+                this.setState({
+                    docList : response.data
+                })
+            }catch (error){
+                console.log(error)
+            }
+        })
+    }
 
     async componentDidMount(){
         let selectedId = this.root.selectedEnquiryId
-        // let getAllDoc = await this.getAllDoctors(selectedId);
-        // this.docList = getAllDoc;
+        console.log(this.root.selectedEnquiryId)
+        let doctors = await this.getAllDoctors(selectedId) 
     }
 
     render() {
-        console.log(this.root, 'enquiry result container')
+        // console.log(this.root, 'enquiry result container')
         return (
             <div className = 'container-fluid'>
+                <DashboardHeader root = {this.root} />
                 <div className = 'profileComponent'>
                 {
-                    this.docList.map((pdata) => {
-                        console.log(pdata)
-                        return <ProfileEnquiryComponent key = {pdata.id} data={pdata}  root = {this.root} />
+                    this.state.docList.map((pdata) => {
+                        // console.log(pdata)
+                        return <ProfileEnquiryComponent key = {pdata._id} data={pdata}  root = {this.root} />
                     })
                 }
             </div>

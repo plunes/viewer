@@ -140,7 +140,7 @@ class LandingContainer extends React.Component {
     async componentDidMount() {
         return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
             .then(({ data }) => {
-                console.log(data)
+                // console.log(data)
                 if (data.err) {
                     console.log(data.err)
                 }
@@ -233,7 +233,6 @@ class LandingContainer extends React.Component {
                                             <li key='' className='row procedureListClass'>{item}</li>
                                         ))
                                 }
-
                             </form> : null
                         }
                     </ul>
@@ -262,7 +261,7 @@ class LandingContainer extends React.Component {
                 <div class="card-body carousel-text">
                   <h5 class="card-title carousel-header">Dentist</h5>
                   <p class="card-text">Root canal Treatment (TCT)<br></br>Teeth whitening<br></br>Scaling & Polishing Dental Filling..</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
+                  <a href="" class="btn btn-primary button-view">view more</a>
                 </div>
               </div>
         </div>
@@ -272,42 +271,37 @@ class LandingContainer extends React.Component {
                 <div class="card-body carousel-text">
                   <h5 class="card-title carousel-header">Orthopedics</h5>
                   <p class="card-text">Spinal Fusion Surgery<br></br>Arthoplasty<br></br>Bone Grafting ...</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
+                  <a href="" class="btn btn-primary button-view">view more</a>
                 </div>
               </div>
-        
         </div>
-      
         <div class="item">
             <div class="card ">
                 <img src="Dermatologist.png" class="card-img-top" alt="..." />
                 <div class="card-body carousel-text">
                   <h5 class="card-title carousel-header">Dermatologists</h5>
                   <p class="card-text">Botox Treatment<br></br>Skin Booster & Treatments <br></br>Dermaroller..</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
+                  <a href="" class="btn btn-primary button-view">view more</a>
                 </div>
               </div>
-        
         </div>
-       
         <div class="item">
             <div class="card">
                 <img src="Gynaecologist.png" class="card-img-top" alt="..." />
                 <div class="card-body carousel-text">
                   <h5 class="card-title carousel-header">Gynaecologist</h5>
                   <p class="card-text">Cervical Amputation <br></br>Bartholins Cyst<br></br>Scaling & Laser Ablation..</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
+                  <a href="" class="btn btn-primary button-view">view more</a>
                 </div>
               </div>
         </div>
-      
         <div class="item" >
             <div class="card ">
                 <img src="PSYCHIATRISTS.png" class="card-img-top" alt="..." />
                 <div class="card-body carousel-text">
                   <h5 class="card-title carousel-header">Psychiatrists</h5>
                   <p class="card-text">Conduct Disorder<br></br>Autism Assessment & Stress Management...</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
+                  <a href="" class="btn btn-primary button-view">view more</a>
                 </div>
               </div>
         </div>
@@ -315,14 +309,10 @@ class LandingContainer extends React.Component {
             <div class="owl-theme">
         <div class="owl-controls">
             <div class="custom-nav owl-nav"></div>
-            
         </div>
     </div>
     </div>
     </div>
-  
-
-           
         </Router>
     }
 }

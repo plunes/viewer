@@ -96,10 +96,6 @@ class ProfileComponent extends React.Component {
                 </div>
                 <div className='bottomBorder'>
                 </div> */}
-                <div>
-                kkkkkkkkkkkkkaaaaaaaaakkakkk
-
-                </div>
             </div>
         )
     }
