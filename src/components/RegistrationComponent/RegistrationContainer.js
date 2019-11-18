@@ -14,7 +14,6 @@ class RegistrationComponent extends React.Component {
         // console.log(props.root, "Registration")
         this.root = props.root
         this.state = {
-            userType:'',
             showLogin: false,
             showGeneralUserForm: true,
             showDoctorForm: false,
@@ -32,7 +31,6 @@ class RegistrationComponent extends React.Component {
                     showGeneralUserForm : true,
                     showDoctorForm : false,
                     showHospitalForm : false,
-                    userType: 'User'
                 })
                 break;
             case 'docForm':
@@ -40,7 +38,6 @@ class RegistrationComponent extends React.Component {
                         showGeneralUserForm : false,
                         showDoctorForm : true,
                         showHospitalForm : false,
-                        userType: 'Doctor'
                     })
                 break;
             case 'hospitalForm':
@@ -48,7 +45,6 @@ class RegistrationComponent extends React.Component {
                         showGeneralUserForm : false,
                         showDoctorForm : false,
                         showHospitalForm : true,
-                        userType: 'Hospital'
                     })
                 break;    
         }
@@ -60,6 +56,8 @@ class RegistrationComponent extends React.Component {
 
     render() {
         const { showLogin } = this.state
+        const { serviceList } = this.root
+        console.log(serviceList, 'serviceList');
 
         if (showLogin) {
             return <Redirect to='/login' />
@@ -87,15 +85,15 @@ class RegistrationComponent extends React.Component {
                             </div>
                             {
                                 this.state.showGeneralUserForm ?
-                                <UserRegistrationForm userType = {this.state.userType} /> : null
+                                <UserRegistrationForm  /> : null
                             }
                             {
                                 this.state.showDoctorForm ? 
-                                <DoctorRegistrationForm userType = {this.state.userType} /> : null
+                                <DoctorRegistrationForm  /> : null
                             }
                             {
                                 this.state.showHospitalForm ?
-                                <HospitalRegistrationForm userType = {this.state.userType}/> : null 
+                                <HospitalRegistrationForm /> : null 
                             }
                         </div>
                     </div>

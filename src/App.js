@@ -21,6 +21,13 @@ import ProfileComponent from './components/ProfileComponent/ProfileComponent'
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+    this.root  = {
+      isAuth: false,
+      doctorList: [],
+      docDetail:{},
+      baseUrl: 'http://13.233.151.26:8000/',
+      serviceList: []
+    }
     // console.log(this.props , 'Anshul')
     //   this is the application object which contains all the info related to render and the logic
     //   this object shud be passed to each component , so that component can have the data to render
@@ -37,33 +44,32 @@ export default class App extends React.Component {
      * this path approach may help you in abstraction maybe , but a clarifity on where to find a component data in root object
      * 
      */
-    
-    this.root = {
-      isAuth: false,
-      doctorList: [],
-      docDetail:{},
-      baseUrl: 'http://13.233.151.26:8000/',
-      serviceList: []
-    };
-    
   }
 
-  async componentDidMount(){
-    if(localStorage.getItem('token')){
-      this.root.isAuth = true;
-    }else{
-      this.root.isAuth = false;
-    }
-    return  await axios.get(this.root.baseUrl + 'catalogue')
-    .then(({ data }) => {
-        if (data.err) {
-            console.log(data.err)
-        }else {
-          this.root.serviceList = [1,2,3,4,5];
-        }
+  async  componentDidMount(){
+    const res = await fetch('http://13.233.151.26:8000/catalogue')
+    const catalogue = await res.json()
+    
+   await catalogue.forEach((item) => {
+      // console.log(item);
+      let speciality = {
+        specialityId : item._id,
+        speciality: item.speciality
+      }
+      this.root.serviceList.push(speciality)
+      // console.log('anshul123')
     })
+    // console.log('anshul000')
 
+    // this.setState({something})
+    // if(localStorage.getItem('token')){
+    //     this.root.isAuth = true
+    // }else{
+    //     this.root.isAuth = true
+    // }
   }
+  
+
 
   render() {
     const App = () => (

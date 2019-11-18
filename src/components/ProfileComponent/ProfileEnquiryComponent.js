@@ -52,29 +52,32 @@ class ProfileEnquiryComponent extends Component {
 
     }
 
-    handleSubmit(){
+    handleSubmit(e){
+        e.preventDefault();
         let data = {
-            'enquiryString' : this.state.concernInput,
-            'specialityId' : ''
+            'enquiry' : this.state.concernInput,
+            'fromUserId' : '5dcfbd9fbb9a061db52671a1',
+            'toUserId' : '5dd25e7419b4ea462221e7fb'
         }
-        // axios.post(this.baseUrl + 'user/login', data)
-        // .then(({ data }) => {
-        //     if (data.err) {
-        //         console.log(data.err)
-        //     }
-        //     else {
-        //         console.log(data);
-
+        axios.post( "http://13.233.151.26:8000/enquiry", data)
+        .then(({ data }) => {
+            console.log(data);
+            if (data.err) {
+                console.log(data.err)
+            }
+            else {
+                console.log(data);
                 this.setState({
                     showForm : false
                 })
-                
-        //     }
-        // })
+            }
+        })
     }
 
 
     render() {
+        // console.log(this.props.data, "wsssss");
+
         return (
             <div className='container'>
                 <div className='row'>
@@ -87,7 +90,7 @@ class ProfileEnquiryComponent extends Component {
                     <div className='col-md-4'>
                         <button type='button' onClick={this.openModal}>
                             Ask
-                            </button>
+                        </button>
                     </div>
 
                 </div>
@@ -118,7 +121,6 @@ class ProfileEnquiryComponent extends Component {
                             <button onClick={this.closeModal}>close</button>
                         </div>
                     }
-                    
                 </Modal>
                 </div>
                 
