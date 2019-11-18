@@ -98,14 +98,11 @@ class EnquiryContainer extends Component {
 
         return (
             <div className='row'>
-                <div className='col-md-2'>
-                </div>
-                <div className='col-md-7 '>
+                <div className="col-sm-3">
+                
+                   </div>
                    
-                    <div className = 'row'>
-
-                    </div>
-                    <div className = 'row'>
+                    <div className = 'col-sm-6'>
                         <input className="form-controll" placeholder="Choose Speciality" aria-label="Username" aria-describedby="basic-addon1" onChange = {this.handleChange}/>
                         <div className='row'>
                             <ul>
@@ -117,13 +114,18 @@ class EnquiryContainer extends Component {
                                     ))
                                     }
                             </ul>
+                            </div>
+            
+                          <button className="button-nav"><span> Solution Activities</span></button>
+            
+                
                         </div>
-                    </div>
-                </div>
-                <div className='col-md-3'>
-                    <button>Solution Activities</button>
-                </div>
+                        <div className="col-sm-3">
+                            </div>
+                    
+                
             </div>
+            
         )
     }
 }

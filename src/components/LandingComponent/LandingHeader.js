@@ -12,7 +12,7 @@ class LandingHeader extends React.Component {
         // console.log(this.root.isAuth, "Anshul")
         return <div className = 'container-fluid'>
   <nav class="navbar navbar-expand-lg navbar-light  ">
-    <a class="navbar-brand" href="#"><img style={{height:'52px', width:'130px'}} src="logo.png" /></a>
+    <a class="navbar-brand" href="#"><img style={{height:'52px', width:'130px',marginLeft:'55px'}} src="logo.png" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@ class LandingHeader extends React.Component {
             <a class="nav33  nav-link _app " href="#">
               <h6 class="nn "><span><img className="ios" src="iOS.png"
                   />
-                  <img className="android" src="Android.png" /> Download App</span>
+                  <img className="android" src="Android.png" /> <span>Download App</span></span>
                   </h6>
             </a>
             </div>

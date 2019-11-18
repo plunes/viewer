@@ -16,7 +16,7 @@ class LandingContainer extends React.Component {
             filter: '',
             emailid: '',
             password: '',
-            proceduresList: [],    
+            proceduresList: [],
             selectedData: [],
             docList: [],
             showDropdown: false,
@@ -111,7 +111,7 @@ class LandingContainer extends React.Component {
     }
 
 
-    async handleSubmit(e) {     
+    async handleSubmit(e) {
         e.preventDefault();
         console.log(this.state.selectedData);
 
@@ -138,7 +138,7 @@ class LandingContainer extends React.Component {
     }
 
     async componentDidMount() {
-     
+
 
         return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
             .then(({ data }) => {
@@ -207,127 +207,251 @@ class LandingContainer extends React.Component {
         }
 
         return <Router>
-            <div class="container">
-        <div class="text-center">
-             <h1 class="h11">Find the best offer on Diagnostic Tests <br></br> & Medical Procedures. </h1>
-            <form action="">
-          <div  class="autocomplete">
-            <input class="form-control"  type="text" name="search" placeholder="Name the procedure or test here .." autoComplete="off" id="mytInput" onChange={this.onSearchQuery}/>
-            {this.state.showDiv ? <div className='row' >
-                <ul style={{ listStyleType: 'none' }} className='searchDropdown'>
-                    {
-                        this.state.showDropdown ?
-                            this.data.map(item => (
-                                <li key='' data-value={item.procedure} className='row procedureListClass' onClick={this.handleClick} >
-                                    {item.procedure}
-                                </li>
-                            )) : null
-                    }
-                </ul>
-            </div> : null
+            <div class="container-fluid">
+                <div class="text-center">
+                    <h1 class="h11">Find the best offer on Diagnostic Tests <br></br> & Medical Procedures. </h1>
+                    <form action="">
+                        <div class="autocomplete">
+                            <input class="form-control" type="text" name="search" placeholder="Name the procedure or test here .." autoComplete="off" id="mytInput" onChange={this.onSearchQuery} />
+                            {this.state.showDiv ? <div className='row' >
+                                <ul style={{ listStyleType: 'none' }} className='searchDropdown'>
+                                    {
+                                        this.state.showDropdown ?
+                                            this.data.map(item => (
+                                                <li key='' data-value={item.procedure} className='row procedureListClass' onClick={this.handleClick} >
+                                                    {item.procedure}
+                                                </li>
+                                            )) : null
+                                    }
+                                </ul>
+                            </div> : null
 
-            }
-            {
-                this.state.showSelectedProcedures ? <div className='row selectedProceduresList'>
-                    <ul style={{ listStyleType: 'none' }} >
-                        {
-                            this.showForm ? <form onSubmit={this.handleSubmit}>
-                                {
-                                    this.state.selectedData.map(item =>
-                                        (
-                                            <li key='' className='row procedureListClass'>{item}</li>
-                                        ))
-                                }
+                            }
+                            {
+                                this.state.showSelectedProcedures ? <div className='row selectedProceduresList'>
+                                    <ul style={{ listStyleType: 'none' }} >
+                                        {
+                                            this.showForm ? <form onSubmit={this.handleSubmit}>
+                                                {
+                                                    this.state.selectedData.map(item =>
+                                                        (
+                                                            <li key='' className='row procedureListClass'>{item}</li>
+                                                        ))
+                                                }
 
-                            </form> : null
-                        }
-                    </ul>
-                </div> : null
-            }
-            {
-                this.showForm ?
-                    <button type='button' className='btn btn-success proceedButton' onClick={this.sendToSignUpPage}> Proceed </button>
-                    : null
-            } 
-          </div>
-            </form>
+                                            </form> : null
+                                        }
+                                    </ul>
+                                </div> : null
+                            }
+                            {
+                                this.showForm ?
+                                    <button type='button' className='btn btn-success proceedButton' onClick={this.sendToSignUpPage}> Proceed </button>
+                                    : null
+                            }
+                        </div>
+                    </form>
 
-        </div>
-    </div>
-    
-  <div style={{backgroundColor: '#f2f2f2'}}>
-           <div> <h3 class="header"> Avail upto 50% of on Medical
-              procedures,<br></br> diagnostics & appointments. 
-               </h3></div>
-        <div class="main-content">
-    <div id="owl-demo" class = 'row cardItemsRow owl-carousel owl-theme'>
-        <div class="item">
-            <div class="card" >
-                <img src="Dentist.png" class="card-img-top" alt="..." />
-                <div class="card-body carousel-text">
-                  <h5 class="card-title carousel-header">Dentist</h5>
-                  <p class="card-text">Root canal Treatment (TCT)<br></br>Teeth whitening<br></br>Scaling & Polishing Dental Filling..</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
                 </div>
-              </div>
-        </div>
-        <div class="item">
-            <div class="card">
-                <img src="Orthopedics.png" class="card-img-top" alt="..." />
-                <div class="card-body carousel-text">
-                  <h5 class="card-title carousel-header">Orthopedics</h5>
-                  <p class="card-text">Spinal Fusion Surgery<br></br>Arthoplasty<br></br>Bone Grafting ...</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
-                </div>
-              </div>
-        
-        </div>
-      
-        <div class="item">
-            <div class="card ">
-                <img src="Dermatologist.png" class="card-img-top" alt="..." />
-                <div class="card-body carousel-text">
-                  <h5 class="card-title carousel-header">Dermatologists</h5>
-                  <p class="card-text">Botox Treatment<br></br>Skin Booster & Treatments <br></br>Dermaroller..</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
-                </div>
-              </div>
-        
-        </div>
-       
-        <div class="item">
-            <div class="card">
-                <img src="Gynaecologist.png" class="card-img-top" alt="..." />
-                <div class="card-body carousel-text">
-                  <h5 class="card-title carousel-header">Gynaecologist</h5>
-                  <p class="card-text">Cervical Amputation <br></br>Bartholins Cyst<br></br>Scaling & Laser Ablation..</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
-                </div>
-              </div>
-        </div>
-      
-        <div class="item" >
-            <div class="card ">
-                <img src="PSYCHIATRISTS.png" class="card-img-top" alt="..." />
-                <div class="card-body carousel-text">
-                  <h5 class="card-title carousel-header">Psychiatrists</h5>
-                  <p class="card-text">Conduct Disorder<br></br>Autism Assessment & Stress Management...</p>
-                  <a href="#" class="btn btn-primary button-view">view more</a>
-                </div>
-              </div>
-        </div>
-        </div>
-            <div class="owl-theme">
-        <div class="owl-controls">
-            <div class="custom-nav owl-nav"></div>
             
-        </div>
-    </div>
-    </div>
-    </div>
-  
 
-           
+            <div> 
+                <hr width="70%"></hr>
+                <div> <h3 class="header"> Avail upto 50% of on Medical
+              procedures,<br></br> diagnostics & appointments.
+               </h3></div>
+                <div className="container-fluid">
+                    <div className="row" >
+                        <div className=" col-sm-4">
+                            <div class="item">
+                                <div class="card" >
+                                    <img className="card-item-top" src="Dentist.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Dentist</h5>
+                                        <p class="card-text">Root canal Treatment (TCT)<br></br>Teeth whitening<br></br>Scaling & Polishing Dental Filling..</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-4">
+                            <div class="item">
+                                <div class="card">
+                                    <img className="card-item-top" src="Orthopedics.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Orthopedics</h5>
+                                        <p class="card-text">Spinal Fusion Surgery<br></br>Arthoplasty<br></br>Bone Grafting ...</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="col-sm-4">
+                            <div class="item">
+                                <div class="card ">
+                                    <img className="card-item-top" src="Dermatologist.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Dermatologists</h5>
+                                        <p class="card-text">Botox Treatment<br></br>Skin Booster & Treatments <br></br>Dermaroller..</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-sm-4">
+                            <div class="item">
+                                <div class="card">
+                                    <img className="card-item-top" src="Gynaecologist.png" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title ">Gynaecologist</h5>
+                                        <p class="card-text">Cervical Amputation <br></br>Bartholins Cyst<br></br>Scaling & Laser Ablation..</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-sm-4">
+                            <div class="item" >
+                                <div class="card ">
+                                    <img className="card-item-top" src="VETERINARY.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Psychiatrists</h5>
+                                        <p class="card-text">Conduct Disorder<br></br>Autism Assessment & Stress Management...</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-4">
+                            <div class="item" >
+                                <div class="card ">
+                                    <img className="card-item-top" src="PLASTIC-SURGEON.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Psychiatrists</h5>
+                                        <p class="card-text">Conduct Disorder<br></br>Autism Assessment & Stress Management...</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row" >
+                        <div className=" col-sm-4">
+                            <div class="item">
+                                <div class="card" >
+                                    <img className="card-item-top" src="Physiotherapy.png" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title ">Dentist</h5>
+                                        <p class="card-text">Root canal Treatment (TCT)<br></br>Teeth whitening<br></br>Scaling & Polishing Dental Filling..</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-4">
+                            <div class="item">
+                                <div class="card">
+                                    <img className="card-item-top" src="Pathology.png" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title ">Orthopedics</h5>
+                                        <p class="card-text">Spinal Fusion Surgery<br></br>Arthoplasty<br></br>Bone Grafting ...</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="col-sm-4">
+                            <div class="item">
+                                <div class="card ">
+                                    <img className="card-item-top" src="OPHTHAMOLOGIST.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Dermatologists</h5>
+                                        <p class="card-text">Botox Treatment<br></br>Skin Booster & Treatments <br></br>Dermaroller..</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row" >
+                        <div className=" col-sm-4">
+                            <div class="item">
+                                <div class="card" >
+                                    <img className="card-item-top" src="Neurologist.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Dentist</h5>
+                                        <p class="card-text">Root canal Treatment (TCT)<br></br>Teeth whitening<br></br>Scaling & Polishing Dental Filling..</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-4">
+                            <div class="item">
+                                <div class="card">
+                                    <img className="card-item-top" src="PEDIATRICIAN.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Orthopedics</h5>
+                                        <p class="card-text">Spinal Fusion Surgery<br></br>Arthoplasty<br></br>Bone Grafting ...</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="col-sm-4">
+                            <div class="item">
+                                <div class="card">
+                                    <img className="card-item-top" src="Allergist.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Dermatologists</h5>
+                                        <p class="card-text">Botox Treatment<br></br>Skin Booster & Treatments <br></br>Dermaroller..</p>
+                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                            </div>
+                                            <hr width="70%"></hr>
+                                            <div className="container">
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <img className="download-app-pic" src="Category.png"/>
+                                            <img className="download-app-pic2" src="Search.png"/>
+
+                                        </div>
+                                            <div className="col-sm-6">
+                                                <p> Download Plunes App Now!  </p>
+                                                <p>Book Procedures, Medical Tests & Appointments</p>
+                                                <p>Get the link to download link</p>
+                                                <input class="Number-text" name="number" placeholder="Enter your Number" id="myInput"></input>
+                                                <img className="download-logo" src="app-store.png"/>
+                                            <img className="download-logo" src="Play-store.png"/>
+
+                                     </div>
+                                </div>
+                        </div>
+ 
+
+                        <hr width="70%"></hr>
+                        
+
+                    </div>
+
+                                </div>
+
+                </div>
+                
+            </div>
+            
+
+    
         </Router>
     }
 }

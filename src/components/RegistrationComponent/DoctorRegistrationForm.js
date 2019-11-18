@@ -9,19 +9,19 @@ class DoctorRegistrationForm extends Component {
 
                  <form>
                       <div className="form-group">
-                          <input className="form-control" name="fullName" placeholder="Hospital Name" onChange={this.handleChange} required/>
+                          <input className="form-control2" name="fullName" placeholder="Hospital Name" onChange={this.handleChange} required/>
                     </div>
                     <div className="form-group">
-                          <input className="form-control address-input" name="fullName" placeholder="Address" onChange={this.handleChange} required/>
+                          <textarea className="form-control2 " rows="3" name="fullName" placeholder="Address" onChange={this.handleChange} required></textarea>
                     </div>
                     <div className="form-group">
-                          <input className="form-control" name="fullName" placeholder="Mobile Number" onChange={this.handleChange} required/>
+                          <input className="form-control2" name="fullName" placeholder="Mobile Number" onChange={this.handleChange} required/>
                     </div>
                     <div className="form-group">
-                          <input className="form-control address-input" name="fullName" placeholder="About Hospital" onChange={this.handleChange} required/>
+                          <textarea className="form-control2" rows="3" name="fullName" placeholder="About Hospital" onChange={this.handleChange} required></textarea>
                     </div>
                     <div className="form-group">
-                          <input className="form-control" name="fullName" placeholder="Registration No" onChange={this.handleChange} required/>
+                          <input className="form-control2" name="fullName" placeholder="Registration No" onChange={this.handleChange} required/>
                     </div>
                     <div><p className=" hospital-text">Add specialization<br></br><a href="#">Add Specialization & Service </a></p>
 
