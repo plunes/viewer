@@ -12,7 +12,7 @@ class LandingHeader extends React.Component {
         // console.log(this.root.isAuth, "Anshul")
         return <div className = 'container-fluid'>
   <nav class="navbar navbar-expand-lg navbar-light  ">
-    <a class="navbar-brand" href="#"><img style={{height:'52px', width:'130px',marginLeft:'55px'}} src="logo.png" /></a>
+    <a class="navbar-brand" href="/"><img style={{height:'52px', width:'130px',marginLeft:'55px'}} src="logo.png" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -22,10 +22,10 @@ class LandingHeader extends React.Component {
       <ul className="navbar-nav ml-auto">
         <li className="nav2 nav-item active">
           <div className="nav333">
-            <a className="nav33  nav-link _app " href="#">
-              <h6 className="nn "><span><img className="ios" src="iOS.png"
-                  />
-                  <img className="android" src="Android.png" /> <span>Download App</span></span>
+            <a className="nav33  nav-link _app " >
+              <h6 className="nn "><span><a href="https://apps.apple.com/us/app/plunes/id1463747553"><img className="ios" src="iOS.png"
+                  /></a>
+                  <a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en_IN"><img className="android" src="Android.png" /> </a><span>Download App</span></span>
                   </h6>
             </a>
             </div>

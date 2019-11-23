@@ -12,8 +12,8 @@ return (
 <div className="col-sm-1"></div>
 <div className="col-sm-11">
 <ul class="breadcrumb">
-<li><a href="#">Home</a></li>
-<li className="header-font2" ><a className="breadcrumb-text" href="#">Dentistry</a></li>
+<li><a href="/">Home</a></li>
+<li className="header-font2" ><a className="breadcrumb-text" href="#">Orthopedics</a></li>
 
 </ul>
 </div>
@@ -96,12 +96,12 @@ The bones in some people’s faces don’t line up with the bite of their teeth.
 <p className="peragraph-text">
 During a knee osteotomy, either your tibia (upper shinbone) or femur (lower thighbone) are cut and reshaped.
 </p>
-<br></br><br></br><br></br> <br></br>
+<br></br><br></br>
 <p className="header-font">5. Chin Surgery</p>
 <p className="peragraph-text">
 Plastic surgeons use osteotomy to narrow a broad or square chin.
 
-</p><br></br><br></br>
+</p><br></br><br></br><br></br>
 <p className="header-font">8. Anterior cruciate ligament reconstruction</p>
 <p className="peragraph-text">
 It is a surgical tissue graft replacement of the anterior cruciate ligament, located in the knee, to restore its function after an injury.
@@ -116,7 +116,7 @@ It is a surgical tissue graft replacement of the anterior cruciate ligament, loc
 <p className="header-font">3. Spine Surgery</p>
 <p className="peragraph-text">A wedge-shaped piece of bone from a section of your spine can be removed to correct a swayback or reduce a hunchback. 
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">6. Laminectomy</p>
 <p className="peragraph-text">
 A laminectomy is a surgical procedure that removes a portion of the vertebral bone called the lamina, which is the roof of the spinal canal.
@@ -135,9 +135,9 @@ Arthroplasty is an orthopedic surgical procedure where the articular surface of 
 <div className="col-sm-4 ">
 </div>
 <div className="col-sm-4 button-align">
-{/* <a href="#" class="btn btn-primary button-view">view more</a> */}
+{/* <a href="#" class="btn btn-primary button-view">view more</a>
 <a class="btn  button-view " data-toggle="collapse" href="#dentist" role="button" aria-expanded="false" aria-controls="collapseExample">
-view more </a>
+view more </a> */}
 
 </div>
 <div className="col-sm-4">
@@ -147,7 +147,7 @@ view more </a>
 <div>
 
 
-<div className="row collapse" id="dentist">
+<div className="row ">
 <div className="col-sm-1"></div>
 <div className="col-sm-3">
 <p className="header-font">10. Internal fixation
@@ -156,37 +156,37 @@ view more </a>
 It involves the surgical implementation of implants for the purpose of repairing a bone.
 
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">13. Tendon Transfer</p>
 <p className="peragraph-text">
 A tendon transfer is a surgical process in which the insertion of a tendon is moved, but the origin remains in the same location.
 </p>
-<br></br><br></br>
+<br></br><br></br><br></br><br></br>
 <p className="header-font">16. Reduction :</p>
 <p className="peragraph-text">
 Reduction is a surgical procedure to repair a fracture or dislocation to the correct alignment.
-</p>
+</p><br></br><br></br><br></br>
 <p className="header-font">19.  Ankle Replacement
 </p>
 <p className="peragraph-text">
 Ankle replacement, or ankle arthroplasty, is a surgical procedure to replace the damaged articular surfaces of the human ankle joint with prosthetic components.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
-<p className="header-font">22. Triple arthrodesis :</p>
+<br></br><br></br><br></br><br></br>    
+<p className="header-font">22. Triple arthrodesis:</p>
 <p className="peragraph-text">
 It's a surgical procedure whose purpose is to relieve pain in the rear part of the foot, improve stability of the foot, and in some cases correct deformity of the foot, by fusing of the three main joints of the hind foot: the subtalar joint, calcaneocuboid joint and the talonavicular joint.
 </p>
-<br></br><br></br>
+<br></br>
 <p className="header-font">25. Auto transplantation :</p>
 <p className="peragraph-text">
 It's the transplantation of organs, tissues, or even particular proteins from one part of the body to another in the same person. 
-</p>
+</p><br></br>
 <p className="header-font">28. Laminotomy
 </p>
 <p className="peragraph-text">
 It is an orthopedic neurosurgical procedure that removes part of the lamina of a vertebral arch in order to relieve pressure in the vertebral canal.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">31. Brostrom procedure :</p>
 <p className="peragraph-text">
 It's a repair of ligaments on lateral ankle. It is designed to address ankle instability. More importantly, it is primarily used to repair the anterior talofibular ligament in the ankle.
@@ -205,19 +205,19 @@ The Ponseti method is a manipulative technique that corrects congenital clubfoot
 It is a surgical procedure that replaces missing bone in order to repair bone fractures that are extremely complex.
 
 </p>
-<br></br><br></br><br></br><br></br><br></br>
-<p className="header-font">14. Arthrodesis(Joint Fusion Surgery)</p>
+<br></br>
+<p className="header-font">14. Arthrodesis(Joint Fusion Surgery):</p>
 <p className="peragraph-text">
 It is also known as artificial ankylosis or syndesis, is the artificial induction of joint ossification between two bones by surgery. This is done to relieve intractable pain in a joint which cannot be managed by pain medication, splints.
 . </p>
 <br></br><br></br>
-<p className="header-font">17. Synovectomy</p>
+<p className="header-font">17. Synovectomy:</p>
 
 <p className="peragraph-text">
 Synovectomy is a type of surgery done to remove inflamed synovial tissue that is the source of much pain and limited mobility.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
-<p className="header-font">20. Foraminotomy</p>
+<br></br><br></br>
+<p className="header-font">20. Foraminotomy:</p>
 <p className="peragraph-text">
 Foraminotomy is a medical operation used to relieve pressure on nerves that are being compressed by the intervertebral foramina, the passages through the bones of the vertebrae of the spine that pass nerve bundles to the body from the spinal cord.
 
@@ -226,13 +226,13 @@ Foraminotomy is a medical operation used to relieve pressure on nerves that are 
 <p className="header-font">23.  External fixation</p>
 <p className="peragraph-text">
 It's a surgical treatment wherein rods are screwed into bone and exit the body to be attached to a stabilizing structure on the outside of the body.
-</p>
+</p><br></br><br></br><br></br><br></br>
 <p className="header-font">26. Ostectomy
 </p>
 <p className="peragraph-text">
 It's a procedure involving the removal of bone.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br>
 <p className="header-font">29. Brunelli procedure</p>
 <p className="peragraph-text">
 It's a surgical procedure that can be used to correct instability in the wrist. Instability in the wrist can be caused by a torn Scapholunate ligament. </p>
@@ -248,7 +248,7 @@ It's the removal of a bursa, which is a small sac filled with synovial fluid tha
 <p className="peragraph-text">
 It uses bone from a deceased donor or a cadaver that has been cleaned and stored in a tissue bank.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">15. Shoulder Replacement </p>
 <p className="peragraph-text">
 Shoulder replacement is a surgical procedure in which all or part of the glenohumeral joint is replaced by a prosthetic implant. Such joint replacement surgery generally is conducted to relieve arthritis pain or fix severe physical joint damage. </p>
@@ -262,7 +262,7 @@ Vertebral augmentation, which includes vertebroplasty and kyphoplasty, are simil
 <p className="peragraph-text">
 Unicompartmental knee arthroplasty is a surgical procedure used to relieve arthritis in one of the knee compartments in which the damaged parts of the knee are replaced.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br>
 <p className="header-font">24. Corpectomy</p>
 <p className="peragraph-text">
 A corpectomy or vertebrectomy is a surgical procedure that involves removing all or part of the vertebral body (Latin: corpus vertebrae, hence the name corpectomy), usually as a way to decompress the spinal cord and nerves. </p>
@@ -270,14 +270,14 @@ A corpectomy or vertebrectomy is a surgical procedure that involves removing all
 <p className="header-font">27. Distraction ontogenesis</p>
 <p className="peragraph-text">
 It's a process used in orthopedic surgery, podiatric surgery, and oral and maxillofacial surgery to repair skeletal deformities and in reconstructive surgery.
-</p>
+</p><br></br>
 <p className="header-font">
 30. Epiphysiodesis
 </p>
 <p className="peragraph-text">
 It's a pediatric surgical procedure in which the epiphyseal plate of a bone is fused either temporarily or permanently to delay growth of a long bone .
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">33. Shoulder surgery</p>
 <p className="peragraph-text">
 It's the treatment for injured shoulders. Many surgeries have been developed to repair the muscles, connective tissue, or damaged joints that can arise from traumatic or overuse injuries to the shoulder.

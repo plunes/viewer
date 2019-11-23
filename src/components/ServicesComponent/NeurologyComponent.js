@@ -13,8 +13,8 @@ return (
 
 <div className="col-sm-11">
 <ul class="breadcrumb">
-<li><a href="#">Home</a></li>
-<li className="header-font2" ><a className="breadcrumb-text" href="#">Dentistry</a></li>
+<li><a href="/">Home</a></li>
+<li className="header-font2" ><a className="breadcrumb-text" href="#">Neurology</a></li>
 
 </ul>
 </div>
@@ -94,7 +94,7 @@ It is a procedure to close off an aneurysm. Doctor removes a section of your sku
 <p className="header-font">5. Epilepsy surgery In Delhi NCR at best price:</p>
 <p className="peragraph-text">
 Epilepsy surgery is a procedure that removes or alters an area of your brain where seizures originate.
-</p><br></br><br></br>
+</p><br></br><br></br><br></br>
 <p className="header-font">8. Stereotactic radiosurgery (SRS) In Delhi NCR at best price: </p>
 <p className="peragraph-text">
 Stereotactic radiosurgery (SRS) uses many precisely focused radiation beams to treat tumors and other problems in the brain, neck, lungs, liver, spine and other parts of the body.

@@ -13,7 +13,7 @@ return (
 
 <div className="col-sm-11">
 <ul class="breadcrumb">
-<li><a href="#">Home</a></li>
+<li><a href="/">Home</a></li>
 <li className="header-font2" ><a className="breadcrumb-text" href="#">Physiotherapy</a></li>
 
 </ul>
@@ -83,7 +83,7 @@ We help you find the best price solutions to all your medical concerns with just
 <p className="peragraph-text">
 A physical therapy consultation is an appointment between a physical therapist and a patient. Incorporating physical therapy into a medical treatment plan for pain or injury can help reduce the need for prescription drugs (which can cause side effects) and surgical intervention.
 </p>
-<br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br><br></br>
 <p className="header-font">4. Percutaneous electrical nerve stimulation (PENS)
 </p>
 <p className="peragraph-text">
@@ -103,7 +103,7 @@ It is essentially a deeper form of TENS.  It utilizes two high frequency current
 <br></br>
 The device is connected by wires to sticky pad electrodes, which are placed on the skin in the area of the pain. This allows a small, low-intensity electric charge to be passed across the area.
 </p>
-<br></br><br></br><br></br> <br></br>
+
 <p className="header-font">5. RTMS (Repetitive transcranial magnetic stimulation)</p>
 <p className="peragraph-text">
 It uses magnetic fields to send electrical impulses into the brain, blocking pain signals.
@@ -129,7 +129,7 @@ It is essentially a deeper form of TENS (Transcutaneous Electrical Nerve Stimula
 <p className="peragraph-text">
 Laser therapies are medical treatments that use focused light. Unlike most light sources, light from a laser (which stands for light amplification by stimulated emission of radiation) is tuned to specific wavelengths.
 </p>
-<br></br><br></br>
+<br></br>
 <p className="header-font">9. Paraffin Wax Therapy</p>
 <p className="peragraph-text">
 Wax therapy, which uses a bath of molten paraffin wax, is one of the most effective ways of applying heat to improve mobility by warming the connective tissues.
@@ -143,9 +143,9 @@ Wax therapy, which uses a bath of molten paraffin wax, is one of the most effect
 <div className="col-sm-4 ">
 </div>
 <div className="col-sm-4 button-align">
-{/* <a href="#" class="btn btn-primary button-view">view more</a> */}
+{/* <a href="#" class="btn btn-primary button-view">view more</a>
 <a class="btn  button-view " data-toggle="collapse" href="#dentist" role="button" aria-expanded="false" aria-controls="collapseExample">
-view more </a>
+view more </a> */}
 
 </div>
 <div className="col-sm-4">
@@ -155,7 +155,7 @@ view more </a>
 <div>
 
 
-<div className="row collapse" id="dentist">
+<div className="row " >
 <div className="col-sm-1"></div>
 <div className="col-sm-3">
 <p className="header-font">10. Direct Pouring
@@ -163,30 +163,30 @@ view more </a>
 <p className="peragraph-text">
 The molten wax is directly poured on the part to be treated.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">13. Dip and Wrap / Glove Method
 </p>
 <p className="peragraph-text">
 In this procedure it provides mild heating and most widely used method.
 </p>
-<br></br><br></br>
+<br></br><br></br><br></br><br></br>
 <p className="header-font">16. Microwave diathermy :</p>
 <p className="peragraph-text">
 Microwave diathermy uses microwaves to generate heat in the body. It can be used to evenly warm deep tissues without heating the skin. Since it can’t penetrate deep muscles, its best suited for areas that are closer to the skin, such as the shoulders.
-</p>
+</p><br></br>
 <p className="header-font">19. Manual spinal traction
 
 </p>
 <p className="peragraph-text">
 In manual spinal traction, a physical therapist uses their hands to put people in a state of traction. Then they use manual force on the joints and muscles to widen the spaces between vertebrae.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">22.  Moist heat packs
 </p>
 <p className="peragraph-text">
 A wet heat source used to soothe and relax sore muscles, joints and ligaments. This could include hot water bottles, steam towels, hot baths, or moist heating packs
 </p>
-<br></br><br></br>
+<br></br><br></br><br></br>
 <p className="header-font">25.  Dry Needling Therapy
 </p>
 <p className="peragraph-text">
@@ -208,7 +208,7 @@ It is an orthopedic neurosurgical procedure that removes part of the lamina of a
 A Towel or roll of bandage is immersed in molten paraffin wax and wrapped around the body.
 
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">14. Diathermy</p>
 <p className="peragraph-text">
 Diathermy is a therapeutic treatment most commonly prescribed for muscle and joint conditions. It uses a high-frequency electric current to stimulate heat generation within body tissues.
@@ -220,7 +220,7 @@ Diathermy is a therapeutic treatment most commonly prescribed for muscle and joi
 <p className="peragraph-text">
 Diathermy is a therapeutic treatment most commonly prescribed for muscle and joint conditions. It uses a high-frequency electric current to stimulate the heat within our body tissues.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">20.  Mechanical spinal traction
 </p>
 <p className="peragraph-text">
@@ -231,7 +231,7 @@ In mechanical spinal traction, you will lie on a table that has special tools to
 <p className="header-font">23. E Lumbago/Lower Back Pain Treatment</p>
 <p className="peragraph-text">
 This procedure helps to reduce the Lower Back Pain through various Exercises.
-</p>
+</p><br></br><br></br><br></br><br></br>
 <p className="header-font">26.  Muscle Stimulation Therapy
 
 </p>
@@ -243,32 +243,32 @@ Help treat musculoskeletal injuries or ailments and Reduces muscle spasms, resto
 
 </div>
 <div className="col-sm-3">
-<p className="header-font">12. Brushing / Painting Method
+<p className="header-font">12. Brushing / Painting Method:
 
 </p>
 <p className="peragraph-text">
 If the part can't be immersed in wax, it is possible to coat the surface with the help of brush.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
-<p className="header-font">15. Shortwave diathermy</p>
+<br></br><br></br>
+<p className="header-font">15. Shortwave diathermy:</p>
 <p className="peragraph-text">
 Shortwave diathermy uses high-frequency electromagnetic energy to generate heat. It may be applied in pulsed or continuous energy waves. It has been used to treat pain from kidney stones, and pelvic inflammatory disease.
-</p><br></br><br></br>
+</p><br></br>
 <p className="header-font">18. Ultrasound diathermy
 </p>
 <p className="peragraph-text">
 Ultrasound diathermy uses sound waves to treat deep tissues. Heat is generated by the vibration of the tissue. This promotes blood flow into the area.
-</p>
+</p><br></br><br></br><br></br>
 <p className="header-font">21. Fitting Of Orthosis
 </p>
 <p className="peragraph-text">
 An orthosis is an external device with controlling forces to improve body alignment, improve function, immobilize the injured area, prevent or improve a deformity, protect a joint or limb, limit or reduce pain, and provide proprioceptive feedback. 
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br>
 <p className="header-font">24. Skeletal Muscle Therapy</p>
 <p className="peragraph-text">
 This procedure includes treatment of skeletal muscles and bones through manual and automated means. These cell types operate via distinct modes of action, and they demonstrate varying levels of feasibility for muscle regeneration depending, to an extent, on the muscle injury model used. 
-</p> <br></br><br></br>
+</p> <br></br>
 <p className="header-font">27. Sciatica Pain Treatment
 </p>
 <p className="peragraph-text">

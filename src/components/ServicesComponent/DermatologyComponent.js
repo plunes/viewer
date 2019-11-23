@@ -13,8 +13,8 @@ return (
 
 <div className="col-sm-11">
 <ul class="breadcrumb">
-<li><a href="#">Home</a></li>
-<li className="header-font2" ><a className="breadcrumb-text" href="#">Dentistry</a></li>
+<li><a href="/">Home</a></li>
+<li className="header-font2" ><a className="breadcrumb-text" href="#">Dermatology</a></li>
 
 </ul>
 </div>
@@ -117,7 +117,7 @@ Different procedures of Laser Treatment – <br></br>
 Q Switch Laser: A quality-switched laser (Q-Switched) is a non-invasive laser that creates high-intensity pulsed beam light, mainly it's used for tattoo removal.<br></br>
 Fractional Laser: This is a non-invasive, microscopic laser that penetrates your skin to encourage new collagen and elastin growth. It softens the wrinkles and scars, fades brown spots, and resurfaces your entire skin tone.<br></br>
 </p>
-<br></br><br></br>
+<br></br><br></br><br></br>
 <p className="header-font">9. Skin Rash Treatment: </p>
 <p className="peragraph-text">Skin rashes are very common and should not be avoided. It can be healed by certain ointments as prescribed by the doctor.
 </p>
@@ -131,8 +131,8 @@ Fractional Laser: This is a non-invasive, microscopic laser that penetrates your
 </div>
 <div className="col-sm-4 button-align">
 {/* <a href="#" class="btn btn-primary button-view">view more</a> */}
-<a class="btn  button-view " data-toggle="collapse" href="#gynae" role="button" aria-expanded="false" aria-controls="collapseExample">
-view more </a>
+{/* <a class="btn  button-view " data-toggle="collapse" href="#gynae" role="button" aria-expanded="false" aria-controls="collapseExample">
+view more </a> */}
 
 </div>
 <div className="col-sm-4">
@@ -142,7 +142,7 @@ view more </a>
 <div>
 
 
-<div className="row collapse" id="gynae">
+<div className="row " >
 <div className="col-sm-1"></div>
 <div className="col-sm-3">
 <p className="header-font">10. Acne Treatment In Delhi NCR at best price
@@ -167,7 +167,7 @@ Different types of peels – <br></br>
 <p className="header-font">16. Mole Removal:  </p>
 <p className="peragraph-text">Most moles do not require treatment. A dermatologist will remove a mole that bothersome; unattractive to a patient, suspicious (could be skin cancer).
 
-</p>
+</p><br></br>
 <p className="header-font">19. Acne Scar Treatment In Delhi NCR at best price:
 </p>
 <p className="peragraph-text">
@@ -188,14 +188,14 @@ Pigmentation refers to the coloring of the skin. Skin pigmentation disorders cau
 
 </p>
 
-
+<br></br><br></br>
 <p className="header-font">17. Skin Grafting:   </p>
 <p className="peragraph-text">The Dermatologist uses a surgical blade to remove the mole. In most cases, a specially trained doctor will examine your mole under a microscope.
 
 
 
 
-</p>
+</p><br></br><br></br>
 <p className="header-font">20.  Phototherapy In Delhi NCR at best price:   </p>
 <p className="peragraph-text">Light therapy, also known as phototherapy, is the use of ultraviolet (UV) light for its healing effects. Phototherapy has been used worldwide to treat chronic skin conditions such as psoriasis and severe eczema.
 
@@ -217,7 +217,7 @@ The goals of treatment are to destroy the wart, stimulate an immune system respo
 <p className="peragraph-text">Using laser light energy to penetrate the hair shaft, it kills the hair root.
 
 
-</p>
+</p><br></br><br></br><br></br><br></br><br></br><br></br>
 <p className="header-font">18. Micro-pigmentation:  </p>
 <p className="peragraph-text">In this procedure, your doctor creates blisters on your pigmented skin, usually with suction. 
 

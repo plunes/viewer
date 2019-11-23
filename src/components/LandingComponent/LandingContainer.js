@@ -453,8 +453,8 @@ class LandingContainer extends React.Component {
                                                 <button type='submit' class="btn btn-primary button-view button-align">Get App Link</button>
                                                 </form>
                                                 </div>
-                                              <span>  <img className="download-logo" src="app-store.png"/></span>
-                                           <span> <img className="download-logo2" src="Play-store.png"/></span>
+                                              <span> <a href="https://apps.apple.com/us/app/plunes/id1463747553"> <img className="download-logo" src="app-store.png"/></a></span>
+                                           <span><a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en_IN"> <img className="download-logo2" src="Play-store.png"/></a></span>
 
                                      </div>
                                 </div>

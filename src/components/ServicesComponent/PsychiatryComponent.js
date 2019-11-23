@@ -13,8 +13,8 @@ return (
 
 <div className="col-sm-11">
 <ul class="breadcrumb">
-<li><a href="#">Home</a></li>
-<li className="header-font2" ><a className="breadcrumb-text" href="#">Dentistry</a></li>
+<li><a href="/">Home</a></li>
+<li className="header-font2" ><a className="breadcrumb-text" href="#">Psychiatry</a></li>
 
 </ul>
 </div>
@@ -84,7 +84,7 @@ We help you find the best price solutions to all your medical concerns with just
 Consulting psychology shall be defined as the function of applying and extending the specialized knowledge of a psychologist through the process of consultation to problems involving human behavior in various areas. 
 
 </p>
-<br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <p className="header-font">4. Counseling In Delhi NCR at best price:
 </p>
 <p className="peragraph-text">
@@ -140,7 +140,7 @@ A neuropsychological evaluation is an assessment of how one's brain functions, w
 <p className="peragraph-text">
 Sleep induction is the deliberate effort to bring on sleep by various techniques. It is practiced to lengthen periods of sleep, increase the effectiveness of sleep, and to reduce or prevent insomnia
 
-</p><br></br><br></br>
+</p><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <p className="header-font">8. Conduct Disorder In Delhi NCR at best price: </p>
 <p className="peragraph-text">
 Conduct disorder (CD) is a mental disorder diagnosed in childhood or adolescence that presents itself through a repetitive and persistent pattern of behavior in which the basic rights of others or major age-appropriate norms are violated. 
@@ -170,12 +170,12 @@ Aptitude tests measure your ability to acquire a skill or do a particular type o
 Intelligence tests measure your intellectual functioning, or in plain language, how smart you are.
 </li>
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <p className="header-font">6. Hypnotism In Delhi NCR at best price:</p>
 <p className="peragraph-text">
 Hypnosis is a state of human consciousness involving focused attention and reduced peripheral awareness and an enhanced capacity to respond to suggestion.
 </p>
-<br></br><br></br>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <p className="header-font">9. Asperger’s Syndrome:</p>
 <p className="peragraph-text">
 Asperger's syndrome (AS) is an autism spectrum disorder (ASD) marked by impaired social interactions and limited repetitive patterns of behavior, interests, and activities.
@@ -189,10 +189,10 @@ Asperger's syndrome (AS) is an autism spectrum disorder (ASD) marked by impaired
 <div className="col-sm-4 ">
 </div>
 <div className="col-sm-4 button-align">
-{/* <a href="#" class="btn btn-primary button-view">view more</a> */}
+{/* a href="#" class="btn btn-primary button-view">view more</a>
 <a class="btn  button-view " data-toggle="collapse" href="#dentist" role="button" aria-expanded="false" aria-controls="collapseExample">
 view more </a>
-
+< */}
 </div>
 <div className="col-sm-4">
 </div>
@@ -201,7 +201,7 @@ view more </a>
 <div>
 
 
-<div className="row collapse" id="dentist">
+<div className="row ">
 <div className="col-sm-1"></div>
 <div className="col-sm-3">
 <p className="header-font">10. Stress Management In Delhi NCR at best price:

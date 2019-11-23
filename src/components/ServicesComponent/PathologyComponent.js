@@ -13,8 +13,8 @@ return (
 
 <div className="col-sm-11">
 <ul class="breadcrumb">
-<li><a href="#">Home</a></li>
-<li className="header-font2" ><a className="breadcrumb-text" href="#">Physiotherapy</a></li>
+<li><a href="/">Home</a></li>
+<li className="header-font2" ><a className="breadcrumb-text" href="#">Pathology</a></li>
 
 </ul>
 </div>
@@ -85,7 +85,7 @@ The clinician requests a second opinion from another pathologist and/or the pati
 <br></br>
 Pediatric consultation is a common medical process that involves the assessment and diagnosis of conditions affecting children and, to a certain extent, teens, as well as the management of the overall health. 
 </p>
-<br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">4. Bleeding Time (BT) Test    
 
 
@@ -93,7 +93,7 @@ Pediatric consultation is a common medical process that involves the assessment 
 <p className="peragraph-text">
 The time from the beginning of incision until the termination of bleeding is considered as the Bleeding Time. A standard filter paper should be used every 30 seconds to draw it off until the blood completely stops.
   
-</p><br></br><br></br>
+</p><br></br><br></br><br></br>
 <p className="header-font">7. Occult Blood (Stool ) Examination    
  </p>
 <p className="peragraph-text">
@@ -107,7 +107,7 @@ The fecal occult blood test (FOBT) is a lab test used to check stool samples for
 <p className="peragraph-text">
 A blood urea nitrogen (BUN) test measures the amount of nitrogen in your blood that comes from the waste product urea. Urea is made when protein is broken down in your body. 
 </p>
-<br></br><br></br><br></br> <br></br>
+<br></br><br></br><br></br> <br></br><br></br><br></br>
 <p className="header-font">5. C-Peptide Test: 
 </p>
 <p className="peragraph-text">
@@ -140,7 +140,7 @@ A blood culture is a test that checks for foreign invaders like bacteria, yeast,
 Serology detects antibodies against malaria parasites, using either indirect immunofluorescence (IFA) or enzyme-linked immune sorbent assay (ELISA). 
 Serology does not detect current infection but rather measures past exposure.
 </p>
-<br></br><br></br>
+<br></br><br></br><br></br>
 <p className="header-font">9. Acid-Fast Bacilli (AFB) Stain Test:
 </p>
 <p className="peragraph-text">
@@ -155,9 +155,9 @@ This procedure includes the microscopic examination of a person's sputum, a mixt
 <div className="col-sm-4 ">
 </div>
 <div className="col-sm-4 button-align">
-{/* <a href="#" class="btn btn-primary button-view">view more</a> */}
+{/* <a href="#" class="btn btn-primary button-view">view more</a>
 <a class="btn  button-view " data-toggle="collapse" href="#dentist" role="button" aria-expanded="false" aria-controls="collapseExample">
-view more </a>
+view more </a> */}
 
 </div>
 <div className="col-sm-4">
@@ -167,7 +167,7 @@ view more </a>
 <div>
 
 
-<div className="row collapse" id="dentist">
+<div className="row " id="dentist">
 <div className="col-sm-1"></div>
 <div className="col-sm-3">
 <p className="header-font">10. Semen Carcinoma In-situ (CIS) Test    
@@ -175,17 +175,17 @@ view more </a>
 <p className="peragraph-text">
 Carcinoma In-situ, a group of abnormal cells that remain in the place where they are first formed.  These abnormal cells may become cancer and spread into nearby normal tissue. This is also known as ‘Stage O’ disease. 
 </p>
-<br></br><br></br><br></br><br></br><br></br>
-<p className="header-font">13. Ferritin Test    
+<br></br><br></br>
+<p className="header-font">13. Ferritin Test:    
 </p>
 <p className="peragraph-text">
 A ferritin test is a laboratory blood test that measures the amount of ferritin in a person's blood stream. Ferritin is the major iron storage protein in the body, so the ferritin test is ordered as an indirect way to measure the iron stores in the body.
 </p>
 <br></br><br></br>
-<p className="header-font">16.LIPID Profile Examination :</p>
+<p className="header-font">16. LIPID Profile Examination:</p>
 <p className="peragraph-text">
 A complete cholesterol test is also called a lipid panel or lipid profile. Your doctor can use it to measure the amount of “good” and “bad” cholesterol. Cholesterol is a soft, waxy fat that your body needs to function properly. 
-</p>
+</p><br></br><br></br>
 <p className="header-font">19. Urine Microalbumin Test    
 
 
@@ -193,7 +193,7 @@ A complete cholesterol test is also called a lipid panel or lipid profile. Your 
 <p className="peragraph-text">
 A microalbumin urine test checks for small (or "micro") amounts of albumin in your urine at levels so small a regular urine test might not find them. If you have diabetes or high blood pressure, microalbumin urine test helps .
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br>
 <p className="header-font">22. Human Immuno Virus (HIV -1) Test
 
 </p>
@@ -207,14 +207,14 @@ HIV causes AIDS and interferes with the body's ability to fight infections. The 
 </p>
 <p className="peragraph-text">
 This is a treatment technique whereby a sterile, single-use, fine filament needle (acupuncture needle) is inserted into the muscle to assist with decreasing pain and improving function through the release of myofascial trigger points (knots in the muscle).
-</p>
+</p><br></br>
 <p className="header-font">28. Gait Analysis
 
 </p>
 <p className="peragraph-text">
 It is an orthopedic neurosurgical procedure that removes part of the lamina of a vertebral arch in order to relieve pressure in the vertebral canal.
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br>
 <p className="header-font">31. Brostrom procedure :</p>
 <p className="peragraph-text">
 It's a repair of ligaments on lateral ankle. It is designed to address ankle instability. More importantly, it is primarily used to repair the anterior talofibular ligament in the ankle.
@@ -234,7 +234,7 @@ The Ponseti method is a manipulative technique that corrects congenital clubfoot
 A T4 test measures the blood level of the hormone T4, also known as thyroxin, which is produced by the thyroid gland and helps control metabolism and growth.
 
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br>
 <p className="header-font">14. Complete Blood Count Test    
 </p>
 <p className="peragraph-text">
@@ -248,7 +248,7 @@ A complete blood count is a blood panel requested by a doctor or other medical p
 <p className="peragraph-text">
 A blood urea nitrogen (BUN) test measures the amount of nitrogen in your blood that comes from the waste product urea. Urea is made when protein is broken down in your body. 
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br>
 <p className="header-font">20. Hepatitis-B Virus Surface Antigen(HbsAg) Elisa Test    
 </p>
 <p className="peragraph-text">
@@ -262,14 +262,14 @@ This test is used to detect the actual presence of Hepatitis B virus (called the
 This test measures the amount of insulin in your blood. Insulin is a hormone that helps move blood sugar, known as glucose, from your bloodstream into your cells.
 <br></br>
 Glucose comes from the foods you eat and drink. It is your body's main source of energy.
-</p>
+</p><br></br><br></br>
 <p className="header-font">26.  Muscle Stimulation Therapy
 
 </p>
 <p className="peragraph-text">
 Help treat musculoskeletal injuries or ailments and Reduces muscle spasms, restores muscle tone and rehabilitate parts of the body
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br>
 <p className="header-font">29. Electrotherapy</p>
 <p className="peragraph-text">
 Electrotherapy uses electrical signals to interfere with the transmission of neural pain signals into the brain. It effectively slows down or distracts the message from the nerve to the brain. 
@@ -295,13 +295,13 @@ Shortwave diathermy uses high-frequency electromagnetic energy to generate heat.
 </p>
 <p className="peragraph-text">
 Ultrasound diathermy uses sound waves to treat deep tissues. Heat is generated by the vibration of the tissue. This promotes blood flow into the area.
-</p>
+</p><br></br><br></br><br></br><br></br>
 <p className="header-font">21. Fitting Of Orthosis
 </p>
 <p className="peragraph-text">
 An orthosis is an external device with controlling forces to improve body alignment, improve function, immobilize the injured area, prevent or improve a deformity, protect a joint or limb, limit or reduce pain, and provide proprioceptive feedback. 
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br>
 <p className="header-font">24. Skeletal Muscle Therapy</p>
 <p className="peragraph-text">
 This procedure includes treatment of skeletal muscles and bones through manual and automated means. These cell types operate via distinct modes of action, and they demonstrate varying levels of feasibility for muscle regeneration depending, to an extent, on the muscle injury model used. 
@@ -312,12 +312,12 @@ This procedure includes treatment of skeletal muscles and bones through manual a
 Physical therapy exercises incorporating a combination of strengthening, stretching, and aerobic conditioning are a central component of almost any sciatica treatment plan.
 </p>
 <p className="header-font">
-30. Epiphysiodesis
+        30. Epiphysiodesis
 </p>
 <p className="peragraph-text">
 It's a pediatric surgical procedure in which the epiphyseal plate of a bone is fused either temporarily or permanently to delay growth of a long bone .
 </p>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br><br></br>
 <p className="header-font">33. Shoulder surgery</p>
 <p className="peragraph-text">
 It's the treatment for injured shoulders. Many surgeries have been developed to repair the muscles, connective tissue, or damaged joints that can arise from traumatic or overuse injuries to the shoulder.
@@ -325,9 +325,7 @@ It's the treatment for injured shoulders. Many surgeries have been developed to 
 
 </p>
 <br></br><br></br>
-<p className="header-font">9. Braces & Aligners :</p>
-<p className="peragraph-text">They are appliances which are used to align or straighten the teeth to guide the teeth for better & corrected position.
-</p>
+
 
 </div>
 <div className="col-sm-2">
