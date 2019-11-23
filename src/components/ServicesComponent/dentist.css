@@ -1,0 +1,86 @@
+@font-face {
+    font-family:'proxima';
+    src:url(../../proxima.otf);
+    font-style: "normal";
+    font-weight: 500;
+  } 
+
+
+.dentist-image{
+    height: 138px;
+    width: 150px;
+}
+.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: white !important;
+   
+  }
+  
+ 
+  .breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  .breadcrumb-text
+  {
+color:  #06DF86 !important;
+  }
+  
+ 
+  .breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  .breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  
+  .breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+  .header-font{
+      font-size: 24px;
+    
+  }
+  .peragraph-text{
+      font-size: 16px;
+      color: #8A8A8A;
+  }
+  .header-size{
+      margin-top: -15px;
+      margin-bottom: -46px;
+  }
+  .header2-text{
+      margin-bottom: 12px;
+  }
+  .align-text{
+    margin-top: 11px;
+  }
+  .button-align{
+      margin-top: 30px !important;
+      margin-bottom: 60px;
+  }
+  .header-font2{
+    font-size: 24px;
+
+  }
+  
+  @media  (max-width: 576px) {
+    .header-font{
+        margin-left: 45px;
+    }
+    .button-view{
+        margin-left: 9px;
+        
+    }
+    .button-align{
+      margin-left: 20px !important;
+    }
+
+  }

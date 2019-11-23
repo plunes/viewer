@@ -38,7 +38,63 @@ class HospitalRegistrationForm extends Component {
                     </div>
                     
                 </form>
-            </div>
+               
+                <div className="add-doctors">
+                <hr></hr>
+                    <p className="signup-add-doctor"> Add Doctors</p>
+                    <p className="signup-add-doctor2"><div class="container">
+ 
+ 
+ 
+ <button data-toggle="modal" className="add-button" data-target="#myModal">
+   Add manually
+ </button>
+
+ <div class="modal fade" id="myModal">
+   <div class="modal-dialog">
+     <div class="modal-content">
+     
+       <div class="modal-header">
+         <h4 class="modal-title">Modal Heading</h4>
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+       </div>
+       
+     
+       <div class="modal-body">
+         Modal body..
+       </div>
+       
+       <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+       
+     </div>
+   </div>
+ </div>
+ 
+</div>
+</p>
+                    <hr></hr>
+                    <p className="signup-add-doctor">Manage Account</p>
+                    <p className="signup-add-doctor2"> <a href="#">Add Manually</a></p>
+                    <p>Admin</p>
+                    <p>Add user</p>
+                    <div className="form-group">
+                        
+                        <input className="form-control2" name="fullName" placeholder="User Email" onChange={this.handleChange} required/>
+                  </div>
+                  <div className="form-group">
+                        
+                        <input className="form-control2" name="fullName" placeholder="User Password" onChange={this.handleChange} required/>
+                  </div>
+                  <p className="signup-add-doctor3">Please enter at least 8 character Password</p>
+                  <div className="form-group" className='buttonSignUp'>
+                        <button type="submit" className="btn btn-success btn-lg btn-block">Submit</button>
+                    </div>
+                    
+
+                    </div>
+            </div>  
         );
     }
 }

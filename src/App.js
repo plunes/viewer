@@ -17,7 +17,17 @@ import LoginComponent from './components/LoginComponent/LoginComponent'
 import ForgotPasswordComponent from './components/LoginComponent/ForgotPassword'
 
 import ProfileComponent from './components/ProfileComponent/ProfileComponent'
-
+import DentistComponent from './components/ServicesComponent/DentistComponent'
+import OphthalmologyComponent from './components/ServicesComponent/OphthalmologyComponent'
+import NeurologyComponent from './components/ServicesComponent/NeurologyComponent'
+import GynaeComponent from './components/ServicesComponent/GynaeComponent'
+  import DermatologyComponent from './components/ServicesComponent/DermatologyComponent'
+  import PsychiatryComponent from './components/ServicesComponent/PsychiatryComponent'
+  import RadiologyComponent from './components/ServicesComponent/RadiologyComponent'
+  import OrthopedicsComponent from './components/ServicesComponent/OrthopedicsComponent'
+  import PhysiotherapyComponent from './components/ServicesComponent/PhysiotherapyComponent'
+  import PediatricsComponent from './components/ServicesComponent/PediatricsComponent'
+  import PathologyComponent from './components/ServicesComponent/PathologyComponent'
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -84,8 +94,20 @@ export default class App extends React.Component {
           <Route exact path='/confirmBooking' component={() => (<ConfirmBookingComponent root={this.root}  />)} />
           <Route exact path='/enquiry' component={() => (<EnquiryComponent root={this.root} />)} />
           <Route exact path='/enquiryresult' component={() => (<EnquiryResultComponent root={this.root} />)} />
-          <Route exact path='/profile' component={() => (<ProfileComponent root={this.root} />)} />
-        </Switch>
+          <Route exact path='/profile' component={() => (<DermatologyComponent  root={this.root} />)} />
+          <Route exact path='/dentist' component={() => (<DentistComponent  />)} />
+          <Route exact path='/dermatology' component={() => (<DermatologyComponent  />)} />
+          <Route exact path='/ophthalmology' component={() => (<OphthalmologyComponent />)} />
+          <Route exact path='/neurology' component={() => (<NeurologyComponent />)} />
+          <Route exact path='/Gynae' component={() => (<GynaeComponent />)} />
+          <Route exact path='/Psychiatry' component={() => (<PsychiatryComponent />)} />
+          <Route exact path='/Radiology' component={() => (<RadiologyComponent />)} />
+          <Route exact path='/Orthopedics' component={() => (<OrthopedicsComponent />)} />
+          <Route exact path='/Physiotherapy' component={() => (<PhysiotherapyComponent />)} />
+          <Route exact path='/Pediatrics' component={() => (<PediatricsComponent />)} />
+          <Route exact path='/Pathology' component={() => (<PathologyComponent />)} />
+
+        </Switch> 
       </div>
     )
     return (

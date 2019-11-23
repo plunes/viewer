@@ -9,10 +9,11 @@ import { Redirect } from 'react-router'
 class LandingContainer extends React.Component {
     constructor(props) {
         super(props);
-        // console.log(props.root, "Landing Container");
-        // console.log(props)
+      
         this.root = props.root;
         this.state = {
+            mobileNo : '',
+            countryCode: '',
             filter: '',
             emailid: '',
             password: '',
@@ -36,7 +37,29 @@ class LandingContainer extends React.Component {
         this.settingBid = this.settingBid.bind(this);
         this.viewAllBid = this.viewAllBid.bind(this);
         this.sendToSignUpPage = this.sendToSignUpPage.bind(this);
+        this.sendAppLink = this.sendAppLink.bind(this)
 
+    }
+    async sendAppLink(e){
+        e.preventDefault()
+        let response = await axios.get( "http://13.233.151.26:8000/notification/applink/" + this.state.mobileNo )
+        .then(({ data }) => {
+            // console.log(data);
+            if (data.err) {
+                //message.error(data.msg);
+                console.log(data.err)
+            }
+            else {
+                console.log(data)
+                // console.log('anshul')
+                // console.log(data)
+                this.setState({
+                    mobileNo : '',
+                    countryCode : ''
+                })
+            
+            }
+        })
     }
 
     sendToSignUpPage() {
@@ -113,8 +136,6 @@ class LandingContainer extends React.Component {
 
     async handleSubmit(e) {
         e.preventDefault();
-        console.log(this.state.selectedData);
-
         let settingBid = await this.settingBid(this.state.selectedData);
         let userId = '5db92f2d5ea63a232301ac18';
         let viewBids = await this.viewAllBid(userId)
@@ -206,7 +227,7 @@ class LandingContainer extends React.Component {
         return <Router>
             <div class="container-fluid">
                 <div class="text-center">
-                    <h1 class="h11">Find the best offer on Diagnostic Tests <br></br> & Medical Procedures. </h1>
+                    <h1 class="h11">Search for the best price solutions near you </h1>
                     <form action="">
                         <div class="autocomplete">
                             <input class="form-control" type="text" name="search" placeholder="Name the procedure or test here .." autoComplete="off" id="mytInput" onChange={this.onSearchQuery} />
@@ -253,20 +274,23 @@ class LandingContainer extends React.Component {
             
 
             <div> 
+                
+                <div>
                 <hr width="70%"></hr>
-                <div> <h3 class="header"> Avail upto 50% of on Medical
+                     <h3 class="header"> Avail upto 50% of on Medical
               procedures,<br></br> diagnostics & appointments.
                </h3></div>
-                <div className="container-fluid">
+                <div className="container-fluid download-area ">
+                    <div className="container-fluid middle-container">
                     <div className="row" >
                         <div className=" col-sm-4">
                             <div class="item">
                                 <div class="card" >
                                     <img className="card-item-top" src="Dentist.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title ">Dentist</h5>
-                                        <p class="card-text">Root canal Treatment (TCT)<br></br>Teeth whitening<br></br>Scaling & Polishing Dental Filling..</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <h5 class="card-title ">Dentistry</h5>
+                                        <p class="card-text">Tooth Removal, Tooth whitening<br></br>Root Canal Treatment<br></br>Dental Implant, Braces</p>
+                                        <a href="/dentist" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
@@ -277,8 +301,8 @@ class LandingContainer extends React.Component {
                                     <img className="card-item-top" src="Orthopedics.png" alt="..." />
                                     <div class="card-body ">
                                         <h5 class="card-title ">Orthopedics</h5>
-                                        <p class="card-text">Spinal Fusion Surgery<br></br>Arthoplasty<br></br>Bone Grafting ...</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <p class="card-text">Joint Replacement<br></br>Fracture<br></br>Arthroplasty</p>
+                                        <a href="/Orthopedics" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
@@ -290,8 +314,8 @@ class LandingContainer extends React.Component {
                                     <img className="card-item-top" src="Dermatologist.png" alt="..." />
                                     <div class="card-body ">
                                         <h5 class="card-title ">Dermatologists</h5>
-                                        <p class="card-text">Botox Treatment<br></br>Skin Booster & Treatments <br></br>Dermaroller..</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <p class="card-text">Dermatology Consultation<br></br>Lazer Hair Reduction <br></br>Botox Treatment</p>
+                                        <a href="/dermatology" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
@@ -305,8 +329,8 @@ class LandingContainer extends React.Component {
                                     <img className="card-item-top" src="Gynaecologist.png" alt="..." />
                                     <div class="card-body">
                                         <h5 class="card-title ">Gynaecologist</h5>
-                                        <p class="card-text">Cervical Amputation <br></br>Bartholins Cyst<br></br>Scaling & Laser Ablation..</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <p class="card-text">Gynaecologist Consultation <br></br>Cesarean/C-section<br></br>Ovarian Cyst Removal</p>
+                                        <a href="/Gynae" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
@@ -318,24 +342,27 @@ class LandingContainer extends React.Component {
                                     <img className="card-item-top" src="VETERINARY.png" alt="..." />
                                     <div class="card-body ">
                                         <h5 class="card-title ">Psychiatrists</h5>
-                                        <p class="card-text">Conduct Disorder<br></br>Autism Assessment & Stress Management...</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <p class="card-text">Psychologist Consultation<br></br>Autism Assessment <br></br> Counseling</p>
+                                        <a href="/Psychiatry" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-sm-4">
-                            <div class="item" >
-                                <div class="card ">
-                                    <img className="card-item-top" src="PLASTIC-SURGEON.png" alt="..." />
+                            <div class="item">
+                                <div class="card">
+                                    <img className="card-item-top" src="RADIOLOGIST.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title ">Psychiatrists</h5>
-                                        <p class="card-text">Conduct Disorder<br></br>Autism Assessment & Stress Management...</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <h5 class="card-title ">Radiology</h5>
+                                        <p class="card-text">MRI, CT Scan, X-ray<br></br>Ultrasound <br></br>Doppler Test</p>
+                                        <a href="/radiology" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
+                                
                             </div>
-                        </div>
+                            
+                            </div>
+                       
                     </div>
                     <div className="row" >
                         <div className=" col-sm-4">
@@ -343,9 +370,9 @@ class LandingContainer extends React.Component {
                                 <div class="card" >
                                     <img className="card-item-top" src="Physiotherapy.png" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title ">Dentist</h5>
-                                        <p class="card-text">Root canal Treatment (TCT)<br></br>Teeth whitening<br></br>Scaling & Polishing Dental Filling..</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <h5 class="card-title ">Physiotherapy</h5>
+                                        <p class="card-text">Physiotherapy Consultation <br></br>Back Pain/knee Pain <br></br>Frozen Shoulder</p>
+                                        <a href="Physiotherapy" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
@@ -355,9 +382,9 @@ class LandingContainer extends React.Component {
                                 <div class="card">
                                     <img className="card-item-top" src="Pathology.png" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title ">Orthopedics</h5>
-                                        <p class="card-text">Spinal Fusion Surgery<br></br>Arthoplasty<br></br>Bone Grafting ...</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <h5 class="card-title ">Pathology</h5>
+                                        <p class="card-text">Complete Blood Test<br></br>LIPID Profile<br></br>HIV Test</p>
+                                        <a href="/Pathology" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
@@ -368,23 +395,25 @@ class LandingContainer extends React.Component {
                                 <div class="card ">
                                     <img className="card-item-top" src="OPHTHAMOLOGIST.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title ">Dermatologists</h5>
-                                        <p class="card-text">Botox Treatment<br></br>Skin Booster & Treatments <br></br>Dermaroller..</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <h5 class="card-title ">Ophthamologist</h5>
+                                        <p class="card-text">Ophthamology Consultation<br></br>Cataract Surgery <br></br>Glaucoma Surgery</p>
+                                        <a href="/ophthalmology" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    
                     <div className="row" >
                         <div className=" col-sm-4">
                             <div class="item">
                                 <div class="card" >
-                                    <img className="card-item-top" src="Neurologist.png" alt="..." />
+                                    <img className="card-item-top" src="Neonatologist.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title ">Dentist</h5>
-                                        <p class="card-text">Root canal Treatment (TCT)<br></br>Teeth whitening<br></br>Scaling & Polishing Dental Filling..</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <h5 class="card-title ">Neurologist</h5>
+                                        <p class="card-text">Neurology Consultation <br></br>Chemotherapy <br></br>Brain Tumor Surgery</p>
+                                        <a href="/neurology" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
@@ -394,29 +423,19 @@ class LandingContainer extends React.Component {
                                 <div class="card">
                                     <img className="card-item-top" src="PEDIATRICIAN.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title ">Orthopedics</h5>
-                                        <p class="card-text">Spinal Fusion Surgery<br></br>Arthoplasty<br></br>Bone Grafting ...</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
+                                        <h5 class="card-title ">Padiatrician</h5>
+                                        <p class="card-text">Padiatric Consultation <br></br>Vaccination <br></br>Heart Murmur</p>
+                                        <a href="/Pediatrics" class="btn btn-primary button-view">view more</a>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div className="col-sm-4">
-                            <div class="item">
-                                <div class="card">
-                                    <img className="card-item-top" src="Allergist.png" alt="..." />
-                                    <div class="card-body ">
-                                        <h5 class="card-title ">Dermatologists</h5>
-                                        <p class="card-text">Botox Treatment<br></br>Skin Booster & Treatments <br></br>Dermaroller..</p>
-                                        <a href="#" class="btn btn-primary button-view">view more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                                            </div>
+                       
+                                            </div></div>
                                             <hr width="70%"></hr>
-                                            <div className="container">
+                                           
+                                            <div className="container download-area">
                                     <div className="row">
                                         <div className="col-sm-6">
                                             <img className="download-app-pic" src="Category.png"/>
@@ -424,23 +443,22 @@ class LandingContainer extends React.Component {
 
                                         </div>
                                             <div className="col-sm-6">
-                                                <p> Download Plunes App Now!  </p>
-                                                <p>Book Procedures, Medical Tests & Appointments</p>
-                                                <p>Get the link to download link</p>
-                                                <input type="tel" placeholder="Enter your Number" name="usrtel"></input>
-                                                <img className="download-logo" src="app-store.png"/>
-                                            <img className="download-logo" src="Play-store.png"/>
+                                                <p className="download-text"> Download Plunes App Now!  </p>
+                                                <p className="download-text2">Book Procedures, Medical Tests & Appointments</p>
+                                                <p className="download-text3">Get the link to download app</p>
+                                                <div className="download-link-app">
+                                                <form onSubmit = {this.sendAppLink}>
+                                                <span><input id="UserMobile" value = {this.state.countryCode} onChange = {this.handleChange} name='countryCode' className="number-text2" maxLength="3" data-fv-numeric="true" data-fv-numeric-message="Please enter your numbers" data-fv-phone-country11="IN" required="required" data-fv-notempty-message="This field cannot be left blank." placeholder="+91 "  data-fv-field="data[User][mobile]"></input></span>
+                                               <span> <input id="UserMobile" value = {this.state.mobileNo} className="number-text" maxLength="10" data-fv-numeric="true" data-fv-numeric-message="Please enter your numbers" data-fv-phone-country11="IN" required="required" data-fv-notempty-message="This field cannot be left blank." placeholder="Mobile No "  name = 'mobileNo' onChange = {this.handleChange}></input></span>
+                                                <button type='submit' class="btn btn-primary button-view button-align">Get App Link</button>
+                                                </form>
+                                                </div>
+                                              <span>  <img className="download-logo" src="app-store.png"/></span>
+                                           <span> <img className="download-logo2" src="Play-store.png"/></span>
 
                                      </div>
                                 </div>
                         </div>
- 
-
-                        <hr width="70%"></hr>
-                        
-
-                    </div>
-
                                 </div>
 
                 </div>

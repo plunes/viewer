@@ -9,30 +9,47 @@ class DoctorRegistrationForm extends Component {
 
                  <form>
                       <div className="form-group">
-                          <input className="form-control2" name="fullName" placeholder="Hospital Name" onChange={this.handleChange} required/>
-                    </div>
-                    <div className="form-group">
-                          <textarea className="form-control2 " rows="3" name="fullName" placeholder="Address" onChange={this.handleChange} required></textarea>
+                          <input className="form-control2" name="fullName" placeholder=" Name" onChange={this.handleChange} required/>
                     </div>
                     <div className="form-group">
                           <input className="form-control2" name="fullName" placeholder="Mobile Number" onChange={this.handleChange} required/>
                     </div>
                     <div className="form-group">
-                          <textarea className="form-control2" rows="3" name="fullName" placeholder="About Hospital" onChange={this.handleChange} required></textarea>
+                          <input className="form-control2" name="fullName" placeholder="Email Id" onChange={this.handleChange} required/>
                     </div>
                     <div className="form-group">
-                          <input className="form-control2" name="fullName" placeholder="Registration No" onChange={this.handleChange} required/>
+                          <input className="form-control2" name="fullName" placeholder="Date Of Birth" onChange={this.handleChange} required/>
                     </div>
-                    <div>
-                        <p className=" hospital-text">Add specialization<br></br>
-                            <a href="">Add Specialization & Service </a>
-                        </p>
+                    <div className="form-group">
+                          <input className="form-control2" name="fullName" placeholder="Password" onChange={this.handleChange} required/>
                     </div>
+                    <div className="form-group">
+                          <textarea className="form-control2 " rows="3" name="fullName" placeholder="Location" onChange={this.handleChange} required></textarea>
+                    </div>
+                    <div className="form-group">
+                          <input className="form-control2" name="fullName" placeholder="Professional Reg. No" onChange={this.handleChange} required/>
+                    </div>
+                    <div className="form-group">
+                          <input className="form-control2" name="fullName" placeholder="Specialization" onChange={this.handleChange} required/>
+      
+                    </div>
+                    <div className="form-group">
+                          <input className="form-control2" name="fullName" placeholder="Experience(in number)" onChange={this.handleChange} required/>
+                    </div>
+                    <div className="form-group">
+                          <input className="form-control2" name="fullName" placeholder="Referal Code(opyional)" onChange={this.handleChange} required/>
+                    </div>
+                   
+                    
+                 
                     <div className="form-group" className='buttonSignUp'>
-                        <button type="submit" className="btn btn-success btn-lg btn-block">Add</button>
+                        <button type="submit" className="btn btn-success btn-lg btn-block">Sign up</button>
                     </div>
                     
                 </form>
+                <div>
+                    <p className="last-text">By registering, you agree to our<br></br><a href="#" >Terms of Service </a> </p>
+                </div>
 
             </div>
         );

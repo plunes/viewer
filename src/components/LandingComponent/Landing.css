@@ -14,24 +14,81 @@
 .ftr{    height: 40px;
     width: 40px;
     margin-top: 15px !important;
-    margin-left: 216px !important; 
+    margin-left: 245px !important; 
   
   }
+  .navbar-brand {
+    margin-left: -50px;
+  }
+  .services{
+    margin-left: 16px !important;
+  }
+  .responsive-logo{
+    margin-left: 16px;
+  }
+  .responsiv-futtor{
+    margin-left: -43px;
+  }
+  .procedure-text{
+    margin-left: 0px;
+  }
+  .new-footer-ele{
+    margin-left: 16px !important;
+  }
+  .MARGIN-FOOTER{
+    margin-left: 16px !important;
+  }
+  .download-app-pic{
+    height: 250px !important;
+    width: 150px !important;
+    margin-top: 40px;
+    margin-left: 32px;
+  }
+  .download-app-pic2{
+    height: 250px !important;
+    width: 150px !important;
+    position: absolute !important;
+    left: 155px !important;
+      top: 60px !important;
+  
+    }
+    .download-text{
+      font-size: 26px !important;
+      margin-left: 0px;
+      margin-bottom: 25px;
+      margin-top: 40px !important;
+    }
+    .download-text2{
+      font-size: 18px !important;
+      margin-left: 0px;
+    }
+    .download-text3{
+      font-size: 16px !important;
+      margin-left: 0px;
+      margin-top: 35px !important;
+    }
   .ios{
     margin-left: -34px !important;
   }
   .navbar-toggler{
     width: 15% !important;
   }
+  .download-area{
+    margin-bottom: 67px !important;
+  }
   .owl-prev {
     width: 56px !important;
     outline: none !important;
+  }
+  .footer-margin{
+   margin-left: 0px !important;
   }
   .footerfont{
     
     font-size: 15px !important;
     margin-right: 16px !important;
     padding-top: 6px !important;
+    margin-left: 16px;
   }
   
   .owl-next{
@@ -63,8 +120,16 @@
   border-radius: 15px !important;
   bottom: 145px;
 }
-
-
+.number-text{
+  width: 245px !important;
+  margin-bottom: 15px;
+}
+.button-align{
+  margin-left: 100px !important;
+}
+.button-view{
+  margin-left: 110px !important;
+}
     .ftr1{
         height: 40px;
         width: 40px;
@@ -74,17 +139,17 @@
     .h11{
             font-size: 24px !important;
             font-weight: 400;
-            width: 105%;
+            width: 100%;
     }
 
 .ftr2{
     height: 40px;
     width: 40px;
     margin-top: -61px !important;
-    margin-left: 175px;
+    margin-left: 205px;
 }
 .ftr3{
-    margin-left: 179px !important;
+    margin-left: 205px !important;
     margin-top: -55px !important;
 }
     .header{
@@ -117,7 +182,7 @@
     background-clip: border-box !important;
     border-radius: .25rem !important;
     width: 100% !important;
-   
+    margin-left: -25px !important;
     overflow:  hidden !important;
   }
   
@@ -135,12 +200,13 @@
     background-repeat: no-repeat;
     padding: 14px 55px 12px 9px !important;
     outline: none;
-    margin-left: 17px;
+    margin-left: 30px;
     width: 100% !important;
         margin-top: 11px;
-        background-size: 27px 27px !important;
+        background-size: 22px 22px !important;
     
     margin-right: 150px;
+    height: 45px;
 }
      
     .nav33{
@@ -184,9 +250,10 @@
       p {
         margin-top: 0;
         margin-bottom: 1rem;
-            font-size: 13px}
-        
-       
+            font-size: 13px;
+         margin-left: 45px;
+      
+      }
         .navbar-nav{
           margin-top: 10px;
         }
@@ -213,6 +280,9 @@
     }
     .nav2 nav3{
       width: 94% !important;
+    }
+    .card-title{
+      margin-left: 45px;
     }
 
     
@@ -248,7 +318,7 @@
      font-size: 26px;
      color: #343434;
      font-weight: 500;
-    padding-top: 100px;
+    padding-top: 30px;
     margin-bottom: 61px;
   }
   
@@ -337,7 +407,7 @@
       padding-right:55px;
   }
   input[type=text] {
-      width: 90% !important;
+      width: 85% !important;
       box-sizing: border-box;
       border: 1.5px solid #01d35a;
       border-radius: 40px;
@@ -348,7 +418,7 @@
       background-repeat: no-repeat;
       padding:24px 20px 24px 25px;
       outline: none;
-      margin-top: 11px;
+      margin-top: 25px;
       background-size: 27px 27px;
       margin-bottom: 170px;
       
@@ -369,10 +439,10 @@
   
   }
   .h11{
-    font-size: 35px !important;
+    font-size: 30px !important;
     font-weight: 500;
     margin-top: 210px;
-     font-size: 35px;
+ 
     color: #343434;
     margin-bottom: 12px;
   }
@@ -383,7 +453,7 @@
       font-family:Proxima;
       text-align:left;
       padding-inline-start: 0;
-      
+      margin-left: 0px;
       
   }
   
@@ -423,9 +493,9 @@
   figure img{width:300px;
   }
   .card-item-top{
-    width: 250px !important;
-   height: 230px !important;
-   margin-left: 81px;
+    width: 220px !important;
+   height: 202px !important;
+   margin-left: 90px;
   }
     
   
@@ -449,7 +519,7 @@
     border-radius: 25px !important;
     width: 130px;
     color:white !important;
-    margin-left: 125px;
+    margin-left: 117px;
   }
   
   
@@ -522,6 +592,7 @@
      .autocomplete {
     position: relative;
     display: inline-block;
+    margin-bottom: 70px;
   
   }
   
@@ -746,7 +817,7 @@ padding-right: 10px;
 }
 .footer-margin{
 
-  margin-top: 18px;
+  margin-top: -17px;
 }
 .footer-margin2{
   margin-top: -12px;
@@ -778,8 +849,9 @@ padding-right: 10px;
 }
 .card-text{
     color: #727272;
-    font-size: 20px !important;
+    font-size: 18px !important;
     text-align: center;
+    margin-top: -10px;
 }
 .landingTopRow{
     margin-top: 60px;
@@ -930,7 +1002,7 @@ footer{
   
   }
   .text-center{
-    margin-top: -20px;
+    padding-top: 50px;
   }
   .row{
     margin-bottom: 16px;
@@ -941,29 +1013,125 @@ footer{
   }
   .footer-padding{
 
-    padding-top: 120px;
+    padding-top: 51px;
+    background-color: #f8f8f8;
   }
   .m-0 {
     margin: 0!important;
-    padding-top: 80px;
-    padding-bottom: 49px;
+    padding-top: 35px;
+    padding-bottom: 12px;
+    background-color: white;
 }
 .download-app-pic{
-height: 500px;
-width: 330px;
+  height: 450px;
+  width: 270px;
+  margin-top: 40px;
 }
 .download-app-pic2{
-  height: 500px;
-  width: 330px;
+  height: 450px;
+  width: 270px;
   position: absolute !important;
-  left: 244px;
-    top: 51px;
+  left: 200px;
+    top: 80px;
 
   }
   .download-logo{
-    width: 100px;
-    height: 35px;
-    margin-left: 11px;
+    width: 140px;
+    height: 46px;
+  
+    margin-top: 35px;
 
 
+  }
+  .download-logo2{
+    width: 140px;
+    height: 46px;
+    margin-left: 20px;
+    margin-top: 35px;
+
+
+  }
+  .download-text{
+    font-size: 32px;
+    margin-top: 100px;
+    
+  }
+  .download-text2{
+    font-size: 20px;
+    margin-top: -18px;
+    opacity: 1;
+   
+    
+    color: #717171;
+  }
+  .download-text3{
+
+    font-size: 19px;
+  
+    margin-top: 70px;
+  }
+  .download-area{
+    margin-bottom: 105px;
+    margin-top: -20px;
+    
+  }
+  
+  .number-text{
+    background-color: white;
+    border: 1px solid #B2B2B2;
+border-radius: 8px;
+opacity: 1;
+outline: none;
+margin-top: 10px;
+margin-left: 11px;
+width: 280px;
+height: 40px !important;
+  }
+  .number-text2{
+    background-color: white;
+    border: 1px solid #B2B2B2;
+border-radius: 8px;
+opacity: 1;
+outline: none;
+  width: 50px;
+  height: 40px;
+  }
+  .button-align{
+    margin-left: 20px;
+    height: 40px !important;
+    margin-bottom: 38px !important;
+  }
+  .download-link-app{
+    margin-top: -8px;
+  }
+  .middle-container{
+    margin-bottom: -31px;
+  }
+  .futtor{
+    margin-left: -87px;
+  }
+  .policies-text{
+
+    margin-top: 38px;
+  }
+  .procedure-text{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: -13px;
+  }
+  .footer-alignment{
+    padding-top: 25px;
+    margin-bottom: -2px
+  }
+  .footer2-align{
+    margin-left: -65px;
+  }
+  .MARGIN-FOOTER{
+    margin-left: 20px;
+  }
+  .new-footer-ele{
+    margin-left: -20px;
+  }
+  .new-footer-ele2{
+    padding-left: 44px;
   }
