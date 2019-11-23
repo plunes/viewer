@@ -14,7 +14,7 @@ return (
 <div className="col-sm-11">
 <ul class="breadcrumb">
 <li><a href="/">Home</a></li>
-<li className="header-font2" ><a className="breadcrumb-text" href="#">Psychiatry</a></li>
+<li className="header-font2" ><a className="breadcrumb-text" href="#">Gynecology</a></li>
 
 </ul>
 </div>

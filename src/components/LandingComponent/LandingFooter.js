@@ -14,63 +14,63 @@ export default class LandingFooter extends Component {
                 <div class="ftr3 footerfont">FOLLOW US AT </div>
                 <li style={{ display: 'inline-block' }}>
                   <span style={{ fontSize: '11px' }}>
-                    <a href="#"><img class="ftr" src="linkedin.png" /><br /></a></span>
+                    <a href="https://in.linkedin.com/company/plunes-com"><img class="ftr" src="linkedin.png" /><br /></a></span>
                 </li>
                 <li style={{ display: 'inline-block' }}>
                   <span style={{ fontSize: '11px' }}>
-                    <a href="#"><img class="ftr1" src="Instagram.png" /><br /></a></span>
+                    <a href="https://instagram.com/plunes_utility_network?igshid=17ov9733181re"><img class="ftr1" src="Instagram.png" /><br /></a></span>
                 </li>
                 <li style={{ display: 'inline-block' }}>
                   <span style={{ fontSize: '11px' }}>
-                    <a href="#"><img class="ftr2" src="Facebook.png" /><br /></a></span>
+                    <a href="https://m.facebook.com/plunes076/"><img class="ftr2" src="Facebook.png" /><br /></a></span>
                 </li>
               </ul>
               </div>
             <div class="col-sm-2 ">
             <h5 className="footerfont">  FOR USERS </h5>
               <ul className="services footerele">
-                <li><a href="#">PATHOLOGISTS IN GURGAON</a>  </li>
-                <li><a href="#"> PEDIATRICS IN GURGAON</a> </li>
-                <li><a href="#">PSYSIOTHERAPHISTS IN GURGAON </a> </li>
-                <li><a href="#">RADIOLOGISTS IN GURGAON </a> </li>
-                <li><a href="#"> ORTHOPEDICS IN GURGAON</a>  </li>
-                <li><a href="#">  DENTIST IN GURGAON</a> </li>
-                <li><a href="#">DERMATOLOGIST IN GURGAON </a>   </li>
+                <li><a href="/Pathology">PATHOLOGISTS IN GURGAON</a>  </li>
+                <li><a href="/Pediatrics"> PEDIATRICS IN GURGAON</a> </li>
+                <li><a href="/Physiotherapy">PSYSIOTHERAPHISTS IN GURGAON </a> </li>
+                <li><a href="/Radiology">RADIOLOGISTS IN GURGAON </a> </li>
+                <li><a href="/Orthopedics"> ORTHOPEDICS IN GURGAON</a>  </li>
+                <li><a href="/dentist">  DENTIST IN GURGAON</a> </li>
+                <li><a href="/dermatology">DERMATOLOGIST IN GURGAON </a>   </li>
               </ul>
             </div>
             <div className="col-sm-2 ">
               {/* <h5 className="footerfont">  FOR USERS </h5> */}
               <ul className="services footerele">
-              <li><a href="#"> GYNECOLOGISTS IN GURGAON </a>   </li>
-                <li><a href="#">  PSYCHIATISTS IN GURGAON</a></li>
-                <li><a href="#">NEUROLOGISTS IN GURGAON </a>  </li>
-                <li><a href="#">OPTHAMALOGISTS IN GURGAON</a> </li>
+              <li><a href="/Gynae"> GYNECOLOGISTS IN GURGAON </a>   </li>
+                <li><a href="/Psychiatry">  PSYCHIATISTS IN GURGAON</a></li>
+                <li><a href="/neurology">NEUROLOGISTS IN GURGAON </a>  </li>
+                <li><a href="/ophthalmology">OPTHAMALOGISTS IN GURGAON</a> </li>
               </ul>
             </div>
             <div class="col-sm-2 ">
               <h5 class="footerfont">FOR HOSPITALS/CLINICS   </h5>
               <ul class="services footerele">
-                <li><a href="#"> REGISTER  </a></li>
-                <li><a href="#"> PLOCKR </a></li>
+                <li><a href="/signup"> REGISTER  </a></li>
+                <li><a href="/"> PLOCKR </a></li>
               </ul>
             </div>
             <div class="col-sm-2">
               <h5 class="footerfont">GET IN TOUCH WITH </ h5>
               <ul class="services footerele">
-                <li><a href="http://www.google.com">ABOUT US</a> </li>
-                <li><a href="http://www.google.com">CONTACT US </ a></li>
-                <li><a href="">CAREERS</a></li><br></br>
+                <li><a href="/">ABOUT US</a> </li>
+                <li><a href="/">CONTACT US </ a></li>
+                <li><a href="/">CAREERS</a></li><br></br>
               </ul>
             </div>
             <div className="col-sm-1">
               <ul class="services footerele">
               <li class="footerfont footer-margin">REACH US AT </li><br></br>
-                <li class="footer-margin2"><a href="http://www.google.com" >info@plunes.com</a><br></br></li>
+                <li class="footer-margin2"><a href="/" >info@plunes.com</a><br></br></li>
                 </ul>
                 <h5 className="footerfont policies-text">  OUR POLICIES </h5>
                 <ul class="services footerele">
-                <li><a href="#"> REGISTER  </a></li>
-                <li><a href="#"> PLOCKR </a></li>
+                <li><a href="/"> REGISTER  </a></li>
+                <li><a href="/"> PLOCKR </a></li>
               </ul>
               </div>
           </div>
