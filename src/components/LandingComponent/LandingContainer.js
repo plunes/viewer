@@ -277,7 +277,7 @@ class LandingContainer extends React.Component {
                 
                 <div>
                 <hr width="70%"></hr>
-                     <h3 class="header"> Avail upto 50% of on Medical
+                     <h3 class="header"> Avail upto 50% off on Medical
               procedures,<br></br> diagnostics & appointments.
                </h3></div>
                 <div className="container-fluid download-area ">
@@ -339,7 +339,7 @@ class LandingContainer extends React.Component {
                         <div className="col-sm-4">
                             <div class="item" >
                                 <div class="card ">
-                                    <img className="card-item-top" src="VETERINARY.png" alt="..." />
+                                    <img className="card-item-top" src="PSYCHIATRISTS.png" alt="..." />
                                     <div class="card-body ">
                                         <h5 class="card-title ">Psychiatrists</h5>
                                         <p class="card-text">Psychologist Consultation<br></br>Autism Assessment <br></br> Counseling</p>
@@ -423,7 +423,7 @@ class LandingContainer extends React.Component {
                                 <div class="card">
                                     <img className="card-item-top" src="PEDIATRICIAN.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title ">Padiatrician</h5>
+                                        <h5 class="card-title ">Pediatrician</h5>
                                         <p class="card-text">Padiatric Consultation <br></br>Vaccination <br></br>Heart Murmur</p>
                                         <a href="/Pediatrics" class="btn btn-primary button-view">view more</a>
                                     </div>

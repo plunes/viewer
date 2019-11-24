@@ -17,6 +17,16 @@
     margin-left: 245px !important; 
   
   }
+  .text-center{
+    margin-top: -100px;
+  }
+  .download-logo2{
+    width: 137px !important;
+
+  }
+  .download-logo{
+    width: 137px !important;
+  }
   .navbar-brand {
     margin-left: -50px;
   }
@@ -121,7 +131,7 @@
   bottom: 145px;
 }
 .number-text{
-  width: 245px !important;
+  width: 225px !important;
   margin-bottom: 15px;
 }
 .button-align{
@@ -359,7 +369,7 @@
   .nav2 .nav3 {
     display: block;
     text-align: center;
-    padding: 4px 18px;
+    padding: 5px 18px;
     color: #707070 !important;
     text-decoration: none;
     border: 1px solid #707070;
