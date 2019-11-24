@@ -112,19 +112,19 @@
   .searchDropdown {
     height: 200px;
     position: relative;
-    left: 13px;
+    left: 26px !important;
     overflow-y: auto;
     border-radius: 15px !important;
     border: 1.5px solid #01d35a;
-    width: 340px !important;
+    width: 331px !important;
     margin-top: 10px;
     bottom: 160px;
 }
 .selectedProceduresList {
   border: 1.5px solid #e4e4e4;
-  width: 368px !important;
+  width: 322px !important;
   position: relative;
-  left: 13px;
+  left: 29px !important;
   margin-top: 23px;
   margin-bottom: 15px;
   border-radius: 15px !important;
