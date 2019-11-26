@@ -162,7 +162,7 @@
 }
 
 .button-view{
-  margin-left: 100px !important;
+  margin-left: 109px !important;
 }
     .ftr1{
         height: 40px;
@@ -428,7 +428,7 @@ width: 190px !important;
     outline: none !important;
   }
   .main-content .owl-theme .custom-nav .owl-prev {
-    left: 0;
+    left: -16px;
     outline: none !important;
     background-color: white;
    width: 1px;
