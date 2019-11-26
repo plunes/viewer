@@ -29,22 +29,22 @@ export default class LandingFooter extends Component {
             <div class="col-sm-2 ">
             <h5 className="footerfont">  FOR USERS </h5>
               <ul className="services footerele">
-                <li><a href="/Pathology">PATHOLOGISTS IN GURGAON</a>  </li>
-                <li><a href="/Pediatrics"> PEDIATRICS IN GURGAON</a> </li>
-                <li><a href="/Physiotherapy">PSYSIOTHERAPHISTS IN GURGAON </a> </li>
+               
+                <li><a href="/Pediatrics"> PEDIATRICIANS IN GURGAON</a> </li>
+                <li><a href="/Physiotherapy">PHYSIOTHERAPHISTS IN GURGAON </a> </li>
                 <li><a href="/Radiology">RADIOLOGISTS IN GURGAON </a> </li>
-                <li><a href="/Orthopedics"> ORTHOPEDICS IN GURGAON</a>  </li>
-                <li><a href="/dentist">  DENTIST IN GURGAON</a> </li>
-                <li><a href="/dermatology">DERMATOLOGIST IN GURGAON </a>   </li>
+                <li><a href="/Orthopedics"> ORTHOPEDICIANS IN GURGAON</a>  </li>
+                <li><a href="/dentist">  DENTISTS IN GURGAON</a> </li>
+                <li><a href="/dermatology">DERMATOLOGISTS IN GURGAON </a>   </li>
               </ul>
             </div>
             <div className="col-sm-2 ">
               {/* <h5 className="footerfont">  FOR USERS </h5> */}
-              <ul className="services footerele">
-              <li><a href="/Gynae"> GYNECOLOGISTS IN GURGAON </a>   </li>
-                <li><a href="/Psychiatry">  PSYCHIATISTS IN GURGAON</a></li>
+              <ul className="services footerele"> 
+              <li><a href="/Gynae"> GYNAECOLOGISTS IN GURGAON </a>   </li>
+                <li><a href="/Psychiatry">  PSYCHIATRISTS IN GURGAON</a></li>
                 <li><a href="/neurology">NEUROLOGISTS IN GURGAON </a>  </li>
-                <li><a href="/ophthalmology">OPTHAMALOGISTS IN GURGAON</a> </li>
+                <li><a href="/ophthalmology">OPHTHALMOLOGISTS IN GURGAON</a> </li>
               </ul>
             </div>
             <div class="col-sm-2 ">
@@ -59,7 +59,7 @@ export default class LandingFooter extends Component {
               <ul class="services footerele">
                 <li><a href="/">ABOUT US</a> </li>
                 <li><a href="/">CONTACT US </ a></li>
-                <li><a href="/">CAREERS</a></li><br></br>
+                <li><a href="/career">CAREERS</a></li><br></br>
               </ul>
             </div>
             <div className="col-sm-1">
@@ -69,8 +69,8 @@ export default class LandingFooter extends Component {
                 </ul>
                 <h5 className="footerfont policies-text">  OUR POLICIES </h5>
                 <ul class="services footerele">
-                <li><a href="/"> REGISTER  </a></li>
-                <li><a href="/"> PLOCKR </a></li>
+                <li><a href="/"> TERMS OF USE   </a></li>
+                <li><a href="/">PRIVACY POLICY </a></li>
               </ul>
               </div>
           </div>
@@ -94,8 +94,8 @@ export default class LandingFooter extends Component {
                 <li><a href="/Orthopedics">BACK PAIN TREATMENT IN GURGAON </a>   </li>
                 <li><a href="/Gynae">OVARIAN CYST REMOVAL IN GURGAON </a>   </li>
                 <li><a href="/Gynae">FERTILITY TREATMENT IN GURGAON </a> </li>
-                <li><a href="/Gynae">PCOD IN GURGAON </a> </li>
-                <li><a href="/Gynae"> PCOS IN GURGAON</a>  </li>
+                <li><a href="/Gynae">P.C.O.D IN GURGAON </a> </li>
+                <li><a href="/Gynae"> P.C.O.S IN GURGAON</a>  </li>
                 <li><a href="/Gynae">C-SECTION IN GURGAON </a>   </li>
               </ul>
               </div>
@@ -145,7 +145,7 @@ export default class LandingFooter extends Component {
                 <li><a href="/Radiology">HEART CHECK UP IN GURGAON </a> </li>
                 <li><a href="/Radiology">  TMT IN GURGAON</a> </li>
                 <li><a href="/Radiology">MRI IN GURGAON </a>   </li>
-                <li><a href="/Radiology">BLOOD TEST IN GURGAON</a> </li>
+                <li><a href="/Pathology">BLOOD TEST IN GURGAON</a> </li>
                 <li><a href="/Radiology">PET CT SCAN IN GURGAON </a>   </li>
               </ul>
               </div>

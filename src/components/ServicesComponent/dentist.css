@@ -73,7 +73,7 @@ color:  #06DF86 !important;
   
   @media  (max-width: 576px) {
     .header-font{
-        margin-left: 45px;
+        margin-left: 15px;
     }
     .button-view{
         margin-left: 9px;
@@ -82,5 +82,12 @@ color:  #06DF86 !important;
     .button-align{
       margin-left: 20px !important;
     }
+    .peragraph-text{
+      margin-left: 15px !important;
+    }
+    .view-more-align{
+      margin-left: -15px;
+      margin-top: 14px;
+  }
 
   }

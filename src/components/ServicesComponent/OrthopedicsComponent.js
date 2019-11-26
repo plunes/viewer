@@ -29,7 +29,7 @@ export default class OrthopedicsComponent extends Component {
                             <div className="col-sm-2">
                                 <img className="dentist-image" src="/Orthopedics.png" />
                             </div>
-                            <div className="col-sm-9">
+                            <div className="col-sm-9 view-more-align">
                                 <h3 className="header-font">Orthopedics</h3>
                                 <p className="peragraph-text">Orthopedics is a medical specialty that focuses on the diagnosis, correction, prevention, and treatment of patients with skeletal deformities.
 
@@ -55,7 +55,7 @@ export default class OrthopedicsComponent extends Component {
                         <p className="peragraph-text">
                         We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your orthopedic procedures & treatments in Delhi NCR.</p>
                         <p className="peragraph-text"> Search for the desired orthopedic treatments & procedures such as bone fusion surgery, Internal Fixation of Bones, Joint Replacement Procedures, bone pain, bone replacement, joint replacement, back pain or any other orthopedic treatments & our AI will negotiate in real-time with top orthopedists & clinics nearest to you to get the best price in real time. </p>
-                        <p className="peragraph-text"> Avail upto 50% discount instantly at orthopedic clinics & hospitals in Delhi NCR through PLUNES!  
+                        <p className="peragraph-text"> Avail upto 50% discount instantly at orthopedic clinics & hospitals in Delhi NCR through Plunes!  
 </p>
                     </div>
                     <div className="col-sm-1"></div>
@@ -82,13 +82,13 @@ export default class OrthopedicsComponent extends Component {
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">2. Knee Surgery</p>
+                            <p className="header-font">2. Knee Surgery:</p>
                             <p className="peragraph-text">
                                 During a knee osteotomy, either your tibia (upper shinbone) or femur (lower thighbone) are cut and reshaped.
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">3. Spine Surgery</p>
+                            <p className="header-font">3. Spine Surgery:</p>
                             <p className="peragraph-text">A wedge-shaped piece of bone from a section of your spine can be removed to correct a swayback or reduce a hunchback.
 </p>
                         </div>
@@ -132,7 +132,7 @@ export default class OrthopedicsComponent extends Component {
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">8. Anterior cruciate ligament reconstruction:</p>
+                            <p className="header-font">8. Anterior Cruciate Ligament Reconstruction:</p>
                             <p className="peragraph-text">
                                 It is a surgical tissue graft replacement of the anterior cruciate ligament, located in the knee, to restore its function after an injury.
 </p>
@@ -151,7 +151,7 @@ export default class OrthopedicsComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">10. Internal fixation:
+                            <p className="header-font">10. Internal Fixation:
 </p>
                             <p className="peragraph-text">
                                 It involves the surgical implementation of implants for the purpose of repairing a bone.
@@ -187,7 +187,7 @@ export default class OrthopedicsComponent extends Component {
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">14. Arthrodesis(Joint Fusion Surgery):</p>
+                            <p className="header-font">14. Arthrodesis (Joint Fusion Surgery):</p>
                             <p className="peragraph-text">
                                 It is also known as artificial ankylosis or syndesis, is the artificial induction of joint ossification between two bones by surgery. This is done to relieve intractable pain in a joint which cannot be managed by pain medication, splints.
 . </p>
@@ -218,7 +218,7 @@ export default class OrthopedicsComponent extends Component {
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">18. Vertebral augmentation:</p>
+                            <p className="header-font">18. Vertebral Augmentation:</p>
                             <p className="peragraph-text">
                                 Vertebral augmentation, which includes vertebroplasty and kyphoplasty, are similar spinal procedures in which bone cement is injected through a small hole in the skin into a fractured vertebra to try to relieve back pain caused by a vertebral compression fractures.
 </p>
@@ -245,7 +245,7 @@ export default class OrthopedicsComponent extends Component {
 . </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">21. Unicompartmental knee arthroplasty:
+                            <p className="header-font">21. Unicompartmental Knee Arthroplasty:
 </p>
                             <p className="peragraph-text">
                                 Unicompartmental knee arthroplasty is a surgical procedure used to relieve arthritis in one of the knee compartments in which the damaged parts of the knee are replaced.
@@ -259,13 +259,13 @@ export default class OrthopedicsComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">22. Triple arthrodesis:</p>
+                            <p className="header-font">22. Triple Arthrodesis:</p>
                             <p className="peragraph-text">
                                 It's a surgical procedure whose purpose is to relieve pain in the rear part of the foot, improve stability of the foot, and in some cases correct deformity of the foot, by fusing of the three main joints of the hind foot: the subtalar joint, calcaneocuboid joint and the talonavicular joint.
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">23. External fixation:</p>
+                            <p className="header-font">23. External Fixation:</p>
                             <p className="peragraph-text">
                                 It's a surgical treatment wherein rods are screwed into bone and exit the body to be attached to a stabilizing structure on the outside of the body.
 </p>
@@ -283,7 +283,7 @@ export default class OrthopedicsComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">25. Auto transplantation :</p>
+                            <p className="header-font">25. Auto Transplantation :</p>
                             <p className="peragraph-text">
                                 It's the transplantation of organs, tissues, or even particular proteins from one part of the body to another in the same person.
 </p>
@@ -296,7 +296,7 @@ export default class OrthopedicsComponent extends Component {
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">27. Distraction ontogenesis:</p>
+                            <p className="header-font">27. Distraction Ontogenesis:</p>
                             <p className="peragraph-text">
                                 It's a process used in orthopedic surgery, podiatric surgery, and oral and maxillofacial surgery to repair skeletal deformities and in reconstructive surgery.
 </p>
@@ -316,7 +316,7 @@ export default class OrthopedicsComponent extends Component {
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">29. Brunelli procedure:</p>
+                            <p className="header-font">29. Brunelli Procedure:</p>
                             <p className="peragraph-text">
                                 It's a surgical procedure that can be used to correct instability in the wrist. Instability in the wrist can be caused by a torn Scapholunate ligament. </p>
                         </div>
@@ -337,7 +337,7 @@ export default class OrthopedicsComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                        <p className="header-font">31. Brostrom procedure:</p>
+                        <p className="header-font">31. Brostrom Procedure:</p>
                             <p className="peragraph-text">
                                 It's a repair of ligaments on lateral ankle. It is designed to address ankle instability. More importantly, it is primarily used to repair the anterior talofibular ligament in the ankle.
 </p>
@@ -349,7 +349,7 @@ export default class OrthopedicsComponent extends Component {
 </p>
                         </div>
                         <div className="col-sm-3">
-                        <p className="header-font">33. Shoulder surgery:</p>
+                        <p className="header-font">33. Shoulder Surgery:</p>
                             <p className="peragraph-text">
                                 It's the treatment for injured shoulders. Many surgeries have been developed to repair the muscles, connective tissue, or damaged joints that can arise from traumatic or overuse injuries to the shoulder.
 </p>
@@ -363,7 +363,7 @@ export default class OrthopedicsComponent extends Component {
                             <div className="col-sm-1">
                                 </div>
                                 <div className="col-sm-3">
-                                <p className="header-font">34. Ponseti method:</p>
+                                <p className="header-font">34. Ponseti Method:</p>
                             <p className="peragraph-text">
                                 The Ponseti method is a manipulative technique that corrects congenital clubfoot without invasive surgery.                             .
 </p>

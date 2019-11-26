@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+
 export default class PathologyComponent extends Component {
         render() {
                 return (
@@ -29,7 +30,7 @@ export default class PathologyComponent extends Component {
                                                         <div className="col-sm-2">
                                                                 <img className="dentist-image" src="/Pathology.png" />
                                                         </div>
-                                                        <div className="col-sm-9">
+                                                        <div className="col-sm-9 view-more-align">
                                                                 <h3 className="header-font">Pathology</h3>
                                                                 <p className="peragraph-text">
                                                                         Pathology is the study of the causes and effects of disease or injury. The word pathology also refers to the study of disease in general, incorporating a wide range of bioscience research fields and medical practices.
@@ -56,8 +57,8 @@ export default class PathologyComponent extends Component {
                                                 <h3 className="header-font">Why Plunes? </h3>
                                                 <p className="peragraph-text">
                                                 We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your pathology or blood tests in Delhi NCR.</p>
-                                                <p className="peragraph-text"> Search for the desired tests such as Blood tests, CBC, LFT/KFT, Thyroid profile, Pregnancy tests, Dengue tests, Vidal/Typhoid tests or any other lab tests & our AI will negotiate in real-time with top pathology labs nearest to you to get the best price in real time. </p>
-                                                <p className="peragraph-text">Avail upto 50% discount instantly at pathology labs in Delhi NCR through PLUNES!   
+                                                <p className="peragraph-text"> Search for the desired tests such as Blood tests, CBC, LFT/KFT, Thyroid profile, Pregnancy tests, Dengue tests, Widal tests or any other lab tests & our AI will negotiate in real-time with top pathology labs nearest to you to get the best price in real time. </p>
+                                                <p className="peragraph-text">Avail upto 50% discount instantly at pathology labs in Delhi NCR through Plunes!   
 </p>
                                         </div>
                                         <div className="col-sm-1"></div>
@@ -77,7 +78,7 @@ export default class PathologyComponent extends Component {
                                                 <div className="col-sm-1">
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">1. Pathology tests:
+                                                        <p className="header-font">1. Pathology Tests:
 </p>
                                                         <p className="peragraph-text">
                                                                 The clinician requests a second opinion from another pathologist and/or the patient requests their slides be reviewed elsewhere, potentially where they may be seeking second or third opinions regarding their treatment options. You can have the best price
@@ -165,7 +166,7 @@ export default class PathologyComponent extends Component {
                                                 <div className="col-sm-1">
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">10. Semen Carcinoma In-situ (CIS) Test:
+                                                        <p className="header-font">10. Semen Carcinoma In-Situ (CIS) Test:
 </p>
                                                         <p className="peragraph-text">
                                                                 Carcinoma In-situ, a group of abnormal cells that remain in the place where they are first formed.  These abnormal cells may become cancer and spread into nearby normal tissue. This is also known as ‘Stage O’ disease.
@@ -208,7 +209,7 @@ export default class PathologyComponent extends Component {
 </p>
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">15. Shortwave diathermy:</p>
+                                                        <p className="header-font">15. Shortwave Diathermy:</p>
                                                         <p className="peragraph-text">
                                                                 Shortwave diathermy uses high-frequency electromagnetic energy to generate heat. It may be applied in pulsed or continuous energy waves. It has been used to treat pain from kidney stones, and pelvic inflammatory disease.
 </p>
@@ -236,7 +237,7 @@ export default class PathologyComponent extends Component {
                                                 </div>
                                                 <div className="col-sm-3">
 
-                                                        <p className="header-font">18. Ultrasound diathermy:
+                                                        <p className="header-font">18. Ultrasound Diathermy:
 </p>
                                                         <p className="peragraph-text">
                                                                 Ultrasound diathermy uses sound waves to treat deep tissues. Heat is generated by the vibration of the tissue. This promotes blood flow into the area.
@@ -257,7 +258,7 @@ export default class PathologyComponent extends Component {
 </p>
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">20. Hepatitis-B Virus Surface Antigen(HbsAg) Elisa Test:
+                                                        <p className="header-font">20. Hepatitis-B Virus Surface Antigen (HbsAg) Elisa Test:
 </p>
                                                         <p className="peragraph-text">
                                                                 This test is used to detect the actual presence of Hepatitis B virus (called the surface antigen) in your blood.
@@ -398,7 +399,9 @@ export default class PathologyComponent extends Component {
                                                 </div>
                                         </div>
                                 </div>
-
+                                <div>
+                            <LandingFooter />
+                        </div>
 
 
                         </div>

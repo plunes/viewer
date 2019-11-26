@@ -30,7 +30,7 @@ return (
 <div className="col-sm-2">
 <img className="dentist-image" src="/PEDIATRICIAN.png" />
 </div>
-<div className="col-sm-9">
+<div className="col-sm-9 view-more-align">
 <h3 className="header-font">Pediatrics</h3>
 <p className="peragraph-text">
 Pediatrics is the branch of medicine dealing with the health and medical care of infants, children, and adolescents from birth up to the age of 18. The word “pediatrics” means “healer of children”.
@@ -58,7 +58,7 @@ Pediatricians are doctors who manage the health of your child, including physica
 <p className="peragraph-text">
 We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your pediatric procedures/treatments in Delhi NCR. </p>
 <p className="peragraph-text"> Search for the desired tests such as nursemaid’s elbow, heart murmur treatment, vaccination,venipuncture or any other pediatric procedures & our AI will negotiate in real-time with top pediatric hospitals &child specialists nearest to you to get the best price in real time.</p>
-<p className="peragraph-text"> Avail upto 50% discount instantly at pediatric clinics & hospitals in Delhi NCR through PLUNES! 
+<p className="peragraph-text"> Avail upto 50% discount instantly at pediatric clinics & hospitals in Delhi NCR through Plunes! 
 </p>
 </div>
 <div className="col-sm-1"></div>
@@ -78,7 +78,7 @@ We help you find the best price solutions to all your medical concerns with just
         <div className="col-sm-1">
             </div>
             <div className="col-sm-3">
-            <p className="header-font">1. Pediatric Consultation In Delhi NCR at best price:</p>
+            <p className="header-font">1. Pediatric Consultation:</p>
 <p className="peragraph-text">
 A Pediatric Consultation is a service provided by a Pediatrician.  It can be sometimes for free, or for patients who are seeking the desired advice. 
 <br></br>
@@ -86,14 +86,14 @@ Pediatric consultation is a common medical process that involves the assessment 
 </p>
             </div>
             <div className="col-sm-3">
-            <p className="header-font">2. Nursemaid’s Elbow In Delhi NCR at best price: 
+            <p className="header-font">2. Nursemaid’s Elbow: 
 </p>
 <p className="peragraph-text">
 The child's doctor will treat a nursemaid elbow through a process called reduction. It involves gently moving the bone and ligament back into place.
 </p>
             </div>
             <div className="col-sm-3">
-            <p className="header-font">3. Vaccination In Delhi NCR at best price: 
+            <p className="header-font">3. Vaccination: 
 </p>
 <p className="peragraph-text">
 Giving immunization/Vaccination is the best way to protect your child against many dangerous diseases.
@@ -106,7 +106,7 @@ Giving immunization/Vaccination is the best way to protect your child against ma
         <div className="col-sm-1">
             </div>
             <div className="col-sm-3">
-            <p className="header-font">4. Heart Murmur Treatment In Delhi NCR at best price: 
+            <p className="header-font">4. Heart Murmur Treatment: 
 
 </p>
 <p className="peragraph-text">
@@ -115,7 +115,7 @@ Heart murmurs are extra or abnormal sounds made by turbulent blood flowing throu
 </p>
             </div>
             <div className="col-sm-3">
-            <p className="header-font">5. Hip Examination In Delhi NCR at best price: 
+            <p className="header-font">5. Hip Examination: 
 </p>
 <p className="peragraph-text">
 The neonate who has a dislocated hip at birth should be referred to a pediatric orthopedist immediately for treatment.
@@ -136,7 +136,7 @@ Examiner adducts the hip while applying an anterior force on the femur to reduce
         <div className="col-sm-1">
             </div>
             <div className="col-sm-3">
-            <p className="header-font">7. pGALS In Delhi NCR at best price: </p>
+            <p className="header-font">7. pGALS: </p>
 <p className="peragraph-text">
 pGALS (pediatric Gait, Arms, Legs and Spine) it's  a simple quick musculoskeletal assessment to distinguish abnormal from normal joints in children. 
  
@@ -149,7 +149,7 @@ Treatment is usually closed reduction followed by brief immobilization unless th
 </p>
             </div>
             <div className="col-sm-3">
-            <p className="header-font">9. Venipuncture Treatment In Delhi NCR at best price:
+            <p className="header-font">9. Venipuncture Treatment:
 </p>
 <p className="peragraph-text">
 It is the process of obtaining intravenous access for intravenous therapy or blood sampling of venous blood.

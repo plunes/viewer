@@ -23,9 +23,9 @@ export default class RadiologyComponent extends Component {
                     <div className="col-sm-11 header2-text">
                         <div className="row">
                             <div className="col-sm-2">
-                                <img className="dentist-image" src="/RADIOLOGIST.png" />
+                                <img className="dentist-image" src="/Radio.png" />
                             </div>
-                            <div className="col-sm-9">
+                            <div className="col-sm-9 view-more-align">
                                 <h3 className="header-font">Radiology</h3>
                                 <p className="peragraph-text">
                                     Radiology is the medical specialty that uses medical imaging to diagnose and treat diseases within the bodies of both humans and animals.
@@ -47,7 +47,7 @@ export default class RadiologyComponent extends Component {
                         <p className="peragraph-text">
                             We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dentistry procedures & treatments in Delhi NCR.</p>
                         <p className="peragraph-text"> Search for the desired dental treatments such as hot sensitivity, cold sensitivity, oral checkup, dental implants, gum swelling, tooth ache, tooth pain, composite veneers, porcelain veneers, zirconia porcelain veneers, dental porcelain laminates, teeth bonding treatment, dental bonding or any other dentistry treatments & our AI will negotiate in real-time with top dentists & clinics nearest to you to get the best price in real time. </p>
-                        <p className="peragraph-text"> Avail upto 50% discount instantly at dental clinics & hospitals in Delhi NCR through PLUNES!
+                        <p className="peragraph-text"> Avail upto 50% discount instantly at dental clinics & hospitals in Delhi NCR through Plunes!
                         </p>
                     </div>
                     <div className="col-sm-1"></div>
@@ -101,7 +101,7 @@ export default class RadiologyComponent extends Component {
                         <p className="peragraph-text">
                             Doppler ultrasonography is a medical ultrasonography that employs the Doppler Effect to generate imaging/projection of the affected area.
 <br></br>
-                            A Doppler ultrasound is an imaging test that uses sound waves to show blood moving through blood vessels. Your doctor may suggest a Doppler ultrasound exam if you show signs of decreased blood flow in the arteries or veins of your legs, arms, or neck. It is used for examinations such as: Doppler abdominal, Doppler arterial - one limb, Doppler arterial / venous - one limb, Doppler both limbs arterial, Doppler both limbs venous, Doppler both lims arterial/venous (one study), Doppler both lower limbs arterial & venous, Doppler both upper limbs arterial & venous, Doppler carotid, Doppler obstetric, Doppler obstetric with bpp, Doppler pelvic, Doppler penile, Doppler peripheral arterial, Doppler peripheral venous, Doppler renal, Doppler scrotal, Doppler single limb arterial & venous, &Doppler small parts.
+                            A Doppler ultrasound is an imaging test that uses sound waves to show blood moving through blood vessels. Your doctor may suggest a Doppler ultrasound exam if you show signs of decreased blood flow in the arteries or veins of your legs, arms, or neck. It is used for examinations such as: Doppler abdominal, Doppler arterial - one limb, Doppler arterial / venous - one limb, Doppler both limbs arterial, Doppler both limbs venous, Doppler both limbs arterial/venous (one study), Doppler both lower limbs arterial & venous, Doppler both upper limbs arterial & venous, Doppler carotid, Doppler obstetric, Doppler obstetric with bpp, Doppler pelvic, Doppler penile, Doppler peripheral arterial, Doppler peripheral venous, Doppler renal, Doppler scrotal, Doppler single limb arterial & venous, &Doppler small parts.
 </p></div></div></div>
                   <LandingFooter />
             </div>

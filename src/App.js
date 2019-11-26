@@ -28,6 +28,7 @@ import GynaeComponent from './components/ServicesComponent/GynaeComponent'
   import PhysiotherapyComponent from './components/ServicesComponent/PhysiotherapyComponent'
   import PediatricsComponent from './components/ServicesComponent/PediatricsComponent'
   import PathologyComponent from './components/ServicesComponent/PathologyComponent'
+ 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -106,12 +107,13 @@ export default class App extends React.Component {
           <Route exact path='/Physiotherapy' component={() => (<PhysiotherapyComponent />)} />
           <Route exact path='/Pediatrics' component={() => (<PediatricsComponent />)} />
           <Route exact path='/Pathology' component={() => (<PathologyComponent />)} />
+  
 
         </Switch> 
       </div>
     )
     return (
-      <Switch>
+      <Switch>  
         <App />
       </Switch>
     )
