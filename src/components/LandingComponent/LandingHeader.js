@@ -10,7 +10,7 @@ class LandingHeader extends React.Component {
     }
     render() {
         // console.log(this.root.isAuth, "Anshul")
-        return <div className = 'container-fluid'>
+        return <div className = 'container-fluid header-position'>
   <nav class="navbar navbar-expand-lg navbar-light  ">
     <a class="navbar-brand" href="/"><img style={{height:'52px', width:'130px',marginLeft:'55px'}} src="logo.png" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

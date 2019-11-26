@@ -225,131 +225,97 @@ class LandingContainer extends React.Component {
         }
 
         return <Router>
-            <div className="container-fluid " >
-                {/* <div class="text-center">
-                    <h1 class="h11">Search for the best price solutions near you </h1>
-                    <form action="">
-                        <div class="autocomplete">
-                            <input class="form-control" type="text" name="search" placeholder="Name the procedure or test here .." autoComplete="off" id="mytInput" onChange={this.onSearchQuery} />
-                            {this.state.showDiv ? <div className='row' >
-                                <ul style={{ listStyleType: 'none' }} className='searchDropdown'>
-                                    {
-                                        this.state.showDropdown ?
-                                            this.data.map(item => (
-                                                <li key='' data-value={item.procedure} className='row procedureListClass' onClick={this.handleClick} >
-                                                    {item.procedure}
-                                                </li>
-                                            )) : null
-                                    }
-                                </ul>
-                            </div> : null
-
-                            }
-                            {
-                                this.state.showSelectedProcedures ? <div className='row selectedProceduresList'>
-                                    <ul style={{ listStyleType: 'none' }} >
-                                        {
-                                            this.showForm ? <form onSubmit={this.handleSubmit}>
-                                                {
-                                                    this.state.selectedData.map(item =>
-                                                        (
-                                                            <li key='' className='row procedureListClass'>{item}</li>
-                                                        ))
-                                                }
-
-                                            </form> : null
-                                        }
-                                    </ul>
-                                </div> : null
-                            }
-                            {
-                                this.showForm ?
-                                    <button type='button' className='btn btn-success proceedButton' onClick={this.sendToSignUpPage}> Proceed </button>
-                                    : null
-                            }demo
-                        </div>
-                    </form>
-
-                </div> */}
-          
+            <div className="container-fluid" >
+                {/* <div className="CodeMirror-vscrollbar" cm-not-content="true" style={{display:'block' ,bottom:'0px'}}>
+                    <div style={{minWidth: '1px', }}></div>
+                        </div> */}
                 <h3 className="h15">Welcome to India's First Utility Network</h3>
                 <h3 className="header2">Experience our Unique AI & Avail upto 50% off on all your Medical Procedures, Diagnostics & Appointments</h3>
-                <div class="owl-carousel owl-theme owl-nav owl-loaded" id="owl-demo">
-                    
-                    
-                    <div class="item">
-                        <a href="/dermatology">
-                            <div class="card" >
-                                <img className=" card-align" src="Dermat.png" alt="..." />
-                                <div class="card-body ">
-                                    <h5 class="card-title2 ">Dermatology Procedure</h5>
-                                    <p class="card-text2">Dermatology Consultation <br></br> Laser Hair Reduction <br></br> Botox Treatment</p>
+                <div className="main-content">
+                    <div class="owl-carousel owl-theme " id="owl-demo">
 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/Gynae">
-                            <div class="card" >
-                                <img className=" card-align" src="Gyneco.png" alt="..." />
-                                <div class="card-body ">
-                                    <h5 class="card-title2 ">Gynecology Procedures</h5>
-                                    <p class="card-text2">Gynecologist Consultation<br></br>Cesarean / C-section <br></br>Ovarian Cyst Removal</p>
 
-                                </div>
-                            </div></a>
-                    </div>
-                    <div class="item">
-                        <a href="/Radiology">
-                            <div class="card" >
-                                <img className="card-align" src="Radio.png" alt="..." />
-                                <div class="card-body ">
-                                    <h5 class="card-title2 ">Radiology Tests</h5>
-                                    <p class="card-text2">MRI, CT Scan, X-ray<br></br> Ultrasound <br></br>Doppler Test</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/dentist">
-                            <div class="card" >
-                                <img className="card-align" src="/dent.png" alt="..." />
-                                <div class="card-body ">
-                                    <h5 class="card-title2 ">Dentistry Procedure</h5>
-                                    <p class="card-text2">Tooth Removal, Tooth whitening<br></br>Root Canal Treatment<br></br>Dental Implant, Braces</p>
+                        <div class="item">
+                            <a href="/dermatology">
+                                <div class="card" >
+                                    <img className=" card-align" src="Dermat.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title2 ">Dermatology Procedure</h5>
+                                        <p class="card-text2">Dermatology Consultation <br></br> Laser Hair Reduction <br></br> Botox Treatment</p>
 
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="/Pathology">
-                            <div class="card" >
-                                <img className=" card-align" src="Pathology.png" alt="..." />
-                                <div class="card-body ">
-                                    <h5 class="card-title2 ">Pathology</h5>
-                                    <p class="card-text2">Complete Blood Count Test<br></br>LIPID Profile<br></br>HIV Test</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/Gynae">
+                                <div class="card" >
+                                    <img className=" card-align" src="Gyneco.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title2 ">Gynecology Procedures</h5>
+                                        <p class="card-text2">Gynecologist Consultation<br></br>Cesarean / C-section <br></br>Ovarian Cyst Removal</p>
 
+                                    </div>
+                                </div></a>
+                        </div>
+                        <div class="item">
+                            <a href="/Radiology">
+                                <div class="card" >
+                                    <img className="card-align" src="Radio.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title2 ">Radiology Tests</h5>
+                                        <p class="card-text2">MRI, CT Scan, X-ray<br></br> Ultrasound <br></br>Doppler Test</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className='item'>
-                        <a href="/Orthopedics">
-                            <div class="card" >
-                                <img className=" card-align" src="Orthopedics.png" alt="..." />
-                                <div class="card-body ">
-                                    <h5 class="card-title2 ">Orthopedic</h5>
-                                    <p class="card-text2">Joint Replacement<br></br>Fracture<br></br>Arthroplasty</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/dentist">
+                                <div class="card" >
+                                    <img className="card-align" src="/dent.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title2 ">Dentistry Procedure</h5>
+                                        <p class="card-text2">Tooth Removal, Tooth whitening<br></br>Root Canal Treatment<br></br>Dental Implant, Braces</p>
 
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="/Pathology">
+                                <div class="card" >
+                                    <img className=" card-align" src="Pathology.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title2 ">Pathology</h5>
+                                        <p class="card-text2">Complete Blood Count Test<br></br>LIPID Profile<br></br>HIV Test</p>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className='item'>
+                            <a href="/Orthopedics">
+                                <div class="card" >
+                                    <img className=" card-align" src="Orthopedics.png" alt="..." />
+                                    <div class="card-body ">
+                                        <h5 class="card-title2 ">Orthopedic</h5>
+                                        <p class="card-text2">Joint Replacement<br></br>Fracture<br></br>Arthroplasty</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                       
+                    </div>
+                    <div class="owl-theme">
+                            <div class="owl-controls">
+                                <div class="custom-nav owl-nav"></div>
+                            </div>
+                        </div>
                 </div>
+
+
                 <hr width="70%" ></hr>
-                
+
                 <div className="container download-area">
 
                     <h3 className="h11">Book instantly from top doctors near you</h3>
@@ -377,15 +343,15 @@ class LandingContainer extends React.Component {
                         </div>
                     </div>
                 </div><br></br>
-                    <hr width="70%" ></hr>
+                <hr width="70%" ></hr>
                 <div className='container-fluid'>
-                  
+
                     <h3 className="header"> Why Plunes?</h3>
 
                     <div className='row'>
                         <div className='col-sm-1 why-plunes'></div>
                         <div className='col-sm-4'>
-                            <ul style={{listStyleType : 'none'}}>
+                            <ul style={{ listStyleType: 'none' }}>
                                 <li className="pencil-align"><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">100% Payments Refundable.</span></li><br></br>
                                 <li className="pencil-align"><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">Prefered timing as per your availability</span></li><br></br>
                                 <li className="pencil-align" ><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">Free telephonic consultations</span></li><br></br>
@@ -396,7 +362,7 @@ class LandingContainer extends React.Component {
 
                         </div>
                         <div className='col-sm-4'>
-                            <ul style={{listStyleType : 'none'}}>
+                            <ul style={{ listStyleType: 'none' }}>
                                 <li className="pencil-align"><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">First Consultation Free</span></li><br></br>
                                 <li className="pencil-align"><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">Make Partial Payments</span></li><br></br>
                             </ul>
@@ -404,13 +370,13 @@ class LandingContainer extends React.Component {
                         <div className='col-sm-1'></div>
 
                     </div>
-                    
+
                 </div>
 
-              <div>
-               
-              <hr width="70%"></hr>
-                  </div>
+                <div>
+
+                    <hr width="70%"></hr>
+                </div>
 
 
                 <div>
