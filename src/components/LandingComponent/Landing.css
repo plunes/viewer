@@ -17,6 +17,10 @@
     margin-left: 245px !important; 
   
   }
+  .footer-col-align{
+    margin-top: -16px !important;
+
+  }
   .pencil-ul{
     margin-top: -16px;
   }
@@ -40,7 +44,7 @@
     margin-top: -100px;
   }
   .pencil{
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
   .download-logo2{
     width: 137px !important;
@@ -130,7 +134,7 @@
 
   }
   .card-item-top{
-    margin-left: 82px !important;
+    margin-left: 61px !important;
   }
   
   
@@ -162,7 +166,7 @@
 }
 
 .button-view{
-  margin-left: 109px !important;
+  margin-left: 80px !important;
 }
     .ftr1{
         height: 40px;
@@ -259,14 +263,14 @@
     
         display: block;
     text-align: center;
-    padding: 5px;
+    padding: 7px;
     color: white !important;
     text-decoration: none;
     border: 1px solid white;
     border-radius: 20px;
     margin-left: 20px;
     font-size: 14px;
-    width: 215px;
+    width: 200px !important;
     height: 34px;
     width: 215px !important;
     padding-left: 80px !important;
@@ -434,7 +438,7 @@ width: 190px !important;
    width: 1px;
   }
   .main-content .owl-theme .custom-nav .owl-next {
-    right: 0;
+    right: -11px;
     outline: none !important;
     background-color: white;
     width: 55px;
@@ -625,7 +629,7 @@ width: 190px !important;
       font-family:Proxima;
       text-align:left;
       padding-inline-start: 0;
-      margin-left: 0px;
+      margin-left: -1px;
       
   }
   
