@@ -20,7 +20,7 @@ class LandingHeader extends React.Component {
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ml-auto">
-        <li className="nav2 nav-item active">
+        <li className="nav2 nav-item downApp">
           <div className="nav333">
             <a className="nav33  nav-link _app " >
               <h6 className="nn "><span><a href="https://apps.apple.com/us/app/plunes/id1463747553"><img className="ios" src="iOS.png"

@@ -9,8 +9,14 @@ export default class LandingFooter extends Component {
             <div className="col-sm-1 futtor">
               </div>
             <div className="col-sm-2">
-            <img className="responsive-logo" style={{ height: '52px', width: '130px' }} src="logo.png" />
-              <ul style={{ paddingInlineStart: '0' }}>
+              <div>
+              <a href="/" >
+          
+          <img className="responsive-logo" style={{ height: '52px', width: '130px' }} src="logo.png" />
+          </a>
+              </div>
+        
+               <ul style={{ paddingInlineStart: '0' }}>
                 <div class="ftr3 footerfont">FOLLOW US AT </div>
                 <li style={{ display: 'inline-block' }}>
                   <span style={{ fontSize: '11px' }}>
@@ -24,7 +30,7 @@ export default class LandingFooter extends Component {
                   <span style={{ fontSize: '11px' }}>
                     <a href="https://m.facebook.com/plunes076/"><img class="ftr2" src="Facebook.png" /><br /></a></span>
                 </li>
-              </ul>
+              </ul> 
               </div>
             <div class="col-sm-2 ">
             <h5 className="footerfont">  FOR USERS </h5>
@@ -40,7 +46,7 @@ export default class LandingFooter extends Component {
             </div>
             <div className="col-sm-2 ">
               {/* <h5 className="footerfont">  FOR USERS </h5> */}
-              <ul className="services footerele"> 
+              <ul className="services footerele footer-col-align"> 
               <li><a href="/Gynae"> GYNAECOLOGISTS IN GURGAON </a>   </li>
                 <li><a href="/Psychiatry">  PSYCHIATRISTS IN GURGAON</a></li>
                 <li><a href="/neurology">NEUROLOGISTS IN GURGAON </a>  </li>
@@ -59,7 +65,8 @@ export default class LandingFooter extends Component {
               <ul class="services footerele">
                 <li><a href="/">ABOUT US</a> </li>
                 <li><a href="/">CONTACT US </ a></li>
-                <li><a href="/career">CAREERS</a></li><br></br>
+                <li><a href="/career">CAREERS</a></li>
+                <li><a href="/">BLOG </ a></li>
               </ul>
             </div>
             <div className="col-sm-1">

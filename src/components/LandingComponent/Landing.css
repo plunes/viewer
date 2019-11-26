@@ -17,9 +17,12 @@
     margin-left: 245px !important; 
   
   }
+  .pencil-ul{
+    margin-top: -16px;
+  }
   
   .pencil-align{
-    margin-left: -23px;
+    margin-left: -33px;
   }
   .card-title2{
     margin-left: 0px !important;
@@ -127,7 +130,7 @@
 
   }
   .card-item-top{
-    margin-left: 66px !important;
+    margin-left: 82px !important;
   }
   
   
@@ -157,11 +160,9 @@
   width: 225px !important;
   margin-bottom: 15px;
 }
-.button-align{
-  margin-left: 100px !important;
-}
+
 .button-view{
-  margin-left: 85px !important;
+  margin-left: 100px !important;
 }
     .ftr1{
         height: 40px;
@@ -171,9 +172,18 @@
     }
     .h11{
       
-            font-size: 30px !important;
+            font-size: 25px !important;
             font-weight: 400;
             width: 100%;
+    }
+    .h15{
+      font-size: 24px !important;
+    }
+    .h12{
+      font-size: 24px !important;
+    }
+    .h13{
+      font-size: 24px !important;
     }
 
 .ftr2{
@@ -243,15 +253,7 @@
     margin-right: 150px;
     height: 45px;
 }
-     
-    .nav33{
-    
-      
-    width: 215px !important;
-        padding-left: 80px !important;
-   text-align: left !important;
-}
-
+  
 
 .nav33{
     
@@ -266,6 +268,10 @@
     font-size: 14px;
     width: 215px;
     height: 34px;
+    width: 215px !important;
+    padding-left: 80px !important;
+text-align: left !important;
+width: 190px !important;
 }
 .welcome-to{
   margin-top: 133px !important;
@@ -282,6 +288,10 @@
     margin-top: -7px !important;
     margin-right: 50px;
     }
+    
+    ._app{
+      background-color: #01d35a !important;
+      }
     
  
       p {
@@ -318,6 +328,13 @@
     .nav2 nav3{
       width: 94% !important;
     }
+    .header{
+      padding-top: 20px !important;
+      margin-bottom: 28px !important;
+    }
+    .download-area{
+      margin-bottom: -6px !important;
+    }
     
     
 }
@@ -328,7 +345,7 @@
   .card{
        border: none;
        width: 100%;
-     margin-left: 30px;
+     margin-left: 0px;
       
       margin-bottom: 48px;
       margin-top: 11px;
@@ -425,7 +442,7 @@
   .main-content{
     position: relative;
   }
-  
+ 
   
   .logo
     {
@@ -487,12 +504,13 @@
     padding: 5px ;
     color:white !important;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid #01d35a ;
     border-radius: 20px;
     margin-left: 20px;
     font-size: 14px;
-    width: 215px !important;
-      height: 34px;
+    width: 190px !important;
+      height: 35px;
+      background-color: #01d35a !important;
   }
   .nav333
   {
@@ -510,9 +528,9 @@
   
   
   .nav2 .nav3:hover {
-    background-color: #01de5a;
+    background-color: #01D35A;
       color: #fff;
-      border-color: #01de5a;
+      border-color: #01D35A;
   }
   .box2{
       padding-right:55px;
@@ -520,7 +538,7 @@
   input[type=text] {
       width: 85% !important;
       box-sizing: border-box;
-      border: 1.5px solid #01d35a;
+      border: 1.5px solid #01D35A;
       border-radius: 40px;
       font-size: 16px;
       background-color: white !important;
@@ -561,7 +579,10 @@
   
   }
   .why-plunes{
-    margin-left: 82px;
+    margin-left: 45px;
+  }
+  .footer-col-align{
+    margin-top: 30px !important;
   }
   
   
@@ -627,14 +648,15 @@
 
     height: 20px;
     width: 20px;
-    
+    margin-top: -3px;
      margin-left: 3px;
   }
   .ios{
     height: 20px;
      width :20px ;
      float:"left";
-      margin-left: 9px;
+      margin-left: -3px;
+      margin-top: -3px;
   }
   .bg-blue-ui {
     background-color:  #01d35a !important;
@@ -671,7 +693,7 @@
     border-radius: 25px !important;
     width: 130px;
     color:white !important;
-    margin-left: 117px;
+    margin-left: 111px;
   }
   .card-align{
     width: 300px !important;
@@ -1200,7 +1222,7 @@ footer{
 }
 .pencil{
   padding-left: 30px;
-  font-size: 24px;
+  font-size: 22px;
   color: #474747;
 }
 .download-app-pic{
@@ -1252,7 +1274,7 @@ footer{
     margin-top: 70px;
   }
   .download-area{
-    margin-bottom: 105px;
+    margin-bottom: 72px;
     margin-top: -70px;
     
   }
@@ -1271,11 +1293,11 @@ height: 40px !important;
   .number-text2{
     background-color: white;
     border: 1px solid #B2B2B2;
-border-radius: 8px;
-opacity: 1;
-outline: none;
-  width: 50px;
-  height: 40px;
+    border-radius: 8px;
+    opacity: 1;
+    outline: none;
+    width: 50px;
+    height: 40px;
   }
   .button-align{
     margin-left: 20px;

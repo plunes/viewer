@@ -42,7 +42,7 @@ class LandingContainer extends React.Component {
     }
     async sendAppLink(e) {
         e.preventDefault()
-        let response = await axios.get("http://13.233.151.26:8000/notification/applink/" + this.state.mobileNo)
+        let response = await axios.get("https://plunes.co/v3/payment/applink/" + this.state.mobileNo)
             .then(({ data }) => {
                 // console.log(data);
                 if (data.err) {
@@ -161,16 +161,16 @@ class LandingContainer extends React.Component {
     async componentDidMount() {
 
 
-        return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
-            .then(({ data }) => {
-                // console.log(data)
-                if (data.err) {
-                    console.log(data.err)
-                }
-                else {
-                    this.setState({ proceduresList: data.user })
-                }
-            })
+        // return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
+        //     .then(({ data }) => {
+        //         // console.log(data)
+        //         if (data.err) {
+        //             console.log(data.err)
+        //         }
+        //         else {
+        //             this.setState({ proceduresList: data.user })
+        //         }
+        //     })
     }
 
     handleClick(e) {
@@ -226,9 +226,7 @@ class LandingContainer extends React.Component {
 
         return <Router>
             <div className="container-fluid" >
-                {/* <div className="CodeMirror-vscrollbar" cm-not-content="true" style={{display:'block' ,bottom:'0px'}}>
-                    <div style={{minWidth: '1px', }}></div>
-                        </div> */}
+               
                 <h3 className="h15">Welcome to India's First Utility Network</h3>
                 <h3 className="header2">Experience our Unique AI & Avail upto 50% off on all your Medical Procedures, Diagnostics & Appointments</h3>
                 <div className="main-content">
@@ -318,7 +316,7 @@ class LandingContainer extends React.Component {
 
                 <div className="container download-area">
 
-                    <h3 className="h11">Book instantly from top doctors near you</h3>
+                    <h3 className="h11">Book instantly from top doctors/hospitals near you</h3>
 
                     <div className="row">
                         <div className="col-sm-6">
@@ -352,9 +350,9 @@ class LandingContainer extends React.Component {
                         <div className='col-sm-1 why-plunes'></div>
                         <div className='col-sm-4'>
                             <ul style={{ listStyleType: 'none' }}>
-                                <li className="pencil-align"><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">100% Payments Refundable.</span></li><br></br>
-                                <li className="pencil-align"><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">Prefered timing as per your availability</span></li><br></br>
-                                <li className="pencil-align" ><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">Free telephonic consultations</span></li><br></br>
+                                <li className="pencil-align"><img src='/payment refundable.png' height='25px' width='25px'></img><span className="pencil">100% Refundable Payment </span></li><br></br>
+                                <li className="pencil-align"><img src='/availability.png' height='25px' width='25px'></img><span className="pencil">Prefered Timing as Per Your Availability</span></li><br></br>
+                                <li className="pencil-align" ><img src='/free-telephonic.png' height='25px' width='25px'></img><span className="pencil">Free Telephonic Consultations</span></li><br></br>
                             </ul>
 
                         </div>
@@ -362,9 +360,9 @@ class LandingContainer extends React.Component {
 
                         </div>
                         <div className='col-sm-4'>
-                            <ul style={{ listStyleType: 'none' }}>
-                                <li className="pencil-align"><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">First Consultation Free</span></li><br></br>
-                                <li className="pencil-align"><img src='/pencil.png' height='25px' width='25px'></img><span className="pencil">Make Partial Payments</span></li><br></br>
+                            <ul className="pencil-ul" style={{ listStyleType: 'none' }}>
+                                <li className="pencil-align"><img src='/first_consultation.png' height='25px' width='25px'></img><span className="pencil">First Consultation Free</span></li><br></br>
+                                <li className="pencil-align"><img src='/partial-payments.png' height='25px' width='25px'></img><span className="pencil">Make Partial Payments</span></li><br></br>
                             </ul>
                         </div>
                         <div className='col-sm-1'></div>
@@ -383,9 +381,9 @@ class LandingContainer extends React.Component {
 
                     <div>
 
-                        <h3 class="h12"> Best Doctors, No Waiting in the Queue, Hassle free payments
-               </h3>
-                        <p className="header2">Book Now!</p>
+                        {/* <h3 class="h12"> Best Doctors, Hassle-free Payments With Seamless Experience
+               </h3> */}
+                        <p className="header2"></p>
 
                     </div>
                     <div className="container-fluid download-area ">
@@ -397,7 +395,7 @@ class LandingContainer extends React.Component {
                                             <img className="card-item-top" src="Physiotherapy.png" alt="..." />
                                             <div class="card-body">
                                                 <h5 class="card-title ">Physiotherapy</h5>
-                                                <p class="card-text">Physiotherapy Consultation <br></br>Back Pain/knee Pain <br></br>Frozen Shoulder</p>
+                                                <p class="card-text">Physiotherapy Consultation <br></br>Back Pain/Knee Pain <br></br>Frozen Shoulder</p>
                                                 <a href="Physiotherapy" class="btn btn-primary button-view">view more</a>
                                             </div>
                                         </div>
@@ -450,7 +448,7 @@ class LandingContainer extends React.Component {
                                             <img className="card-item-top" src="PEDIATRICIAN.png" alt="..." />
                                             <div class="card-body ">
                                                 <h5 class="card-title ">Pediatric</h5>
-                                                <p class="card-text">Pediatric Consultation <br></br>Vaccination <br></br>Heart Murmur</p>
+                                                <p class="card-text">Pediatric Consultation <br></br>Vaccination <br></br>Heart Murmur Treatment</p>
                                                 <a href="/Pediatrics" class="btn btn-primary button-view">view more</a>
                                             </div>
                                         </div>
@@ -464,7 +462,7 @@ class LandingContainer extends React.Component {
 
 
                             <div className="row">
-                                <h3 className="header2">Save time, Save Money!</h3>
+                                <h3 className="header2">Save Time, Save Money!</h3>
 
                             </div>
 
