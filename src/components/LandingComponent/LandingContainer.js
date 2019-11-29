@@ -226,85 +226,87 @@ class LandingContainer extends React.Component {
 
         return <Router>
             <div className="container-fluid" >
-               
+
                 <h3 className="h15">Welcome to India's First Utility Network</h3>
                 <h3 className="header2">Experience our Unique AI & Avail upto 50% off on all your Medical Procedures, Diagnostics & Appointments</h3>
-                <div className="main-content">
-                    <div class="owl-carousel owl-theme " id="owl-demo">
+                <div className="container-fluid">
+                    <div className="main-content">
+                        <div class="owl-carousel owl-theme " id="owl-demo">
 
 
-                        <div class="item">
-                            <a href="/dermatology">
-                                <div class="card" >
-                                    <img className=" card-align" src="Dermat.png" alt="..." />
-                                    <div class="card-body ">
-                                        <h5 class="card-title2 ">Dermatology Procedures</h5>
-                                        <p class="card-text2">Dermatology Consultation <br></br> Laser Hair Reduction <br></br> Botox Treatment</p>
+                            <div class="item">
+                                <a href="/dermatology">
+                                    <div class="card" >
+                                        <img className=" card-align" src="Dermat.png" alt="..." />
+                                        <div class="card-body ">
+                                            <h5 class="card-title2 ">Dermatology Procedures</h5>
+                                            <p class="card-text2">Dermatology Consultation <br></br> Laser Hair Reduction <br></br> Botox Treatment</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="/Gynae">
-                                <div class="card" >
-                                    <img className=" card-align" src="Gyneco.png" alt="..." />
-                                    <div class="card-body ">
-                                        <h5 class="card-title2 ">Gynecology Procedures</h5>
-                                        <p class="card-text2">Gynecologist Consultation<br></br>Cesarean / C-section <br></br>Ovarian Cyst Removal</p>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="/Gynae">
+                                    <div class="card" >
+                                        <img className=" card-align" src="Gyneco.png" alt="..." />
+                                        <div class="card-body ">
+                                            <h5 class="card-title2 ">Gynecology Procedures</h5>
+                                            <p class="card-text2">Gynecologist Consultation<br></br>Cesarean / C-section <br></br>Ovarian Cyst Removal</p>
+                                        </div>
+                                    </div></a>
+                            </div>
+                            <div class="item">
+                                <a href="/Radiology">
+                                    <div class="card" >
+                                        <img className="card-align" src="Radio.png" alt="..." />
+                                        <div class="card-body ">
+                                            <h5 class="card-title2 ">Radiology Diagnosis </h5>
+                                            <p class="card-text2">MRI, CT Scan, X-ray<br></br> Ultrasound <br></br>Doppler Test</p>
+                                        </div>
                                     </div>
-                                </div></a>
-                        </div>
-                        <div class="item">
-                            <a href="/Radiology">
-                                <div class="card" >
-                                    <img className="card-align" src="Radio.png" alt="..." />
-                                    <div class="card-body ">
-                                        <h5 class="card-title2 ">Radiology Diagnosis </h5>
-                                        <p class="card-text2">MRI, CT Scan, X-ray<br></br> Ultrasound <br></br>Doppler Test</p>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="/dentist">
+                                    <div class="card" >
+                                        <img className="card-align" src="/dent.png" alt="..." />
+                                        <div class="card-body ">
+                                            <h5 class="card-title2 ">Dentistry Procedures</h5>
+                                            <p class="card-text2">Tooth Removal, Tooth whitening<br></br>Root Canal Treatment<br></br>Dental Implant, Braces</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="/dentist">
-                                <div class="card" >
-                                    <img className="card-align" src="/dent.png" alt="..." />
-                                    <div class="card-body ">
-                                        <h5 class="card-title2 ">Dentistry Procedures</h5>
-                                        <p class="card-text2">Tooth Removal, Tooth whitening<br></br>Root Canal Treatment<br></br>Dental Implant, Braces</p>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="/Pathology">
+                                    <div class="card" >
+                                        <img className=" card-align" src="Pathology.png" alt="..." />
+                                        <div class="card-body ">
+                                            <h5 class="card-title2 ">Pathology Tests</h5>
+                                            <p class="card-text2">Complete Blood Count Test<br></br>LIPID Profile<br></br>HIV Test</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="/Pathology">
-                                <div class="card" >
-                                    <img className=" card-align" src="Pathology.png" alt="..." />
-                                    <div class="card-body ">
-                                        <h5 class="card-title2 ">Pathology Tests</h5>
-                                        <p class="card-text2">Complete Blood Count Test<br></br>LIPID Profile<br></br>HIV Test</p>
+                                </a>
+                            </div>
+                            <div className='item'>
+                                <a href="/Orthopedics">
+                                    <div class="card" >
+                                        <img className=" card-align" src="Orthopedics.png" alt="..." />
+                                        <div class="card-body ">
+                                            <h5 class="card-title2 ">Orthopedic Procedures</h5>
+                                            <p class="card-text2">Joint Replacement<br></br>Fracture<br></br>Arthroplasty</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+
                         </div>
-                        <div className='item'>
-                            <a href="/Orthopedics">
-                                <div class="card" >
-                                    <img className=" card-align" src="Orthopedics.png" alt="..." />
-                                    <div class="card-body ">
-                                        <h5 class="card-title2 ">Orthopedic Procedures</h5>
-                                        <p class="card-text2">Joint Replacement<br></br>Fracture<br></br>Arthroplasty</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                       
-                    </div>
-                    <div class="owl-theme">
+                        <div class="owl-theme">
                             <div class="owl-controls">
                                 <div class="custom-nav owl-nav"></div>
                             </div>
                         </div>
+                    </div>
                 </div>
 
 

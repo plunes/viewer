@@ -3,11 +3,20 @@ import React, { Component } from 'react';
 import '../ServicesComponent/RegisterComponent.css'
 import LandingHeader from '../LandingComponent/LandingHeader'
 import LandingFooter from '../LandingComponent/LandingFooter'
+import {Helmet} from "react-helmet";
 
 class RegisterComponent extends Component {
     render() {
         return (
             <div className='container-fluid'>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <link rel="canonical" href="/register" />
+                <title>Register With Us</title>
+                <meta name='keywords' content='register, automated appointments, instant payments, pre-paid clients, free registration, digital profile, free registration'></meta>
+                <meta name="description" content="Register yourself on Plunes & get best pricing solutions to all your medical procedures, diagnostics & tests instantly.">
+                </meta>
+                </Helmet>
                 <div>
                     <LandingHeader />
                 </div>

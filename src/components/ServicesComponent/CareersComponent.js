@@ -3,10 +3,20 @@ import React, { Component } from 'react';
 import '../ServicesComponent/CareersComponent.css'
 import LandingHeader from '../LandingComponent/LandingHeader'
 import LandingFooter from '../LandingComponent/LandingFooter'
+import {Helmet} from "react-helmet";
+
 class CareersComponent extends Component {
     render() {
         return (
             <div className='container-fluid'>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <link rel="canonical" href="/careers" />
+                <title>Plunes Careers | Jobs at Plunes</title>
+                <meta name='keywords' content='dream job, we are looking for you, plunes, career'></meta>
+                <meta name="description" content="Dream job is not a myth anymore! At Plunes we believe in teaming up innovation with focus & creativity. Apply to jobs at Plunes & let your career flourish.">
+                </meta>
+                </Helmet>
                 <div>
                     <LandingHeader />
                 </div>
@@ -25,7 +35,7 @@ class CareersComponent extends Component {
 
                                 <div className='row'>
                                     <h2 className="we-believe">We believe that Dream Job is not a myth!</h2>
-                                    <h3 className="we-believe-in">We believ in creating a world that inspires ease of life!</h3>
+                                    <h3 className="we-believe-in">We believe in creating a world that inspires ease of life!</h3>
                                 </div>
                                 <div className='row'>
                                     <p className="career-pera">
@@ -252,9 +262,9 @@ class CareersComponent extends Component {
                     <div className="row">
                         <div className="col-sm-1"></div>
                         <div className="col-sm-10">
-                        <p className="if-u">Our careers site is only for individuals seeking a position with Plunes technologies Pvt. Ltd. Staffing and recruiting agencies and individuals being represented by an agency are not authorized to use this site or to submit profiles, applications, or resumes, and any such submissions will be considered unsolicited. Plunes does not accept unsolicited resumes or applications from agencies. Please do not forward resumes to our job alias, Plunes employees, or any other company location. Plunes is not responsible for any fees related to unsolicited resumes/applications. 
+                        <p className="if-u">Our careers site is only for individuals seeking a position with Plunes Technologies Pvt. Ltd. Staffing and recruiting agencies and individuals being represented by an agency are not authorized to use this site or to submit profiles, applications, or resumes, and any such submissions will be considered unsolicited. Plunes does not accept unsolicited resumes or applications from agencies. Please do not forward resumes to our job alias, Plunes employees, or any other company location. Plunes is not responsible for any fees related to unsolicited resumes/applications. 
                         <br></br>
-                        <br></br>
+                       
                         Any offer (s) of employment are contingent upon a satisfactory background and criminal records check, which will be conducted in accordance with local legal regulations.</p>
                         
                         </div>

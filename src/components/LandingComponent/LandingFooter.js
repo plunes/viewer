@@ -6,10 +6,11 @@ export default class LandingFooter extends Component {
 
       <div class="footer">
         <div class="container-fluid footer-padding">
-          <div class="row landing-footer-row1">
-            {/* <div className="col-sm-1 futtor">
-              </div> */}
-            <div className="col-sm-2">
+          <div className="container-fluid">
+          <div class="row ">
+            <div className="col-sm-1 futtor">
+              </div>
+            <div className="col-sm-2 ">
               <div>
               <a href="/" >
           
@@ -65,20 +66,20 @@ export default class LandingFooter extends Component {
               <h5 class="footerfont">GET IN TOUCH WITH </ h5>
               <ul class="services footerele">
                 <li><a href="/aboutus">ABOUT US</a> </li>
-                <li><a href="/">CONTACT US </ a></li>
+                <li><a href="/contactus">CONTACT US </ a></li>
                 <li><a href="/careers">CAREERS</a></li>
-                <li><a href="/">BLOG </ a></li>
+                <li><a href="/blog">BLOG </ a></li>
               </ul>
             </div>
-            <div className="col-sm-2">
+            <div className="col-sm-1 footer-row-align">
               <ul class="services footerele">
               <li class="footerfont footer-margin">REACH US AT </li><br></br>
                 <li class="footer-margin2"><a href="/" >info@plunes.com</a><br></br></li>
                 </ul>
                 <h5 className="footerfont policies-text">  OUR POLICIES </h5>
                 <ul class="services footerele">
-                <li><a href="/"> TERMS OF USE   </a></li>
-                <li><a href="/">PRIVACY POLICY </a></li>
+                <li><a href="/termsofuse"> TERMS OF USE   </a></li>
+                <li><a href="/termsofuse">PRIVACY POLICY </a></li>
               </ul>
               </div>
           </div>
@@ -89,6 +90,7 @@ export default class LandingFooter extends Component {
               </div>
               <div className="col-sm-5">
                 </div>
+            </div>
             </div>
           <div className="row">
             {/* <div className="col-sm-1 footer2-align">

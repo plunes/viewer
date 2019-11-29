@@ -21,6 +21,9 @@
     margin-top: -16px !important;
 
   }
+  .footer-row-align{
+    margin-left: 15px !important;
+  }
   .pencil-ul{
     margin-top: -16px;
   }
@@ -409,12 +412,7 @@ width: 190px !important;
      font-weight: 100;
    
   }
-  .item{
-   
-    
-    margin-left: 10px;
-   
-  }
+  
   
     
   .main-content .owl-theme .custom-nav {
@@ -1246,7 +1244,7 @@ footer{
 }
 .pencil{
   padding-left: 30px;
-  font-size: 22px;
+  font-size: 20px;
   color: #474747;
 }
 .download-app-pic{
@@ -1362,6 +1360,6 @@ height: 40px !important;
   .new-footer-ele2{
     padding-left: 44px;
   }
-  .landing-footer-row1{
-    margin-left: 45px !important;
+  .footer-row-align{
+    padding-left: 1px !important;
   }

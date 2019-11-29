@@ -32,6 +32,10 @@ import GynaeComponent from './components/ServicesComponent/GynaeComponent'
   import PlockrComponent from './components/ServicesComponent/PlockrComponent'
   import AboutusComponent from './components/ServicesComponent/AboutusComponent'
   import RegisterComponent from './components/ServicesComponent/RegisterComponent'
+  import ContactusComponent from './components/ServicesComponent/ContactusComponent'
+  import TermsOfUseComponent from './components/ServicesComponent/TermsOfUseComponent'
+  import BlogComponent from './components/ServicesComponent/BlogComponent'
+
 
 
  
@@ -117,6 +121,10 @@ export default class App extends React.Component {
           <Route exact path='/aboutus' component={() => (<AboutusComponent />)} />
           <Route exact path='/plockr' component={() => (<PlockrComponent />)} />
           <Route exact path='/register' component={() => (<RegisterComponent />)} />
+          <Route exact path='/contactus' component={() => (<ContactusComponent />)} />
+          <Route exact path='/termsofuse' component={() => (<TermsOfUseComponent />)} />
+          <Route exact path='/blog' component={() => (<BlogComponent />)} />
+
 
         </Switch> 
       </div>
