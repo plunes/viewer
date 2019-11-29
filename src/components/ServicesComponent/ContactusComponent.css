@@ -40,3 +40,15 @@
     font-size: 30px;
     margin-bottom: -12px;
 }
+.form-control-contactus{
+    width: 100%;
+    outline: none;
+    background-color: #ffffff;
+  
+    height: 40px;
+}
+.careers-button{
+   margin-left: 100px;
+   margin-right: 100px;
+   border-radius: 22px;
+}

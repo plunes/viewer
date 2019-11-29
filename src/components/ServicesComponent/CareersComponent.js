@@ -205,9 +205,8 @@ class CareersComponent extends Component {
                     <hr width="10%" color="#01D35A" ></hr>
 
 
-                    <div className="row">
-                        <div className="col-sm-3"></div>
-                        <div className="col-sm-7">
+                        <div className="container">
+                        <form>
                    <table class="table table-bordered">
                  <thead>
                    <tr>
@@ -219,27 +218,29 @@ class CareersComponent extends Component {
                          <tbody>
                                    <tr>
                           <td>Phone Number</td>
-                        <td>Enter Phone Number</td>
+                        <td><input className="form-control-contactus" name="fullName" placeholder="Mobile Number" onChange={this.handleChange} required/>
+                       </td>
         
-      </tr>
-      <tr>
-        <td>Email Id</td>
-        <td>Enter Email Id</td>
+                   </tr>
+                     <tr>
+                 <td>Email Id</td>
+                  <td> <input className="form-control-contactus" name="fullName" placeholder="Enter Email Id" onChange={this.handleChange} required/>
+                </td>
        
                      </tr>
             <tr>
                 <td>Attach Resume</td>
-          <td><span>
-            <button className="btn table-button">Upload
-            </button>pdf, doc, docx, png, jpeg format only
-            </span>
+          <td>
+              <input type="file"/>
             </td>
             
                     </tr>
                 </tbody>
                      </table>
-                     </div>
-                     <div className="col-sm-2">
+                        
+                         <button type="submit" className="btn btn-success careers-button ">Submit</button>
+                        
+                         </form>
                          </div>
                      </div>
                      <div className="row justify-content-center ">
@@ -251,13 +252,11 @@ class CareersComponent extends Component {
                         <div className="col-sm-10">
                     <p className="if-u">Plunes's policy is to provide equal employment opportunities to all applicants and employees without regard to race, color, religion, creed, gender, gender identity or expression, age, national origin or ancestry, citizenship, disability, sexual orientation, marital status, pregnancy, veteran status, membership in the uniformed services, genetic information, or any other basis protected by applicable law. Plunes follows all legal and government regulations including those set forth by The Government of India.</p>
                         </div>
-                            <div className="col-sm-1">
-                                </div>
-
+                            
                         </div>
-                    <div className="row justify-content-center ">
+                    <div className="row justify-content-center">
                         <h1 className="ploker-header">Disclaimer</h1>
-                    </div>
+                        </div>
                     <hr width="10%" color="#01D35A" ></hr>
                     <div className="row">
                         <div className="col-sm-1"></div>
@@ -272,7 +271,7 @@ class CareersComponent extends Component {
                         </div>
 
 
-                </div>
+                
                 <LandingFooter />       
             </div>
         );
