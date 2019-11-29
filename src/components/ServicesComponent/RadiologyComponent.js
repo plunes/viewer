@@ -10,7 +10,7 @@ export default class RadiologyComponent extends Component {
             <div>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <link rel="canonical" href="/Radiology" />
+                    <link rel="canonical" href="/radiology" />
                     <title>A Complete Guide To Radiology: All You Need To Know</title>
                     <meta name = 'keywords' content= 'radiologist in gurgaon, radiology center gurgaon, radiology clinic gurgaon, radiology hospital gurgaon, doppler both limbs venous gurgaon, doppler peripheral arterial gurgaon, doppler peripheral venous gurgaon'></meta>
                     <meta name="description" content="Search for the desired tests such as MRI, CT-Scan, PET CT-SCAN, X-Ray, Doppler or any other lab tests & avail upto 50% discount.">

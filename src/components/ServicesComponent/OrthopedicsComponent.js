@@ -10,7 +10,7 @@ export default class OrthopedicsComponent extends Component {
             <div>
                 <Helmet>
                 <meta charSet="utf-8" />
-                <link rel="canonical" href="/Orthopedics" />
+                <link rel="canonical" href="/orthopedics" />
                 <title>A Complete Guide To Orthopedics: All You Need To Know</title>
                 <meta name='keywords' content='orthopaedic clinic gurgaon, orthopedic doctor in gurgaon, orthopaedic doctor gurgaon'></meta>
                 <meta name="description" content="Search for the desired orthopedic treatments such as bone fusion surgery, Bone Internal Fixation, Joint Replacement etc & avail upto 50% discount.">
@@ -37,7 +37,7 @@ export default class OrthopedicsComponent extends Component {
                     <div className="col-sm-11 header2-text">
                         <div className="row">
                             <div className="col-sm-2">
-                                <img className="dentist-image" src="/Orthopedics.png" />
+                                <img className="dentist-image" src="/orthopedics.png" />
                             </div>
                             <div className="col-sm-9 view-more-align">
                                 <h3 className="header-font">Orthopedics</h3>

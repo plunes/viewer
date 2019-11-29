@@ -38,10 +38,10 @@ export default class LandingFooter extends Component {
             <h5 className="footerfont">  FOR USERS </h5>
               <ul className="services footerele">
                
-                <li><a href="/Pediatrics"> PEDIATRICIANS IN GURGAON</a> </li>
-                <li><a href="/Physiotherapy">PHYSIOTHERAPHISTS IN GURGAON </a> </li>
-                <li><a href="/Radiology">RADIOLOGISTS IN GURGAON </a> </li>
-                <li><a href="/Orthopedics"> ORTHOPEDICIANS IN GURGAON</a>  </li>
+                <li><a href="/pediatrics"> PEDIATRICIANS IN GURGAON</a> </li>
+                <li><a href="/physiotherapy">PHYSIOTHERAPHISTS IN GURGAON </a> </li>
+                <li><a href="/radiology">RADIOLOGISTS IN GURGAON </a> </li>
+                <li><a href="/orthopedics"> ORTHOPEDICIANS IN GURGAON</a>  </li>
                 <li><a href="/dentist">  DENTISTS IN GURGAON</a> </li>
                 <li><a href="/dermatology">DERMATOLOGISTS IN GURGAON </a>   </li>
               </ul>
@@ -49,8 +49,8 @@ export default class LandingFooter extends Component {
             <div className="col-sm-2 ">
               {/* <h5 className="footerfont">  FOR USERS </h5> */}
               <ul className="services footerele footer-col-align"> 
-              <li><a href="/Gynae"> GYNAECOLOGISTS IN GURGAON </a>   </li>
-                <li><a href="/Psychiatry">  PSYCHIATRISTS IN GURGAON</a></li>
+              <li><a href="/gynae"> GYNAECOLOGISTS IN GURGAON </a>   </li>
+                <li><a href="/psychiatry">  PSYCHIATRISTS IN GURGAON</a></li>
                 <li><a href="/neurology">NEUROLOGISTS IN GURGAON </a>  </li>
                 <li><a href="/ophthalmology">OPHTHALMOLOGISTS IN GURGAON</a> </li>
               </ul>
@@ -97,16 +97,16 @@ export default class LandingFooter extends Component {
               </div> */}
             <div className="col-sm-3 responsiv-futtor">
             <ul className="services footerele new-footer-ele2">
-                <li><a href="/Gynae">MEDICALLY TERMINATED PREGNANCY IN GURGAON</a>  </li>
-                <li><a href="/Gynae">VAGINAL RECONSTRUCTION IN GURGAON</a> </li>
-                <li><a href="/Orthopedics">JOINT REPLACEMENT IN GURGAON</a>  </li>
-                <li><a href="/Gynae">PREGNANCY TESTS IN GURGAON</a> </li>
-                <li><a href="/Orthopedics">BACK PAIN TREATMENT IN GURGAON </a>   </li>
-                <li><a href="/Gynae">OVARIAN CYST REMOVAL IN GURGAON </a>   </li>
-                <li><a href="/Gynae">FERTILITY TREATMENT IN GURGAON </a> </li>
-                <li><a href="/Gynae">P.C.O.D IN GURGAON </a> </li>
-                <li><a href="/Gynae"> P.C.O.S IN GURGAON</a>  </li>
-                <li><a href="/Gynae">C-SECTION IN GURGAON </a>   </li>
+                <li><a href="/gynae">MEDICALLY TERMINATED PREGNANCY IN GURGAON</a>  </li>
+                <li><a href="/gynae">VAGINAL RECONSTRUCTION IN GURGAON</a> </li>
+                <li><a href="/orthopedics">JOINT REPLACEMENT IN GURGAON</a>  </li>
+                <li><a href="/gynae">PREGNANCY TESTS IN GURGAON</a> </li>
+                <li><a href="/orthopedics">BACK PAIN TREATMENT IN GURGAON </a>   </li>
+                <li><a href="/gynae">OVARIAN CYST REMOVAL IN GURGAON </a>   </li>
+                <li><a href="/gynae">FERTILITY TREATMENT IN GURGAON </a> </li>
+                <li><a href="/gynae">P.C.O.D IN GURGAON </a> </li>
+                <li><a href="/gynae"> P.C.O.S IN GURGAON</a>  </li>
+                <li><a href="/gynae">C-SECTION IN GURGAON </a>   </li>
               </ul>
               </div>
               <div className="col-sm-3">
@@ -117,10 +117,10 @@ export default class LandingFooter extends Component {
                 <li><a href="/dermatology">LASER HAIR TREATMENT IN GURGAON</a> </li>
                 <li><a href="/dermatology"> SKIN TREATMENT IN GURGAON</a> </li>
                 <li><a href="/dermatology"> HAIR TRANSPLANT IN GURGAON</a>  </li>
-                <li><a href="/Gynae">MAMMOGRAPHY IN GURGAON</a>  </li>
-                <li><a href="/Gynae">  BARIATRIC SURGERY IN GURGAON</a> </li>
-                <li><a href="/Orthopedics">FROZEN SHOULDER IN GURGAON </a>   </li>
-                <li><a href="/Orthopedics">KNEE PAIN TREATMENT IN GURGAON</a>   </li>
+                <li><a href="/gynae">MAMMOGRAPHY IN GURGAON</a>  </li>
+                <li><a href="/gynae">  BARIATRIC SURGERY IN GURGAON</a> </li>
+                <li><a href="/orthopedics">FROZEN SHOULDER IN GURGAON </a>   </li>
+                <li><a href="/orthopedics">KNEE PAIN TREATMENT IN GURGAON</a>   </li>
               </ul>
               </div>
               <div className="col-sm-2">
@@ -132,31 +132,31 @@ export default class LandingFooter extends Component {
                 <li><a href="/ophthalmology"> LASIK EYES TREATMENT IN GURGAON</a>  </li>
                 <li><a href="/ophthalmology"> GLAUCOMA SURGERY IN GURGAON</a> </li>
                 <li><a href="/ophthalmology">CATARACT EYE SURGERY IN GURGAON </a>   </li>
-                <li><a href="/Gynae">IVF IN GURGAON </a>   </li>
+                <li><a href="/gynae">IVF IN GURGAON </a>   </li>
               </ul>
               </div>
               <div className="col-sm-2">
               <ul className="services footerele">
-                <li><a href="/Pathology"> SUGAR TEST IN GURGAON</a> </li>
-                <li><a href="/Pathology">ULTRASOUND IN GURGAON </a> </li>
-                <li><a href="/Pathology">HIV AIDS TEST IN GURGAON </a> </li>
+                <li><a href="/pathology"> SUGAR TEST IN GURGAON</a> </li>
+                <li><a href="/pathology">ULTRASOUND IN GURGAON </a> </li>
+                <li><a href="/pathology">HIV AIDS TEST IN GURGAON </a> </li>
                 <li><a href="/dermatology"> PRP THERAPY IN GURGAON</a>  </li>
-                <li><a href="/Pathology">PATHOLOGISTS IN GURGAON </a>   </li>
-                <li><a href="/Pathology">LIPID PROFILE  TEST IN GURGAON </a>   </li>
-                <li><a href="/Pathology">FULL BODY CHECK UP IN GURGAON </a> </li>
-                <li><a href="/Pathology"> BLOOD PRESSURE TEST IN GURGAON</a> </li>
+                <li><a href="/pathology">PATHOLOGISTS IN GURGAON </a>   </li>
+                <li><a href="/pathology">LIPID PROFILE  TEST IN GURGAON </a>   </li>
+                <li><a href="/pathology">FULL BODY CHECK UP IN GURGAON </a> </li>
+                <li><a href="/pathology"> BLOOD PRESSURE TEST IN GURGAON</a> </li>
               </ul>
               </div>
               <div className="col-sm-2">
               <ul className="services footerele MARGIN-FOOTER">
-                <li><a href="/Radiology">CT SCAN IN GURGAON</a>  </li>
-                <li><a href="/Radiology"> ECG IN GURGAON</a> </li>
-                <li><a href="/Radiology">X-RAY IN GURGAON </a> </li>
-                <li><a href="/Radiology">HEART CHECK UP IN GURGAON </a> </li>
-                <li><a href="/Radiology">  TMT IN GURGAON</a> </li>
-                <li><a href="/Radiology">MRI IN GURGAON </a>   </li>
-                <li><a href="/Pathology">BLOOD TEST IN GURGAON</a> </li>
-                <li><a href="/Radiology">PET CT SCAN IN GURGAON </a>   </li>
+                <li><a href="/radiology">CT SCAN IN GURGAON</a>  </li>
+                <li><a href="/radiology"> ECG IN GURGAON</a> </li>
+                <li><a href="/radiology">X-RAY IN GURGAON </a> </li>
+                <li><a href="/radiology">HEART CHECK UP IN GURGAON </a> </li>
+                <li><a href="/radiology">  TMT IN GURGAON</a> </li>
+                <li><a href="/radiology">MRI IN GURGAON </a>   </li>
+                <li><a href="/pathology">BLOOD TEST IN GURGAON</a> </li>
+                <li><a href="/radiology">PET CT SCAN IN GURGAON </a>   </li>
               </ul>
               </div>
             </div>

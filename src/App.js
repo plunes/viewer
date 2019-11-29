@@ -35,7 +35,7 @@ import GynaeComponent from './components/ServicesComponent/GynaeComponent'
   import ContactusComponent from './components/ServicesComponent/ContactusComponent'
   import TermsOfUseComponent from './components/ServicesComponent/TermsOfUseComponent'
   import BlogComponent from './components/ServicesComponent/BlogComponent'
-
+  import IvfComponent from './components/ServicesComponent/IvfComponent'
 
 
  
@@ -110,20 +110,21 @@ export default class App extends React.Component {
           <Route exact path='/dermatology' component={() => (<DermatologyComponent  />)} />
           <Route exact path='/ophthalmology' component={() => (<OphthalmologyComponent />)} />
           <Route exact path='/neurology' component={() => (<NeurologyComponent />)} />
-          <Route exact path='/Gynae' component={() => (<GynaeComponent />)} />
-          <Route exact path='/Psychiatry' component={() => (<PsychiatryComponent />)} />
-          <Route exact path='/Radiology' component={() => (<RadiologyComponent />)} />
-          <Route exact path='/Orthopedics' component={() => (<OrthopedicsComponent />)} />
-          <Route exact path='/Physiotherapy' component={() => (<PhysiotherapyComponent />)} />
-          <Route exact path='/Pediatrics' component={() => (<PediatricsComponent />)} />
-          <Route exact path='/Pathology' component={() => (<PathologyComponent />)} />
-          <Route exact path='/Careers' component={() => (<CareersComponent />)} />
+          <Route exact path='/gynae' component={() => (<GynaeComponent />)} />
+          <Route exact path='/psychiatry' component={() => (<PsychiatryComponent />)} />
+          <Route exact path='/radiology' component={() => (<RadiologyComponent />)} />
+          <Route exact path='/orthopedics' component={() => (<OrthopedicsComponent />)} />
+          <Route exact path='/physiotherapy' component={() => (<PhysiotherapyComponent />)} />
+          <Route exact path='/pediatrics' component={() => (<PediatricsComponent />)} />
+          <Route exact path='/pathology' component={() => (<PathologyComponent />)} />
+          <Route exact path='/careers' component={() => (<CareersComponent />)} />
           <Route exact path='/aboutus' component={() => (<AboutusComponent />)} />
           <Route exact path='/plockr' component={() => (<PlockrComponent />)} />
           <Route exact path='/register' component={() => (<RegisterComponent />)} />
           <Route exact path='/contactus' component={() => (<ContactusComponent />)} />
           <Route exact path='/termsofuse' component={() => (<TermsOfUseComponent />)} />
           <Route exact path='/blog' component={() => (<BlogComponent />)} />
+          <Route exact path='/ivf' component={() => (<IvfComponent />)} />
 
 
         </Switch> 
