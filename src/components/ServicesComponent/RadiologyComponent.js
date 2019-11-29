@@ -2,10 +2,20 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import {Helmet} from "react-helmet";
+
 export default class RadiologyComponent extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <link rel="canonical" href="/Radiology" />
+                    <title>A Complete Guide To Radiology: All You Need To Know</title>
+                    <meta name = 'keywords' content= 'radiologist in gurgaon, radiology center gurgaon, radiology clinic gurgaon, radiology hospital gurgaon, doppler both limbs venous gurgaon, doppler peripheral arterial gurgaon, doppler peripheral venous gurgaon'></meta>
+                    <meta name="description" content="Search for the desired tests such as MRI, CT-Scan, PET CT-SCAN, X-Ray, Doppler or any other lab tests & avail upto 50% discount.">
+                    </meta>
+                </Helmet>
                 <LandingHeader />
                 <br></br>
                 <div className="row">

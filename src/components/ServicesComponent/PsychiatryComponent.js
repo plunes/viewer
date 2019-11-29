@@ -2,10 +2,20 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import {Helmet} from "react-helmet";
+
 export default class PsychiatryComponent extends Component {
 render() {
 return (
 <div>
+<Helmet>
+    <meta charSet="utf-8" />
+        <link rel="canonical" href="/Psychiatry" />
+        <title>A Complete Guide To Psychiatry: All You Need To Know</title>
+        <meta name= 'keywords' content = 'psychologist in gurgaon, best psychologist in gurgaon, child psychologist in gurgaon, marriage counselor in gurgaon, counseling with psychologist in gurgaon, psychotherapist in gurgaon, family counselling gurgaon'></meta>
+    <meta name="description" content="Search for the desired procedure such as stress management, marriage counseling, autism disorder etc & avail upto 50% discount.">
+    </meta>
+</Helmet>
 <LandingHeader />
 <br></br>
 <div className="row">

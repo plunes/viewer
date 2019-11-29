@@ -2,10 +2,20 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import {Helmet} from "react-helmet";
+
 export default class DermatologyComponent extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <link rel="canonical" href="/dermatology" />
+                <title>A Complete Guide To Dermatology: All You Need To Know</title>
+                <meta name='keywords' content = 'dermatologist in gurgaon, dermatology clinic in gurgaon, dermatology hospital in gurgaon, allergy rashes cure gurgaon, best skin treatment for wrinkles gurgaon, best treatment for fine lines and wrinkles gurgaon'></meta>
+                <meta name="description" content="Search for the desired dermatological procedure such as laser hair reduction, skin rash treatment, eyebrow thread lift etc & avail upto 50% discount. ">
+                </meta>
+                </Helmet>
                 <LandingHeader />
                 <br></br>
                 <div className="row">

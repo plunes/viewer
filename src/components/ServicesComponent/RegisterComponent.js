@@ -1,0 +1,63 @@
+
+import React, { Component } from 'react';
+import '../ServicesComponent/RegisterComponent.css'
+import LandingHeader from '../LandingComponent/LandingHeader'
+import LandingFooter from '../LandingComponent/LandingFooter'
+
+class RegisterComponent extends Component {
+    render() {
+        return (
+            <div className='container-fluid'>
+                <div>
+                    <LandingHeader />
+                </div>
+                    
+                <div className='container-fluid'>
+                    <div className='row justify-content-center'>
+                        
+                        <h1 className="ploker-header">REGISTER</h1>
+                    </div>
+                    <div className="row register-element">
+                        {/* <div className="col-sm-1"></div> */}
+                        <div className="col-sm-3">
+                            <img className="register-img" src="/Appintment.png" />
+                            <p className="register-heading">Automated Appointments</p>
+                            <p className="register-text">Our unique AI acts as your personal assistant automating all the Appointments for you.</p>
+
+                            </div> 
+                            <div className="col-sm-3">
+                                <img className="register-img" src="/text.png" />
+                                <p className="register-heading" >Instant Payments</p>
+                                <p className="register-text">We provide hassle-free payment options for the clients.</p>
+                            </div>
+                            <div className="col-sm-3">
+                                
+                            <img className="register-item-img" src="/employee.png" />
+                            <p className="register-heading">Pre-paid Clients</p>
+                            <p className="register-text">Our AI automatically provides price solution for all your client requests. Thus, giving you pre-paid clients right at your doorstep.</p>
+                            </div>
+                            <div className="col-sm-3">
+                            <img className="register-img" src="/browser.png" />
+                            <p className="register-heading">Free Registration</p>
+                            <p className="register-text">
+                            We create your digital profile and do extensive marketing on your behalf. The best part is that the registration is completely free.
+                            </p>
+                            </div>
+                            {/* <div className="col-sm-1">
+                            </div> */}
+                             </div>
+                             <div className="row">
+                                <div className="col-sm-5"></div>
+                                <div className="col-sm-2">                          
+                             <button className="btn register-button">Register </button>
+                              </div>
+                              <div className="col-sm-2">
+                                  </div>
+                   </div>
+                </div>
+                <LandingFooter />
+            </div>
+        );
+    }
+}
+export default RegisterComponent;

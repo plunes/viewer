@@ -2,10 +2,20 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import {Helmet} from "react-helmet";
+
 export default class OphthalmologyComponent extends Component {
 render() {
 return (
 <div>
+<Helmet>
+    <meta charSet="utf-8" />
+        <link rel="canonical" href="/ophthalmology" />
+        <title>A Complete Guide To Ophthalmology: All You Need To Know</title>
+        <meta name='keywords' content='eye hospital in gurgaon, eye specialist in gurgaon, eye clinic in gurgaon, ophthalmologist in gurgaon, cataract surgery in gurgaon, lasik eye surgery in gurgaon, lasik surgery in gurgaon'></meta>
+    <meta name="description" content="Search for the desired procedure such as cataract eye surgery, corneal repair, prosthetic eye surgery etc & avail upto 50% discount. ">
+    </meta>
+</Helmet>
 <LandingHeader />
 <br></br>
 <div className="row">

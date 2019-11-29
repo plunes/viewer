@@ -2,10 +2,22 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import {Helmet} from "react-helmet";
+
+
+
 export default class PhysiotherapyComponent extends Component {
 render() {
 return (
 <div>
+<Helmet>
+    <meta charSet="utf-8" />
+        <link rel="canonical" href="/Physiotherapy" />
+        <title>A Complete Guide To Physiotherapy: All You Need To Know</title>
+        <meta name= 'keywords' content= 'physiotherapist in gurgaon, best physiotherapist in gurgaon, physiotherapy at home in gurgaon, physiotherapy clinic in gurgaon, female physiotherapist in gurgaon, best physiotherapy clinic in gurgaon, physiotherapy center in gurgaon, charitable physiotherapy in gurgaon, neuro physiotherapist in gurgaon, home physiotherapy in gurgaon, sports physiotherapist in gurgaon, physiotherapist in gurgaon sector 14, physiotherapist in gurgaon sector 56, physiotherapy in gurgaon sohna road'></meta>
+    <meta name="description" content="Search for the desired therapy such as cranial electrotherapy, pain relief, spine pain treatment etc & avail upto 50% discount.">
+    </meta>
+</Helmet>
 <LandingHeader />
 <br></br>
 <div className="row">

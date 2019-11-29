@@ -1,0 +1,134 @@
+@media only screen and (max-width: 768px) and (min-width: 320px){
+
+    .career-img{
+        width: 300px !important;
+    }
+.career-pera{
+    margin-left: 15px;
+    margin-top: 1px !important;
+
+}
+.we-believe{
+    margin-left: 15px;
+    margin-top: 50px !important;
+}
+.we-believe-in{
+    margin-left: 15px;
+}
+.what-we-have{
+    margin-top: -25px !important;
+}
+.careers-grid2{
+    margin-left: -40px !important;
+}
+.ploker-header{
+    font-size: 27px !important;
+}
+
+}
+
+
+.career-img{
+    width: 600px;
+}
+.we-believe{
+    font-size: 25px;
+    margin-top:95px;
+}
+.we-believe-in{
+    font-size: 18px;
+    
+}
+.career-pera{
+    font-size: 16px;
+    color: #717171;
+    margin-top: 32px;
+}
+.img-width{
+    width:70px;
+    margin-left: 80px;
+}
+.img-font{
+
+    
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+}
+.what-we-have {
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: -10px;
+}
+.career-grid{
+    margin-top: 80px;
+}
+.careers-grid2{
+    margin-top: 80px;
+}
+.careers-content{
+    color: #717171;
+    text-align: center;
+    font-size: 14px;
+}
+.img-width2{
+    width:70px;
+    margin-left: 80px;
+   
+}
+.img-width3{
+    width:70px;
+    margin-left: 145px;
+   
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #C1C1C1;
+  }
+  .career-button{
+    background-color: #01d35a !important;
+    border-color: #01d35a !important;
+    border-radius: 25px !important;
+    width: 140px;
+    height: 37px;
+    color:white !important;
+    margin-left: 28px;
+    margin-top: 20px;
+
+  }
+  .box-text{
+      font-size: 18px;
+      text-align: center;
+      margin-top: 20px;
+  }
+  .box-content{
+      font-size: 16px ;
+      color: #717171;
+      text-align: center;
+  }
+  .careers-grid3{
+    margin-top: 80px;
+    margin-left: 128px !important;
+}
+.box-align{
+    margin-top: 30px;
+}
+.if-u{
+    color: #717171;
+    font-size: 21px;
+   
+}
+.table-button{
+    background-color: #01d35a !important;
+    border-color: #01d35a !important;
+    border-radius: 25px !important;
+    width: 140px;
+    height: 37px;
+    color:white !important;
+    margin-left: 28px;
+    margin-top: 3px;
+
+
+
+}

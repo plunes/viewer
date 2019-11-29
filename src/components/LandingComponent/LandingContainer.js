@@ -238,9 +238,8 @@ class LandingContainer extends React.Component {
                                 <div class="card" >
                                     <img className=" card-align" src="Dermat.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title2 ">Dermatology Procedure</h5>
+                                        <h5 class="card-title2 ">Dermatology Procedures</h5>
                                         <p class="card-text2">Dermatology Consultation <br></br> Laser Hair Reduction <br></br> Botox Treatment</p>
-
                                     </div>
                                 </div>
                             </a>
@@ -252,7 +251,6 @@ class LandingContainer extends React.Component {
                                     <div class="card-body ">
                                         <h5 class="card-title2 ">Gynecology Procedures</h5>
                                         <p class="card-text2">Gynecologist Consultation<br></br>Cesarean / C-section <br></br>Ovarian Cyst Removal</p>
-
                                     </div>
                                 </div></a>
                         </div>
@@ -261,7 +259,7 @@ class LandingContainer extends React.Component {
                                 <div class="card" >
                                     <img className="card-align" src="Radio.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title2 ">Radiology Tests</h5>
+                                        <h5 class="card-title2 ">Radiology Diagnosis </h5>
                                         <p class="card-text2">MRI, CT Scan, X-ray<br></br> Ultrasound <br></br>Doppler Test</p>
                                     </div>
                                 </div>
@@ -272,9 +270,8 @@ class LandingContainer extends React.Component {
                                 <div class="card" >
                                     <img className="card-align" src="/dent.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title2 ">Dentistry Procedure</h5>
+                                        <h5 class="card-title2 ">Dentistry Procedures</h5>
                                         <p class="card-text2">Tooth Removal, Tooth whitening<br></br>Root Canal Treatment<br></br>Dental Implant, Braces</p>
-
                                     </div>
                                 </div>
                             </a>
@@ -284,9 +281,8 @@ class LandingContainer extends React.Component {
                                 <div class="card" >
                                     <img className=" card-align" src="Pathology.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title2 ">Pathology</h5>
+                                        <h5 class="card-title2 ">Pathology Tests</h5>
                                         <p class="card-text2">Complete Blood Count Test<br></br>LIPID Profile<br></br>HIV Test</p>
-
                                     </div>
                                 </div>
                             </a>
@@ -296,7 +292,7 @@ class LandingContainer extends React.Component {
                                 <div class="card" >
                                     <img className=" card-align" src="Orthopedics.png" alt="..." />
                                     <div class="card-body ">
-                                        <h5 class="card-title2 ">Orthopedic</h5>
+                                        <h5 class="card-title2 ">Orthopedic Procedures</h5>
                                         <p class="card-text2">Joint Replacement<br></br>Fracture<br></br>Arthroplasty</p>
                                     </div>
                                 </div>
@@ -348,15 +344,15 @@ class LandingContainer extends React.Component {
 
                     <div className='row'>
                         <div className='col-sm-1 why-plunes'></div>
-                        <div className='col-sm-4'>
+                        <div className='col-sm-5'>
                             <ul style={{ listStyleType: 'none' }}>
                                 <li className="pencil-align"><img src='/payment refundable.png' height='25px' width='25px'></img><span className="pencil">100% Refundable Payment </span></li><br></br>
-                                <li className="pencil-align"><img src='/availability.png' height='25px' width='25px'></img><span className="pencil">Prefered Timing as Per Your Availability</span></li><br></br>
+                                <li className="pencil-align"><img src='/availability.png' height='25px' width='25px'></img><span className="pencil">Preferred Timing as Per Your Availability</span></li><br></br>
                                 <li className="pencil-align" ><img src='/free-telephonic.png' height='25px' width='25px'></img><span className="pencil">Free Telephonic Consultations</span></li><br></br>
                             </ul>
 
                         </div>
-                        <div className="col-sm-2">
+                        <div className="col-sm-1">
 
                         </div>
                         <div className='col-sm-4'>
@@ -390,7 +386,7 @@ class LandingContainer extends React.Component {
                         <div className="container-fluid middle-container">
                             <div className="row" >
                                 <div className=" col-sm-4">
-                                    <div class="item">
+                                    <div class="item bootstrap-card">
                                         <div class="card" >
                                             <img className="card-item-top" src="Physiotherapy.png" alt="..." />
                                             <div class="card-body">
@@ -402,12 +398,12 @@ class LandingContainer extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-sm-4">
-                                    <div class="item" >
+                                    <div class="item bootstrap-card" >
                                         <div class="card ">
                                             <img className="card-item-top" src="PSYCHIATRISTS.png" alt="..." />
                                             <div class="card-body ">
-                                                <h5 class="card-title ">Psychiatric</h5>
-                                                <p class="card-text">Psychologist Consultation<br></br>Autism Assessment <br></br> Counseling</p>
+                                                <h5 class="card-title ">Psychiatry</h5>
+                                                <p class="card-text">Psychiatric Consultation<br></br>Autism Assessment <br></br> Counseling</p>
                                                 <a href="/Psychiatry" class="btn btn-primary button-view">view more</a>
                                             </div>
                                         </div>
@@ -415,7 +411,7 @@ class LandingContainer extends React.Component {
                                 </div>
 
                                 <div className="col-sm-4">
-                                    <div class="item">
+                                    <div class="item bootstrap-card">
                                         <div class="card ">
                                             <img className="card-item-top" src="OPHTHAMOLOGIST.png" alt="..." />
                                             <div class="card-body ">
@@ -431,7 +427,7 @@ class LandingContainer extends React.Component {
 
                             <div className="row" >
                                 <div className=" col-sm-4">
-                                    <div class="item">
+                                    <div class="item bootstrap-card">
                                         <div class="card" >
                                             <img className="card-item-top" src="Neurologist.png" alt="..." />
                                             <div class="card-body ">
@@ -443,13 +439,26 @@ class LandingContainer extends React.Component {
                                     </div>
                                 </div>
                                 <div className="col-sm-4">
-                                    <div class="item">
+                                    <div class="item bootstrap-card">
                                         <div class="card">
                                             <img className="card-item-top" src="PEDIATRICIAN.png" alt="..." />
                                             <div class="card-body ">
-                                                <h5 class="card-title ">Pediatric</h5>
+                                                <h5 class="card-title ">Pediatry</h5>
                                                 <p class="card-text">Pediatric Consultation <br></br>Vaccination <br></br>Heart Murmur Treatment</p>
                                                 <a href="/Pediatrics" class="btn btn-primary button-view">view more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div className="col-sm-4">
+                                    <div class="item bootstrap-card">
+                                        <div class="card">
+                                            <img className="card-item-top" src="IVF.png" alt="..." />
+                                            <div class="card-body ">
+                                                <h5 class="card-title ">IVF</h5>
+                                                <p class="card-text">Laproscopic IVF <br></br>Ovarian Reserve Assessment<br></br>Semen Analysis</p>
+                                                <a href="/" class="btn btn-primary button-view">view more</a>
                                             </div>
                                         </div>
                                     </div>

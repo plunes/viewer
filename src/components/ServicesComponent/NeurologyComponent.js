@@ -2,10 +2,22 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import {Helmet} from "react-helmet";
+
+
 export default class NeurologyComponent extends Component {
 render() {
 return (
 <div>
+<Helmet>
+        <meta charSet="utf-8" />
+            <link rel="canonical" href="/neurology" />
+            <title>A Complete Guide To Neurology: All You Need To Know</title>
+            <meta name='keywords' content='best neurologist in gurgaon, neuro clinic gurgaon, neuro hospital gurgaon, brain treatment gurgaon, brain tumor operation gurgaon, brain tumor removal gurgaon, neuro specialist doctor gurgaon'>
+            </meta>
+        <meta name="description" content="Search for the desired procedures such as chemotherapy, brain tumor surgery, stereotactic radiosurgery etc & avail upto 50% discount.">
+        </meta>
+    </Helmet>
 <LandingHeader />
 <br></br>
 <div className="row">

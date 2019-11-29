@@ -2,10 +2,20 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import {Helmet} from "react-helmet";
+
 export default class OrthopedicsComponent extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <link rel="canonical" href="/Orthopedics" />
+                <title>A Complete Guide To Orthopedics: All You Need To Know</title>
+                <meta name='keywords' content='orthopaedic clinic gurgaon, orthopedic doctor in gurgaon, orthopaedic doctor gurgaon'></meta>
+                <meta name="description" content="Search for the desired orthopedic treatments such as bone fusion surgery, Bone Internal Fixation, Joint Replacement etc & avail upto 50% discount.">
+                </meta>
+                </Helmet>
                 <LandingHeader />
                 <br></br>
                 <div className="row">

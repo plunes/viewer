@@ -4,7 +4,7 @@
     font-style: "normal";
     font-weight: 500;
   } 
-  @media  (max-width: 576px) {
+  @media only screen and (min-width : 320px) and (max-width : 768px) {
     .btn.bg-blue-ui.white.read{margin-left:45px;}
 .h1, h1 {font-size: 1.2rem;
     font-weight: 300;}
@@ -46,9 +46,15 @@
   .pencil{
     font-size: 15px !important;
   }
+  .button-align{
+    margin-left: 102px !important;
+  }
   .download-logo2{
     width: 137px !important;
 
+  }
+  .bootstrap-card{
+    margin-left: 0px !important;
   }
   .download-logo{
     width: 137px !important;
@@ -134,9 +140,11 @@
 
   }
   .card-item-top{
-    margin-left: 61px !important;
+    width: 85% !important;
+    height: auto !important;
+    margin-left: 30px !important;
   }
-  
+ 
   
 
   .searchDropdown {
@@ -166,7 +174,8 @@
 }
 
 .button-view{
-  margin-left: 80px !important;
+  margin-left: 95px !important;
+  width: 40% !important;
 }
     .ftr1{
         height: 40px;
@@ -229,10 +238,10 @@
     flex-direction: column !important;
     word-wrap: break-word !important;
     background-clip: border-box !important;
-    border-radius: .25rem !important;
+    
     width: 100% !important;
-    margin-left: 0px !important;
-    overflow:  hidden !important;
+    
+ 
   }
   
     
@@ -339,6 +348,7 @@ width: 190px !important;
     .download-area{
       margin-bottom: -6px !important;
     }
+   
     
     
 }
@@ -399,6 +409,12 @@ width: 190px !important;
      font-weight: 100;
    
   }
+  .item{
+   
+    
+    margin-left: 10px;
+   
+  }
   
     
   .main-content .owl-theme .custom-nav {
@@ -435,13 +451,13 @@ width: 190px !important;
     left: -16px;
     outline: none !important;
     background-color: white;
-   width: 1px;
+     width: 40px;
   }
   .main-content .owl-theme .custom-nav .owl-next {
-    right: -11px;
+    right: -5px;
     outline: none !important;
     background-color: white;
-    width: 55px;
+    width: 40px;
   }
   .main-content{
     position: relative;
@@ -524,7 +540,7 @@ width: 190px !important;
   }
   
   
-  @media (max-width: 767px){
+  @media (max-width: 768px){
   .nav2 {
       float: right;
       margin-bottom: 15px;
@@ -573,6 +589,9 @@ width: 190px !important;
     z-index: 9999;
     box-shadow: 0px 0px 6px #00000029;
      
+  }
+  .bootstrap-card{
+    margin-left: 40px;
   }
   
   
@@ -668,12 +687,13 @@ width: 190px !important;
   }
   
   
-  figure img{width:300px;
-  }
+  /* figure img{width:300px;
+  } */
   .card-item-top{
-    width: 220px !important;
-   height: 202px !important;
+    width: 220px ;
+   height: 202px ;
    margin-left: 90px;
+   margin-right: 0px !important;
   }
     
   
@@ -1341,4 +1361,7 @@ height: 40px !important;
   }
   .new-footer-ele2{
     padding-left: 44px;
+  }
+  .landing-footer-row1{
+    margin-left: 45px !important;
   }

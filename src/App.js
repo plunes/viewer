@@ -28,6 +28,12 @@ import GynaeComponent from './components/ServicesComponent/GynaeComponent'
   import PhysiotherapyComponent from './components/ServicesComponent/PhysiotherapyComponent'
   import PediatricsComponent from './components/ServicesComponent/PediatricsComponent'
   import PathologyComponent from './components/ServicesComponent/PathologyComponent'
+  import CareersComponent from './components/ServicesComponent/CareersComponent'
+  import PlockrComponent from './components/ServicesComponent/PlockrComponent'
+  import AboutusComponent from './components/ServicesComponent/AboutusComponent'
+  import RegisterComponent from './components/ServicesComponent/RegisterComponent'
+
+
  
 export default class App extends React.Component {
   constructor(props) {
@@ -107,7 +113,10 @@ export default class App extends React.Component {
           <Route exact path='/Physiotherapy' component={() => (<PhysiotherapyComponent />)} />
           <Route exact path='/Pediatrics' component={() => (<PediatricsComponent />)} />
           <Route exact path='/Pathology' component={() => (<PathologyComponent />)} />
-  
+          <Route exact path='/Careers' component={() => (<CareersComponent />)} />
+          <Route exact path='/aboutus' component={() => (<AboutusComponent />)} />
+          <Route exact path='/plockr' component={() => (<PlockrComponent />)} />
+          <Route exact path='/register' component={() => (<RegisterComponent />)} />
 
         </Switch> 
       </div>

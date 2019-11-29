@@ -4,13 +4,12 @@
     
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"/>
     <meta name="theme-color" content="#000000" />
     <meta name="description"
       content="Experience our unique AI. Book any Medical Procedures, Diagnostics & Appointments with curated doctors nearest to you in Delhi NCR at best prices"
     />
-    <meta name="keywords" content="dental clinic in gurgaon, orthodontist in gurgaon, gynecologist in gurgaon, gynecology clinic gurgaon, psychologist in gurgaon, psychotherapist in gurgaon, hair transplant clinic in gurgaon, radiologist in gurgaon, ivf in gurgaon, ayurvedic clinic in gurgaon, child specialist in gurgaon, pediatrician in gurgaon, pathology in gurgaon, biopsy test in gurgaon, orthopedics doctor in gurgaon, ent specialist in gurgaon, ent surgeon in gurgaon, eye hospital in gurgaon, ophthalmologist in gurgaon, dermatologist in gurgaon, best neurologist in gurgaon, neuro hospital in gurgaon">
-    
+    <meta name="keywords" content="India's first utility network, utility network, plunes, book an appointment, download app, hospitals near you, doctors near you, book instantly, free consultation, dental clinic in gurgaon, orthodontist in gurgaon, gynecologist in gurgaon, gynecology clinic gurgaon, psychologist in gurgaon, psychotherapist in gurgaon, hair transplant clinic in gurgaon, radiologist in gurgaon, ivf in gurgaon, ayurvedic clinic in gurgaon, child specialist in gurgaon, pediatrician in gurgaon, pathology in gurgaon, biopsy test in gurgaon, orthopedics doctor in gurgaon, ent specialist in gurgaon, ent surgeon in gurgaon, eye hospital in gurgaon, ophthalmologist in gurgaon, dermatologist in gurgaon, best neurologist in gurgaon, neuro hospital in gurgaon">    
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -73,28 +72,33 @@
      
     $("#owl-demo").owlCarousel({
    
-  stagePadding: 50,
+  stagePadding: 35,
   loop: true,
-  margin: 65,
+  margin: 75,
+  
   nav: true,
   dots: false,
   navText: [
-  '<img src="./arrow_left.png" alt="..."  height="40px" width="40px"/>',
-  '<img src="./arrow_right.png" alt="..." height="40px" width="40px"/>'  ],
+  '<img src="./arrow_left.png" alt="..."  height="30px" width="30px"/>',
+  '<img src="./arrow_right.png" alt="..." height="30px" width="30px"/>'  ],
   navContainer: '.main-content .custom-nav',
         autoplay:true,    
   autoplayTimeout:2000,
+  // autoWidth:true,
   autoplayHoverPause:true,
    nav:true,
            responsive:{
       0:{
-          items: 1
+          items: 1,
+       
       },
-      600:{
-          items: 1
+        768:{
+          items: 1,
+        
       },
-      1000:{
-          items: 4
+         991:{
+          items: 4,
+          
       }
   }
        

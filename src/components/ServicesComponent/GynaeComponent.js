@@ -2,10 +2,20 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import {Helmet} from "react-helmet";
+
 export default class GynaeComponent extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <link rel="canonical" href="/Gynae" />
+                <title>A Complete Guide To Gynaecology: All You Need To Know</title>
+                <meta name='keywords' content='gynecologist in gurgaon, gynecology clinic gurgaon, gynecology hospital gurgaon'></meta>
+                <meta name="description" content="Search for the desired procedure such as vulvar biopsy, ovarian cyst removal, laparotomy, C-section/cesarean etc & avail upto 50% discount.">
+                </meta>
+                </Helmet>
                 <LandingHeader />
                 <br></br>
                 <div className="row">

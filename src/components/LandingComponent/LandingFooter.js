@@ -3,11 +3,12 @@ import { decorator } from '@babel/types'
 export default class LandingFooter extends Component {
   render() {
     return (
+
       <div class="footer">
         <div class="container-fluid footer-padding">
-          <div class="row">
-            <div className="col-sm-1 futtor">
-              </div>
+          <div class="row landing-footer-row1">
+            {/* <div className="col-sm-1 futtor">
+              </div> */}
             <div className="col-sm-2">
               <div>
               <a href="/" >
@@ -56,20 +57,20 @@ export default class LandingFooter extends Component {
             <div class="col-sm-2 ">
               <h5 class="footerfont">FOR HOSPITALS/CLINICS   </h5>
               <ul class="services footerele">
-                <li><a href="/signup"> REGISTER  </a></li>
-                <li><a href="/"> PLOCKR </a></li>
+                <li><a href="/register"> REGISTER  </a></li>
+                <li><a href="/plockr"> PLOCKR </a></li>
               </ul>
             </div>
             <div class="col-sm-2">
               <h5 class="footerfont">GET IN TOUCH WITH </ h5>
               <ul class="services footerele">
-                <li><a href="/">ABOUT US</a> </li>
+                <li><a href="/aboutus">ABOUT US</a> </li>
                 <li><a href="/">CONTACT US </ a></li>
-                <li><a href="/career">CAREERS</a></li>
+                <li><a href="/careers">CAREERS</a></li>
                 <li><a href="/">BLOG </ a></li>
               </ul>
             </div>
-            <div className="col-sm-1">
+            <div className="col-sm-2">
               <ul class="services footerele">
               <li class="footerfont footer-margin">REACH US AT </li><br></br>
                 <li class="footer-margin2"><a href="/" >info@plunes.com</a><br></br></li>

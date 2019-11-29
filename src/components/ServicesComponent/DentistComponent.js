@@ -2,11 +2,21 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
+import {Helmet} from "react-helmet";
+
 export default class DentistComponent extends Component {
     render() {
         return (
 
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <link rel="canonical" href="/dentist" />
+                <title>A Complete Guide To Dentistry: All You Need To Know</title>
+                <meta name='keywords' content='dental clinic in gurgaon, dentist in gurgaon, best dental clinic in gurgaon, dental implants in gurgaon, orthodontist in gurgaon, root canal treatment in gurgaon, best dental implants in gurgaon, best orthodontist in gurgaon, braces treatment in gurgaon, ceramic braces cost in gurgaon, cosmetic dentist in gurgaon, dental braces cost in gurgaon, dental surgeon in gurgaon, dentist near me gurgaon, kids dentist in gurgaon'></meta>
+                <meta name="description" content="Search for the desired dental treatments such as hot sensitivity, cold sensitivity, dental implants etc & avail upto 50% discount.">
+                </meta>
+                </Helmet>
                   <LandingHeader/>
                    
                <br></br>
