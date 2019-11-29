@@ -246,7 +246,7 @@ class LandingContainer extends React.Component {
                                 </a>
                             </div>
                             <div class="item">
-                                <a href="/Gynae">
+                                <a href="/gynae">
                                     <div class="card" >
                                         <img className=" card-align" src="Gyneco.png" alt="..." />
                                         <div class="card-body ">
@@ -256,7 +256,7 @@ class LandingContainer extends React.Component {
                                     </div></a>
                             </div>
                             <div class="item">
-                                <a href="/Radiology">
+                                <a href="/radiology">
                                     <div class="card" >
                                         <img className="card-align" src="Radio.png" alt="..." />
                                         <div class="card-body ">
@@ -278,7 +278,7 @@ class LandingContainer extends React.Component {
                                 </a>
                             </div>
                             <div class="item">
-                                <a href="/Pathology">
+                                <a href="/pathology">
                                     <div class="card" >
                                         <img className=" card-align" src="Pathology.png" alt="..." />
                                         <div class="card-body ">
@@ -289,7 +289,7 @@ class LandingContainer extends React.Component {
                                 </a>
                             </div>
                             <div className='item'>
-                                <a href="/Orthopedics">
+                                <a href="/orthopedics">
                                     <div class="card" >
                                         <img className=" card-align" src="Orthopedics.png" alt="..." />
                                         <div class="card-body ">
@@ -406,7 +406,7 @@ class LandingContainer extends React.Component {
                                             <div class="card-body ">
                                                 <h5 class="card-title ">Psychiatry</h5>
                                                 <p class="card-text">Psychiatric Consultation<br></br>Autism Assessment <br></br> Counseling</p>
-                                                <a href="/Psychiatry" class="btn btn-primary button-view">view more</a>
+                                                <a href="/psychiatry" class="btn btn-primary button-view">view more</a>
                                             </div>
                                         </div>
                                     </div>
@@ -447,7 +447,7 @@ class LandingContainer extends React.Component {
                                             <div class="card-body ">
                                                 <h5 class="card-title ">Pediatry</h5>
                                                 <p class="card-text">Pediatric Consultation <br></br>Vaccination <br></br>Heart Murmur Treatment</p>
-                                                <a href="/Pediatrics" class="btn btn-primary button-view">view more</a>
+                                                <a href="/pediatrics" class="btn btn-primary button-view">view more</a>
                                             </div>
                                         </div>
                                     </div>
