@@ -50,7 +50,7 @@ class BlogComponent extends Component {
                                 <div class="card-body">
                                     <h3 class="card-title">Key Benefits of: Teeth Whitening</h3>
                                     <p class="card-text">Are you conscious about your teeth before you can laugh freely? Though you are flossing twice a day but no improvement with your yellow teeth?</p>
-                                    <a href="#" class="btn btn-primary blog-button">View more</a>
+                                    <a href="/teethwhitening" class="btn btn-primary blog-button">View more</a>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ class BlogComponent extends Component {
                                 <div class="card-body">
                                     <h3 class="card-title">Your Complete Guide: Root Canal Treatment</h3>
                                     <p class="card-text">Despite of how scary it feels to undergo Root Canal Treatment, it is ensured that the procedure helps to remove the infected tissue or canal successfully and gives you much relief from the teeth pain</p>
-                                    <a  href="#" class="btn btn-primary blog-button">View more</a>
+                                    <a  href="/rootcanal" class="btn btn-primary blog-button">View more</a>
                                 </div>
                             </div>
                         </div>

@@ -37,6 +37,8 @@ import GynaeComponent from './components/ServicesComponent/GynaeComponent'
   import BlogComponent from './components/ServicesComponent/BlogComponent'
   import IvfComponent from './components/ServicesComponent/IvfComponent'
   import PrivacypolicyComponent from './components/ServicesComponent/PrivacypolicyComponent'
+  import TeethWhiteningComponent from './components/ServicesComponent/TeethWhiteningComponent'
+  import RootCanalComponent from './components/ServicesComponent/RootCanalComponent'
 
   import DentalComplicationsComponent from './components/ServicesComponent/DentalComplicationsComponent'
 
@@ -129,6 +131,8 @@ export default class App extends React.Component {
           <Route exact path='/ivf' component={() => (<IvfComponent />)} />
           <Route exact path='/privacy' component={() => (<PrivacypolicyComponent />)} />
           <Route exact path='/dentalcomplications' component={() => (<DentalComplicationsComponent />)} />
+          <Route exact path='/rootcanal' component={() => (<RootCanalComponent />)} />
+          <Route exact path='/teethwhitening' component={() => (<TeethWhiteningComponent />)} />
 
 
         </Switch> 
