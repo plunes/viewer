@@ -10,7 +10,7 @@ export default class PathologyComponent extends Component {
                         <div>
                                 <Helmet>
                 <meta charSet="utf-8" />
-                <link rel="canonical" href="/pathology" />
+                <link rel="canonical" href="https://www.plunes.com/pathology" />
                 <title>A Complete Guide To Pathology: All You Need To Know</title>
                 <meta name = 'keywords' content = 'pathology in gurgaon, csf fluid examination, dengue test in gurgaon, pathology clinic in gurgaon, pathology hospital in gurgaon, biopsy test gurgaon, blood sugar test gurgaon, kidney function test gurgaon'></meta>
                 <meta name="description" content="Search for the desired tests such as Blood tests, Dengue tests, Widal tests, Thyroid profile, Pregnancy tests & avail upto 50% discount.">

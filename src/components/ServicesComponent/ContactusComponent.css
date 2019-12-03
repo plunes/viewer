@@ -25,7 +25,7 @@
 }
 .contact-img{
     width: 25%;
-    margin-left: 109px;
+    margin-left: 37%;
 }
 .font{
     font-size: 28px;
@@ -52,3 +52,15 @@
    margin-right: 100px;
    border-radius: 22px;
 }
+.contactus-button{
+    background-color: #01d35a !important;
+    border-color: #01d35a !important;
+    border-radius: 25px !important;
+    width: 70%;
+    height: 37px;
+    color:white !important;
+    margin-left: 15%;
+    margin-top: 20px;
+
+  }
+ 

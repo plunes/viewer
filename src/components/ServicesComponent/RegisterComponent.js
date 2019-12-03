@@ -11,7 +11,7 @@ class RegisterComponent extends Component {
             <div className='container-fluid'>
                 <Helmet>
                 <meta charSet="utf-8" />
-                <link rel="canonical" href="/register" />
+                <link rel="canonical" href="https://www.plunes.com/register" />
                 <title>Register With Us</title>
                 <meta name='keywords' content='register, automated appointments, instant payments, pre-paid clients, free registration, digital profile, free registration'></meta>
                 <meta name="description" content="Register yourself on Plunes & get best pricing solutions to all your medical procedures, diagnostics & tests instantly.">
@@ -29,6 +29,7 @@ class RegisterComponent extends Component {
                     <div className="row register-element">
                         {/* <div className="col-sm-1"></div> */}
                         <div className="col-sm-3">
+                            
                             <img className="register-img" src="/Appintment.png" />
                             <p className="register-heading">Automated Appointments</p>
                             <p className="register-text">Our unique AI acts as your personal assistant automating all the Appointments for you.</p>

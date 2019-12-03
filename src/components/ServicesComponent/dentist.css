@@ -14,6 +14,7 @@
     padding: 10px 16px;
     list-style: none;
     background-color: white !important;
+    margin-top: 30px;
    
   }
   
@@ -91,14 +92,4 @@ color:  #06DF86 !important;
   }
 
   }
-  .contactus-button{
-    background-color: #01d35a !important;
-    border-color: #01d35a !important;
-    border-radius: 25px !important;
-    width: 70%;
-    height: 37px;
-    color:white !important;
-    margin-left: 28px;
-    margin-top: 20px;
-
-  }
+ 

@@ -36,6 +36,7 @@ import GynaeComponent from './components/ServicesComponent/GynaeComponent'
   import TermsOfUseComponent from './components/ServicesComponent/TermsOfUseComponent'
   import BlogComponent from './components/ServicesComponent/BlogComponent'
   import IvfComponent from './components/ServicesComponent/IvfComponent'
+  import PrivacypolicyComponent from './components/ServicesComponent/PrivacypolicyComponent'
 
 
  
@@ -125,6 +126,7 @@ export default class App extends React.Component {
           <Route exact path='/termsofuse' component={() => (<TermsOfUseComponent />)} />
           <Route exact path='/blog' component={() => (<BlogComponent />)} />
           <Route exact path='/ivf' component={() => (<IvfComponent />)} />
+          <Route exact path='/privacy' component={() => (<PrivacypolicyComponent />)} />
 
 
         </Switch> 

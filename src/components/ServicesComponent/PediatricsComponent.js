@@ -10,7 +10,7 @@ return (
 <div>
 <Helmet>
     <meta charSet="utf-8" />
-        <link rel="canonical" href="/pediatrics" />
+        <link rel="canonical" href="https://www.plunes.com/pediatrics" />
         <title>A Complete Guide To Pediatry: All You Need To Know</title>
         <meta name= 'keywords' content = 'child specialist in gurgaon, best pediatrician in gurgaon, pediatrician in gurgaon, pediatric clinic in gurgaon, pediatric hospital in gurgaon'></meta>
     <meta name="description" content="Search for the desired tests such as nursemaid’s elbow, heart murmur treatment, vaccination etc & avail upto 50% discount">

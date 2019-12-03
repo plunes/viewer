@@ -11,7 +11,7 @@ class CareersComponent extends Component {
             <div className='container-fluid'>
                 <Helmet>
                 <meta charSet="utf-8" />
-                <link rel="canonical" href="/careers" />
+                <link rel="canonical" href="https://www.plunes.com/careers" />
                 <title>Plunes Careers | Jobs at Plunes</title>
                 <meta name='keywords' content='dream job, we are looking for you, plunes, career'></meta>
                 <meta name="description" content="Dream job is not a myth anymore! At Plunes we believe in teaming up innovation with focus & creativity. Apply to jobs at Plunes & let your career flourish.">
@@ -54,37 +54,37 @@ class CareersComponent extends Component {
                     <hr width="10%" color="#01D35A" ></hr>
 
                     <div className="row career-grid">
-                        <div className="col-sm-1 col ">
+                        <div className="col-sm-1  ">
                         </div>
-                        <div className="col-sm-2 col ">
+                        <div className="col-sm-2 ">
                             
                             <img className="img-width" src="building_green.png" />
                             <p className="img-font">Full-of-life <br></br>Office</p>
                         </div>
-                        <div className="col-sm-3 col">
-                            <div className="row"></div>
+                        <div className="col-sm-2 grid-box-align">
                             
-                            <img className="img-width3" src="people.png" />
+                            
+                            <img className="img-width" src="people.png" />
 
                             <p className="img-font">Working with a <br></br>talented team
                                     </p>
                         </div>
-                        <div className="col-sm-3 col">
-                            <img className="img-width3" src="earth.png" />
+                        <div className="col-sm-2 grid-box-align">
+                            <img className="img-width" src="earth.png" />
                             <p className="img-font">The satisfaction<br></br> of building something<br></br> Phenomenal
                                     </p>
                         </div>
-                        <div className="col-sm-2 col">
+                        <div className="col-sm-2 grid-box-align">
                             <img className="img-width" src="largest.png" />
                             <p className="img-font">Largest pool of <br></br>ESOPs reserved for<br></br> employees
                                     </p>
                         </div>
-                        <div className="col-sm-1 col">
+                        <div className="col-sm-3">
                                     </div>
 
                     </div>
                     <div className="row justify-content-center ">
-                        <h1 className="ploker-header">Our 5-stage Recruitment Process</h1>
+                        <h1 className="career-header">Our 5-stage Recruitment Process</h1>
                     </div>
                     <hr width="10%" color="#01D35A" ></hr>
                     <div className="row careers-grid2">
@@ -123,7 +123,7 @@ class CareersComponent extends Component {
                             You made it through the toughest. Let’s meet for coffee! 
                             </p>
                         </div>
-                        <div className="col-sm-2  ">
+                        <div className="col-sm-2 col ">
                             <img className="img-width2" src="offer.png" />
                             <p className="img-font">Offer
                             </p>
@@ -132,7 +132,7 @@ class CareersComponent extends Component {
                             </p>
 
                         </div>
-                        <div className="col-sm-1">
+                        <div className="col-sm-1 col">
                             </div>
 
 
@@ -175,14 +175,15 @@ class CareersComponent extends Component {
                                     </div>
                                 </div>
                                 <div className="row box-align">
-                                <div className="col-sm-3">
+                                    </div>
+                                <div className="col-sm-3 grid-box-3">
                                 <div className="box">
                                     <p  class="box-text">Operation Executive</p>
                                     <p className="box-content">Gurugram | 3 Years</p>
                                     <button className="btn career-button">View job details</button>
 
                                     </div>
-                                </div>
+                                
 
                                     </div>
                             
@@ -200,18 +201,18 @@ class CareersComponent extends Component {
 
                             </div>
                             <div className="row justify-content-center ">
-                        <h1 className="ploker-header">Submission Form</h1>
+                        <h1 className="career-header">Submission Form</h1>
                     </div>
                     <hr width="10%" color="#01D35A" ></hr>
 
 
                         <div className="container">
                         <form>
-                   <table class="table table-bordered">
+                   <table width="100" class="table table-bordered">
                  <thead>
                    <tr>
-                      <th width="250px">NAME</th>
-                          <th>Enter Name</th>
+                      <th >NAME</th>
+                          <th >Enter Name</th>
         
                               </tr>
                              </thead>
@@ -244,7 +245,7 @@ class CareersComponent extends Component {
                          </div>
                      </div>
                      <div className="row justify-content-center ">
-                        <h1 className="ploker-header">Employment Policy</h1>
+                        <h1 className="career-header">Employment Policy</h1>
                     </div>
                     <hr width="10%" color="#01D35A" ></hr>
                     <div className="row">
@@ -255,7 +256,7 @@ class CareersComponent extends Component {
                             
                         </div>
                     <div className="row justify-content-center">
-                        <h1 className="ploker-header">Disclaimer</h1>
+                        <h1 className="career-header">Disclaimer</h1>
                         </div>
                     <hr width="10%" color="#01D35A" ></hr>
                     <div className="row">

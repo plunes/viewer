@@ -10,7 +10,7 @@ export default class GynaeComponent extends Component {
             <div>
                 <Helmet>
                 <meta charSet="utf-8" />
-                <link rel="canonical" href="/gynae" />
+                <link rel="canonical" href="https://www.plunes.com/gynae" />
                 <title>A Complete Guide To Gynaecology: All You Need To Know</title>
                 <meta name='keywords' content='gynecologist in gurgaon, gynecology clinic gurgaon, gynecology hospital gurgaon'></meta>
                 <meta name="description" content="Search for the desired procedure such as vulvar biopsy, ovarian cyst removal, laparotomy, C-section/cesarean etc & avail upto 50% discount.">

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import RegistrationContainer from '../RegistrationComponent/RegistrationComponent'
 import axios from 'axios';
 import { Redirect } from 'react-router'
+import {Helmet} from "react-helmet";
 
 
 class LandingContainer extends React.Component {
@@ -226,9 +227,19 @@ class LandingContainer extends React.Component {
 
         return <Router>
             <div className="container-fluid" >
+            <Helmet>
+                <meta charSet="utf-8" />
+                <link rel="canonical" href="https://www.plunes.com" />
+                 <title>Welcome to India's First Utility Network</title>
+                    <meta name="description"
+      content="Experience our unique AI. Book any Medical Procedures, Diagnostics & Appointments with curated doctors nearest to you in Delhi NCR at best prices"
+    />
+    <meta name="keywords" content="India's first utility network, utility network, plunes, book an appointment, download app, hospitals near you, doctors near you, book instantly, free consultation, dental clinic in gurgaon, orthodontist in gurgaon, gynecologist in gurgaon, gynecology clinic gurgaon, psychologist in gurgaon, psychotherapist in gurgaon, hair transplant clinic in gurgaon, radiologist in gurgaon, ivf in gurgaon, ayurvedic clinic in gurgaon, child specialist in gurgaon, pediatrician in gurgaon, pathology in gurgaon, biopsy test in gurgaon, orthopedics doctor in gurgaon, ent specialist in gurgaon, ent surgeon in gurgaon, eye hospital in gurgaon, ophthalmologist in gurgaon, dermatologist in gurgaon, best neurologist in gurgaon, neuro hospital in gurgaon">
+                </meta>
+                </Helmet>
 
-                <h3 className="h15">Welcome to India's First Utility Network</h3>
-                <h3 className="header2">Experience our Unique AI & Avail upto 50% off on all your Medical Procedures, Diagnostics & Appointments</h3>
+                <h3 className="h15">Welcome To India's First Utility Network</h3>
+                <h3 className="header2">Experience our unique AI & avail upto 50% off on all your Medical Procedures, Diagnostics & Appointments</h3>
                 <div className="container-fluid">
                     <div className="main-content">
                         <div class="owl-carousel owl-theme " id="owl-demo">
@@ -460,7 +471,7 @@ class LandingContainer extends React.Component {
                                             <div class="card-body ">
                                                 <h5 class="card-title ">IVF</h5>
                                                 <p class="card-text">Laproscopic IVF <br></br>Ovarian Reserve Assessment<br></br>Semen Analysis</p>
-                                                <a href="/" class="btn btn-primary button-view">view more</a>
+                                                <a href="/ivf" class="btn btn-primary button-view">view more</a>
                                             </div>
                                         </div>
                                     </div>

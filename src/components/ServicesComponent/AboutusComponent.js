@@ -10,7 +10,7 @@ class AboutusComponent extends Component {
             <div className='container-fluid'>
                 <Helmet>
                 <meta charSet="utf-8" />
-                <link rel="canonical" href="/about" />
+                <link rel="canonical" href="https://www.plunes.com/about" />
                 <title>Why Plunes?</title>
                 <meta name='keywords' content='utility network, plunes, AI-powered, real-time solutions, one stop solution, consultation, procedures'></meta>
                 <meta name="description" content="We help you search instant solutions for all your desired medical procedures, diagnostics & tests in Delhi NCR & Gurgaon.">

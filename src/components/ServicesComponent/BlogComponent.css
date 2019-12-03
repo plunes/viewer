@@ -3,14 +3,24 @@
     margin-left: -3px !important;
     margin-right: -3px !important ;
 }
+.blog-button{
+    margin-left: 28% !important;
+}
 
+.blog-front-img{
+    margin-top: 13% !important;
+}
+.blog-header{
+    margin-top: 40px !important;
+}
 }
 .card-blog{
     margin-left: 40px;
     margin-right: 40px;
 }
 .blog-button{
-    margin-left: 125px;
+    margin-left: 32%;
+  
     background-color: #01d35a !important;
     border-color: #01d35a !important;
     border-radius: 25px !important;
@@ -20,4 +30,16 @@
     
     margin-top: 20px;
 
+} 
+.blog-img{
+    width: 80% !important;
+  margin-left: 10% !important;
+}
+.blog-front-img{
+    width: 100%;
+    margin-top: 3%;
+}
+.blog-header{
+    font-size: 30px;
+    margin-top: 120px;
 }

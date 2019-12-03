@@ -17,6 +17,10 @@
     margin-left: 245px !important; 
   
   }
+  .dropdown-toggle{
+    width: 108% !important;
+    margin-left: 8% !important;
+  }
   .footer-col-align{
     margin-top: -16px !important;
 
@@ -529,6 +533,7 @@ width: 190px !important;
     width: 200px !important;
       height: 35px;
       background-color: #01d35a !important;
+      
   }
   .nav333
   {
@@ -584,9 +589,9 @@ width: 190px !important;
     width: 100%;
     overflow: hidden;
     background-color:white;
-    z-index: 9999;
+    z-index: 55;
     box-shadow: 0px 0px 6px #00000029;
-     
+    
   }
   .bootstrap-card{
     margin-left: 40px;
@@ -605,8 +610,13 @@ width: 190px !important;
   .footer-col-align{
     margin-top: 30px !important;
   }
-  
-  
+  .dropdown-menu.show{
+    border-radius: 15px;
+    position: fixed !important;
+    margin-top: -48% ;
+   margin-left: 72%;
+  }
+   
   .h11{
     font-size: 30px;
     font-weight: 500;
@@ -665,6 +675,16 @@ width: 190px !important;
   
   
   }
+  .dropdown-toggle{
+    width: 135%;
+    height: 33px !important;
+    outline: none !important;
+    background-color: #01d35a !important;
+    border-radius: 44px !important;
+    color: white !important;
+    outline: none !important;
+    margin-left: -30%;
+  }
   .android{
 
     height: 20px;
@@ -672,13 +692,13 @@ width: 190px !important;
     margin-top: -3px;
      margin-left: 3px;
   }
-  .ios{
+  /* .ios{
     height: 20px;
      width :20px ;
-     float:"left";
+   
       margin-left: -3px;
       margin-top: -3px;
-  }
+  } */
   .bg-blue-ui {
     background-color:  #01d35a !important;
       border-radius: 40px;
@@ -1363,3 +1383,4 @@ height: 40px !important;
   .footer-row-align{
     padding-left: 1px !important;
   }
+  

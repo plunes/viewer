@@ -8,6 +8,23 @@
     margin-top: 1px !important;
 
 }
+.career-button{
+    margin-left:30% !important;
+}
+.box{
+    width: 90% !important;
+}
+.box2{
+    width: 130% !important;
+}
+.img-font{
+    margin-left: -8% !important;
+}
+.grid-box-3{
+    margin-top: 0px !important;
+}
+
+
 .we-believe{
     margin-left: 15px;
     margin-top: 50px !important;
@@ -23,6 +40,17 @@
 }
 .ploker-header{
     font-size: 27px !important;
+}
+.if-u{
+    margin-left: 15px !important;
+}
+.table{
+    margin-left: 0px !important;
+    
+   
+}
+.career-header{
+    font-size: 25px !important;
 }
 
 }
@@ -46,7 +74,7 @@
 }
 .img-width{
     width:70px;
-    margin-left: 80px;
+    margin-left: 35%;
 }
 .img-font{
 
@@ -76,12 +104,13 @@
     margin-left: 80px;
    
 }
-.img-width3{
-    width:70px;
-    margin-left: 145px;
-   
-}
+
 .box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #C1C1C1;
+  }
+  .box2{
     width: 200px;
     height: 200px;
     border: 1px solid #C1C1C1;
@@ -89,11 +118,22 @@
   .career-button{
     background-color: #01d35a !important;
     border-color: #01d35a !important;
-    border-radius: 25px !important;
+    border-radius: 40px !important;
     width: 140px;
     height: 37px;
     color:white !important;
-    margin-left: 28px;
+    margin-left: 14% ;
+    margin-top: 20px;
+
+  }
+  .careers-button{
+    background-color: #01d35a !important;
+    border-color: #01d35a !important;
+    border-radius: 40px !important;
+    width: 140px;
+    height: 37px;
+    color:white !important;
+    margin-left: 42% !important;
     margin-top: 20px;
 
   }
@@ -101,15 +141,17 @@
       font-size: 18px;
       text-align: center;
       margin-top: 20px;
+      margin-left: 3%;
   }
   .box-content{
       font-size: 16px ;
       color: #717171;
       text-align: center;
+      margin-left: 3%;
   }
   .careers-grid3{
-    margin-top: 80px;
-    margin-left: 128px !important;
+    margin-top:5%;
+    margin-left: 8% !important;
 }
 .box-align{
     margin-top: 30px;
@@ -131,4 +173,31 @@
 
 
 
+}
+.table-career{
+    width: 25%;
+    background-color: #f7f7f7;
+    
+}
+.table{
+    width: 82% !important;
+    margin-left: 9%;
+}
+.career-header{
+    font-size: 27px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    height: 600px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.grid-box-3{
+    margin-top: 25px;
+}
+.grid-box-align{
+    margin-left: 5%;
 }

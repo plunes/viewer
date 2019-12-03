@@ -11,7 +11,7 @@ return (
 <div>
 <Helmet>
         <meta charSet="utf-8" />
-            <link rel="canonical" href="/neurology" />
+            <link rel="canonical" href="https://www.plunes.com/neurology" />
             <title>A Complete Guide To Neurology: All You Need To Know</title>
             <meta name='keywords' content='best neurologist in gurgaon, neuro clinic gurgaon, neuro hospital gurgaon, brain treatment gurgaon, brain tumor operation gurgaon, brain tumor removal gurgaon, neuro specialist doctor gurgaon'>
             </meta>

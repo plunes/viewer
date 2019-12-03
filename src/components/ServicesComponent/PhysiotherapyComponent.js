@@ -12,7 +12,7 @@ return (
 <div>
 <Helmet>
     <meta charSet="utf-8" />
-        <link rel="canonical" href="/physiotherapy" />
+        <link rel="canonical" href="https://www.plunes.com/physiotherapy" />
         <title>A Complete Guide To Physiotherapy: All You Need To Know</title>
         <meta name= 'keywords' content= 'physiotherapist in gurgaon, best physiotherapist in gurgaon, physiotherapy at home in gurgaon, physiotherapy clinic in gurgaon, female physiotherapist in gurgaon, best physiotherapy clinic in gurgaon, physiotherapy center in gurgaon, charitable physiotherapy in gurgaon, neuro physiotherapist in gurgaon, home physiotherapy in gurgaon, sports physiotherapist in gurgaon, physiotherapist in gurgaon sector 14, physiotherapist in gurgaon sector 56, physiotherapy in gurgaon sohna road'></meta>
     <meta name="description" content="Search for the desired therapy such as cranial electrotherapy, pain relief, spine pain treatment etc & avail upto 50% discount.">
@@ -40,7 +40,7 @@ return (
 <div className="col-sm-11 header2-text">
 <div className="row">
 <div className="col-sm-2">
-<img className="dentist-image" src="/physiotherapy.png" />
+<img className="dentist-image" src="/Physiotherapy.png" />
 </div>
 <div className="col-sm-9 view-more-align">
 <h3 className="header-font">Physiotherapy</h3>

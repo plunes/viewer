@@ -11,7 +11,7 @@ export default class DentistComponent extends Component {
             <div>
                 <Helmet>
                 <meta charSet="utf-8" />
-                <link rel="canonical" href="/dentist" />
+                <link rel="canonical" href="https://www.plunes.com/dentist" />
                 <title>A Complete Guide To Dentistry: All You Need To Know</title>
                 <meta name='keywords' content='dental clinic in gurgaon, dentist in gurgaon, best dental clinic in gurgaon, dental implants in gurgaon, orthodontist in gurgaon, root canal treatment in gurgaon, best dental implants in gurgaon, best orthodontist in gurgaon, braces treatment in gurgaon, ceramic braces cost in gurgaon, cosmetic dentist in gurgaon, dental braces cost in gurgaon, dental surgeon in gurgaon, dentist near me gurgaon, kids dentist in gurgaon'></meta>
                 <meta name="description" content="Search for the desired dental treatments such as hot sensitivity, cold sensitivity, dental implants etc & avail upto 50% discount.">

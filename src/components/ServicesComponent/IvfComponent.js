@@ -10,11 +10,11 @@ export default class IvfComponent extends Component {
             <div>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <link rel="canonical" href="/ivf" />
+                    <link rel="canonical" href="https://www.plunes.com/ivf" />
                     <title>A Complete Guide To IVF: All You Need To Know</title>
-                    {/* <meta name = 'keywords' content= 'radiologist in gurgaon, radiology center gurgaon, radiology clinic gurgaon, radiology hospital gurgaon, doppler both limbs venous gurgaon, doppler peripheral arterial gurgaon, doppler peripheral venous gurgaon'></meta>
-                    <meta name="description" content="Search for the desired tests such as MRI, CT-Scan, PET CT-SCAN, X-Ray, Doppler or any other lab tests & avail upto 50% discount.">
-                    </meta> */}
+                    <meta name = 'keywords' content= 'test tube baby, ivf, embryo transfer, ivf, in vitro fertilization, female infertility, infertility, pregnancy, artificial pregnancy, egg transfer, infertility, male infertility'></meta>
+                    <meta name="description" content="Search for the desired IVF procedure such as Infertility & Artificial Insemination, Hysteroscopy IVF, Egg Retrieval, etc & avail upto 50% discount. ">
+                    </meta>
                 </Helmet>
                 <LandingHeader />
                 <br></br>

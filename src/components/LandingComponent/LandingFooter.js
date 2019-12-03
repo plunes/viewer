@@ -79,7 +79,7 @@ export default class LandingFooter extends Component {
                 <h5 className="footerfont policies-text">  OUR POLICIES </h5>
                 <ul class="services footerele">
                 <li><a href="/termsofuse"> TERMS OF USE   </a></li>
-                <li><a href="/termsofuse">PRIVACY POLICY </a></li>
+                <li><a href="/privacy">PRIVACY POLICY </a></li>
               </ul>
               </div>
           </div>
@@ -132,7 +132,7 @@ export default class LandingFooter extends Component {
                 <li><a href="/ophthalmology"> LASIK EYES TREATMENT IN GURGAON</a>  </li>
                 <li><a href="/ophthalmology"> GLAUCOMA SURGERY IN GURGAON</a> </li>
                 <li><a href="/ophthalmology">CATARACT EYE SURGERY IN GURGAON </a>   </li>
-                <li><a href="/gynae">IVF IN GURGAON </a>   </li>
+                <li><a href="/ivf">IVF IN GURGAON </a>   </li>
               </ul>
               </div>
               <div className="col-sm-2">

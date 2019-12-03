@@ -1,11 +1,11 @@
 
 import React, { Component } from 'react';
-import '../ServicesComponent/TermsOfUseComponent.css'
+import '../ServicesComponent/PrivacypolicyComponent.css'
 import LandingHeader from '../LandingComponent/LandingHeader'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import {Helmet} from "react-helmet";
 
-class TermsOfUseComponent extends Component {
+class PrivacypolicyComponent extends Component {
     render() {
         return (
             <div className='container-fluid'>
@@ -24,7 +24,7 @@ class TermsOfUseComponent extends Component {
                 <div className='container-fluid'>
                     <div className='row justify-content-center'>
                         
-                        <h1 className="ploker-header">TERMS OF USE</h1>
+                        <h1 className="ploker-header">PRIVACY POLICY</h1>
                     </div>
                     <div className="row">
                         <div className="col-sm-1">
@@ -62,4 +62,4 @@ class TermsOfUseComponent extends Component {
         );
     }
 }
-export default TermsOfUseComponent;
+export default PrivacypolicyComponent;

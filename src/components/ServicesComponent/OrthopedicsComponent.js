@@ -10,7 +10,7 @@ export default class OrthopedicsComponent extends Component {
             <div>
                 <Helmet>
                 <meta charSet="utf-8" />
-                <link rel="canonical" href="/orthopedics" />
+                <link rel="canonical" href="https://www.plunes.com/orthopedics" />
                 <title>A Complete Guide To Orthopedics: All You Need To Know</title>
                 <meta name='keywords' content='orthopaedic clinic gurgaon, orthopedic doctor in gurgaon, orthopaedic doctor gurgaon'></meta>
                 <meta name="description" content="Search for the desired orthopedic treatments such as bone fusion surgery, Bone Internal Fixation, Joint Replacement etc & avail upto 50% discount.">

@@ -10,7 +10,7 @@ class ContactusComponent extends Component {
             <div className='container-fluid'>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <link rel="canonical" href="/contact" />
+                    <link rel="canonical" href="https://www.plunes.com/contact" />
                     <title>Contact Us - Plunes</title>
                     <meta name='keywords' content='contact us, email id, you can ask us, phone number, comment, get in touch'></meta>
                     <meta name="description" content="Got any suggestions or have queries regarding our product? Need support or any other service? Just let us know and we will get right back to you!">

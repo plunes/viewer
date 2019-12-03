@@ -10,7 +10,7 @@ export default class DermatologyComponent extends Component {
             <div>
                 <Helmet>
                 <meta charSet="utf-8" />
-                <link rel="canonical" href="/dermatology" />
+                <link rel="canonical" href="https://www.plunes.com/dermatology" />
                 <title>A Complete Guide To Dermatology: All You Need To Know</title>
                 <meta name='keywords' content = 'dermatologist in gurgaon, dermatology clinic in gurgaon, dermatology hospital in gurgaon, allergy rashes cure gurgaon, best skin treatment for wrinkles gurgaon, best treatment for fine lines and wrinkles gurgaon'></meta>
                 <meta name="description" content="Search for the desired dermatological procedure such as laser hair reduction, skin rash treatment, eyebrow thread lift etc & avail upto 50% discount. ">
