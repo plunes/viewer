@@ -8,9 +8,13 @@
     margin-top: 1px !important;
 
 }
+.table{
+    width: 99% !important;
+}
 .career-button{
     margin-left:30% !important;
 }
+
 .box{
     width: 90% !important;
 }
@@ -179,10 +183,7 @@
     background-color: #f7f7f7;
     
 }
-.table{
-    width: 82% !important;
-    margin-left: 9%;
-}
+
 .career-header{
     font-size: 27px;
     margin-top: 40px;
