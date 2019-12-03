@@ -40,7 +40,7 @@ class BlogComponent extends Component {
                                 <div class="card-body">
                                     <h3 class="card-title">Dental Complications with Healthy Suggestions</h3>
                                     <p class="card-text">Dental problems are very common these days also can't be ignored. Almost everyone at some stage of life would face dental problems in different forms</p>
-                                    <a href="#" class="btn btn-primary blog-button">View more</a>
+                                    <a href="/dentalcomplications" class="btn btn-primary blog-button">View more</a>
                                 </div>
                             </div>
                         </div>

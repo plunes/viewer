@@ -38,6 +38,7 @@ import GynaeComponent from './components/ServicesComponent/GynaeComponent'
   import IvfComponent from './components/ServicesComponent/IvfComponent'
   import PrivacypolicyComponent from './components/ServicesComponent/PrivacypolicyComponent'
 
+  import DentalComplicationsComponent from './components/ServicesComponent/DentalComplicationsComponent'
 
  
 export default class App extends React.Component {
@@ -127,6 +128,7 @@ export default class App extends React.Component {
           <Route exact path='/blog' component={() => (<BlogComponent />)} />
           <Route exact path='/ivf' component={() => (<IvfComponent />)} />
           <Route exact path='/privacy' component={() => (<PrivacypolicyComponent />)} />
+          <Route exact path='/dentalcomplications' component={() => (<DentalComplicationsComponent />)} />
 
 
         </Switch> 

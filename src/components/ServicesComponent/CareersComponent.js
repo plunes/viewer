@@ -212,7 +212,7 @@ class CareersComponent extends Component {
                  <thead>
                    <tr>
                       <th >NAME</th>
-                          <th >Enter Name</th>
+                          <th ><input className="form-control-contactus" name="fullName" placeholder="Enter Name" onChange={this.handleChange} required/></th>
         
                               </tr>
                              </thead>
