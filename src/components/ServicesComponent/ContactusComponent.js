@@ -3,8 +3,48 @@ import '../ServicesComponent/ContactusComponent.css'
 import LandingHeader from '../LandingComponent/LandingHeader'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import { Helmet } from "react-helmet";
+import axios from 'axios'
 
 class ContactusComponent extends Component {
+    constructor(props){
+        super(props)
+        this.state={
+            name : '',
+            email : '',
+            message : ''
+        }
+
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+    }
+
+    handleChange(e){
+        this.setState({
+            [e.target.name] : e.target.value
+        })
+    }
+
+    handleSubmit(e){
+        e.preventDefault();
+        let data = {
+            name : this.state.name,
+            email : this.state.email,
+            message : this.state.message
+        }
+        axios.post('https://plunes.co/v4/notification/contact', data)
+        .then(res => { // then print response status
+            console.log(res.statusText)
+            if(res.status === 201){
+                this.setState({
+                    name : '',
+                    email : '',
+                    message : ''
+                })
+            }
+            })
+    }
+
+
     render() {
         return (
             <div className='container-fluid'>
@@ -33,15 +73,12 @@ class ContactusComponent extends Component {
                                 <div className="card-body font">
                                     <h5 class="card-title">Email</h5>
                                     <p class="card-text">info@plunes.com</p>
-
                                 </div>
                             </div>
-                           
-
                         </div>
                     </div>
                     <div className="section">
-                        <form>
+                        <form onSubmit= {this.handleSubmit}>
                             <div className='row justify-content-center'>
                                 <h1 className="contact-header">Get In Touch</h1>
                             </div>
@@ -51,15 +88,15 @@ class ContactusComponent extends Component {
                                 <div className = 'col-sm-6'>
                                     <div className = 'row'>
                                         <div className = 'col'>
-                                        <input className="contact-us-form" name="firstname" placeholder="Name" />
+                                        <input className="contact-us-form" name="name" placeholder="Name" value = {this.state.name} onChange = {this.handleChange} />
                                         </div>
                                         <div className = 'col'>
-                                        <input className="contact-us-form" name="firstname" placeholder="Email ID" />
+                                        <input className="contact-us-form" name="email" placeholder="Email ID" value = {this.state.email} onChange = {this.handleChange} />
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className = 'col'>
-                                        <textarea placeholder="Message" className="contact-textarea"></textarea>
+                                        <textarea placeholder="Message" name='message' className="contact-textarea" value = {this.state.message} onChange = {this.handleChange}></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -71,7 +108,7 @@ class ContactusComponent extends Component {
                                 <div className="col-sm-4">
                                 </div>
                                 <div className="col-sm-4">
-                                    <button className="contactus-button">Submit</button>
+                                    <button type='submit' className="contactus-button">Submit</button>
                                 </div>
                                 <div className="col-sm-4">
                                 </div>

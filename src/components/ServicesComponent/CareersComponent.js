@@ -4,8 +4,76 @@ import '../ServicesComponent/CareersComponent.css'
 import LandingHeader from '../LandingComponent/LandingHeader'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import {Helmet} from "react-helmet";
+import axios from 'axios'
 
 class CareersComponent extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            fullname : '',
+            mobileNo : '',
+            file : null,
+            email: ''
+        }
+
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+    }
+
+    handleChange(e){
+        if(e.target.name === 'file'){
+            this.setState({
+                file : e.target.files[0]
+            })
+        }else{
+            this.setState({
+                [e.target.name] : e.target.value
+            })
+        }
+        
+    }
+    
+    handleSubmit(e){
+        e.preventDefault();
+        const data = new FormData();
+        data.append('file', this.state.file)
+        // data.append('name', this.state.file)
+        // data.append('email', this.state.email)
+        // data.append('mobileNo', this.state.mobileNo)
+        axios.post("https://plunes.co/v4/upload", data, { 
+            // multipart/form-data
+            headers: {
+                'Content-Type': 'multipart/form-data'
+              }
+      // receive two    parameter endpoint url ,form data
+        })
+        .then(res => { // then print response status
+        console.log(res.status, 'filename')
+            if(res.status === 200){
+                // console.log(this.state.fullname)
+                let userData = {
+                    name : this.state.fullname,
+                    email : this.state.email,
+                    mobileNumber :  this.state.mobileNo,
+                    filename : res.data.filename
+                }
+                axios.post('https://plunes.co/v4/notification/resume', userData)
+                .then(res => {
+                    alert('Your application has been submitted')
+                    document.getElementById('fileinput').value= null;
+                    // console.log(res.status);
+                    this.setState({
+                        fullname : '',
+                        mobileNo : '',
+                        // file : '',
+                        email: ''
+                    })
+                })
+            }
+        })
+    }
+
+
     render() {
         return (
             <div className='container-fluid'>
@@ -62,22 +130,19 @@ class CareersComponent extends Component {
                             <p className="img-font">Full-of-life <br></br>Office</p>
                         </div>
                         <div className="col-sm-2 grid-box-align">
-                            
-                            
                             <img className="img-width" src="people.png" />
-
                             <p className="img-font">Working with a <br></br>talented team
-                                    </p>
+                            </p>
                         </div>
                         <div className="col-sm-2 grid-box-align">
                             <img className="img-width" src="earth.png" />
                             <p className="img-font">The satisfaction<br></br> of building something<br></br> Phenomenal
-                                    </p>
+                            </p>
                         </div>
                         <div className="col-sm-2 grid-box-align">
                             <img className="img-width" src="largest.png" />
                             <p className="img-font">Largest pool of <br></br>ESOPs reserved for<br></br> employees
-                                    </p>
+                            </p>
                         </div>
                         <div className="col-sm-3">
                                     </div>
@@ -181,12 +246,8 @@ class CareersComponent extends Component {
                                     <p  class="box-text">Operation Executive</p>
                                     <p className="box-content">Gurugram | 3 Years</p>
                                     <button className="btn career-button">View job details</button>
-
                                     </div>
-                                
-
                                     </div>
-                            
                             </div>
                         </div>
                         <div className="row">
@@ -196,45 +257,37 @@ class CareersComponent extends Component {
                             <p className="if-u">If you don’t find any relevant position here, don’t worry. We are always looking for talent. Send us our resume and we will be happy to review it.</p>
                             </div>
                                 <div className="col-sm-1">
-                                    </div>
-
-
+                                </div>
                             </div>
                             <div className="row justify-content-center ">
                         <h1 className="career-header">Submission Form</h1>
                     </div>
                     <hr width="10%" color="#01D35A" ></hr>
-
-
                         <div className="container">
-                        <form>
+                        <form onSubmit = {this.handleSubmit}>
                    <table width="100" class="table table-bordered">
                  <thead>
                    <tr>
                       <th >NAME</th>
-                          <th ><input className="form-control-contactus" name="fullName" placeholder="Enter Name" onChange={this.handleChange} required/></th>
-        
+                          <th ><input className="form-control-contactus" value={this.state.fullname} name="fullname" placeholder="Enter Name" onChange={this.handleChange} required/></th>
                               </tr>
                              </thead>
                          <tbody>
                                    <tr>
                           <td>Phone Number</td>
-                        <td><input className="form-control-contactus" name="fullName" placeholder="Mobile Number" onChange={this.handleChange} required/>
+                        <td><input className="form-control-contactus" value={this.state.mobileNo} name="mobileNo" placeholder="Mobile Number" onChange={this.handleChange} required/>
                        </td>
-        
                    </tr>
                      <tr>
                  <td>Email Id</td>
-                  <td> <input className="form-control-contactus" name="fullName" placeholder="Enter Email Id" onChange={this.handleChange} required/>
+                  <td> <input className="form-control-contactus" value={this.state.email} name="email" placeholder="Enter Email Id" onChange={this.handleChange} required/>
                 </td>
-       
                      </tr>
             <tr>
                 <td>Attach Resume</td>
-          <td>
-              <input type="file"/>
-            </td>
-            
+                <td>
+              <input type="file" name='file' onChange={this.handleChange} id = 'fileinput' required/>
+                </td>
                     </tr>
                 </tbody>
                      </table>
