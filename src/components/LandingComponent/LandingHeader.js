@@ -26,18 +26,18 @@ class LandingHeader extends React.Component {
                 <button type="button" class="btn dropdown-toggle " data-toggle="dropdown">
                   Download
   </button>
-               
-    <ul class="dropdown-menu ">
-    <li><span><a href="https://apps.apple.com/us/app/plunes/id1463747553"><img className="ios" src="iOS.png"/>
-      ios </a></span></li><hr width="70%"></hr>
-    <li><span>  <a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en_IN"><img className="android" src="Android.png" />
-         android </a></span></li>
-    
-  </ul>
-                  
-                  
 
-                
+                <ul class="dropdown-menu ">
+                  <li><a href="https://apps.apple.com/us/app/plunes/id1463747553"><img className="ios" src="iOS.png" />
+                    ios </a></li><hr width="70%"></hr>
+                  <li><span>  <a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en_IN"><img className="android" src="Android.png" />
+                    android </a></span></li>
+
+                </ul>
+
+
+
+
               </div>
               <div className="nav333">
 
