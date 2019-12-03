@@ -208,7 +208,7 @@ class CareersComponent extends Component {
 
                         <div className="container">
                         <form>
-                   <table width="100" class="table table-bordered">
+                   <table class="table table-bordered table-responsive-md">
                  <thead>
                    <tr>
                       <th >NAME</th>
@@ -239,7 +239,7 @@ class CareersComponent extends Component {
                 </tbody>
                      </table>
                         
-                         <button type="submit" className="btn btn-success careers-button ">Submit</button>
+                <button type="submit" className="btn btn-success careers-button">Submit</button>
                         
                          </form>
                          </div>

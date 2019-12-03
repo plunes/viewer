@@ -12,9 +12,9 @@ class DentalComplicationsComponent extends Component {
                 <Helmet>
                     <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/plockr" />
-                    <title>India's first cross-functional Integrated platform for EMRs </title>
-                    <meta name='keywords' content='plockr, EMR, electronic medical records, cloud solution'></meta>
-                    <meta name="description" content="EMRs stands for Electronic Medical Records. Get the doctor’s remarks & medical reports delivered directly in your PLOCKR ID, for a seamless experience.">
+                    <title>Dental Complications to Consider With Healthy Suggestions | Blog</title>
+                    <meta name='keywords' content='hot sensitivity, cold sensitivity, oral checkup, dental implants, gum swelling, tooth ache, tooth pain, composite veneers, porcelain veneers, zirconia porcelain veneers, dental porcelain laminates, teeth bonding treatment, dental bonding, Dental Complications, Healthy Suggestions, Dental problems, Gum disease, Periodontitis, Tooth Decay, Dental Cavity, Bad breath, Oral cancer, plaque, flossing, tooth sensivity, dry mouth'></meta>
+                    <meta name="description" content="Dental problems are very common these days also can't be ignored. Be aware of all the dental complications to stay away from all the infectious causes. ">
                     </meta>
                 </Helmet>
                 <div>

@@ -11,9 +11,9 @@ class TeethWhiteningComponent extends Component {
                 <Helmet>
                     <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/plockr" />
-                    <title>India's first cross-functional Integrated platform for EMRs </title>
-                    <meta name='keywords' content='plockr, EMR, electronic medical records, cloud solution'></meta>
-                    <meta name="description" content="EMRs stands for Electronic Medical Records. Get the doctor’s remarks & medical reports delivered directly in your PLOCKR ID, for a seamless experience.">
+                    <title>How Teeth Whitening can improve your daily lifestyle | Blog </title>
+                    <meta name='keywords' content='dentist consultation, hot sensitivity, sensitivity, cold sensitivity, oral checkup, implant, gum swelling, tooth ache, tooth pain, Invisalign therapy, teeth bleaching, teeth whitening strips, vital teeth whitening, cosmetic dentistry'></meta>
+                    <meta name="description" content="Tooth whitening lightens teeth and helps to remove teeth stains and discoloration. It primarily focuses on the improvement of the overall smile appearance. ">
                     </meta>
                 </Helmet>
                 <div>

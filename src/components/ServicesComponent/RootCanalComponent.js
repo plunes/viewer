@@ -12,9 +12,9 @@ class RootCanalComponent extends Component {
                 <Helmet>
                     <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/plockr" />
-                    <title>India's first cross-functional Integrated platform for EMRs </title>
-                    <meta name='keywords' content='plockr, EMR, electronic medical records, cloud solution'></meta>
-                    <meta name="description" content="EMRs stands for Electronic Medical Records. Get the doctor’s remarks & medical reports delivered directly in your PLOCKR ID, for a seamless experience.">
+                    <title>Touch up your dental health with Root Canal Treatment | Blog </title>
+                    <meta name='keywords' content='Cavity fillings, hot sensitivity, sensitivity, cold sensitivity, oral checkup, implant, gum swelling, tooth ache, tooth pain, RCT, Root Canal Treatment, gum infection, gum swelling, dental implant '></meta>
+                    <meta name="description" content="Root Canal Treatment helps to remove the infected tissue or canal successfully and gives you much relief from the teeth pain. ">
                     </meta>
                 </Helmet>
                 <div>
