@@ -6,7 +6,7 @@ import axios from 'axios';
 import { Redirect } from 'react-router'
 import {Helmet} from "react-helmet";
 
-
+// kanak
 class LandingContainer extends React.Component {
     constructor(props) {
         super(props);

@@ -74,7 +74,7 @@ export default class LandingFooter extends Component {
             <div className="col-sm-1 footer-row-align">
               <ul class="services footerele">
               <li class="footerfont footer-margin">REACH US AT </li><br></br>
-                <li class="footer-margin2"><a href="/" >info@plunes.com</a><br></br></li>
+                <li class="footer-margin2"><a href="/contactus" >info@plunes.com</a><br></br></li>
                 </ul>
                 <h5 className="footerfont policies-text">  OUR POLICIES </h5>
                 <ul class="services footerele">
