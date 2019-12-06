@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 class RootCanalComponent extends Component {
     render() {
         return (
-            <div className='container-fluid'>
+            <div className='container-fluid '>
                 <Helmet>
                     <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/plockr" />
@@ -20,16 +20,16 @@ class RootCanalComponent extends Component {
                 <div>
                     <LandingHeader />
                 </div>
-                <div className="container-fluid">
+                <div className="container-fluid dental-margin">
 
-                    <h1 className="key-benefits">Touch-up Your Dental Health with <br></br>Root Canal Treatment</h1>
+                    <h1 className="key-benefits">Touch-up Your Dental Health with Root Canal Treatment</h1>
 
                     <div className="row">
                         <div className="col-sm-1">
 
                         </div>
                         <div className="col-sm-5">
-                            <img className="dentalcompli-img" src="/blog1.png" />
+                            <img className="dentalcompli-img" src="/blog1.png" alt="" />
                         </div>
                         <div className="col-sm-5">
                             <p className="dental-problem">Despite of how scary it feels to undergo Root Canal Treatment, it is ensured that the procedure helps to remove the infected tissue or canal successfully and gives you much relief from the teeth pain. Let’s first understand how RCT (Root Canal Treatment) helps to newly restore the decayed or infected tooth. </p>

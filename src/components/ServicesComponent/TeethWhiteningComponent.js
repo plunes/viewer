@@ -19,16 +19,16 @@ class TeethWhiteningComponent extends Component {
                 <div>
                     <LandingHeader />
                 </div>
-                <div className="container-fluid">
+                <div className="container-fluid dental-margin">
 
-                    <h1 className="key-benefits">How Teeth Whitening Can Improve<br></br>  Your Lifestyle</h1>
+                    <h1 className="key-benefits">How Teeth Whitening Can Improve Your Lifestyle</h1>
 
                     <div className="row">
                         <div className="col-sm-1">
 
                         </div>
                         <div className="col-sm-5">
-                            <img className="dentalcompli-img" src="/blog3.png" />
+                            <img className="dentalcompli-img" src="/blog3.png"  alt=""/>
                         </div>
                         <div className="col-sm-5">
                             <p className="dental-problem">Are you conscious about your teeth before you can laugh freely? Though you are flossing twice a day but no improvement with your yellow teeth? Then it’s time to consider other options and you have arrived on the correct page!<br></br>

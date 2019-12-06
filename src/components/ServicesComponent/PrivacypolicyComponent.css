@@ -9,9 +9,15 @@
     }
     .terms-of{
         color: #717171;
-        font-size: 18px;
+        font-size: 15px;
        
     }
     .collection{
-        font-size: 24px;
+        font-size: 22px;
+    }
+    .attime-align{
+        margin-left: 15px;
+    }
+    .ul-privacy-align{
+        margin-top: 9px;
     }

@@ -5,6 +5,18 @@ import LandingHeader from '../LandingComponent/LandingHeader'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import {Helmet} from "react-helmet";
 import axios from 'axios'
+import Modal from 'react-modal';
+
+const customStyles = {
+    content : {
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)'
+    }
+  };
 
 class CareersComponent extends Component {
     constructor(props){
@@ -13,12 +25,29 @@ class CareersComponent extends Component {
             fullname : '',
             mobileNo : '',
             file : null,
-            email: ''
+            email: '',
+            modalIsOpen: false
         }
 
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
     }
+    openModal() {
+        this.setState({modalIsOpen: true});
+      }
+     
+
+    afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        this.subtitle.style.color = '#f00';
+      }
+     
+      closeModal() {
+        this.setState({modalIsOpen: false});
+      }
 
     handleChange(e){
         if(e.target.name === 'file'){
@@ -57,18 +86,21 @@ class CareersComponent extends Component {
                     mobileNumber :  this.state.mobileNo,
                     filename : res.data.filename
                 }
-                axios.post('https://plunes.co/v4/notification/resume', userData)
-                .then(res => {
-                    alert('Your application has been submitted')
-                    document.getElementById('fileinput').value= null;
-                    // console.log(res.status);
-                    this.setState({
-                        fullname : '',
-                        mobileNo : '',
-                        // file : '',
-                        email: ''
-                    })
-                })
+                this.setState({
+                            modalIsOpen: true
+                        })
+                // axios.post('https://plunes.co/v4/notification/resume', userData)
+                // .then(res => {
+                //     this.setState({
+                //         modalIsOpen: true
+                //     })
+                //     document.getElementById('fileinput').value= null;
+                //     this.setState({
+                //         fullname : '',
+                //         mobileNo : '',
+                //         email: ''
+                //     })
+                // })
             }
         })
     }
@@ -76,7 +108,7 @@ class CareersComponent extends Component {
 
     render() {
         return (
-            <div className='container-fluid'>
+            <div className='container-fluid  '>
                 <Helmet>
                 <meta charSet="utf-8" />
                 <link rel="canonical" href="https://www.plunes.com/careers" />
@@ -88,15 +120,15 @@ class CareersComponent extends Component {
                 <div>
                     <LandingHeader />
                 </div>
-                <div className='container-fluid'>
+                <div className='container-fluid '>
                     <div className='row justify-content-center'>
                         <h1 className="ploker-header">CAREER</h1>
                     </div>
-                    <div className='row ploker-align'>
+                    <div className='row career-align'>
                         <div className='col-md-1'>
                         </div>
                         <div className='col-sm-5'>
-                            <img className="career-img" src="careers.png" />
+                            <img className="career-img" src="careers.png" alt=""/>
                         </div>
                         <div className='col-sm-4'>
                             <div className='row'>
@@ -119,44 +151,45 @@ class CareersComponent extends Component {
                     <div className="row justify-content-center">
                         <h1 className="what-we-have">What we have for you</h1>
                     </div>
-                    <hr width="10%" color="#01D35A" ></hr>
-
+                  
+                       <hr width="7%" size="10" color="#01D35A" ></hr>
+                      
                     <div className="row career-grid">
-                        <div className="col-sm-1  ">
+                        <div className="col-sm-1 ">
                         </div>
-                        <div className="col-sm-2 ">
+                        <div className="col-sm-2 full-life-alin col">
                             
-                            <img className="img-width" src="building_green.png" />
-                            <p className="img-font">Full-of-life <br></br>Office</p>
+                            <img className="img-width1" src="building_green.png" alt="" />
+                            <p className="img-font2">Full-of-life <br></br>Office</p>
                         </div>
-                        <div className="col-sm-2 grid-box-align">
-                            <img className="img-width" src="people.png" />
-                            <p className="img-font">Working with a <br></br>talented team
+                        <div className="col-sm-2 grid-box-align col">
+                            <img className="img-width" src="people.png" alt=""/>
+                            <p className="img-font2">Working with a <br></br>talented team
                             </p>
                         </div>
-                        <div className="col-sm-2 grid-box-align">
-                            <img className="img-width" src="earth.png" />
-                            <p className="img-font">The satisfaction<br></br> of building something<br></br> Phenomenal
+                        <div className="col-sm-2 grid-box-align col">
+                            <img className="img-width" src="earth.png" alt="" />
+                            <p className="img-font2">The satisfaction<br></br> of building something<br></br> Phenomenal
                             </p>
                         </div>
-                        <div className="col-sm-2 grid-box-align">
-                            <img className="img-width" src="largest.png" />
-                            <p className="img-font">Largest pool of <br></br>ESOPs reserved for<br></br> employees
+                        <div className="col-sm-2 grid-box-align col">
+                            <img className="img-width" src="largest.png" alt=""/>
+                            <p className="img-font2">Largest pool of <br></br>ESOPs reserved for<br></br> employees
                             </p>
                         </div>
-                        <div className="col-sm-3">
+                        <div className="col-sm-3 ">
                                     </div>
 
                     </div>
                     <div className="row justify-content-center ">
                         <h1 className="career-header">Our 5-stage Recruitment Process</h1>
                     </div>
-                    <hr width="10%" color="#01D35A" ></hr>
+                    <hr width="7%" color="#01D35A" ></hr>
                     <div className="row careers-grid2">
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-2 col">
-                            <img className="img-width2" src="mssg.png" />
+                            <img className="img-width2" src="mssg.png" alt=""/>
                             <p className="img-font">Review
                             </p>
                             <p  className="careers-content">
@@ -164,7 +197,7 @@ class CareersComponent extends Component {
                             </p>
                         </div>
                         <div className="col-sm-2 col">
-                            <img className="img-width2" src="tele.png" />
+                            <img className="img-width2" src="tele.png" alt=""/>
                             <p className="img-font">Telephonic Interview
                             </p>
                             <p  className="careers-content">
@@ -173,7 +206,7 @@ class CareersComponent extends Component {
                             </p>
                         </div>
                         <div className="col-sm-2 col">
-                            <img className="img-width2" src="notepad.png" />
+                            <img className="img-width2" src="notepad.png" alt=""/>
                             <p className="img-font">Task
                             </p>
                             <p className="careers-content">
@@ -181,7 +214,7 @@ class CareersComponent extends Component {
                             </p>
                         </div>
                         <div className="col-sm-2 col">
-                            <img className="img-width2" src="f2f_green.png" />
+                            <img className="img-width2" src="f2f_green.png" alt=""/>
                             <p className="img-font" >F2F Interview
                             </p>
                             <p className="careers-content">
@@ -189,7 +222,7 @@ class CareersComponent extends Component {
                             </p>
                         </div>
                         <div className="col-sm-2 col ">
-                            <img className="img-width2" src="offer.png" />
+                            <img className="img-width2" src="offer.png" alt="" />
                             <p className="img-font">Offer
                             </p>
                             <p  className="careers-content">
@@ -198,15 +231,12 @@ class CareersComponent extends Component {
 
                         </div>
                         <div className="col-sm-1 col">
-                            </div>
-
-
-
+                        </div>
                     </div>
                     <div className="row justify-content-center">
                         <h1 className="what-we-have">Current Openings</h1>
                     </div>
-                    <hr width="10%" color="#01D35A" ></hr>
+                    <hr width="7%" color="#01D35A" ></hr>
                     <div className="container-fluid">
                         <div className="row careers-grid3">
                             <div className="col-sm-3">
@@ -262,45 +292,64 @@ class CareersComponent extends Component {
                             <div className="row justify-content-center ">
                         <h1 className="career-header">Submission Form</h1>
                     </div>
-                    <hr width="10%" color="#01D35A" ></hr>
-                        <div className="container">
+                    <hr width="7%" color="#01D35A" ></hr>
+                        <div className="container career-table-align">
                         <form onSubmit = {this.handleSubmit}>
-                   <table width="100" class="table table-bordered">
-                 <thead>
+                   <table width="100"  class="table table-bordered table-responsive-sm">
+                
                    <tr>
-                      <th >NAME</th>
+                       
+                      <th style={{backgroundColor:'#F8F8F8'}}><p style={{fontWeight:'100'}}>NAME</p></th>
                           <th ><input className="form-control-contactus" value={this.state.fullname} name="fullname" placeholder="Enter Name" onChange={this.handleChange} required/></th>
                               </tr>
-                             </thead>
-                         <tbody>
+                          
+                        
                                    <tr>
-                          <td>Phone Number</td>
+                          <td style={{backgroundColor:'#F8F8F8'}}>Phone Number</td>
                         <td><input className="form-control-contactus" value={this.state.mobileNo} name="mobileNo" placeholder="Mobile Number" onChange={this.handleChange} required/>
                        </td>
                    </tr>
                      <tr>
-                 <td>Email Id</td>
+                 <td style={{backgroundColor:'#F8F8F8'}}>Email Id</td>
                   <td> <input className="form-control-contactus" value={this.state.email} name="email" placeholder="Enter Email Id" onChange={this.handleChange} required/>
                 </td>
                      </tr>
             <tr>
-                <td>Attach Resume</td>
+                <td style={{backgroundColor:'#F8F8F8'}}>Attach Resume</td>
                 <td>
-              <input type="file" name='file' onChange={this.handleChange} id = 'fileinput' required/>
+              <input type="file" name='file' onChange={this.handleChange} title="Choose a video please" id = 'fileinput'  required/>
+              <label className="lable">(.doc, .docx, .pdf, .jpeg only)</label>
                 </td>
                     </tr>
-                </tbody>
+                
                      </table>
+                                                      
+                               
                         
-                         <button type="submit" className="btn btn-success careers-button ">Submit</button>
+                         <button type="submit" className="btn carers-button ">Submit</button>
                         
                          </form>
                          </div>
-                     </div>
+                         <Modal
+          isOpen={this.state.modalIsOpen}
+          onAfterOpen={this.afterOpenModal}
+          onRequestClose={this.closeModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+        >
+ 
+          <h2 style={{fontSize:'11px'}} ref={subtitle => this.subtitle = subtitle}>Hello</h2>
+          <div>
+            <h1 className="form-model-align">Your Application has <br></br>been submitted.</h1>
+
+          </div>
+          <button className="modle-button" onClick={this.closeModal}>close</button>
+        </Modal>
+                   
                      <div className="row justify-content-center ">
                         <h1 className="career-header">Employment Policy</h1>
                     </div>
-                    <hr width="10%" color="#01D35A" ></hr>
+                    <hr width="7%" color="#01D35A" ></hr>
                     <div className="row">
                         <div className="col-sm-1"></div>
                         <div className="col-sm-10">
@@ -311,7 +360,7 @@ class CareersComponent extends Component {
                     <div className="row justify-content-center">
                         <h1 className="career-header">Disclaimer</h1>
                         </div>
-                    <hr width="10%" color="#01D35A" ></hr>
+                    <hr width="7%" color="#01D35A" ></hr>
                     <div className="row">
                         <div className="col-sm-1"></div>
                         <div className="col-sm-10">
@@ -325,7 +374,7 @@ class CareersComponent extends Component {
                         </div>
 
 
-                
+                        </div>
                 <LandingFooter />       
             </div>
         );

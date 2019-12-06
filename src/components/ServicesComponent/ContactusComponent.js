@@ -60,7 +60,7 @@ class ContactusComponent extends Component {
                     <LandingHeader />
                 </div>
 
-                <div className='container-fluid'>
+                <div className='container-fluid contact-align'>
                     <div className='row justify-content-center'>
 
                         <h1 className="ploker-header">CONTACT US</h1>
@@ -69,10 +69,10 @@ class ContactusComponent extends Component {
                         <div className="row contact-us justify-content-center">
                             
                             <div class="card" style={{ width: '18rem' }}>
-                                <img className="contact-img" src="/inbox.png" />
+                                <img className="contact-img" src="/inbox.png" alt=""/>
                                 <div className="card-body font">
-                                    <h5 class="card-title">Email</h5>
-                                    <p class="card-text">info@plunes.com</p>
+                                    <h5 class="card-title email-align">Email</h5>
+                                    <p class="card-text info-align">info@plunes.com</p>
                                 </div>
                             </div>
                         </div>

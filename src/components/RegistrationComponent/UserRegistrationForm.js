@@ -103,7 +103,7 @@ class UserRegistrationForm extends Component {
                     </div>
                 </form>
                 <div>
-                    <p className="last-text">By registering, you agree to our<br></br><a href="#" >Terms of Service </a> </p>
+                    <p className="last-text">By registering, you agree to our<br></br><a href="/termsofuse" >T&C </a> </p>
                 </div>
             </div>
         );

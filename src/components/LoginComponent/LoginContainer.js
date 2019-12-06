@@ -60,7 +60,7 @@ handleSubmit(event) {
             <div class="container">
             <div class="row">
                 <div class="col-xl-6"><div>
-                  <img className="loginImage" style={{marginTop: '80px'}} src="login.png" />
+                  <img className="loginImage" style={{marginTop: '80px'}} src="login.png"  alt=""/>
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -79,8 +79,8 @@ handleSubmit(event) {
                           <button class="button-login" type='submit'>Login</button>
                       </div>
                     </form>
-                    <a href="/forgot_password" ><h6 className="forgotPassword" >Forgot Password?</h6></a>
-                    <h6 className="signupClass" >Don't have an account?<a href="#" >Signup</a> </h6>
+                    <a href="/" ><h6 className="forgotPassword" >Forgot Password?</h6></a>
+                    <h6 className="signupClass" >Don't have an account?<a href="signup" >Signup</a> </h6>
                   </div>
                 </div>
             </div>

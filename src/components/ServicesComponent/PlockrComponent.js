@@ -21,7 +21,7 @@ class PlockrComponent extends Component {
                     <LandingHeader />
                 </div>
                     
-                <div className='container-fluid'>
+                <div className='container-fluid ploker-align'>
                     <div className='row justify-content-center'>
                         
                         <h1 className="ploker-header">PLOCKR</h1>
@@ -52,7 +52,7 @@ class PlockrComponent extends Component {
                       
                         <div className='col-sm-4 '>
                             
-                            <img className="plocker-img col" src="PLOCKER.png" />
+                            <img className="plocker-img col" src="PLOCKER.png" alt="" />
                         </div>
                         <div className='col-sm-1 col'>
                         </div>

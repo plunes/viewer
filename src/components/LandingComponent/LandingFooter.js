@@ -22,20 +22,20 @@ export default class LandingFooter extends Component {
                 <div class="ftr3 footerfont">FOLLOW US AT </div>
                 <li style={{ display: 'inline-block' }}>
                   <span style={{ fontSize: '11px' }}>
-                    <a href="https://in.linkedin.com/company/plunes-com"><img class="ftr" src="linkedin.png" /><br /></a></span>
+                    <a href="https://in.linkedin.com/company/plunes-com" target="_blank"><img class="ftr" src="linkedin.png" alt=""/><br /></a></span>
                 </li>
                 <li style={{ display: 'inline-block' }}>
                   <span style={{ fontSize: '11px' }}>
-                    <a href="https://instagram.com/plunes_utility_network?igshid=17ov9733181re"><img class="ftr1" src="Instagram.png" /><br /></a></span>
+                    <a href="https://instagram.com/plunes_utility_network?igshid=17ov9733181re" target="_blank"><img class="ftr1" src="Instagram.png" alt=""/><br /></a></span>
                 </li>
                 <li style={{ display: 'inline-block' }}>
                   <span style={{ fontSize: '11px' }}>
-                    <a href="https://m.facebook.com/plunes076/"><img class="ftr2" src="Facebook.png" /><br /></a></span>
+                    <a href="https://www.facebook.com/plunes076/ " target="_blank"><img class="ftr2" src="Facebook.png" alt=""/><br /></a></span>
                 </li>
               </ul> 
               </div>
             <div class="col-sm-2 ">
-            <h5 className="footerfont">  FOR USERS </h5>
+            <h3 className="footerfont">  FOR USERS </h3>
               <ul className="services footerele">
                
                 <li><a href="/pediatrics"> PEDIATRICIANS IN GURGAON</a> </li>
@@ -56,19 +56,19 @@ export default class LandingFooter extends Component {
               </ul>
             </div>
             <div class="col-sm-2 ">
-              <h5 class="footerfont">FOR HOSPITALS/CLINICS   </h5>
+              <h3 class="footerfont">FOR HOSPITALS/CLINICS   </h3>
               <ul class="services footerele">
                 <li><a href="/register"> REGISTER  </a></li>
                 <li><a href="/plockr"> PLOCKR </a></li>
               </ul>
             </div>
             <div class="col-sm-2">
-              <h5 class="footerfont">GET IN TOUCH WITH </ h5>
+              <h3 class="footerfont">GET IN TOUCH WITH </ h3>
               <ul class="services footerele">
                 <li><a href="/aboutus">ABOUT US</a> </li>
                 <li><a href="/contactus">CONTACT US </ a></li>
                 <li><a href="/careers">CAREERS</a></li>
-                <li><a href="/blog">BLOG </ a></li>
+                <li><a href="/blog">BLOGS </ a></li>
               </ul>
             </div>
             <div className="col-sm-1 footer-row-align">
@@ -76,7 +76,7 @@ export default class LandingFooter extends Component {
               <li class="footerfont footer-margin">REACH US AT </li><br></br>
                 <li class="footer-margin2"><a href="/contactus" >info@plunes.com</a><br></br></li>
                 </ul>
-                <h5 className="footerfont policies-text">  OUR POLICIES </h5>
+                <h3 className="footerfont policies-text">  OUR POLICIES </h3>
                 <ul class="services footerele">
                 <li><a href="/termsofuse"> TERMS OF USE   </a></li>
                 <li><a href="/privacy">PRIVACY POLICY </a></li>
@@ -163,7 +163,7 @@ export default class LandingFooter extends Component {
           <div class="">
             <div class="row align-items-center _brdr_bt">
               <p class="col-lg-12 col-sm-12 footer-text m-0 text-center footerlast ">
-                © 2019 Plunes · All rights reserved · Terms of use · Privacy Policy
+                © 2019 Plunes · All rights reserved 
              </p>
             </div>
           </div>

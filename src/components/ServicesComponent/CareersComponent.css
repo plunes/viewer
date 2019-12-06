@@ -3,32 +3,50 @@
     .career-img{
         width: 300px !important;
     }
+    .grid-box-align{
+        margin-left: 10% !important;
+    }
+    .full-life-alin{
+        margin-left: 8% !important;
+    }
+    .lable{
+        margin-left: 4% !important;
+    }
 .career-pera{
     margin-left: 15px;
     margin-top: 1px !important;
-
+}
+.img-width1{
+    margin-left: 26% !important;
+}
+.img-width{
+    margin-left: 16% !important;
 }
 .table{
     width: 99% !important;
 }
 .career-button{
-    margin-left:30% !important;
+    margin-left:26% !important;
 }
-
+.carers-button{
+    margin-left: 30% !important;
+}
 .box{
     width: 90% !important;
+    margin-top: 20px !important;
 }
 .box2{
     width: 130% !important;
 }
 .img-font{
-    margin-left: -8% !important;
+    margin-left: 15% !important;
+}
+.img-font2{
+    margin-left: -4% !important;
 }
 .grid-box-3{
     margin-top: 0px !important;
 }
-
-
 .we-believe{
     margin-left: 15px;
     margin-top: 50px !important;
@@ -37,13 +55,13 @@
     margin-left: 15px;
 }
 .what-we-have{
-    margin-top: -25px !important;
+    margin-top: -10px !important;
 }
 .careers-grid2{
     margin-left: -40px !important;
 }
 .ploker-header{
-    font-size: 27px !important;
+    font-size: 25px !important;
 }
 .if-u{
     margin-left: 15px !important;
@@ -54,7 +72,7 @@
    
 }
 .career-header{
-    font-size: 25px !important;
+    font-size: 22px !important;
 }
 
 }
@@ -72,11 +90,15 @@
     
 }
 .career-pera{
-    font-size: 16px;
+    font-size: 15px;
     color: #717171;
     margin-top: 32px;
 }
 .img-width{
+    width:70px;
+    margin-left: 35%;
+}
+.img-width1{
     width:70px;
     margin-left: 35%;
 }
@@ -87,16 +109,26 @@
     margin-top: 25px;
     font-size: 18px;
 }
+.img-font2{
+
+    
+    text-align: center;
+    margin-top: 25px;
+    font-size: 18px;
+}
 .what-we-have {
     font-size: 30px;
-    margin-top: 70px;
+    margin-top: 20px;
     margin-bottom: -10px;
 }
+.lable{
+    margin-left: -13%;
+}
 .career-grid{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .careers-grid2{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .careers-content{
     color: #717171;
@@ -130,22 +162,25 @@
     margin-top: 20px;
 
   }
-  .careers-button{
+  .carers-button{
     background-color: #01d35a !important;
     border-color: #01d35a !important;
     border-radius: 40px !important;
     width: 140px;
     height: 37px;
     color:white !important;
-    margin-left: 42% !important;
+    margin-left: 43%;
     margin-top: 20px;
-
+    margin-bottom: 40px;
   }
   .box-text{
       font-size: 18px;
       text-align: center;
       margin-top: 20px;
       margin-left: 3%;
+  }
+  .career-table-align{
+      margin-top: 40px;
   }
   .box-content{
       font-size: 16px ;
@@ -154,7 +189,7 @@
       margin-left: 3%;
   }
   .careers-grid3{
-    margin-top:5%;
+    margin-top:40px;
     margin-left: 8% !important;
 }
 .box-align{
@@ -162,8 +197,12 @@
 }
 .if-u{
     color: #717171;
-    font-size: 21px;
+    font-size: 15px;
+    margin-top: 20px;
    
+}
+.full-life-alin{
+    margin-left: 0px;
 }
 .table-button{
     background-color: #01d35a !important;
@@ -174,9 +213,6 @@
     color:white !important;
     margin-left: 28px;
     margin-top: 3px;
-
-
-
 }
 .table-career{
     width: 25%;
@@ -201,4 +237,24 @@
 }
 .grid-box-align{
     margin-left: 5%;
+}
+.career-align{
+    margin-top: 45px;
+    margin-bottom: 5%;
+}
+.form-model-align{
+    font-size: 24px;
+    color: #717171;
+    text-align: center;
+}
+.modle-button{
+    background-color: #01d35a;
+    margin-left: 60%;
+    width: 40%;
+    outline: none !important;
+    margin-top: 8%;
+    color: white;
+}
+#fileinput{
+    background-color: white !important;
 }

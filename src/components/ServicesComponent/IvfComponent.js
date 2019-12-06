@@ -33,7 +33,7 @@ export default class IvfComponent extends Component {
                     <div className="col-sm-11 header2-text">
                         <div className="row">
                             <div className="col-sm-2">
-                                <img className="dentist-image" src="/IVF.png" />
+                                <img className="dentist-image" src="/IVF.png" alt=""/>
                             </div>
                             <div className="col-sm-9 view-more-align">
                                 <h3 className="header-font">IVF</h3>

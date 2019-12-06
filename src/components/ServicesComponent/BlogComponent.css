@@ -6,9 +6,13 @@
 .blog-button{
     margin-left: 28% !important;
 }
+.blog-margin{
+    margin-bottom: -18% !important;
+}
 
 .blog-front-img{
     margin-top: 14% !important;
+    height: 150px !important;
 }
 .blog-header{
     margin-top: 40px !important;
@@ -28,7 +32,7 @@
     height: 37px;
     color:white !important;
     
-    margin-top: 20px;
+   
 
 } 
 .blog-img{
@@ -38,8 +42,18 @@
 .blog-front-img{
     width: 100%;
     margin-top: 3%;
+    height: 400px;
 }
 .blog-header{
     font-size: 30px;
-    margin-top: 120px;
+    margin-top: 80px;
+}
+.card-text
+{
+    font-size: 15px !important;
+    margin-top: 11px;
+    color: #8A8A8A;
+}
+.blog-margin{
+    margin-bottom: -5%;
 }

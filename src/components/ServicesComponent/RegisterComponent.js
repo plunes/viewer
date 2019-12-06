@@ -21,7 +21,7 @@ class RegisterComponent extends Component {
                     <LandingHeader />
                 </div>
                     
-                <div className='container-fluid'>
+                <div className='container-fluid register-align'>
                     <div className='row justify-content-center'>
                         
                         <h1 className="ploker-header">REGISTER</h1>
@@ -30,24 +30,24 @@ class RegisterComponent extends Component {
                         {/* <div className="col-sm-1"></div> */}
                         <div className="col-sm-3">
                             
-                            <img className="register-img" src="/Appintment.png" />
-                            <p className="register-heading">Automated Appointments</p>
+                            <img className="register-img" src="/Appintment.png" alt="" />
+                            <p className="register-heading">Automated appointments</p>
                             <p className="register-text">Our unique AI acts as your personal assistant automating all the Appointments for you.</p>
 
                             </div> 
                             <div className="col-sm-3">
-                                <img className="register-img" src="/text.png" />
+                                <img className="register-img" src="/text.png" alt=""/>
                                 <p className="register-heading" >Instant Payments</p>
                                 <p className="register-text">We provide hassle-free payment options for the clients.</p>
                             </div>
                             <div className="col-sm-3">
                                 
-                            <img className="register-item-img" src="/employee.png" />
+                            <img className="register-img" src="/employee.png" alt=""/>
                             <p className="register-heading">Pre-paid Clients</p>
                             <p className="register-text">Our AI automatically provides price solution for all your client requests. Thus, giving you pre-paid clients right at your doorstep.</p>
                             </div>
                             <div className="col-sm-3">
-                            <img className="register-img" src="/browser.png" />
+                            <img className="register-img" src="/registration.png" alt="" />
                             <p className="register-heading">Free Registration</p>
                             <p className="register-text">
                             We create your digital profile and do extensive marketing on your behalf. The best part is that the registration is completely free.
@@ -59,7 +59,7 @@ class RegisterComponent extends Component {
                              <div className="row">
                                 <div className="col-sm-5"></div>
                                 <div className="col-sm-2">                          
-                             <button className="btn register-button">Register </button>
+                             <a href="/signup" className="btn register-button">Register </a>
                               </div>
                               <div className="col-sm-2">
                                   </div>
