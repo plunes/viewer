@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios'
 import './App.css';
 import LandingPage from './components/LandingComponent/LandingPage';
-import { Route, Switch } from 'react-router-dom';
+import {BrowserRouter, Route, Switch } from 'react-router-dom';
 import RegistrationComponent from './components/RegistrationComponent/RegistrationComponent';
 import DashboardComponent from './components/DashboardComponent/DashboardComponent'
 import SolutionResultComponent from './components/SolutionSearchComponent/SolutionResultComponent'
@@ -10,12 +10,8 @@ import ConfirmBookingComponent from './components/ConfirmBooking/ConfirmBookingC
 import Post from './components/ReduxComponent/Post'
 import EnquiryComponent from './components/EnquiryComponent/EnquiryComponent'
 import EnquiryResultComponent from './components/EnquiryComponent/EnquiryResultComponent'
-// import ProfileComponent from './components/ProfileComponent/ProfileComponent'
-
-// import PreviousEnquiryComponent from './components/EnquiryComponent/PreviousEnquiryComponent'
 import LoginComponent from './components/LoginComponent/LoginComponent'
 import ForgotPasswordComponent from './components/LoginComponent/ForgotPassword'
-
 import ProfileComponent from './components/ProfileComponent/ProfileComponent'
 import DentistComponent from './components/ServicesComponent/DentistComponent'
 import OphthalmologyComponent from './components/ServicesComponent/OphthalmologyComponent'
@@ -39,7 +35,6 @@ import GynaeComponent from './components/ServicesComponent/GynaeComponent'
   import PrivacypolicyComponent from './components/ServicesComponent/PrivacypolicyComponent'
   import TeethWhiteningComponent from './components/ServicesComponent/TeethWhiteningComponent'
   import RootCanalComponent from './components/ServicesComponent/RootCanalComponent'
-
   import DentalComplicationsComponent from './components/ServicesComponent/DentalComplicationsComponent'
 
  
@@ -71,34 +66,10 @@ export default class App extends React.Component {
      */
   }
 
-  async  componentDidMount(){
-    const res = await fetch('http://13.233.151.26:8000/catalogue')
-    const catalogue = await res.json()
-    
-   await catalogue.forEach((item) => {
-      // console.log(item);
-      let speciality = {
-        specialityId : item._id,
-        speciality: item.speciality
-      }
-      this.root.serviceList.push(speciality)
-      // console.log('anshul123')
-    })
-    // console.log('anshul000')
-
-    // this.setState({something})
-    // if(localStorage.getItem('token')){
-    //     this.root.isAuth = true
-    // }else{
-    //     this.root.isAuth = true
-    // }
-  }
-  
-
-
   render() {
     const App = () => (
       <div className = 'container-fluid'>
+      <BrowserRouter>
         <Switch>
           <Route exact path='/' component={() => (<LandingPage root={this.root} />)} />
           <Route exact path='/signup' component={() => (<RegistrationComponent root={this.root} />)} />
@@ -133,9 +104,8 @@ export default class App extends React.Component {
           <Route exact path='/dentalcomplications' component={() => (<DentalComplicationsComponent />)} />
           <Route exact path='/rootcanal' component={() => (<RootCanalComponent />)} />
           <Route exact path='/teethwhitening' component={() => (<TeethWhiteningComponent />)} />
-
-
-        </Switch> 
+        </Switch>
+        </BrowserRouter>
       </div>
     )
     return (

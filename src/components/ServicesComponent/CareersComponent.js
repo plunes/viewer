@@ -158,7 +158,6 @@ class CareersComponent extends Component {
                         <div className="col-sm-1 ">
                         </div>
                         <div className="col-sm-2 full-life-alin col">
-                            
                             <img className="img-width1" src="building_green.png" alt="" />
                             <p className="img-font2">Full-of-life <br></br>Office</p>
                         </div>
@@ -178,8 +177,7 @@ class CareersComponent extends Component {
                             </p>
                         </div>
                         <div className="col-sm-3 ">
-                                    </div>
-
+                        </div>
                     </div>
                     <div className="row justify-content-center ">
                         <h1 className="career-header">Our 5-stage Recruitment Process</h1>
