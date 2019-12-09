@@ -12,8 +12,8 @@ export default class RadiologyComponent extends Component {
                     <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/radiology" />
                     <title>A Complete Guide To Radiology: All You Need To Know</title>
-                    <meta name = 'keywords' content= 'radiologist in gurgaon, radiology center gurgaon, radiology clinic gurgaon, radiology hospital gurgaon, doppler both limbs venous gurgaon, doppler peripheral arterial gurgaon, doppler peripheral venous gurgaon'></meta>
-                    <meta name="description" content="Search for the desired tests such as MRI, CT-Scan, PET CT-SCAN, X-Ray, Doppler or any other lab tests & avail upto 50% discount.">
+                    <meta name = 'keywords' content= 'radiologist in gurgaon, radiology center gurgaon, radiology clinic gurgaon, radiology hospital gurgaon, doppler both limbs venous gurgaon, doppler peripheral arterial gurgaon, doppler peripheral venous gurgaon, radiology'></meta>
+                    <meta name="description" content="Search for the desired tests under radiology such as MRI, CT-Scan, PET CT-SCAN, X-Ray, Doppler or any other lab tests & avail upto 50% discount.">
                     </meta>
                 </Helmet>
                 <LandingHeader />
@@ -33,7 +33,7 @@ export default class RadiologyComponent extends Component {
                     <div className="col-sm-11 header2-text">
                         <div className="row">
                             <div className="col-sm-2">
-                                <img className="dentist-image" src="/Radio.png" alt=""/>
+                                <img className="dentist-image" src="/Radio.png" alt=".."/>
                             </div>
                             <div className="col-sm-9 view-more-align">
                                 <h3 className="header-font">Radiology</h3>

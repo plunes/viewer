@@ -17,7 +17,7 @@ class UserRegistrationForm extends Component {
             userType: 'User',
             showLogin: false
         }
-        this.baseUrl ='http://13.233.151.26:8000/';
+        this.baseUrl = 'http://13.233.151.26:8000/';
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -49,15 +49,15 @@ class UserRegistrationForm extends Component {
                     console.log(data.err)
                 }
                 else {
-                    
+
                     this.setState({ showLogin: true })
                 }
             })
     }
 
     render() {
-        const {showLogin} = this.state
-        if(showLogin){
+        const { showLogin } = this.state
+        if (showLogin) {
             return <Redirect to={{
                 pathname: "/login",
 
@@ -69,12 +69,6 @@ class UserRegistrationForm extends Component {
                     <div className="form-group">
                         <input className="form-control2" name="fullName" placeholder="Name" onChange={this.handleChange} required />
                     </div>
-                    <div className="form-group">
-                        <input className="form-control2" name="phoneNumber" placeholder="Mobile Number" onChange={this.handleChange} required />
-                    </div>
-                    <div className="form-group">
-                        <input className="form-control2" name="emailId" placeholder="Email id" onChange={this.handleChange} required />
-                    </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="radio" class="form-check-input" value='M' name="gender" onChange={this.handleChange} />Male
@@ -85,15 +79,21 @@ class UserRegistrationForm extends Component {
                             <input type="radio" class="form-check-input" value='F' name="gender" onChange={this.handleChange} />Female
                         </label>
                     </div>
+                    <div className="form-group">
+                        <input className="form-control2" name="phoneNumber" placeholder="Mobile Number" onChange={this.handleChange} required />
+                    </div>
+                    <div className="form-group">
+                        <input className="form-control2" name="emailId" placeholder="Email id" onChange={this.handleChange} required />
+                    </div>
+
                     <div class="form-group">
                         <input class="form-control2" type='date' name='dob' id="example-datetime-local-input" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group"><span>
-                        {/* <img src="eye.png" /> */}
                         <input type="password" className="form-control2" placeholder="Password" onChange={this.handleChange} name="password" required /></span>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control2" rows="3" placeholder='Address' name = 'address' onChange={this.handleChange}></textarea>
+                        <textarea class="form-control2" rows="3" placeholder='Address' name='address' onChange={this.handleChange}></textarea>
                     </div>
                     <div className="form-group">
                         <input className="form-control2 " placeholder="Enter Referal Code (Optional)" onChange={this.handleChange} name="refCode" />

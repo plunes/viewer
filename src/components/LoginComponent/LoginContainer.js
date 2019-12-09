@@ -60,7 +60,7 @@ handleSubmit(event) {
             <div class="container">
             <div class="row">
                 <div class="col-xl-6"><div>
-                  <img className="loginImage" style={{marginTop: '80px'}} src="login.png"  alt=""/>
+                  <img className="loginImage" style={{marginTop: '80px'}} src="/login.png"  alt=".."/>
                     </div>
                 </div>
                 <div class="col-xl-6">

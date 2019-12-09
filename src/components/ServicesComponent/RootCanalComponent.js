@@ -12,8 +12,8 @@ class RootCanalComponent extends Component {
                 <Helmet>
                     <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/plockr" />
-                    <title>Touch up your dental health with Root Canal Treatment | Blog </title>
-                    <meta name='keywords' content='Cavity fillings, hot sensitivity, sensitivity, cold sensitivity, oral checkup, implant, gum swelling, tooth ache, tooth pain, RCT, Root Canal Treatment, gum infection, gum swelling, dental implant '></meta>
+                    <title>Touch Up Your Dental Health with Root Canal Treatment | Blog </title>
+                    <meta name='keywords' content='Cavity fillings, hot sensitivity, sensitivity, cold sensitivity, oral checkup, implant, gum swelling, tooth ache, tooth pain, RCT, Root Canal Treatment, gum infection, gum swelling, dental implant'></meta>
                     <meta name="description" content="Root Canal Treatment helps to remove the infected tissue or canal successfully and gives you much relief from the teeth pain. ">
                     </meta>
                 </Helmet>
@@ -29,7 +29,7 @@ class RootCanalComponent extends Component {
 
                         </div>
                         <div className="col-sm-5">
-                            <img className="dentalcompli-img" src="/blog1.png" alt="" />
+                            <img className="dentalcompli-img" src="/blog1.png" alt=".." />
                         </div>
                         <div className="col-sm-5">
                             <p className="dental-problem">Despite of how scary it feels to undergo Root Canal Treatment, it is ensured that the procedure helps to remove the infected tissue or canal successfully and gives you much relief from the teeth pain. Let’s first understand how RCT (Root Canal Treatment) helps to newly restore the decayed or infected tooth. </p>

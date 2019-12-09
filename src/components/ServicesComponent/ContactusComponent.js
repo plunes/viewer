@@ -53,7 +53,7 @@ class ContactusComponent extends Component {
                     <link rel="canonical" href="https://www.plunes.com/contact" />
                     <title>Contact Us - Plunes</title>
                     <meta name='keywords' content='contact us, email id, you can ask us, phone number, comment, get in touch'></meta>
-                    <meta name="description" content="Got any suggestions or have queries regarding our product? Need support or any other service? Just let us know and we will get right back to you!">
+                    <meta name="description" content="Got any suggestions or have queries regarding our product? Contact Us or Just let us know and we will get right back to you!">
                     </meta>
                 </Helmet>
                 <div>
@@ -69,7 +69,7 @@ class ContactusComponent extends Component {
                         <div className="row contact-us justify-content-center">
                             
                             <div class="card" style={{ width: '18rem' }}>
-                                <img className="contact-img" src="/inbox.png" alt=""/>
+                                <img className="contact-img" src="/inbox.png" alt=".."/>
                                 <div className="card-body font">
                                     <h5 class="card-title email-align">Email</h5>
                                     <p class="card-text info-align">info@plunes.com</p>

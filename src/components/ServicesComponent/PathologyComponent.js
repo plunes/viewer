@@ -13,7 +13,7 @@ export default class PathologyComponent extends Component {
                 <link rel="canonical" href="https://www.plunes.com/pathology" />
                 <title>A Complete Guide To Pathology: All You Need To Know</title>
                 <meta name = 'keywords' content = 'pathology in gurgaon, csf fluid examination, dengue test in gurgaon, pathology clinic in gurgaon, pathology hospital in gurgaon, biopsy test gurgaon, blood sugar test gurgaon, kidney function test gurgaon'></meta>
-                <meta name="description" content="Search for the desired tests such as Blood tests, Dengue tests, Widal tests, Thyroid profile, Pregnancy tests & avail upto 50% discount.">
+                <meta name="description" content="Search for the desired tests under pathology such as Blood tests, Dengue tests, Widal tests, Thyroid profile, Pregnancy tests & avail upto 50% discount.">
                 </meta>
                 </Helmet>
                                 <LandingHeader />
@@ -37,7 +37,7 @@ export default class PathologyComponent extends Component {
                                         <div className="col-sm-11 header2-text">
                                                 <div className="row">
                                                         <div className="col-sm-2">
-                                                                <img className="dentist-image" src="/Pathology.png" alt=""/>
+                                                                <img className="dentist-image" src="/Pathology.png" alt=".."/>
                                                         </div>
                                                         <div className="col-sm-9 view-more-align">
                                                                 <h3 className="header-font">Pathology</h3>

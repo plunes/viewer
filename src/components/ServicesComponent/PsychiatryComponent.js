@@ -12,8 +12,8 @@ return (
     <meta charSet="utf-8" />
         <link rel="canonical" href="https://www.plunes.com/psychiatry" />
         <title>A Complete Guide To Psychiatry: All You Need To Know</title>
-        <meta name= 'keywords' content = 'psychologist in gurgaon, best psychologist in gurgaon, child psychologist in gurgaon, marriage counselor in gurgaon, counseling with psychologist in gurgaon, psychotherapist in gurgaon, family counselling gurgaon'></meta>
-    <meta name="description" content="Search for the desired procedure such as stress management, marriage counseling, autism disorder etc & avail upto 50% discount.">
+        <meta name= 'keywords' content = 'psychologist in gurgaon, best psychologist in gurgaon, child psychologist in gurgaon, marriage counselor in gurgaon, counseling with psychologist in gurgaon, psychotherapist in gurgaon, family counselling gurgaon, psychiatry'></meta>
+    <meta name="description" content="Search for the desired procedure under psychiatry such as stress management, marriage counseling, autism disorder etc & avail upto 50% discount.">
     </meta>
 </Helmet>
 <LandingHeader />
@@ -38,7 +38,7 @@ return (
 <div className="col-sm-11 header2-text">
 <div className="row">
 <div className="col-sm-2">
-<img className="dentist-image" src="/PSYCHIATRISTS.png" alt=""/>
+<img className="dentist-image" src="/PSYCHIATRISTS.png" alt=".."/>
 </div>
 <div className="col-sm-9 view-more-align">
 <h3 className="header-font">Psychiatry</h3>

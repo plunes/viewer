@@ -12,8 +12,8 @@ return (
     <meta charSet="utf-8" />
         <link rel="canonical" href="https://www.plunes.com/pediatrics" />
         <title>A Complete Guide To Pediatry: All You Need To Know</title>
-        <meta name= 'keywords' content = 'child specialist in gurgaon, best pediatrician in gurgaon, pediatrician in gurgaon, pediatric clinic in gurgaon, pediatric hospital in gurgaon'></meta>
-    <meta name="description" content="Search for the desired tests such as nursemaid’s elbow, heart murmur treatment, vaccination etc & avail upto 50% discount">
+        <meta name= 'keywords' content = 'child specialist in gurgaon, best pediatrician in gurgaon, pediatrician in gurgaon, pediatric clinic in gurgaon, pediatric hospital in gurgaon, Pediatry'></meta>
+    <meta name="description" content="Search for the desired tests under pediatry such as nursemaid’s elbow, heart murmur treatment, vaccination etc & avail upto 50% discount.">
     </meta>
 </Helmet>
 <LandingHeader />
@@ -38,7 +38,7 @@ return (
 <div className="col-sm-11 header2-text">
 <div className="row">
 <div className="col-sm-2">
-<img className="dentist-image" src="/PEDIATRICIAN.png" alt="" />
+<img className="dentist-image" src="/PEDIATRICIAN.png" alt=".." />
 </div>
 <div className="col-sm-9 view-more-align">
 <h3 className="header-font">Pediatrics</h3>

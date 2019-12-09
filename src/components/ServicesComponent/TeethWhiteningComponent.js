@@ -11,7 +11,7 @@ class TeethWhiteningComponent extends Component {
                 <Helmet>
                     <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/plockr" />
-                    <title>How Teeth Whitening can improve your daily lifestyle | Blog </title>
+                    <title>How Teeth Whitening Can Improve Your Daily Lifestyle | Blog </title>
                     <meta name='keywords' content='dentist consultation, hot sensitivity, sensitivity, cold sensitivity, oral checkup, implant, gum swelling, tooth ache, tooth pain, Invisalign therapy, teeth bleaching, teeth whitening strips, vital teeth whitening, cosmetic dentistry'></meta>
                     <meta name="description" content="Tooth whitening lightens teeth and helps to remove teeth stains and discoloration. It primarily focuses on the improvement of the overall smile appearance. ">
                     </meta>
@@ -28,14 +28,14 @@ class TeethWhiteningComponent extends Component {
 
                         </div>
                         <div className="col-sm-5">
-                            <img className="dentalcompli-img" src="/blog3.png"  alt=""/>
+                            <img className="dentalcompli-img" src="/blog3.png"  alt=".."/>
                         </div>
                         <div className="col-sm-5">
                             <p className="dental-problem">Are you conscious about your teeth before you can laugh freely? Though you are flossing twice a day but no improvement with your yellow teeth? Then it’s time to consider other options and you have arrived on the correct page!<br></br>
-Knowing you’re flashing a healthy, bright smilebuilds confidence, and tooth whitening isone of the safest, easiest and fastest ways to get your teeth in its best possible condition</p>
+                              Knowing you’re flashing a healthy, bright smilebuilds confidence, and tooth whitening isone of the safest, easiest and fastest ways to get your teeth in its best possible condition</p>
                             <h1 className="what-is-it">What Is It?</h1>
                             <p className="dental-problem">Tooth whitening lightens teeth and helps to remove teeth stain and discoloration. Whitening is among the most popular cosmetic dental procedures because it can greatly improve how your teeth look. Most dentists perform tooth whitening.<br></br>
-When your teeth are professionally whitened the only thing that changes is their color. The strength, health or structure of the teeth is never affected. It primarily focuses on the improvement of the overall smile appearance. Whitening is not a one-time procedure. It will need to be repeated from time to time if you want to maintain the brighter color.</p>
+                               When your teeth are professionally whitened the only thing that changes is their color. The strength, health or structure of the teeth is never affected. It primarily focuses on the improvement of the overall smile appearance. Whitening is not a one-time procedure. It will need to be repeated from time to time if you want to maintain the brighter color.</p>
 
                         </div>
                         <div className="col-sm-1">
@@ -56,7 +56,7 @@ When your teeth are professionally whitened the only thing that changes is their
                             
                             <h1 className="tooth-font">The Plunes Advantage  </h1>
                             <p className="tooth-decay-font">We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dentistry procedures & treatments in Delhi NCR. <br></br><br></br>
-Search for the desired dental treatments such as teeth whitening, hot sensitivity, cold sensitivity, oral checkup, dental implants, gum swelling, or any other dentistry treatments & our AI will negotiate in real-time with top dentists & clinics nearest to you to get the best price in real time. Avail Upto 50% discount on instant booking!</p>
+                             Search for the desired dental treatments such as teeth whitening, hot sensitivity, cold sensitivity, oral checkup, dental implants, gum swelling, or any other dentistry treatments & our AI will negotiate in real-time with top dentists & clinics nearest to you to get the best price in real time. Avail Upto 50% discount on instant booking!</p>
 
                         </div>
                         <div className="col-sm-1"></div>

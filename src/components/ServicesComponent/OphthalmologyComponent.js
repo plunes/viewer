@@ -12,8 +12,8 @@ return (
     <meta charSet="utf-8" />
         <link rel="canonical" href="https://www.plunes.com/ophthalmology" />
         <title>A Complete Guide To Ophthalmology: All You Need To Know</title>
-        <meta name='keywords' content='eye hospital in gurgaon, eye specialist in gurgaon, eye clinic in gurgaon, ophthalmologist in gurgaon, cataract surgery in gurgaon, lasik eye surgery in gurgaon, lasik surgery in gurgaon'></meta>
-    <meta name="description" content="Search for the desired procedure such as cataract eye surgery, corneal repair, prosthetic eye surgery etc & avail upto 50% discount. ">
+        <meta name='keywords' content='eye hospital in gurgaon, eye specialist in gurgaon, eye clinic in gurgaon, ophthalmologist in gurgaon, cataract surgery in gurgaon, lasik eye surgery in gurgaon, lasik surgery in gurgaon, Ophthalmology'></meta>
+    <meta name="description" content="Search for the desired procedure under ophthalmology such as cataract eye surgery, corneal repair, prosthetic eye surgery etc & avail upto 50% discount. ">
     </meta>
 </Helmet>
 <LandingHeader />
@@ -38,7 +38,7 @@ return (
 <div className="col-sm-11 header2-text">
 <div className="row">
 <div className="col-sm-2">
-<img className="dentist-image" src="/OPHTHAMOLOGIST.png" alt="" />
+<img className="dentist-image" src="/OPHTHAMOLOGIST.png" alt=".." />
 </div>
 <div className="col-sm-9 view-more-align">
 <h3 className="header-font">Ophthalmology</h3>

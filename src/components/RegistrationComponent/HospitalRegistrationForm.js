@@ -4,9 +4,7 @@ class HospitalRegistrationForm extends Component {
     render() {
         return (
             <div>
-               
-
-                 <form>
+              <form>
                  <input type="radio" name="gender" value="male"/> Male
                  <input type="radio" name="gender" value="female"/> Female
                  
@@ -16,7 +14,7 @@ class HospitalRegistrationForm extends Component {
                     </div>
                     <div className="form-group">
                         
-                          <textarea className="form-control2 " rows="3" name="fullName" placeholder="Address" onChange={this.handleChange} required></textarea>
+                      <textarea className="form-control2 " rows="3" name="fullName" placeholder="Address" onChange={this.handleChange} required></textarea>
                     </div>
                     <div className="form-group">
                         

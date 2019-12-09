@@ -14,7 +14,7 @@ class RegisterComponent extends Component {
                 <link rel="canonical" href="https://www.plunes.com/register" />
                 <title>Register With Us</title>
                 <meta name='keywords' content='register, automated appointments, instant payments, pre-paid clients, free registration, digital profile, free registration'></meta>
-                <meta name="description" content="Register yourself on Plunes & get best pricing solutions to all your medical procedures, diagnostics & tests instantly.">
+                <meta name="description" content="Register yourself on Plunes & get best pricing solutions to all your medical procedures, diagnostics & tests instantly. ">
                 </meta>
                 </Helmet>
                 <div>

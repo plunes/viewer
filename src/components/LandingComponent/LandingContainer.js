@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import RegistrationContainer from '../RegistrationComponent/RegistrationComponent'
 import axios from 'axios';
 import { Redirect } from 'react-router'
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 // kanak
 class LandingContainer extends React.Component {
@@ -56,7 +56,7 @@ class LandingContainer extends React.Component {
                     // console.log(data)
                     this.setState({
                         mobileNo: '',
-                    
+
                     })
 
                 }
@@ -102,7 +102,6 @@ class LandingContainer extends React.Component {
         // console.log(response)
         return response;
     }
-
     async settingBid(proceduresArray) {
         console.log(proceduresArray);
         let proceduresString = proceduresArray.join();
@@ -133,8 +132,6 @@ class LandingContainer extends React.Component {
             })
         return response;
     }
-
-
     async handleSubmit(e) {
         e.preventDefault();
         let settingBid = await this.settingBid(this.state.selectedData);
@@ -152,16 +149,10 @@ class LandingContainer extends React.Component {
             searchInput: true
         })
     }
-
-
-
     handleChange(e) {
         this.setState({ [e.target.name]: e.target.value })
     }
-
     async componentDidMount() {
-
-
         // return await axios.get(this.baseUrl + 'bidding/list_of_procedures')
         //     .then(({ data }) => {
         //         // console.log(data)
@@ -173,7 +164,6 @@ class LandingContainer extends React.Component {
         //         }
         //     })
     }
-
     handleClick(e) {
         let selectedValue = e.currentTarget.dataset.value;
         // console.log(selectedValue);
@@ -227,34 +217,26 @@ class LandingContainer extends React.Component {
 
         return <Router>
             <div className="container-fluid" >
-            <Helmet>
-                <meta charSet="utf-8" />
-                <link rel="canonical" href="https://www.plunes.com" />
-                 <title>Welcome to India's First Utility Network</title>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <link rel="canonical" href="https://www.plunes.com" />
+                    <title>Welcome To India's First Utility Network</title>
                     <meta name="description"
-      content="Experience our unique AI. Book any Medical Procedures, Diagnostics & Appointments with curated doctors nearest to you in Delhi NCR at best prices"
-    />
-    <meta name="keywords" content="India's first utility network, utility network, plunes, book an appointment, download app, hospitals near you, doctors near you, book instantly, free consultation, dental clinic in gurgaon, orthodontist in gurgaon, gynecologist in gurgaon, gynecology clinic gurgaon, psychologist in gurgaon, psychotherapist in gurgaon, hair transplant clinic in gurgaon, radiologist in gurgaon, ivf in gurgaon, ayurvedic clinic in gurgaon, child specialist in gurgaon, pediatrician in gurgaon, pathology in gurgaon, biopsy test in gurgaon, orthopedics doctor in gurgaon, ent specialist in gurgaon, ent surgeon in gurgaon, eye hospital in gurgaon, ophthalmologist in gurgaon, dermatologist in gurgaon, best neurologist in gurgaon, neuro hospital in gurgaon">
-                </meta>
+                        content="Experience our unique AI. Book any Medical Procedures, Diagnostics & Appointments with curated doctors at India's first utility network." />
+                    <meta name="keywords" content="India's first utility network, utility network, plunes, book an appointment, download app, hospitals near you, doctors near you, book instantly, free consultation, dental clinic in gurgaon, orthodontist in gurgaon, gynecologist in gurgaon, gynecology clinic gurgaon, psychologist in gurgaon, psychotherapist in gurgaon, hair transplant clinic in gurgaon, radiologist in gurgaon, ivf in gurgaon, ayurvedic clinic in gurgaon, child specialist in gurgaon, pediatrician in gurgaon, pathology in gurgaon, biopsy test in gurgaon, orthopedics doctor in gurgaon, ent specialist in gurgaon, ent surgeon in gurgaon, eye hospital in gurgaon, ophthalmologist in gurgaon, dermatologist in gurgaon, best neurologist in gurgaon, neuro hospital in gurgaon">
+                    </meta>
                 </Helmet>
-
                 <h1 className="h15">Welcome To India's First Utility Network</h1>
-                <h3 className="header2">Experience our unique AI & avail upto 50% off on all your Medical Procedures, Diagnostics & Appointments</h3>
-                
-                {/* carousel */}
-                <section className="carousel-landing-page">
-                
-                 <div className="container-fluid">
+                <h2 className="header2">Experience our unique AI & avail upto 50% off on all your Medical Procedures, Diagnostics & Appointments</h2>
+                <div className="container-fluid">
                     <div className="main-content">
-                        <div class="owl-carousel owl-theme " id="owl-demo">
-
-
+                        <div class="owl-carousel owl-theme" id="owl-demo">
                             <div class="item">
                                 <a href="/dermatology">
                                     <div class="card" >
-                                        <img className=" card-align" src="Dermat.png" alt="" />
+                                        <img className=" card-align" src="/Dermat.png" alt=".." />
                                         <div class="card-body ">
-                                            <h3 class="card-title2 ">Dermatology Procedures</h3>
+                                            <h1 class="card-title2 ">Dermatology Procedures</h1>
                                             <p class="card-text2">Dermatology Consultation <br></br> Laser Hair Reduction <br></br> Botox Treatment</p>
                                         </div>
                                     </div>
@@ -263,9 +245,9 @@ class LandingContainer extends React.Component {
                             <div class="item">
                                 <a href="/gynae">
                                     <div class="card" >
-                                        <img className=" card-align" src="Gyneco.png" alt="" />
+                                        <img className="card-align" src="/Gyneco.png" alt=".." />
                                         <div class="card-body ">
-                                            <h1 class="card-title2 ">Gynecology Procedures</h1>
+                                            <h1 class="card-title2">Gynecology Procedures</h1>
                                             <p class="card-text2">Gynecologist Consultation<br></br>Cesarean / C-section <br></br>Ovarian Cyst Removal</p>
                                         </div>
                                     </div></a>
@@ -273,7 +255,7 @@ class LandingContainer extends React.Component {
                             <div class="item">
                                 <a href="/radiology">
                                     <div class="card" >
-                                        <img className="card-align" src="Radio.png" alt="" />
+                                        <img className="card-align" src="/Radio.png" alt=".." />
                                         <div class="card-body ">
                                             <h1 class="card-title2 ">Radiology Diagnosis </h1>
                                             <p class="card-text2">MRI, CT Scan, X-ray<br></br> Ultrasound <br></br>Doppler Test</p>
@@ -284,8 +266,8 @@ class LandingContainer extends React.Component {
                             <div class="item">
                                 <a href="/dentist">
                                     <div class="card" >
-                                        <img className="card-align" src="/dent.png" alt="" />
-                                        <div class="card-body ">
+                                        <img className="card-align" src="/dent.png" alt=".." />
+                                        <div class="card-body "> 
                                             <h1 class="card-title2 ">Dentistry Procedures</h1>
                                             <p class="card-text2">Tooth Removal, Tooth Whitening<br></br>Root Canal Treatment<br></br>Dental Implant, Braces</p>
                                         </div>
@@ -295,7 +277,7 @@ class LandingContainer extends React.Component {
                             <div class="item">
                                 <a href="/pathology">
                                     <div class="card" >
-                                        <img className=" card-align" src="Pathology.png" alt="" />
+                                        <img className=" card-align" src="/Pathology.png" alt=".." />
                                         <div class="card-body ">
                                             <h1 class="card-title2 ">Pathology Tests</h1>
                                             <p class="card-text2">Complete Blood Count Test<br></br>LIPID Profile<br></br>HIV Test</p>
@@ -306,15 +288,14 @@ class LandingContainer extends React.Component {
                             <div className='item'>
                                 <a href="/orthopedics">
                                     <div class="card" >
-                                        <img className=" card-align" src="Orthopedics.png" alt="" />
+                                        <img className=" card-align" src="/Orthopedics.png" alt=".." />
                                         <div class="card-body ">
-                                            <h3 class="card-title2 ">Orthopedic Procedures</h3>
+                                            <h1 class="card-title2 ">Orthopedic Procedures</h1>
                                             <p class="card-text2">Joint Replacement<br></br>Fracture<br></br>Arthroplasty</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-
                         </div>
                         <div class="owl-theme">
                             <div class="owl-controls">
@@ -323,24 +304,18 @@ class LandingContainer extends React.Component {
                         </div>
                     </div>
                 </div>
-               </section> 
-
                 <hr width="70%" ></hr>
-
                 <div className="container download-area">
-
                     <h1 className="h11">Book instantly from top doctors/hospitals near you</h1>
-
                     <div className="row">
                         <div className="col-sm-6">
-                            <img className="download-app-pic" src="Category.png" alt="" />
-                            <img className="download-app-pic2" src="mobail.png"  alt=""/>
-
+                            <img className="download-app-pic" src="/Category.png" alt=".." />
+                            <img className="download-app-pic2" src="/mobail.png" alt=".." />
                         </div>
                         <div className="col-sm-6">
                             <p className="download-text"> Download Plunes App Now!  </p>
-                            <p className="download-text2">Book Procedures, Medical Tests & Appointments</p>
-                            <p className="download-text3">Get the link to download app</p>
+                            <p className="download-text2">Book Medical Procedures, Appointments & Tests </p>
+                            <p className="download-text3">Get link to download the app</p>
                             <div className="download-link-app">
                                 <form onSubmit={this.sendAppLink}>
                                     <span><input id="UserMobile" value={this.state.countryCode ? this.state.countryCode : '+91'} onChange={this.handleChange} name='countryCode' className="number-text2" maxLength="3" data-fv-numeric="true" data-fv-numeric-message="Please enter your numbers" data-fv-phone-country11="IN" required="required" data-fv-notempty-message="This field cannot be left blank." placeholder="+91 " data-fv-field="data[User][mobile]"></input></span>
@@ -348,54 +323,38 @@ class LandingContainer extends React.Component {
                                     <button type='submit' class="btn btn-primary button-view button-align">Get App Link</button>
                                 </form>
                             </div>
-                            <span> <a href="https://apps.apple.com/us/app/plunes/id1463747553"> <img className="download-logo" src="app-store.png" /></a></span>
-                            <span><a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en_IN"> <img className="download-logo2" src="Play-store.png" /></a></span>
-
+                            <span> <a href="https://apps.apple.com/us/app/plunes/id1463747553"> <img className="download-logo" src="/app-store.png" alt=".." /></a></span>
+                            <span><a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en_IN"> <img className="download-logo2" src="/Play-store.png" alt=".." /></a></span>
                         </div>
                     </div>
                 </div><br></br>
                 <hr width="70%" ></hr>
                 <div className='container-fluid why-plunes'>
-
                     <h1 className="header"> Why Plunes?</h1>
-
                     <div className='row'>
                         <div className='col-sm-1 why-plunes'></div>
                         <div className='col-sm-6'>
-                            <ul className="why-plunes-align" style={{ listStyleType: 'none' }}>
-                                <li className="pencil-align"><img src='/payment refundable.png' height='25px' width='25px' alt=""></img><span className="pencil">100% Refundable Payment </span></li><br></br>
-                                <li className="pencil-align"><img src='/availability.png' height='25px' width='25px' alt=""></img><span className="pencil">Preferred Timing as Per Your Availability</span></li><br></br>
-                                <li className="pencil-align" ><img src='/free-telephonic.png' height='25px' width='25px' alt=""></img><span className="pencil">Free Telephonic Consultations</span></li><br></br>
+                            <ul className="why-plunes-align">
+                                <li className="pencil-align"><img className="why-plunes-img" src='/payment refundable.png' alt=".."></img><span className="pencil">100% Refundable Payment </span></li><br></br>
+                                <li className="pencil-align"><img className="why-plunes-img" src='/availability.png' alt=".."></img><span className="pencil">Preferred Timing as Per Your Availability</span></li><br></br>
+                                <li className="pencil-align" ><img className="why-plunes-img" src='/free-telephonic.png' alt=".."></img><span className="pencil">Free Telephonic Consultations</span></li><br></br>
                             </ul>
-
                         </div>
-                      
                         <div className='col-sm-4'>
-                            <ul className="pencil-ul why-plunes-align" style={{ listStyleType: 'none' }}>
-                                <li className="pencil-align"><img src='/first_consultation.png' height='25px' width='25px' alt=""></img><span className="pencil">First Consultation Free</span></li><br></br>
-                                <li className="pencil-align"><img src='/partial-payments.png' height='25px' width='25px' alt=""></img><span className="pencil">Make Partial Payments</span></li><br></br>
+                            <ul className="pencil-ul why-plunes-align">
+                                <li className="pencil-align"><img className="why-plunes-img" src='/first_consultation.png'alt=".."></img><span className="pencil">First Consultation Free</span></li><br></br>
+                                <li className="pencil-align"><img className="why-plunes-img" src='/partial-payments.png' alt=".."></img><span className="pencil">Make Partial Payments</span></li><br></br>
                             </ul>
                         </div>
                         <div className='col-sm-1'></div>
-
                     </div>
-
                 </div>
-
                 <div>
-
                     <hr width="70%"></hr>
                 </div>
-
-
                 <div>
-
                     <div>
-
-                        {/* <h3 class="h12"> Best Doctors, Hassle-free Payments With Seamless Experience
-               </h3> */}
                         <p className="header2"></p>
-
                     </div>
                     <div className="container-fluid download-area ">
                         <div className="container-fluid middle-container">
@@ -403,7 +362,7 @@ class LandingContainer extends React.Component {
                                 <div className=" col-sm-4">
                                     <div class="item bootstrap-card">
                                         <div class="card" >
-                                            <img className="card-item-top" src="Physiotherapy.png" alt="" />
+                                            <img className="card-item-top" src="/Physiotherapy.png" alt=".." />
                                             <div class="card-body">
                                                 <h1 class="card-title ">Physiotherapy</h1>
                                                 <p class="card-text">Physiotherapy Consultation <br></br>Back Pain/Knee Pain <br></br>Frozen Shoulder</p>
@@ -415,7 +374,7 @@ class LandingContainer extends React.Component {
                                 <div className="col-sm-4">
                                     <div class="item bootstrap-card" >
                                         <div class="card ">
-                                            <img className="card-item-top" src="PSYCHIATRISTS.png" alt="" />
+                                            <img className="card-item-top" src="/PSYCHIATRISTS.png" alt=".." />
                                             <div class="card-body ">
                                                 <h1 class="card-title ">Psychiatry</h1>
                                                 <p class="card-text">Psychiatric Consultation<br></br>Autism Assessment <br></br> Counseling</p>
@@ -424,11 +383,10 @@ class LandingContainer extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div className="col-sm-4">
                                     <div class="item bootstrap-card">
                                         <div class="card ">
-                                            <img className="card-item-top" src="OPHTHAMOLOGIST.png" alt="" />
+                                            <img className="card-item-top" src="/OPHTHAMOLOGIST.png" alt=".." />
                                             <div class="card-body ">
                                                 <h1 class="card-title ">Ophthalmology</h1>
                                                 <p class="card-text">Ophthalmology Consultation<br></br>Cataract Surgery <br></br>Glaucoma Surgery</p>
@@ -438,13 +396,11 @@ class LandingContainer extends React.Component {
                                     </div>
                                 </div>
                             </div>
-
-
                             <div className="row" >
                                 <div className=" col-sm-4">
                                     <div class="item bootstrap-card">
                                         <div class="card" >
-                                            <img className="card-item-top" src="Neurologist.png" alt="" />
+                                            <img className="card-item-top" src="/Neurologist.png" alt=".." />
                                             <div class="card-body ">
                                                 <h1 class="card-title ">Neurology</h1>
                                                 <p class="card-text">Neurology Consultation <br></br>Chemotherapy <br></br>Brain Tumor Surgery</p>
@@ -456,7 +412,7 @@ class LandingContainer extends React.Component {
                                 <div className="col-sm-4">
                                     <div class="item bootstrap-card">
                                         <div class="card">
-                                            <img className="card-item-top" src="PEDIATRICIAN.png" alt="" />
+                                            <img className="card-item-top" src="/PEDIATRICIAN.png" alt=".." />
                                             <div class="card-body ">
                                                 <h1 class="card-title ">Pediatry</h1>
                                                 <p class="card-text">Pediatric Consultation <br></br>Vaccination <br></br>Heart Murmur Treatment</p>
@@ -464,44 +420,28 @@ class LandingContainer extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 <div className="col-sm-4">
                                     <div class="item bootstrap-card">
                                         <div class="card">
-                                            <img className="card-item-top" src="IVF.png" alt="" />
+                                            <img className="card-item-top" src="/IVF.png" alt=".." />
                                             <div class="card-body ">
                                                 <h1 class="card-title ">IVF</h1>
-                                                <p class="card-text">Laproscopic IVF <br></br>Ovarian Reserve Assessment<br></br>Semen Analysis</p>
+                                                <p class="card-text">Laparoscopic IVF <br></br>Ovarian Reserve Assessment<br></br>Semen Analysis</p>
                                                 <a href="/ivf" class="btn btn-primary button-view">view more</a>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-
                             <h3 className="h13">Long gone are the days of waiting in the queue!</h3>
-
-
                             <div className="row">
                                 <h3 className="header2">Save Time, Save Money!</h3>
-
                             </div>
-
                         </div>
-
- 
-
                     </div>
-
                 </div>
-
             </div>
-
-
-
         </Router >
     }
 }

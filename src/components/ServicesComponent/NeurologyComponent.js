@@ -13,9 +13,9 @@ return (
         <meta charSet="utf-8" />
             <link rel="canonical" href="https://www.plunes.com/neurology" />
             <title>A Complete Guide To Neurology: All You Need To Know</title>
-            <meta name='keywords' content='best neurologist in gurgaon, neuro clinic gurgaon, neuro hospital gurgaon, brain treatment gurgaon, brain tumor operation gurgaon, brain tumor removal gurgaon, neuro specialist doctor gurgaon'>
+            <meta name='keywords' content='best neurologist in gurgaon, neuro clinic gurgaon, neuro hospital gurgaon, brain treatment gurgaon, brain tumor operation gurgaon, brain tumor removal gurgaon, neuro specialist doctor gurgaon, Neurology'>
             </meta>
-        <meta name="description" content="Search for the desired procedures such as chemotherapy, brain tumor surgery, stereotactic radiosurgery etc & avail upto 50% discount.">
+        <meta name="description" content="Search for the desired procedures under neurology such as chemotherapy, brain tumor surgery, stereotactic radiosurgery etc & avail upto 50% discount.">
         </meta>
     </Helmet>
 <LandingHeader />
@@ -40,7 +40,7 @@ return (
 <div className="col-sm-11 header2-text">
 <div className="row">
 <div className="col-sm-2">
-<img className="dentist-image" src="Neurologist.png" alt=""/>
+<img className="dentist-image" src="/Neurologist.png" alt=".."/>
 </div>
 <div className="col-sm-9 view-more-align">
 <h3 className="header-font">Neurology</h3>

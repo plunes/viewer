@@ -13,7 +13,7 @@ export default class GynaeComponent extends Component {
                 <link rel="canonical" href="https://www.plunes.com/gynae" />
                 <title>A Complete Guide To Gynaecology: All You Need To Know</title>
                 <meta name='keywords' content='gynecologist in gurgaon, gynecology clinic gurgaon, gynecology hospital gurgaon'></meta>
-                <meta name="description" content="Search for the desired procedure such as vulvar biopsy, ovarian cyst removal, laparotomy, C-section/cesarean etc & avail upto 50% discount.">
+                <meta name="description" content="Search for the desired procedures under gynecology such as vulvar biopsy, ovarian cyst removal, laparotomy, C-section/cesarean etc & avail upto 50% discount.">
                 </meta>
                 </Helmet>
                 <LandingHeader />
@@ -38,7 +38,7 @@ export default class GynaeComponent extends Component {
                     <div className="col-sm-11 header2-text">
                         <div className="row">
                             <div className="col-sm-2">
-                                <img className="dentist-image" src="/Gyneco.png" alt="" />
+                                <img className="dentist-image" src="/Gyneco.png" alt=".." />
                             </div>
                             <div className="col-sm-9 view-more-align">
                                 <h3 className="header-font">Gynecology</h3>

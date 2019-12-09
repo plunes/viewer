@@ -14,7 +14,7 @@ class PlockrComponent extends Component {
                 <link rel="canonical" href="https://www.plunes.com/plockr" />
                 <title>India's first cross-functional Integrated platform for EMRs </title>
                 <meta name='keywords' content='plockr, EMR, electronic medical records, cloud solution'></meta>
-                <meta name="description" content="EMRs stands for Electronic Medical Records. Get the doctor’s remarks & medical reports delivered directly in your PLOCKR ID, for a seamless experience.">
+                <meta name="description" content="EMRs stands for Electronic Medical Records. Get the doctor’s remarks & medical reports delivered directly in your PLOCKR ID, for a seamless experience. ">
                 </meta>
                 </Helmet>
                 <div>
@@ -52,7 +52,7 @@ class PlockrComponent extends Component {
                       
                         <div className='col-sm-4 '>
                             
-                            <img className="plocker-img col" src="PLOCKER.png" alt="" />
+                            <img className="plocker-img col" src="/PLOCKER.png" alt=".." />
                         </div>
                         <div className='col-sm-1 col'>
                         </div>

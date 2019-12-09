@@ -128,7 +128,7 @@ class CareersComponent extends Component {
                         <div className='col-md-1'>
                         </div>
                         <div className='col-sm-5'>
-                            <img className="career-img" src="careers.png" alt=""/>
+                            <img className="career-img" src="/careers.png" alt=".."/>
                         </div>
                         <div className='col-sm-4'>
                             <div className='row'>
@@ -158,21 +158,21 @@ class CareersComponent extends Component {
                         <div className="col-sm-1 ">
                         </div>
                         <div className="col-sm-2 full-life-alin col">
-                            <img className="img-width1" src="building_green.png" alt="" />
+                            <img className="img-width1" src="/building_green.png" alt=".." />
                             <p className="img-font2">Full-of-life <br></br>Office</p>
                         </div>
                         <div className="col-sm-2 grid-box-align col">
-                            <img className="img-width" src="people.png" alt=""/>
+                            <img className="img-width" src="/people.png" alt=".."/>
                             <p className="img-font2">Working with a <br></br>talented team
                             </p>
                         </div>
                         <div className="col-sm-2 grid-box-align col">
-                            <img className="img-width" src="earth.png" alt="" />
+                            <img className="img-width" src="/earth.png" alt=".." />
                             <p className="img-font2">The satisfaction<br></br> of building something<br></br> Phenomenal
                             </p>
                         </div>
                         <div className="col-sm-2 grid-box-align col">
-                            <img className="img-width" src="largest.png" alt=""/>
+                            <img className="img-width" src="/largest.png" alt=".."/>
                             <p className="img-font2">Largest pool of <br></br>ESOPs reserved for<br></br> employees
                             </p>
                         </div>
@@ -187,7 +187,7 @@ class CareersComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-2 col">
-                            <img className="img-width2" src="mssg.png" alt=""/>
+                            <img className="img-width2" src="/mssg.png" alt=".."/>
                             <p className="img-font">Review
                             </p>
                             <p  className="careers-content">
@@ -195,7 +195,7 @@ class CareersComponent extends Component {
                             </p>
                         </div>
                         <div className="col-sm-2 col">
-                            <img className="img-width2" src="tele.png" alt=""/>
+                            <img className="img-width2" src="/tele.png" alt=".."/>
                             <p className="img-font">Telephonic Interview
                             </p>
                             <p  className="careers-content">
@@ -204,7 +204,7 @@ class CareersComponent extends Component {
                             </p>
                         </div>
                         <div className="col-sm-2 col">
-                            <img className="img-width2" src="notepad.png" alt=""/>
+                            <img className="img-width2" src="/notepad.png" alt=".."/>
                             <p className="img-font">Task
                             </p>
                             <p className="careers-content">
@@ -212,7 +212,7 @@ class CareersComponent extends Component {
                             </p>
                         </div>
                         <div className="col-sm-2 col">
-                            <img className="img-width2" src="f2f_green.png" alt=""/>
+                            <img className="img-width2" src="/f2f_green.png" alt=".."/>
                             <p className="img-font" >F2F Interview
                             </p>
                             <p className="careers-content">
@@ -220,7 +220,7 @@ class CareersComponent extends Component {
                             </p>
                         </div>
                         <div className="col-sm-2 col ">
-                            <img className="img-width2" src="offer.png" alt="" />
+                            <img className="img-width2" src="/offer.png" alt=".." />
                             <p className="img-font">Offer
                             </p>
                             <p  className="careers-content">
@@ -294,15 +294,11 @@ class CareersComponent extends Component {
                         <div className="container career-table-align">
                         <form onSubmit = {this.handleSubmit}>
                    <table width="100"  class="table table-bordered table-responsive-sm">
-                
                    <tr>
-                       
                       <th style={{backgroundColor:'#F8F8F8'}}><p style={{fontWeight:'100'}}>NAME</p></th>
                           <th ><input className="form-control-contactus" value={this.state.fullname} name="fullname" placeholder="Enter Name" onChange={this.handleChange} required/></th>
                               </tr>
-                          
-                        
-                                   <tr>
+                            <tr>
                           <td style={{backgroundColor:'#F8F8F8'}}>Phone Number</td>
                         <td><input className="form-control-contactus" value={this.state.mobileNo} name="mobileNo" placeholder="Mobile Number" onChange={this.handleChange} required/>
                        </td>
@@ -312,20 +308,15 @@ class CareersComponent extends Component {
                   <td> <input className="form-control-contactus" value={this.state.email} name="email" placeholder="Enter Email Id" onChange={this.handleChange} required/>
                 </td>
                      </tr>
-            <tr>
+              <tr>
                 <td style={{backgroundColor:'#F8F8F8'}}>Attach Resume</td>
                 <td>
               <input type="file" name='file' onChange={this.handleChange} title="Choose a video please" id = 'fileinput'  required/>
               <label className="lable">(.doc, .docx, .pdf, .jpeg only)</label>
                 </td>
                     </tr>
-                
                      </table>
-                                                      
-                               
-                        
-                         <button type="submit" className="btn carers-button ">Submit</button>
-                        
+                 <button type="submit" className="btn carers-button ">Submit</button>
                          </form>
                          </div>
                          <Modal
@@ -333,17 +324,14 @@ class CareersComponent extends Component {
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
-        >
- 
-          <h2 style={{fontSize:'11px'}} ref={subtitle => this.subtitle = subtitle}>Hello</h2>
+          contentLabel="Example Modal">
+           <h2 style={{fontSize:'11px'}} ref={subtitle => this.subtitle = subtitle}>Hello</h2>
           <div>
             <h1 className="form-model-align">Your Application has <br></br>been submitted.</h1>
 
           </div>
           <button className="modle-button" onClick={this.closeModal}>close</button>
         </Modal>
-                   
                      <div className="row justify-content-center ">
                         <h1 className="career-header">Employment Policy</h1>
                     </div>
@@ -353,7 +341,6 @@ class CareersComponent extends Component {
                         <div className="col-sm-10">
                     <p className="if-u">Plunes's policy is to provide equal employment opportunities to all applicants and employees without regard to race, color, religion, creed, gender, gender identity or expression, age, national origin or ancestry, citizenship, disability, sexual orientation, marital status, pregnancy, veteran status, membership in the uniformed services, genetic information, or any other basis protected by applicable law. Plunes follows all legal and government regulations including those set forth by The Government of India.</p>
                         </div>
-                            
                         </div>
                     <div className="row justify-content-center">
                         <h1 className="career-header">Disclaimer</h1>
@@ -363,15 +350,11 @@ class CareersComponent extends Component {
                         <div className="col-sm-1"></div>
                         <div className="col-sm-10">
                         <p className="if-u">Our careers site is only for individuals seeking a position with Plunes Technologies Pvt. Ltd. Staffing and recruiting agencies and individuals being represented by an agency are not authorized to use this site or to submit profiles, applications, or resumes, and any such submissions will be considered unsolicited. Plunes does not accept unsolicited resumes or applications from agencies. Please do not forward resumes to our job alias, Plunes employees, or any other company location. Plunes is not responsible for any fees related to unsolicited resumes/applications. 
-                        <br></br>
-                       
+                        <br></br>                       
                         Any offer (s) of employment are contingent upon a satisfactory background and criminal records check, which will be conducted in accordance with local legal regulations.</p>
-                        
                         </div>
                         <div className="col-sm-1"></div>                        
                         </div>
-
-
                         </div>
                 <LandingFooter />       
             </div>
