@@ -55,9 +55,9 @@ export default class RadiologyComponent extends Component {
                         <br></br><br></br>
                         <h3 className="header-font">Why Plunes? </h3>
                         <p className="peragraph-text">
-                            We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dentistry procedures & treatments in Delhi NCR.</p>
-                        <p className="peragraph-text"> Search for the desired dental treatments such as hot sensitivity, cold sensitivity, oral checkup, dental implants, gum swelling, tooth ache, tooth pain, composite veneers, porcelain veneers, zirconia porcelain veneers, dental porcelain laminates, teeth bonding treatment, dental bonding or any other dentistry treatments & our AI will negotiate in real-time with top dentists & clinics nearest to you to get the best price in real time. </p>
-                        <p className="peragraph-text"> Avail upto 50% discount instantly at dental clinics & hospitals in Delhi NCR through Plunes!
+                        We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your radiology tests & examinations in Delhi NCR. </p>
+                        <p className="peragraph-text"> Search for the desired tests such as MRI, CT-Scan, X-Ray, Doppler or any other lab tests & our AI will negotiate in real-time with top radiologist labs nearest to you to get the best price in real time. </p>
+                        <p className="peragraph-text"> Avail upto 50% discount instantly at radiology clinics & hospitals in Delhi NCR through Plunes!
                         </p>
                     </div>
                     <div className="col-sm-1"></div>

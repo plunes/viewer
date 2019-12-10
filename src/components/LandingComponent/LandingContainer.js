@@ -308,7 +308,7 @@ class LandingContainer extends React.Component {
                 <div className="container download-area">
                     <h1 className="h11">Book instantly from top doctors/hospitals near you</h1>
                     <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-sm-6 ">
                             <img className="download-app-pic" src="/Category.png" alt=".." />
                             <img className="download-app-pic2" src="/mobail.png" alt=".." />
                         </div>

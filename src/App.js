@@ -36,6 +36,7 @@ import GynaeComponent from './components/ServicesComponent/GynaeComponent'
   import TeethWhiteningComponent from './components/ServicesComponent/TeethWhiteningComponent'
   import RootCanalComponent from './components/ServicesComponent/RootCanalComponent'
   import DentalComplicationsComponent from './components/ServicesComponent/DentalComplicationsComponent'
+  import PlockrAppComponent from './components/PlockrAppComponent/PlockrAppComponent'
 
  
 export default class App extends React.Component {
@@ -104,6 +105,8 @@ export default class App extends React.Component {
           <Route exact path='/dentalcomplications' component={() => (<DentalComplicationsComponent />)} />
           <Route exact path='/rootcanal' component={() => (<RootCanalComponent />)} />
           <Route exact path='/teethwhitening' component={() => (<TeethWhiteningComponent />)} />
+          <Route exact path='/plockrapp' component={() => (<PlockrAppComponent />)} />
+
         </Switch>
         </BrowserRouter>
       </div>

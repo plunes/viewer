@@ -27,8 +27,7 @@
   .h11{
     margin-top: 105px !important;
   }
-  
-  
+
   .dropdown-toggle{
     width: 108% !important;
     margin-left: 8% !important;
@@ -624,7 +623,7 @@ width: 190px !important;
   }
   .dropdown-menu.show{
    border-radius: 15px;
-   width: 100% !important;
+   width: 101% !important;
   }
 
    
