@@ -20,12 +20,13 @@ class PlockrAppComponent extends Component {
     }
 
     componentDidMount(){
-        // if(localStorage.getItem('isAuth')){
-        //     this.setState({
-        //         showNumber: true,
-        //         showLogin : false
-        //     })
-        // }
+        // console.log('anshul')
+        if(localStorage.getItem('isAuth')){
+            this.setState({
+                showNumber: true,
+                showLogin : false
+            })
+        }
     }
 
     handlelogout(e){
@@ -34,8 +35,13 @@ class PlockrAppComponent extends Component {
         console.log(token, 'token')
         axios.post('https://plunes.co/v4/user/logout', "",  { headers: { "Authorization": `Bearer ${token}` , "Content-Type" : "application/json" } })
         .then((response) => {
-            localStorage.removeItem('auth')
-            console.log(response, 'response')
+            localStorage.removeItem('auth');
+            localStorage.removeItem('isAuth');
+            localStorage.removeItem('uploaderUserId');
+            this.setState({
+                showNumber: false,
+                showLogin : true
+            })
         })
         .catch(error => {
             console.log(error, 'error')
