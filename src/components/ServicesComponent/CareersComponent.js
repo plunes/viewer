@@ -86,21 +86,21 @@ class CareersComponent extends Component {
                     mobileNumber :  this.state.mobileNo,
                     filename : res.data.filename
                 }
-                this.setState({
-                            modalIsOpen: true
-                        })
-                // axios.post('https://plunes.co/v4/notification/resume', userData)
-                // .then(res => {
-                //     this.setState({
-                //         modalIsOpen: true
-                //     })
-                //     document.getElementById('fileinput').value= null;
-                //     this.setState({
-                //         fullname : '',
-                //         mobileNo : '',
-                //         email: ''
-                //     })
-                // })
+                // this.setState({
+                //             modalIsOpen: true
+                //         })
+                axios.post('https://plunes.co/v4/notification/resume', userData)
+                .then(res => {
+                    this.setState({
+                        modalIsOpen: true
+                    })
+                    document.getElementById('fileinput').value= null;
+                    this.setState({
+                        fullname : '',
+                        mobileNo : '',
+                        email: ''
+                    })
+                })
             }
         })
     }

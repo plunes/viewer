@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PlockrProfileComponent from './PlockrProfileComponent';
 import axios from 'axios'
+import './PlockrAppComponent.css'
 
 class PlockrAppComponent extends Component {
     constructor(props) {
@@ -20,12 +21,12 @@ class PlockrAppComponent extends Component {
     }
 
     componentDidMount(){
-        // if(localStorage.getItem('isAuth')){
-        //     this.setState({
-        //         showNumber: true,
-        //         showLogin : false
-        //     })
-        // }
+        if(localStorage.getItem('isAuth')){
+            this.setState({
+                showNumber: true,
+                showLogin : false
+            })
+        }
     }
 
     handlelogout(e){
@@ -89,40 +90,60 @@ class PlockrAppComponent extends Component {
         if (this.state.showLogin) {
             return (
                 <div className='container-fluid'>
-                    <div className='row'>
-                        <div className='col-md-3'>
+                    <div className="navbar navbar-expand-lg navbar-light ">
+                   <a href="/"> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
+
+                    </div>
+                    <div className='row row-align'>
+                        <div className='col-sm-4'>
+                        
                         </div>
-                        <div className='col-md-6'>
-                            <h1>Login Form</h1>
+                        <div className='col-sm-4 col-align'>
+                            <h1 className="plockr-app-login" >Login here</h1>
                             <form onSubmit={this.handleSubmit}>
-                                <div class="form-group">
-                                    <label>Enter your Mobile Number</label>
-                                    <input type="tel" className="form-control" name='mobileNo' placeholder="Enter your Number" onChange={this.handleChange} />
+                                <div className="form-group">
+                                    <input type="tel" className="form-control-app plockr-app-form" name='mobileNo' placeholder="Email Id" onChange={this.handleChange} />
                                 </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" className="form-control" name='password' placeholder="Enter Password" onChange={this.handleChange} />
+                                <div className="form-group">
+                                    <input type="password" className="form-control-app plockr-app-form" name='password' placeholder=" Password" onChange={this.handleChange} />
                                 </div>
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" className="btn plockrapp-button">Login</button>
                             </form>
                         </div>
-                        <div className='col-md-3'>
+                        <div className='col-sm-4'>
                         </div>
                     </div>
                 </div>
             )
         } else {
             return (
-                <div className='container'>
+                <div className='container-fluid'>
                     {
-                        this.state.showNumber ? <div class="jumbotron">
+                        this.state.showNumber ? 
+                        <div className="container-fluid">
+                            <div className="navbar navbar-expand-lg navbar-light ">
+                           <a href="/"> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
+                            </div>
                             <form onSubmit={this.handleNumberSubmit}>
-                                <div class="form-group">
-                                    <label>Enter your mobile number</label>
-                                    <input type="tel" className="form-control" name='patientMobileNo' placeholder="Enter Mobile Number" onChange={this.handleChange} />
+                            <div className='row row-align'>
+                              <div className='col-sm-4'>
                                 </div>
-                                <button type="submit" className="btn btn-primary">Submit</button>
-                                <button type="button" className="btn btn-primary" onClick = {this.handlelogout}>Logout</button>
+                                <div className="col-sm-4 col-align">
+                                <div class="form-group">
+                                    <h1 className="plockr-app-login">Enter your mobile number</h1>
+                                    <input type="tel" className="form-control-app plockr-app-form" name='patientMobileNo' placeholder="Enter Mobile Number" onChange={this.handleChange} />
+                                </div>
+                                <button type="submit" className="btn plockrapp-button"> Submit</button>
+                                <div className="row">
+                                <button type="button" className="btn logout" onClick = {this.handlelogout}>Logout</button>
+
+                                    </div>
+                                </div>
+                                <div className="col-sm-4">
+                                    </div>
+                                  
+                              </div>
+                               
                             </form>
                         </div> : <PlockrProfileComponent user={this.state.userDetails} />
                     }
