@@ -77,7 +77,7 @@ class RegistrationComponent extends React.Component {
                                 <h4 class="signUpText">Sign up</h4>
                             </div>
                             <div class="form-group">
-                                <select class="form-control2" onChange = {this.handleChange}>
+                                <select class="form-control2 option-signup" onChange = {this.handleChange}>
                                     <option value= 'userForm'>General User</option>
                                     <option value= 'docForm'>Doctors</option>
                                     <option value= 'hospitalForm'>Hospitals</option>

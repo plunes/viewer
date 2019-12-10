@@ -129,7 +129,7 @@ class PlockrProfileComponent extends Component {
                             <a href="/"> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
                         </div>
                     </div>
-                    <div className='row'>
+                    <div className='row profile-row-align'>
                         <Modal
                             isOpen={this.state.modalIsOpen}
                             onAfterOpen={this.afterOpenModal}
@@ -148,10 +148,9 @@ class PlockrProfileComponent extends Component {
                         <div className='col-sm-6'>
                             <div className='row'>
                                 <div className='col-sm-2'>
-                                    <img src={this.state.imgUrl} height='100px' width='100px' />
+                                    <img src={this.state.imgUrl} height='auto' width='100px' />
                                 </div>
                                 <div className='col-sm-10'>
-                                    <h1>PatientID</h1>
                                     <h1>{this.state.name}</h1>
                                     <p>{this.state.email}</p>
                                 </div>
@@ -160,7 +159,7 @@ class PlockrProfileComponent extends Component {
 
                                 <div class="form-group ">
                                     <select class="form-control plockr-app-form" onChange={this.handleChange} name='speciality'  required >
-                                    <option value='5de4218d6a2be815b9e215e0'>speciality</option>
+                                    <option value=''>Speciality</option>
                                         <option value='5de4218d6a2be815b9e215e0'>Dentist</option>
                                         <option value='5de4218d6a2be815b9e215e2'>Psychologist</option>
                                         <option value='5de4218d6a2be815b9e215e7'>Gynaecologist</option>
@@ -180,41 +179,41 @@ class PlockrProfileComponent extends Component {
                                         <option value='5de4218d6a2be815b9e215ee'>Neurosurgeon</option>
                                         <option value='5de4218d6a2be815b9e215f0'>Pulmonologist</option>
                                     </select>
-                                </div>
+                                </div><br></br>
                                 <div className="form-group">
                                    
                                     <textarea className="form-control plockr-app-form" placeholder="Problem Area (Diagnosis)" rows="2"  name='problemAreaDiagnosis' onChange={this.handleChange} ></textarea>
-                                </div>
+                                </div><br></br>
                                 <div className="form-group">
                                     
                                     <textarea className="form-control plockr-app-form" placeholder="Reason (Diagnosis)" rows="2" name='reasonDiagnosis' onChange={this.handleChange}></textarea>
-                                </div>
+                                </div><br></br>
                                 <div className="form-group">
                         
                                     <textarea className="form-control plockr-app-form" placeholder="Consumption (Diet)" rows="2" name='consumptionDiet' onChange={this.handleChange}></textarea>
-                                </div>
+                                </div><br></br>
                                 <div className="form-group">
                                     
                                     <textarea className="form-control plockr-app-form" placeholder="Avoid (Diet)" rows="2" name='avoidDiet' onChange={this.handleChange}></textarea>
-                                </div>
+                                </div><br></br>
                                 <div className="form-group">
                                     
                                     <textarea className="form-control plockr-app-form" placeholder="Precautions" rows="2" name='precautions' onChange={this.handleChange}></textarea>
-                                </div>
+                                </div><br></br>
                                 <div className="form-group">
                                     
                                     <textarea className="form-control plockr-app-form" placeholder="Medicine" rows="2" name='medicines' onChange={this.handleChange}></textarea>
-                                </div>
+                                </div><br></br>
                                 <div className="form-group">
                                     
-                                    <textarea className="form-control plockr-app-form" placeholder="Remarks" rows="5" name='remarks' onChange={this.handleChange}></textarea>
-                                </div>
+                                    <textarea className="form-control plockr-app-form" placeholder="Remarks" rows="2" name='remarks' onChange={this.handleChange}></textarea>
+                                </div><br></br>
                                 <div className='form-group'>
                                     <input type="file" name='file' onChange={this.handleChange} title="Choose a video please" id='fileinput' required />
-                                    <label className="lable">(.doc, .docx, .pdf, .jpeg only)</label>
+                                    <label className="lable2">(.doc, .docx, .pdf, .jpeg only)</label>
                                 </div>
-                                <button type="submit" className="btn btn-primary">Submit</button>
-                                <a href='/plockrapp'>Cancel</a>
+                                <button type="submit" className="btn profile-button">Submit</button>
+                                <a  class="btn profile-button2" href='/plockrapp'>Cancel</a>
                             </form>
                         </div>
                         <div className='col-sm-3'>

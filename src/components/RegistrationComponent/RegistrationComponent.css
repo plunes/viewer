@@ -20,7 +20,6 @@ height: 88px  !important;
     outline: none;
     background-color: #ffffff;
    border:  1px solid #ced4da;
-    height: 40px;
 }
 .btn-block{
     border-radius: 44px !important;
@@ -69,6 +68,9 @@ height: 88px  !important;
     background-color: white;
     outline: none !important;
     border: none;
+}
+.option-signup{
+    height: 45px;
 }
 
 

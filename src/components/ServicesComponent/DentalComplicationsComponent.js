@@ -28,10 +28,10 @@ class DentalComplicationsComponent extends Component {
                         <div className="col-sm-1">
 
                         </div>
-                        <div className="col-sm-5">
+                        <div className="col-sm-5 ">
                             <img className="dentalcompli-img" src="/blog5.png" alt=".." />
                         </div>
-                        <div className="col-sm-5">
+                        <div className="col-sm-5 ">
                             <p className="dental-problem">Dental problems are very common these days also can't be ignored. Almost everyone at some stage of life would face dental problems in different forms. Maximum time oral problems do happen by the care we give to our teeth, ignorance or simply by our hereditary. One of the great facts is an advancement in dental care has made the entire clinical procedure pain free. Most of the dental problems can easily be prevented and cured. Although proper dental floss, brushing twice a day and regular dental checkup is so much important to stay away from any dental complication. Be aware of all the general dental complications to stay away from all the infectious causes. </p>
                             <p className="dental-problem">There are a few dental problems that are very common along with the prevention guidelines.</p>
 
