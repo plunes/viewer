@@ -27,10 +27,10 @@ class TeethWhiteningComponent extends Component {
                         <div className="col-sm-1">
 
                         </div>
-                        <div className="col-sm-5">
+                        <div className="col-sm-4">
                             <img className="dentalcompli-img" src="/blog3.png"  alt=".."/>
                         </div>
-                        <div className="col-sm-5">
+                        <div className="col-sm-6">
                             <p className="dental-problem">Are you conscious about your teeth before you can laugh freely? Though you are flossing twice a day but no improvement with your yellow teeth? Then it’s time to consider other options and you have arrived on the correct page!<br></br>
                               Knowing you’re flashing a healthy, bright smilebuilds confidence, and tooth whitening isone of the safest, easiest and fastest ways to get your teeth in its best possible condition</p>
                             <h1 className="what-is-it">What Is It?</h1>

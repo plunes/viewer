@@ -28,10 +28,10 @@ class RootCanalComponent extends Component {
                         <div className="col-sm-1">
 
                         </div>
-                        <div className="col-sm-5">
+                        <div className="col-sm-4">
                             <img className="dentalcompli-img" src="/blog1.png" alt=".." />
                         </div>
-                        <div className="col-sm-5">
+                        <div className="col-sm-6">
                             <p className="dental-problem">Despite of how scary it feels to undergo Root Canal Treatment, it is ensured that the procedure helps to remove the infected tissue or canal successfully and gives you much relief from the teeth pain. Let’s first understand how RCT (Root Canal Treatment) helps to newly restore the decayed or infected tooth. </p>
                             <h1 className="what-is-it">What Is It?</h1>
                             <p className="dental-problem">Usually, root canals are recommended or needed when there is an infection deep within the tooth. The pulp inside the tooth can become infected with bacteria because of an injury or because of a severe, untreated cavity. Without treatment, the infection can become severe enough that the tooth has to be removed. This treatment also protects our teeth from future infections.</p>
