@@ -232,7 +232,6 @@ class PlockrProfileComponent extends Component {
             );
         }
 
-
     }
 }
 
