@@ -150,4 +150,4 @@ class PlockrAppComponent extends Component {
     }
 }
 
-export default PlockrAppComponent;g
+export default PlockrAppComponent;
