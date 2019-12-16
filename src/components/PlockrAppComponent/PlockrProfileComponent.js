@@ -18,8 +18,8 @@ class PlockrProfileComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: this.props.user.name ? this.props.user.name : '',
-            email: this.props.user.email ? this.props.user.email : '',
+            name: this.props.user.name ? this.props.user.name : 'General user' ,
+            email: this.props.user.email ? this.props.user.email : 'generaluser@plunes.com',
             userId: localStorage.getItem('uploaderUserId'),
             patientMobileNumber: this.props.user.mobileNumber,
             problemAreaDiagnosis: '',
@@ -33,6 +33,7 @@ class PlockrProfileComponent extends Component {
             showLogin: false,
             modalIsOpen: false,
             speciality: '',
+            reportName: '',
             imgUrl: this.props.user.imageUrl ? this.props.user.imageUrl : 'https://profile-image-plunes.s3.amazonaws.com/profilephotos/default_img.png'
         }
         this.handleLogout = this.handleLogout.bind(this)
@@ -82,6 +83,7 @@ class PlockrProfileComponent extends Component {
                         precautions: this.state.precautions,
                         medicines: this.state.medicines,
                         remarks: this.state.remarks,
+                        reportName: this.state.reportName,
                         reportUrl: "https://plunes.co/v4/" + res.data.path
                     }
                     console.log(body, 'body')
@@ -138,9 +140,9 @@ class PlockrProfileComponent extends Component {
                             contentLabel="Example Modal">
                             <h2 style={{ fontSize: '11px' }} ref={subtitle => this.subtitle = subtitle}>Hello</h2>
                             <div>
-                                <h1 className="form-model-align">Form Successfully Submitted.</h1>
+                                <h1 className="form-model-align">Form Successfully Submitted</h1>
                             </div>
-                            <a type='button' href='/plockrapp'>OK</a>
+                            <a type='button' className="btn model-button2" href='/plockrapp'>OK</a>
                         </Modal>
                         <div className='col-sm-3'>
                         </div>
@@ -158,8 +160,8 @@ class PlockrProfileComponent extends Component {
                             <form onSubmit={this.handleSubmit}>
 
                                 <div class="form-group ">
-                                    <select class="form-control plockr-app-form" onChange={this.handleChange} name='speciality'  required >
-                                    <option value=''>Speciality</option>
+                                    <select class="form-control plockr-app-form" onChange={this.handleChange} name='speciality' required >
+                                        <option value=''>Speciality</option>
                                         <option value='5de4218d6a2be815b9e215e0'>Dentist</option>
                                         <option value='5de4218d6a2be815b9e215e2'>Psychologist</option>
                                         <option value='5de4218d6a2be815b9e215e7'>Gynaecologist</option>
@@ -181,39 +183,46 @@ class PlockrProfileComponent extends Component {
                                     </select>
                                 </div><br></br>
                                 <div className="form-group">
-                                   
-                                    <textarea className="form-control plockr-app-form" placeholder="Problem Area (Diagnosis)" rows="2"  name='problemAreaDiagnosis' onChange={this.handleChange} ></textarea>
+
+                                    <textarea className="form-control plockr-app-form" placeholder="Report Name" rows="2" name='reportName' onChange={this.handleChange} ></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-                                    
+
+                                    <textarea className="form-control plockr-app-form" placeholder="Problem Area (Diagnosis)" rows="2" name='problemAreaDiagnosis' onChange={this.handleChange} ></textarea>
+                                </div><br></br>
+                                <div className="form-group">
+
                                     <textarea className="form-control plockr-app-form" placeholder="Reason (Diagnosis)" rows="2" name='reasonDiagnosis' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-                        
+
                                     <textarea className="form-control plockr-app-form" placeholder="Consumption (Diet)" rows="2" name='consumptionDiet' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-                                    
+
                                     <textarea className="form-control plockr-app-form" placeholder="Avoid (Diet)" rows="2" name='avoidDiet' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-                                    
+
                                     <textarea className="form-control plockr-app-form" placeholder="Precautions" rows="2" name='precautions' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-                                    
+
                                     <textarea className="form-control plockr-app-form" placeholder="Medicine" rows="2" name='medicines' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-                                    
+
                                     <textarea className="form-control plockr-app-form" placeholder="Remarks" rows="2" name='remarks' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className='form-group'>
-                                    <input type="file" name='file' onChange={this.handleChange} title="Choose a video please" id='fileinput' required />
-                                    <label className="lable2">(.doc, .docx, .pdf, .jpeg only)</label>
+                                    <div class="upload-btn-wrapper">
+                                        <button class="btn-file">Choose</button>
+                                        <label className="lable2">(.doc, .docx, .pdf, .jpeg only)</label>
+                                        <input type="file" name='file' onChange={this.handleChange} title="Choose a file please" id='fileinput' required />
+                                    </div>
                                 </div>
-                                <button type="submit" className="btn profile-button">Submit</button>
-                                <a  class="btn profile-button2" href='/plockrapp'>Cancel</a>
+                                <button type="submit" className="btn profile-button">Submit</button>    
+                                <a class="btn profile-button2" href='/plockrapp'>Cancel</a>
                             </form>
                         </div>
                         <div className='col-sm-3'>

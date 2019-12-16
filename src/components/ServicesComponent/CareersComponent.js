@@ -316,7 +316,7 @@ class CareersComponent extends Component {
                 </td>
                     </tr>
                      </table>
-                 <button type="submit" className="btn carers-button ">Submit</button>
+                 <button type="submit" className="btn carers-button">Submit</button>
                          </form>
                          </div>
                          <Modal
@@ -327,10 +327,10 @@ class CareersComponent extends Component {
           contentLabel="Example Modal">
            <h2 style={{fontSize:'11px'}} ref={subtitle => this.subtitle = subtitle}>Hello</h2>
           <div>
-            <h1 className="form-model-align">Your Application has <br></br>been submitted.</h1>
+            <h1 className="form-model-align">Your Application has <br></br>been submitted</h1>
 
           </div>
-          <button className="modle-button" onClick={this.closeModal}>close</button>
+          <button className="btn modle-button" onClick={this.closeModal}>close</button>
         </Modal>
                      <div className="row justify-content-center ">
                         <h1 className="career-header">Employment Policy</h1>

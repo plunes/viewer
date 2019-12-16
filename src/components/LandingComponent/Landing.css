@@ -241,33 +241,18 @@ margin-left: 12% !important;
     color: #343434; 
     font-weight: 500;
     margin-top: 140px; 
-   
-        
     }  
     .navbar-light .navbar-toggler{
       outline: none !important;
     }
-   
-
-
-
-
-
-    .card {
-      
+   .card {      
     position: relative !important;
     display: flex !important;
     flex-direction: column !important;
     word-wrap: break-word !important;
     background-clip: border-box !important;
-    
     width: 100% !important;
-    
- 
-  }
-  
-    
-    
+   }
     input[type=text] {
     
     box-sizing: border-box;
@@ -288,9 +273,7 @@ margin-left: 12% !important;
     margin-right: 150px;
     height: 45px;
 }
-  
-
-.nav33{
+  .nav33{
     
         display: block;
     text-align: center;
@@ -338,17 +321,13 @@ width: 190px !important;
       }
         .navbar-nav{
           margin-top: 10px;
-        }
-
-  
+        }  
     p {
     margin-top: 0;
     margin-bottom: 1rem;
         font-size: 13px}
-    
   
-    
-    .searchDropdown {
+        .searchDropdown {
       height: 200px;
       position: relative;
       left: 18px;
@@ -370,9 +349,7 @@ width: 190px !important;
     .download-area{
       margin-bottom: -6px !important;
     }
-   
-    
-    
+       
 }
 
 /* mediaquery done */
@@ -520,9 +497,6 @@ width: 190px !important;
     float: right;
     
   }
-  
-
-  
   .nav2 .nav3 {
     display: block;
     text-align: center;
@@ -536,7 +510,6 @@ width: 190px !important;
     height: 31px;
     width: 90%;
   }
-  
   .nav33 {
     display: block;
     text-align: center;
@@ -558,15 +531,11 @@ width: 190px !important;
   position: relative;
   bottom: 2px;
   }
-  
-  
   @media (max-width: 768px){
   .nav2 {
       float: right;
       margin-bottom: 15px;
-  }}
-  
-  
+  }} 
   .nav2 .nav3:hover {
     background-color: #01d35a !important;
      color:white !important;
@@ -592,10 +561,6 @@ width: 190px !important;
       margin-bottom: 170px;
       
   }
-
-  
-  
-  
   .form-control:focus{
     outline:none !important;
 
@@ -603,30 +568,24 @@ width: 190px !important;
  
   .fixed-top{
     box-shadow: 0px 0px 6px #00000029;
-    background-color:white;
-
+    background-color:white; 
   }
   .bootstrap-card{
     margin-left: 40px;
-  }
-  
-  
+  } 
   .h1 {
       font-size: 2.2rem;
       font-weight: 300;
       margin-top: 85px;
   
   }
-  
   .footer-col-align{
     margin-top: 30px !important;
   }
   .dropdown-menu.show{
    border-radius: 15px;
    width: 101% !important;
-  }
-
-   
+  } 
   .h11{
     font-size: 30px;
     font-weight: 500;
@@ -669,9 +628,6 @@ width: 190px !important;
       margin-left: -1px;
       
   }
-  
-  
-  
   .col-md-4{
       padding-bottom:20px;
   }
@@ -682,8 +638,6 @@ width: 190px !important;
   .mt{float: left;margin-top: -20px;padding-top: 20px;
   
   text-align: left;
-  
-  
   }
   .dropdown-toggle{
     width: 110%;
@@ -698,9 +652,7 @@ width: 190px !important;
   }
   .dropdown-toggle:focus {
     box-shadow: unset !important;
-    outline: none !important}
-
-  
+    outline: none !important} 
   .android{
 
     height: 20px;
@@ -719,26 +671,17 @@ width: 190px !important;
     background-color:  #01d35a !important;
       border-radius: 40px;
   }
-  
-  
-  /* figure img{width:300px;
-  } */
   .card-item-top{
     width: 220px ;
    height: 202px ;
    margin-left: 90px;
    margin-right: 0px !important;
   }
-    
-  
-  .footer-pic img{
+   .footer-pic img{
       height:65px;
       width:60px ;
       margin-top:-7px ;
-  }
-  
-  
-  
+  } 
   .button-view
   
   {
@@ -754,15 +697,11 @@ width: 190px !important;
     height: 232px !important;
    margin-left: 1%;
   }
-  
-  
   .search{
     position: absolute !important;
     top: 344px;
     right: 530px;
-    
-    
-    }
+   }
     .imgpd{
    position: absolute;
      top:650px;
@@ -774,9 +713,7 @@ width: 190px !important;
       top: 650px;
       left:11px ;
     }
-    
-  
-    h5{
+      h5{
       text-align: left !important;
     }
     .ftr{height:35px;width:35px;margin-top:15px;
@@ -819,10 +756,6 @@ width: 190px !important;
     .ios-img-header{
       margin-left: 20px;
     }
-  
-  
-  
-  
   /*the container must be positioned relative:*/
      .autocomplete {
     position: relative;
@@ -842,9 +775,6 @@ width: 190px !important;
     background-color: #f1f1f1;
     width: 100%;
   }
-  
-  
-  
   .autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
@@ -865,9 +795,7 @@ width: 190px !important;
       text-align: left;
       margin-bottom: -16px;
   }
-  
-  
-  
+
   .form-control:focus{box-shadow:none !important;border-color:#01d35a !important;}
   
   @media (min-width: 992px){

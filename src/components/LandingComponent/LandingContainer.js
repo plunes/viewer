@@ -183,7 +183,6 @@ class LandingContainer extends React.Component {
         // console.log('anshul')
         // console.log(e.target.value);
         this.setState({ filter: e.target.value });
-
         if (this.state.filter.length > 0) {
             const { filter, proceduresList } = this.state;
             const lowercasedFilter = filter.toLowerCase();
@@ -204,17 +203,13 @@ class LandingContainer extends React.Component {
                 showDropdown: true,
                 showDiv: true
             })
-        }
-
-    }
-
+        }   }
     render() {
         // const { isAuth } = this.root;
         const { showSignup } = this.state
         if (showSignup) {
             return <Redirect to='/signup' />;
         }
-
         return <Router>
             <div className="container-fluid" >
                 <Helmet>

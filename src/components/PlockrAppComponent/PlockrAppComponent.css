@@ -1,3 +1,4 @@
+
 .plockr-app-login{
     font-size: 20px;
     margin-bottom: 7%;
@@ -28,6 +29,17 @@
     width: 70% !important;
     border-radius:33px !important ;
     margin-top: 15px;
+    outline:none !important;
+}
+.plockrapp-button:focus{
+    outline:none !important;
+    box-shadow: unset !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
 }
 .row-align{
     margin-top: 13%;
@@ -41,6 +53,7 @@
   width: 70% !important;
   border-radius:33px !important ;
   margin-top: 27px;
+  outline: none !important;
 }
 .profile-button{
     background-color: #01d35a !important;
@@ -62,7 +75,7 @@
 
 }
 .lable2{
-    margin-left: 24%;
+    margin-left: 53%;
 }
 .profile-row-align{
     margin-top: 50px;
@@ -72,3 +85,35 @@
     color: #3D3D3D;
     font-weight: 500px;
 }
+.model-button2{
+    width: 100%;
+    background-color: #01d35a !important;
+    color: white  !important ;
+    border-radius: 40px !important;
+    outline: none !important;
+    margin-top: 30px ;
+   
+
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-file {
+    border: 1px solid gray !;
+    color: gray;
+    background-color: white;
+    padding: 5px  15px;
+    border-radius: 20px !important;
+    font-size: 18px;
+    width:20%;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  

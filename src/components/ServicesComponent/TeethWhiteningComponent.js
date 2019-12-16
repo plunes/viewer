@@ -24,10 +24,8 @@ class TeethWhiteningComponent extends Component {
                     <h1 className="key-benefits">How Teeth Whitening Can Improve Your Lifestyle</h1>
 
                     <div className="row">
-                        <div className="col-sm-1">
-
-                        </div>
-                        <div className="col-sm-4">
+                        
+                        <div className="col-sm-5">
                             <img className="dentalcompli-img" src="/blog3.png"  alt=".."/>
                         </div>
                         <div className="col-sm-6">

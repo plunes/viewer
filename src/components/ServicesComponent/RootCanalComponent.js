@@ -25,10 +25,8 @@ class RootCanalComponent extends Component {
                     <h1 className="key-benefits">Touch-up Your Dental Health with Root Canal Treatment</h1>
 
                     <div className="row">
-                        <div className="col-sm-1">
-
-                        </div>
-                        <div className="col-sm-4">
+                       
+                        <div className="col-sm-5">
                             <img className="dentalcompli-img" src="/blog1.png" alt=".." />
                         </div>
                         <div className="col-sm-6">

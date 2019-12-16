@@ -25,10 +25,10 @@ class DentalComplicationsComponent extends Component {
                     <h1 className="key-benefits">Dental Complications To Consider For Healthy Suggestions</h1>
 
                     <div className="row">
-                        <div className="col-sm-1">
+                        {/* <div className="col-sm-">
 
-                        </div>
-                        <div className="col-sm-4 ">
+                        </div> */}
+                        <div className="col-sm-5 col-img-dental">
                             <img className="dentalcompli-img" src="/blog5.png" alt=".." />
                         </div>
                         <div className="col-sm-6 ">

@@ -36,13 +36,17 @@ class PlockrAppComponent extends Component {
         axios.post('https://plunes.co/v4/user/logout', "",  { headers: { "Authorization": `Bearer ${token}` , "Content-Type" : "application/json" } })
         .then((response) => {
             localStorage.removeItem('auth')
-            console.log(response, 'response')
+            localStorage.removeItem('isAuth')
+            localStorage.removeItem('uploaderUserId')
+            this.setState({
+                showNumber: false,
+                showLogin : true
+            })
         })
         .catch(error => {
             console.log(error, 'error')
         })
     }
-
     handleSubmit(e) {
         e.preventDefault();
         let data = {
@@ -62,18 +66,15 @@ class PlockrAppComponent extends Component {
                 })
             }
         })
-       
     }
-
     handleChange(e) {
         this.setState({
             [e.target.name]: e.target.value
         })
     }
-
     handleNumberSubmit(e) {
         e.preventDefault();
-        axios.get('http://plunes.co/v4/user?mobileNumber=' + this.state.patientMobileNo)
+        axios.get('https://plunes.co/v4/user?mobileNumber=' + this.state.patientMobileNo)
             .then(res => {
                 if (res.status === 201) {
                     console.log(res.data.user, 'user')
@@ -84,26 +85,22 @@ class PlockrAppComponent extends Component {
                 }
             })
     }
-
     render() {
-
         if (this.state.showLogin) {
             return (
                 <div className='container-fluid'>
                     <div className="navbar navbar-expand-lg navbar-light ">
-                   <a href="/"> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
-
+                     <a href="/"> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
                     </div>
-                    <div className='row row-align'>
-                        <div className='col-sm-4'>
-                        
+                     <div className='row row-align'>
+                        <div className='col-sm-4'>                        
                         </div>
                         <div className='col-sm-4 col-align'>
                             <h1 className="plockr-app-login" >Login here</h1>
                             <form onSubmit={this.handleSubmit}>
                                 <div className="form-group">
-                                    <input type="tel" className="form-control-app plockr-app-form" name='mobileNo' placeholder="Email Id" onChange={this.handleChange} />
-                                </div>
+                                    <input type="tel" className="form-control-app plockr-app-form" name='mobileNo' placeholder="Mobile No" onChange={this.handleChange} />
+                                </div><br></br>
                                 <div className="form-group">
                                     <input type="password" className="form-control-app plockr-app-form" name='password' placeholder=" Password" onChange={this.handleChange} />
                                 </div>
@@ -130,21 +127,18 @@ class PlockrAppComponent extends Component {
                                 </div>
                                 <div className="col-sm-4 col-align">
                                 <div class="form-group">
-                                    <h1 className="plockr-app-login">Enter your mobile number</h1>
-                                    <input type="tel" className="form-control-app plockr-app-form" name='patientMobileNo' placeholder="Enter Mobile Number" onChange={this.handleChange} />
+                                    <h1 className="plockr-app-login">Enter patient's mobile number</h1>
+                                    <input type="tel" className="form-control-app plockr-app-form" name='patientMobileNo' placeholder=" Mobile Number" onChange={this.handleChange} />
                                 </div>
                                 <button type="submit" className="btn plockrapp-button"> Submit</button>
                                 <div className="row">
                                 <button type="button" className="btn logout" onClick = {this.handlelogout}>Logout</button>
-
-                                    </div>
+                                  </div>
                                 </div>
                                 <div className="col-sm-4">
                                     </div>
-                                  
-                              </div>
-                               
-                            </form>
+                                  </div>
+                                </form>
                         </div> : <PlockrProfileComponent user={this.state.userDetails} />
                     }
                 </div>

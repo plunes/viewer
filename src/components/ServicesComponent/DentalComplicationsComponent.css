@@ -4,16 +4,17 @@ font-size: 32px;
 margin-left: 9%;
 }
 .dentalcompli-img{
-    width:500px;
+    width:84%;
     height:300px;
     margin-bottom: 15px;
     margin-top: 4%;
+    margin-left: 21%;
 }
 .dental-problem{
     font-size: 16px;
     margin-top: 3%;
     color: #717171;
-    margin-left: 45px;
+    margin-left: 6%;
 }
 .tooth-font{
     font-size:22px;
@@ -26,6 +27,7 @@ margin-left: 9%;
    
     
 }
+
 .dental-margin{
     margin-bottom: -3%;
 }
@@ -33,6 +35,7 @@ margin-left: 9%;
     .dentalcompli-img{
        width: 100%;
        height: auto;
+       margin-left: 0%;
 
     }
     .key-benefits{
