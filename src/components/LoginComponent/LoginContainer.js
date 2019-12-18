@@ -69,7 +69,7 @@ handleSubmit(event) {
 
                     </div>
                     <div className = 'col-md-6'>
-                    <h4 class="login-text">Login</h4>
+                    <h1 class="login-text">Login</h1>
                      <form action="" onSubmit ={this.handleSubmit}>
                       <div  class=" form-group">
                         <input class="form-controlll inputLogin"   name="emailId" placeholder="Email id or Phone Number" onChange={this.handleChange} id="myInput" />
@@ -80,7 +80,7 @@ handleSubmit(event) {
                       </div>
                     </form>
                     <a href="/" ><h6 className="forgotPassword" >Forgot Password?</h6></a>
-                    <h6 className="signupClass" >Don't have an account?<a href="signup" >Signup</a> </h6>
+                    <h6 className="signupClass" >Don't have an account?<a href="/signup" >Signup</a> </h6>
                   </div>
                 </div>
             </div>

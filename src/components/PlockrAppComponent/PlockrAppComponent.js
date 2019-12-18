@@ -92,23 +92,25 @@ class PlockrAppComponent extends Component {
                     <div className="navbar navbar-expand-lg navbar-light ">
                      <a href="/"> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
                     </div>
-                     <div className='row row-align'>
-                        <div className='col-sm-4'>                        
+                    <div>
+                     <div className='row'>
+                        <div className='col-4'>                        
                         </div>
-                        <div className='col-sm-4 col-align'>
+                        <div className='col-4' style={{paddingLeft: '4%', paddingTop: '13%'}}>
                             <h1 className="plockr-app-login" >Login here</h1>
                             <form onSubmit={this.handleSubmit}>
                                 <div className="form-group">
                                     <input type="tel" className="form-control-app plockr-app-form" name='mobileNo' placeholder="Mobile No" onChange={this.handleChange} />
                                 </div><br></br>
                                 <div className="form-group">
-                                    <input type="password" className="form-control-app plockr-app-form" name='password' placeholder=" Password" onChange={this.handleChange} />
+                                    <input type="password" className="form-control-app plockr-app-form" name='password' placeholder="Password" onChange={this.handleChange} />
                                 </div>
                                 <button type="submit" className="btn plockrapp-button">Login</button>
                             </form>
                         </div>
-                        <div className='col-sm-4'>
+                        <div className='col-4'>
                         </div>
+                    </div>
                     </div>
                 </div>
             )

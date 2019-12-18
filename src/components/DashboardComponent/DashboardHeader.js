@@ -11,7 +11,7 @@ class DashboardHeader extends React.Component {
 
       <div className="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light  ">
-          <a class="navbar-brand" href="#"><img className="logo" src="/logo.png" /></a>
+          <a class="navbar-brand" href="#"><img className="logo" src="/logo.png"  alt='No image available'/></a>
           <div>
 
             <input class="dashbord-input" name="search" placeholder="search" autoComplete="off" id="mytInput" onChange={this.onSearchQuery} />
@@ -29,20 +29,20 @@ class DashboardHeader extends React.Component {
               <li class="nav2 nav-item active">
                 <div>
                   <a class=" nav-link " href="#">
-                    <img className="sol-img" src="/solution.png"></img><span className="top-img">solution</span>
+                    <img className="sol-img" src="/solution.png" alt='No image available'></img><span className="top-img">solution</span>
                   </a>
                 </div>
               </li>
               <li class="nav-item nav2">
-                <a class="nav-link " href="/login"><img className="sol-img" src="/Enquiry.png" />Enquiry</a>
+                <a class="nav-link " href="/login"><img className="sol-img" src="/Enquiry.png" alt='No image available'/>Enquiry</a>
               </li>
               <li class="nav-item nav2">
-                <a class="nav-link " href="/signup"><img className="sol-img" src="/Notification1.png" /></a>
+                <a class="nav-link " href="/signup"><img className="sol-img" src="/Notification1.png" alt='No image available'/></a>
               </li>
               <li>
                 <div class="dropdown">
                   <button class="btn  dropdown-toggle dropdown-align" type="button" data-toggle="dropdown">
-                    <img className="sol-img2" src="/image.png" /> john doe</button>
+                    <img className="sol-img2" src="/image.png"  alt='No image available'/> john doe</button>
                   <ul class="dropdown-menu">
                     <li><a href="#">HTML</a></li>
                     <li><a href="#">CSS</a></li>

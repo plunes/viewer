@@ -313,7 +313,7 @@ class LandingContainer extends React.Component {
                             <p className="download-text3">Get link to download the app</p>
                             <div className="download-link-app">
                                 <form onSubmit={this.sendAppLink}>
-                                    <span><input id="UserMobile" value={this.state.countryCode ? this.state.countryCode : '+91'} onChange={this.handleChange} name='countryCode' className="number-text2" maxLength="3" data-fv-numeric="true" data-fv-numeric-message="Please enter your numbers" data-fv-phone-country11="IN" required="required" data-fv-notempty-message="This field cannot be left blank." placeholder="+91 " data-fv-field="data[User][mobile]"></input></span>
+                                    <span><input value={this.state.countryCode ? this.state.countryCode : '+91'} onChange={this.handleChange} name='countryCode' className="number-text2" maxLength="3" data-fv-numeric="true" data-fv-numeric-message="Please enter your numbers" data-fv-phone-country11="IN" required="required" data-fv-notempty-message="This field cannot be left blank." placeholder="+91 " data-fv-field="data[User][mobile]"></input></span>
                                     <span> <input id="UserMobile" value={this.state.mobileNo} className="number-text" maxLength="10" data-fv-numeric="true" data-fv-numeric-message="Please enter your numbers" data-fv-phone-country11="IN" required="required" data-fv-notempty-message="This field cannot be left blank." placeholder="Mobile No " name='mobileNo' onChange={this.handleChange}></input></span>
                                     <button type='submit' class="btn btn-primary button-view button-align">Get App Link</button>
                                 </form>

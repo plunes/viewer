@@ -161,10 +161,6 @@ class SolutionSearchComponent extends React.Component {
         }
     }
 
-
-
-
-
     render() {
         const { searchInput } = this.state;
         console.log(this.state.docList, 'doclist')

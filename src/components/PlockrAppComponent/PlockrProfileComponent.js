@@ -18,7 +18,7 @@ class PlockrProfileComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: this.props.user.name ? this.props.user.name : 'General user' ,
+            name: this.props.user.name ? this.props.user.name : 'General user',
             email: this.props.user.email ? this.props.user.email : 'generaluser@plunes.com',
             userId: localStorage.getItem('uploaderUserId'),
             patientMobileNumber: this.props.user.mobileNumber,
@@ -34,6 +34,7 @@ class PlockrProfileComponent extends Component {
             modalIsOpen: false,
             speciality: '',
             reportName: '',
+            test:'',
             imgUrl: this.props.user.imageUrl ? this.props.user.imageUrl : 'https://profile-image-plunes.s3.amazonaws.com/profilephotos/default_img.png'
         }
         this.handleLogout = this.handleLogout.bind(this)
@@ -44,7 +45,7 @@ class PlockrProfileComponent extends Component {
     handleLogout(e) {
         e.preventDefault();
         let token = localStorage.getItem('auth');
-        console.log(token, 'token')
+        // console.log(token, 'token')
         axios.post('https://plunes.co/v4/user/logout', "", { headers: { "Authorization": `Bearer ${token}`, "Content-Type": "application/json" } })
             .then((response) => {
                 localStorage.removeItem('auth');
@@ -84,6 +85,7 @@ class PlockrProfileComponent extends Component {
                         medicines: this.state.medicines,
                         remarks: this.state.remarks,
                         reportName: this.state.reportName,
+                        test: this.state.test,
                         reportUrl: "https://plunes.co/v4/" + res.data.path
                     }
                     console.log(body, 'body')
@@ -94,7 +96,7 @@ class PlockrProfileComponent extends Component {
                             this.setState({
                                 modalIsOpen: true
                             })
-                            console.log(res.status)
+                            // console.log(res.status)
                         })
                 }
             })
@@ -146,24 +148,22 @@ class PlockrProfileComponent extends Component {
                         </Modal>
                         <div className='col-sm-3'>
                         </div>
-
                         <div className='col-sm-6'>
                             <div className='row'>
                                 <div className='col-sm-2'>
-                                    <img src={this.state.imgUrl} height='auto' width='100px' />
+                                    <img src={this.state.imgUrl} height='auto' width='100px' alt='No image available'/>
                                 </div>
                                 <div className='col-sm-10'>
                                     <h1>{this.state.name}</h1>
                                     <p>{this.state.email}</p>
                                 </div>
-                            </div   >
+                            </div>
                             <form onSubmit={this.handleSubmit}>
-
                                 <div class="form-group ">
                                     <select class="form-control plockr-app-form" onChange={this.handleChange} name='speciality' required >
                                         <option value=''>Speciality</option>
                                         <option value='5de4218d6a2be815b9e215e0'>Dentist</option>
-                                        <option value='5de4218d6a2be815b9e215e2'>Psychologist</option>
+                                        <option value='5de4218d6a2be815b9e215e2' >Psychologist</option>
                                         <option value='5de4218d6a2be815b9e215e7'>Gynaecologist</option>
                                         <option value='5de4218d6a2be815b9e215e5'>Dermatologist</option>
                                         <option value='5de4218d6a2be815b9e215e3'>Pediatrician</option>
@@ -180,6 +180,8 @@ class PlockrProfileComponent extends Component {
                                         <option value='5de4218d6a2be815b9e215eb'>Radiologists</option>
                                         <option value='5de4218d6a2be815b9e215ee'>Neurosurgeon</option>
                                         <option value='5de4218d6a2be815b9e215f0'>Pulmonologist</option>
+                                        <option value='5df796595250b4295c3d18e2'>Optometrist</option>
+                                        <option value='5df781f3e3668a281ecee2a4'>General Physician</option>
                                     </select>
                                 </div><br></br>
                                 <div className="form-group">
@@ -192,7 +194,15 @@ class PlockrProfileComponent extends Component {
                                 </div><br></br>
                                 <div className="form-group">
 
-                                    <textarea className="form-control plockr-app-form" placeholder="Reason (Diagnosis)" rows="2" name='reasonDiagnosis' onChange={this.handleChange}></textarea>
+                                    <textarea className="form-control plockr-app-form" placeholder="Diagnosis" rows="2" name='reasonDiagnosis' onChange={this.handleChange}></textarea>
+                                </div><br></br>
+                                <div className="form-group">
+
+                                    <textarea className="form-control plockr-app-form" placeholder="Medicine" rows="2" name='medicines' onChange={this.handleChange}></textarea>
+                                </div><br></br>
+                                <div className="form-group">
+
+                                    <textarea className="form-control plockr-app-form" placeholder="Test" rows="2" name='test' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
 
@@ -206,22 +216,20 @@ class PlockrProfileComponent extends Component {
 
                                     <textarea className="form-control plockr-app-form" placeholder="Precautions" rows="2" name='precautions' onChange={this.handleChange}></textarea>
                                 </div><br></br>
-                                <div className="form-group">
 
-                                    <textarea className="form-control plockr-app-form" placeholder="Medicine" rows="2" name='medicines' onChange={this.handleChange}></textarea>
-                                </div><br></br>
                                 <div className="form-group">
 
                                     <textarea className="form-control plockr-app-form" placeholder="Remarks" rows="2" name='remarks' onChange={this.handleChange}></textarea>
                                 </div><br></br>
-                                <div className='form-group'>
-                                    <div class="upload-btn-wrapper">
-                                        <button class="btn-file">Choose</button>
-                                        <label className="lable2">(.doc, .docx, .pdf, .jpeg only)</label>
-                                        <input type="file" name='file' onChange={this.handleChange} title="Choose a file please" id='fileinput' required />
-                                    </div>
+                                <div className='form-group '>
+                                    {/* <div class="upload-btn-wrapper"> */}
+                                    {/* <button class="btn-file">Choose</button> */}
+                                    {/* <label className="lable2">(.doc, .docx, .pdf, .jpeg only)</label> */}
+                                    <input type="file" name='file' onChange={this.handleChange} title="Choose a file please" id='fileinput' required />
+                                    <label >(.doc, .docx, .pdf, .jpeg only)</label>
+                                    {/* </div> */}
                                 </div>
-                                <button type="submit" className="btn profile-button">Submit</button>    
+                                <button type="submit" className="btn profile-button">Submit</button>
                                 <a class="btn profile-button2" href='/plockrapp'>Cancel</a>
                             </form>
                         </div>

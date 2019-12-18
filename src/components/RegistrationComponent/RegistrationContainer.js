@@ -74,7 +74,7 @@ class RegistrationComponent extends React.Component {
                         </div>
                         <div className="col-md-6 signupContainer">
                             <div className='row'>
-                                <h4 class="signUpText">Sign up</h4>
+                                <h1 class="signUpText">Sign up</h1>
                             </div>
                             <div class="form-group">
                                 <select class="form-control2 option-signup" onChange = {this.handleChange}>

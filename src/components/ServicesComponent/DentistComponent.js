@@ -37,7 +37,7 @@ export default class DentistComponent extends Component {
                                 <img className="dentist-image" src="/dent.png" alt=".." />
                             </div>
                             <div className="col-sm-9 view-more-align">
-                                <h3 className="header-font">Dentistry</h3>
+                                <h1 className="header-font">Dentistry</h1>
                                 <p className="peragraph-text">Dentistry, also known as Dental and Oral Medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity.
                                 </p>
                                 <p className="peragraph-text">Dentists are trained to diagnose, treat and prevent oral diseases; promote oral health. </p>
@@ -51,7 +51,7 @@ export default class DentistComponent extends Component {
                     </div>
                     <div className="col-sm-10 header-size">
                         <br></br><br></br>
-                        <h3 className="header-font">Why Plunes? </h3>
+                        <h1 className="header-font">Why Plunes? </h1>
                         <p className="peragraph-text">
                             We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dentistry procedures & treatments in Delhi NCR.</p>
                         <p className="peragraph-text"> Search for the desired dental treatments such as hot sensitivity, cold sensitivity, oral checkup, dental implants, gum swelling, tooth ache, tooth pain, composite veneers, porcelain veneers, zirconia porcelain veneers, dental porcelain laminates, teeth bonding treatment, dental bonding or any other dentistry treatments & our AI will negotiate in real-time with top dentists & clinics nearest to you to get the best price in real time. </p>
@@ -67,24 +67,24 @@ export default class DentistComponent extends Component {
                         </div>
                         <div className="col-sm-11">
                             <br></br>
-                            <h3 className="header-font align-text">Procedure</h3>
+                            <h1 className="header-font align-text">Procedure</h1>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">1. Dental Fillings:</p>
+                            <h2 className="header-font">1. Dental Fillings:</h2>
                             <p className="peragraph-text">It is a procedure to treat cavities and missing tooth that will remove the decayed portion and then "fill" the area where the decayed material was removed.  </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">2. Amalgam Fillings:</p>
+                            <h2 className="header-font">2. Amalgam Fillings:</h2>
                             <p className="peragraph-text">
                                 The fillings in case of amalgam treatment are made up of silver and mercury making the implants very strong and durable.
                               </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">3. Composite Fillings:</p>
+                            <h2 className="header-font">3. Composite Fillings:</h2>
                             <p className="peragraph-text">It is made from a mixture of plastic and fine glass particles and matches the color of the tooth.</p>
                         </div>
                         <div className="col-sm-2">
@@ -94,18 +94,18 @@ export default class DentistComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">4. Porcelain / Ceramic Fillings:</p>
+                            <h2 className="header-font">4. Porcelain / Ceramic Fillings:</h2>
                             <p className="peragraph-text">
                                 Ceramic fillings are made of porcelain and are tooth-colored, so they look natural.
                               </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">5. Gold Fillings:</p>
+                            <h2 className="header-font">5. Gold Fillings:</h2>
                             <p className="peragraph-text">
                                 A small amount of gold that a dentist puts in a hole in a tooth to prevent further decay.
                                         </p>
                         </div>
-                        <div className="col-sm-3"><p className="header-font">6. Glass Ionomer:</p>
+                        <div className="col-sm-3"><h2 className="header-font">6. Glass Ionomer:</h2>
                             <p className="peragraph-text">It is made from acrylic and fluoroaluminosilicate, a component of glass. </p>
 
                         </div>
@@ -115,16 +115,16 @@ export default class DentistComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">7. Root Canal Treatment: </p>
+                            <h2 className="header-font">7. Root Canal Treatment: </h2>
                             <p className="peragraph-text">It is a treatment sequence for the infected pulp of a tooth which results in the elimination of infection and the protection of the decontaminated tooth from future microbial attacks.</p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">8. Wisdom Teeth Removal / Impaction: </p>
+                            <h2 className="header-font">8. Wisdom Teeth Removal / Impaction: </h2>
                             <p className="peragraph-text">
                                 The treatment involves removal of wisdom teeth. It can also reduce inflammation of the gums associated with wisdom teeth development.</p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">9. Braces & Aligners:</p>
+                            <h2 className="header-font">9. Braces & Aligners:</h2>
                             <p className="peragraph-text">They are appliances which are used to align or straighten the teeth to guide the teeth for better & corrected position.
                           </p>
                         </div>
@@ -134,22 +134,22 @@ export default class DentistComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">10. Metal Conventional Braces:
-                                </p>
+                            <h2 className="header-font">10. Metal Conventional Braces:
+                                </h2>
                             <p className="peragraph-text">
                                 The treatment involves removal of wisdom teeth with the involvement of stainless steel for the better alignment.
                              </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">11. Metal Self Ligating Braces:
-                                </p>
+                            <h2 className="header-font">11. Metal Self Ligating Braces:
+                                </h2>
                             <p className="peragraph-text">
                                 Self-ligating brackets are defined as "dental brace, which generally utilizes permanently installed, movable component to entrap the arch-wire".
                              </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">12. Ceramic Conventional Braces:
-                                </p>
+                            <h2 className="header-font">12. Ceramic Conventional Braces:
+                                </h2>
                             <p className="peragraph-text">
                                 These braces are made of transparent ceramic. The wires can also be transparent to make the braces less noticeable.
                             </p>
@@ -160,18 +160,18 @@ export default class DentistComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">13. Lingual Braces:</p>
+                            <h2 className="header-font">13. Lingual Braces:</h2>
                             <p className="peragraph-text">
                                 They are heavy metal braces which are placed behind the teeth. It can be made even of silver or gold. The individual Bracket is customized using CAD-CAM / 3D designing.
                                </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">14. Aligners:</p>
+                            <h2 className="header-font">14. Aligners:</h2>
                             <p className="peragraph-text">It is medical grade plastic trays that do not require any braces or wire. They are totally invisible and also hide existing gaps.
                                </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">15. Dental Implants:</p>
+                            <h2 className="header-font">15. Dental Implants:</h2>
                             <p className="peragraph-text">It is a titanium post (like a tooth root) that is surgically positioned into the jawbone beneath the gum line that allows dentist to mount replacement teeth or bridge into that area.
                            </p>
                         </div>
@@ -181,18 +181,18 @@ export default class DentistComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">16. Endosteal Implants:</p>
+                            <h2 className="header-font">16. Endosteal Implants:</h2>
                             <p className="peragraph-text">These are the most common type of implant and are surgically placed directly into the jaw-bone, they are also called root-form implants. These are typically shaped like small screws, cylinders or plates.
                              </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">17. Sub-periosteal Implant:</p>
+                            <h2 className="header-font">17. Sub-periosteal Implant:</h2>
                             <p className="peragraph-text">
                                 These are made out of a metal framework. This metal frame is attached under your gum tissue but above your jawbone. Protruding from the metal frame of the .
                             </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">18. Dentures:</p>
+                            <h2 className="header-font">18. Dentures:</h2>
                             <p className="peragraph-text">Dentures are custom-made replacements for missing teeth and can be taken out and put back into your mouth.
                            </p>
                         </div>
@@ -202,8 +202,8 @@ export default class DentistComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">19. Porcelain Dentures:
-                                </p>
+                            <h2 className="header-font">19. Porcelain Dentures:
+                                </h2>
                             <p className="peragraph-text">
                                 Porcelain dentures are made up of porcelain look more natural and match easily with the remaining teeth.
                             </p>
