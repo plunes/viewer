@@ -59,7 +59,7 @@ Physiotherapists help people affected by injury, illness or disability through m
 
 </div>
 
-<hr width="80%"></hr>
+<hr style={{width:'80%'}}></hr>
 <div className="row">
 <div className="col-sm-1">
 </div>
@@ -74,7 +74,7 @@ We help you find the best price solutions to all your medical concerns with just
 </div>
 <div className="col-sm-1"></div>
 </div><br></br><br></br>
-<hr width="80%"></hr>
+<hr style={{width:'80%'}}></hr>
 <div className="row">
 <div className="col-sm-1">
 </div>

@@ -55,7 +55,7 @@ export default class OrthopedicsComponent extends Component {
 
                 </div>
 
-                <hr width="80%"></hr>
+                <hr style={{width:'80%'}}></hr>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
@@ -70,7 +70,7 @@ export default class OrthopedicsComponent extends Component {
                     </div>
                     <div className="col-sm-1"></div>
                 </div><br></br><br></br>
-                <hr width="80%"></hr>
+                <hr style={{width:'80%'}}></hr>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>

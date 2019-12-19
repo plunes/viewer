@@ -152,7 +152,7 @@ class CareersComponent extends Component {
                         <h1 className="what-we-have">What we have for you</h1>
                     </div>
                   
-                       <hr width="7%" size="10" color="#01D35A" ></hr>
+                       <hr style={{width:'70%' , color:'#01D35A'}} ></hr>
                       
                     <div className="row career-grid">
                         <div className="col-sm-1 ">
@@ -182,7 +182,7 @@ class CareersComponent extends Component {
                     <div className="row justify-content-center ">
                         <h1 className="career-header">Our 5-stage Recruitment Process</h1>
                     </div>
-                    <hr width="7%" color="#01D35A" ></hr>
+                    <hr style={{width:'7%', color:'#01D35A'}}></hr>
                     <div className="row careers-grid2">
                         <div className="col-sm-1">
                         </div>
@@ -234,7 +234,7 @@ class CareersComponent extends Component {
                     <div className="row justify-content-center">
                         <h1 className="what-we-have">Current Openings</h1>
                     </div>
-                    <hr width="7%" color="#01D35A" ></hr>
+                    <hr style={{width:'7%', color:'#01D35A'}} ></hr>
                     <div className="container-fluid">
                         <div className="row careers-grid3">
                             <div className="col-sm-3">
@@ -290,7 +290,7 @@ class CareersComponent extends Component {
                             <div className="row justify-content-center ">
                         <h1 className="career-header">Submission Form</h1>
                     </div>
-                    <hr width="7%" color="#01D35A" ></hr>
+                    <hr style={{width:'7%', color:'#01D35A'}}></hr>
                         <div className="container career-table-align">
                         <form onSubmit = {this.handleSubmit}>
                    <table width="100"  class="table table-bordered table-responsive-sm">
@@ -335,7 +335,7 @@ class CareersComponent extends Component {
                      <div className="row justify-content-center ">
                         <h1 className="career-header">Employment Policy</h1>
                     </div>
-                    <hr width="7%" color="#01D35A" ></hr>
+                    <hr style={{width:'7%', color:'#01D35A'}} ></hr>
                     <div className="row">
                         <div className="col-sm-1"></div>
                         <div className="col-sm-10">
@@ -345,7 +345,7 @@ class CareersComponent extends Component {
                     <div className="row justify-content-center">
                         <h1 className="career-header">Disclaimer</h1>
                         </div>
-                    <hr width="7%" color="#01D35A" ></hr>
+                    <hr  style={{width:'7%', color:'#01D35A'}} ></hr>
                     <div className="row">
                         <div className="col-sm-1"></div>
                         <div className="col-sm-10">

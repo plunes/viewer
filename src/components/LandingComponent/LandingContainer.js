@@ -299,7 +299,7 @@ class LandingContainer extends React.Component {
                         </div>
                     </div>
                 </div>
-                <hr width="70%" ></hr>
+                <hr  style={{width:'70%'}} ></hr>
                 <div className="container download-area">
                     <h1 className="h11">Book instantly from top doctors/hospitals near you</h1>
                     <div className="row">
@@ -323,7 +323,7 @@ class LandingContainer extends React.Component {
                         </div>
                     </div>
                 </div><br></br>
-                <hr width="70%" ></hr>
+                <hr  style={{width:'70%'}} ></hr>
                 <div className='container-fluid why-plunes'>
                     <h1 className="header"> Why Plunes?</h1>
                     <div className='row'>
@@ -345,7 +345,7 @@ class LandingContainer extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <hr width="70%"></hr>
+                    <hr style={{width:'70%'}}></hr>
                 </div>
                 <div>
                     <div>

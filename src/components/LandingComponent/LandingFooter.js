@@ -82,7 +82,7 @@ export default class LandingFooter extends Component {
             <div className="row footer-alignment">
               <div className="col-sm-5"></div>
               <div className="col-sm-2">
-                <h3 className="procedure-text">COMMON PROCEDURES</h3><hr width="60%"></hr>
+                <h3 className="procedure-text">COMMON PROCEDURES</h3><hr style={{width:'60%'}}></hr>
               </div>
               <div className="col-sm-5">
               </div>

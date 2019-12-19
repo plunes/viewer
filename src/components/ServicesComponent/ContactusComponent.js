@@ -82,7 +82,7 @@ class ContactusComponent extends Component {
                             <div className='row justify-content-center'>
                                 <h1 className="contact-header">Get In Touch</h1>
                             </div>
-                            <hr width="10%" color="#01D35A" ></hr>
+                            <hr style={{width:'10%'}} ></hr>
                             <div className="row">
                                 <div className = 'col-sm-3'></div>
                                 <div className = 'col-sm-6'>

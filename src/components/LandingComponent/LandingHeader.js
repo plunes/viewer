@@ -28,7 +28,7 @@ class LandingHeader extends React.Component {
                     <img className="ios" src="/ios.png" alt=".." />
                     <span className="ios-img-header">iOS</span></a>
                   </li>
-                  <hr width="70%"></hr>
+                  <hr style={{width:'70%'}}></hr>
                   <li>
                     <a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en_IN" title="play store">
                       <img className="android" src="/Android.png" alt=".." />
