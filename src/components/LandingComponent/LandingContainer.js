@@ -318,8 +318,8 @@ class LandingContainer extends React.Component {
                                     <button type='submit' class="btn btn-primary button-view button-align">Get App Link</button>
                                 </form>
                             </div>
-                            <span> <a href="https://apps.apple.com/us/app/plunes/id1463747553"> <img className="download-logo" src="/app-store.png" alt=".." /></a></span>
-                            <span><a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en_IN"> <img className="download-logo2" src="/Play-store.png" alt=".." /></a></span>
+                            <span> <a href="https://apps.apple.com/us/app/plunes/id1463747553" title="app store"> <img className="download-logo" src="/app-store.png" alt=".." /></a></span>
+                            <span><a href="https://play.google.com/store/apps/details?id=com.plunes&hl=en_IN" title="play store"> <img className="download-logo2" src="/Play-store.png" alt=".." /></a></span>
                         </div>
                     </div>
                 </div><br></br>
@@ -330,15 +330,15 @@ class LandingContainer extends React.Component {
                         <div className='col-sm-1 why-plunes'></div>
                         <div className='col-sm-6'>
                             <ul className="why-plunes-align">
-                                <li className="pencil-align"><img className="why-plunes-img" src='/payment refundable.png' alt=".."></img><span className="pencil">100% Refundable Payment </span></li><br></br>
-                                <li className="pencil-align"><img className="why-plunes-img" src='/availability.png' alt=".."></img><span className="pencil">Preferred Timing as Per Your Availability</span></li><br></br>
-                                <li className="pencil-align" ><img className="why-plunes-img" src='/free-telephonic.png' alt=".."></img><span className="pencil">Free Telephonic Consultations</span></li><br></br>
+                                <li><img className="why-plunes-img" src='/payment-refundable.png' alt=".."></img><span className="pencil">100% Refundable Payment </span></li>
+                                <li><img className="why-plunes-img" src='/availability.png' alt=".."></img><span className="pencil">Preferred Timing as Per Your Availability</span></li>
+                                <li><img className="why-plunes-img" src='/free-telephonic.png' alt=".."></img><span className="pencil">Free Telephonic Consultations</span></li>
                             </ul>
                         </div>
                         <div className='col-sm-4'>
                             <ul className="pencil-ul why-plunes-align">
-                                <li className="pencil-align"><img className="why-plunes-img" src='/first_consultation.png'alt=".."></img><span className="pencil">First Consultation Free</span></li><br></br>
-                                <li className="pencil-align"><img className="why-plunes-img" src='/partial-payments.png' alt=".."></img><span className="pencil">Make Partial Payments</span></li><br></br>
+                                <li><img className="why-plunes-img" src='/first_consultation.png'alt=".."></img><span className="pencil">First Consultation Free</span></li>
+                                <li><img className="why-plunes-img" src='/partial-payments.png' alt=".."></img><span className="pencil">Make Partial Payments</span></li>
                             </ul>
                         </div>
                         <div className='col-sm-1'></div>

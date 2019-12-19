@@ -36,7 +36,7 @@ export default class RadiologyComponent extends Component {
                                 <img className="dentist-image" src="/Radio.png" alt=".."/>
                             </div>
                             <div className="col-sm-9 view-more-align">
-                                <h3 className="header-font">Radiology</h3>
+                                <h1 className="header-font">Radiology</h1>
                                 <p className="peragraph-text">
                                     Radiology is the medical specialty that uses medical imaging to diagnose and treat diseases within the bodies of both humans and animals.
 </p>
@@ -53,7 +53,7 @@ export default class RadiologyComponent extends Component {
                     </div>
                     <div className="col-sm-10 header-size">
                         <br></br><br></br>
-                        <h3 className="header-font">Why Plunes? </h3>
+                        <h2 className="header-font">Why Plunes? </h2>
                         <p className="peragraph-text">
                         We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your radiology tests & examinations in Delhi NCR. </p>
                         <p className="peragraph-text"> Search for the desired tests such as MRI, CT-Scan, X-Ray, Doppler or any other lab tests & our AI will negotiate in real-time with top radiologist labs nearest to you to get the best price in real time. </p>
@@ -74,8 +74,8 @@ export default class RadiologyComponent extends Component {
                  <div className = 'container-fluid'>
                     <div className = 'row'>
                         <div className = 'col-sm-1'></div>
-                        <div className = 'col-sm-3'><p className="header-font">1. MRI:
-                        </p>
+                        <div className = 'col-sm-3'><h3 className="header-font">1. MRI:
+                        </h3>
                         <p className="peragraph-text">
                             Magnetic resonance imaging (MRI) is a type of scan that uses strong magnetic fields and radio waves to produce detailed images of any body part inside of our body.<br></br>
                             An MRI scan can be used for examinations such as MRI abdomen, MRI chest, MRI ankle joints, MRI both hip, MRI brain, MRI spinal cord, MRI bones, MRI breast, MRI heart and blood vessels.

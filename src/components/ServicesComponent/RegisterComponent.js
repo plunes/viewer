@@ -48,7 +48,7 @@ class RegisterComponent extends Component {
                             </div>
                             <div className="col-sm-3">
                             <img className="register-img" src="/registration.png" alt="" />
-                            <p className="register-heading">Free Registration</p>
+                            <h2 className="register-heading">Free Registration</h2>
                             <p className="register-text">
                             We create your digital profile and do extensive marketing on your behalf. The best part is that the registration is completely free.
                             </p>

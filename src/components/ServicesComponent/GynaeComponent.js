@@ -41,7 +41,7 @@ export default class GynaeComponent extends Component {
                                 <img className="dentist-image" src="/Gyneco.png" alt=".." />
                             </div>
                             <div className="col-sm-9 view-more-align">
-                                <h3 className="header-font">Gynecology</h3>
+                                <h1 className="header-font">Gynecology</h1>
                                 <p className="peragraph-text">Gynecology or gynecology is the medical practice dealing with the health of the female reproductive systems (vagina, uterus, and ovaries) and the breasts.
 </p>
                                 <p className="peragraph-text">A Gynecologist is a person who treats patients with female reproductive organs, whether or not they identify as women.</p>
@@ -59,7 +59,7 @@ export default class GynaeComponent extends Component {
                     </div>
                     <div className="col-sm-10 header-size">
                         <br></br><br></br>
-                        <h3 className="header-font">Why Plunes? </h3>
+                        <h2 className="header-font">Why Plunes? </h2>
                         <p className="peragraph-text">
                         We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your gynecological treatments & procedures in Delhi NCR. </p>
                         <p className="peragraph-text">Search for the desired procedure such as vulvar biopsy, ovarian cyst removal, laparotomy, C-section/cesarean, or any other gynecological treatments & our AI will negotiate in real-time with top gynecologists & clinics nearest to you to get the best price in real time.  </p>
@@ -83,7 +83,7 @@ export default class GynaeComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-            <p className="header-font">1. Gynecologist Consultation:</p>
+            <h3 className="header-font">1. Gynecologist Consultation:</h3>
                             <p className="peragraph-text">Gynecology consultation is a routine and often diagnostic procedure performed by gynecologists to assess the general condition of the female reproductive system and determine the presence of diseases and infections.</p>
                         </div>
                         <div className="col-sm-3">

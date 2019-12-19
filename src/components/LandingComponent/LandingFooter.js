@@ -11,23 +11,23 @@ export default class LandingFooter extends Component {
               </div>
               <div className="col-sm-2 ">
                 <div>
-                  <a href="/" >
-                    <img className="responsive-logo" src="/logo.png" />
+                  <a href="/" title="home" >
+                    <img className="responsive-logo" src="/logo.png" alt=".."/>
                   </a>
                 </div>
                 <ul className="follow-us-at-li">
-                  <div class="ftr3 footerfont">FOLLOW US AT </div>
+                  <h3 class="ftr3 footerfont">FOLLOW US AT </h3>
                   <li className="follow-us-at">
                     <span>
-                      <a href="https://in.linkedin.com/company/plunes-com" target="_blank"><img class="ftr" src="/linkedin.png" alt=".." /><br /></a></span>
+                      <a href="https://in.linkedin.com/company/plunes-com" target="_blank" title="linkedin"><img class="ftr" src="/linkedin.png" alt=".." /></a></span>
                   </li>
                   <li className="follow-us-at">
                     <span>
-                      <a href="https://instagram.com/plunes_utility_network?igshid=17ov9733181re" target="_blank"><img class="ftr1" src="/Instagram.png" alt=".." /><br /></a></span>
+                      <a href="https://instagram.com/plunes_utility_network?igshid=17ov9733181re" title="instagram" target="_blank"><img class="ftr1" src="/Instagram.png" alt=".." /></a></span>
                   </li>
                   <li className="follow-us-at">
                     <span>
-                      <a href="https://www.facebook.com/plunes076/ " target="_blank"><img class="ftr2" src="/Facebook.png" alt=".." /><br /></a></span>
+                      <a href="https://www.facebook.com/plunes076/ " title="facebook" target="_blank"><img class="ftr2" src="/Facebook.png" alt=".." /></a></span>
                   </li>
                 </ul>
               </div>
@@ -68,9 +68,9 @@ export default class LandingFooter extends Component {
                 </ul>
               </div>
               <div className="col-sm-1 footer-row-align">
+              <h3 class="footerfont">REACH US AT </h3>
                 <ul class="services footerele">
-                  <li class="footerfont footer-margin">REACH US AT </li><br></br>
-                  <li class="footer-margin2"><a href="/contactus" >info@plunes.com</a><br></br></li>
+                  <li><a href="/contactus">info@plunes.com</a></li>
                 </ul>
                 <h3 className="footerfont policies-text">  OUR POLICIES </h3>
                 <ul class="services footerele">
@@ -82,7 +82,7 @@ export default class LandingFooter extends Component {
             <div className="row footer-alignment">
               <div className="col-sm-5"></div>
               <div className="col-sm-2">
-                <p className="procedure-text">COMMON PROCEDURES</p><hr width="60%"></hr>
+                <h3 className="procedure-text">COMMON PROCEDURES</h3><hr width="60%"></hr>
               </div>
               <div className="col-sm-5">
               </div>

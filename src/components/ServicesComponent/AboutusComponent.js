@@ -28,13 +28,13 @@ class AboutusComponent extends Component {
                         </div>
                         <div className="col-sm-3">
                             <img className="col" style={{ width: '450px' }} src="/doctor.png" alt=".." />
-                        </div>
+                        </div> 
                         <div className="col-sm-7">
-                            <p className="plunes-is">Plunes is building India's first utility network, which helps you find instant solutions to your all healthcare problems. We are an AI-powered utility network, which helps you find curated, validated & cost-effective solutions to your all healthcare problems. Our technology enables every individual to have their doctor anywhere anytime as well as have the experience of solving the problems of clients in real-time.
+                            <h3 className="plunes-is">Plunes is building India's first utility network, which helps you find instant solutions to your all healthcare problems. We are an AI-powered utility network, which helps you find curated, validated & cost-effective solutions to your all healthcare problems. Our technology enables every individual to have their doctor anywhere anytime as well as have the experience of solving the problems of clients in real-time.
                             <br></br>
                                 Our AI is very advanced and acts as an assistant to everyone on the platform.
                                 It assists users in curating professionals and price, on the other hand, it acts as an assistant for professionals as well. Plunes is the one-stop solution for Diagnostic, Consultation and Procedures.
-                           </p>
+                           </h3>
                         </div>
                         <div className="col-sm-1">
                         </div>

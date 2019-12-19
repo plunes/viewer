@@ -41,7 +41,7 @@ return (
 <img className="dentist-image" src="/PSYCHIATRISTS.png" alt=".."/>
 </div>
 <div className="col-sm-9 view-more-align">
-<h3 className="header-font">Psychiatry</h3>
+<h1 className="header-font">Psychiatry</h1>
 <p className="peragraph-text">
 Psychiatry is the branch of medicine focused on the diagnosis, treatment and prevention of mental, emotional and behavioral disorders. 
 
@@ -64,7 +64,7 @@ A psychiatrist is a medical doctor who specializes in mental health, including s
 </div>
 <div className="col-sm-10 header-size">
 <br></br><br></br>
-<h3 className="header-font">Why Plunes? </h3>
+<h2 className="header-font">Why Plunes? </h2>
 <p className="peragraph-text">
 We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your psychiatric treatments & procedures in Delhi NCR. </p>
 <p className="peragraph-text"> Search for the desired procedure such as stress management, marriage counseling, autism disorder, brain wave therapy or any other psychiatric problems & our AI will negotiate in real-time with top psychologist & clinics nearest to you to get the best price in real time. </p>
@@ -79,7 +79,7 @@ We help you find the best price solutions to all your medical concerns with just
 </div>
 <div className="col-sm-11">
 <br></br>
-<h3 className="header-font align-text">Procedure</h3>
+<h2 className="header-font align-text">Procedure</h2>
 </div>
 
 </div>
@@ -88,8 +88,8 @@ We help you find the best price solutions to all your medical concerns with just
         <div className="col-sm-1">
             </div>
             <div className="col-sm-3">
-            <p className="header-font">1. Counseling:
-</p>
+            <h3 className="header-font">1. Counseling:
+</h3>
 <p className="peragraph-text">
 <li>Adult Counseling : <br></br>
 A counselor is trained to listen with empathy (by putting themselves in your shoes). They can help you deal with any negative thoughts and feelings you have.

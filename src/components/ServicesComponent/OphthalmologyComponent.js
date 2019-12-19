@@ -41,7 +41,7 @@ return (
 <img className="dentist-image" src="/OPHTHAMOLOGIST.png" alt=".." />
 </div>
 <div className="col-sm-9 view-more-align">
-<h3 className="header-font">Ophthalmology</h3>
+<h1 className="header-font">Ophthalmology</h1>
 <p className="peragraph-text">Ophthalmology is a branch of medicine and surgery which deals with the diagnosis and treatment of eye disorders.
 </p>
 <p className="peragraph-text">An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.
@@ -60,7 +60,7 @@ return (
 </div>
 <div className="col-sm-10 header-size">
 <br></br><br></br>
-<h3 className="header-font">Why Plunes? </h3>
+<h2 className="header-font">Why Plunes? </h2>
 <p className="peragraph-text">
 We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your ophthalmology treatments & procedures in Delhi NCR. </p>
 <p className="peragraph-text"> Search for the desired procedure such as cataract eye surgery, corneal repair, prosthetic eye surgery or any other ophthalmology treatments & our AI will negotiate in real-time with top ophthalmologists & clinics nearest to you to get the best price in real time.  </p>
@@ -75,7 +75,7 @@ We help you find the best price solutions to all your medical concerns with just
 </div>
 <div className="col-sm-11">
 <br></br>
-<h3 className="header-font align-text">Procedure</h3>
+<h2 className="header-font align-text">Procedure</h2>
 </div>
 
 </div>
@@ -85,8 +85,8 @@ We help you find the best price solutions to all your medical concerns with just
         <div className="col-sm-1">
             </div>
             <div className="col-sm-3">
-            <p className="header-font">1. Ophthalmology Consultation:
-</p>
+            <h3 className="header-font">1. Ophthalmology Consultation:
+</h3>
 <p className="peragraph-text">Before undergoing any eye surgery or treatment, the patient attends an ophthalmology consultation. <br></br>
 The ophthalmologist will discuss any of the patients concerns and will examine the eyes.
 

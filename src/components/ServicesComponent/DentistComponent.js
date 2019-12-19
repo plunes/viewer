@@ -38,8 +38,8 @@ export default class DentistComponent extends Component {
                             </div>
                             <div className="col-sm-9 view-more-align">
                                 <h1 className="header-font">Dentistry</h1>
-                                <p className="peragraph-text">Dentistry, also known as Dental and Oral Medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity.
-                                </p>
+                                <h3 className="peragraph-text">Dentistry, also known as Dental and Oral Medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity.
+                                </h3>
                                 <p className="peragraph-text">Dentists are trained to diagnose, treat and prevent oral diseases; promote oral health. </p>
                             </div>
                         </div>
@@ -52,13 +52,13 @@ export default class DentistComponent extends Component {
                     <div className="col-sm-10 header-size">
                         <br></br><br></br>
                         <h1 className="header-font">Why Plunes? </h1>
-                        <p className="peragraph-text">
-                            We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dentistry procedures & treatments in Delhi NCR.</p>
+                        <h3 className="peragraph-text">
+                            We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dentistry procedures & treatments in Delhi NCR.</h3>
                         <p className="peragraph-text"> Search for the desired dental treatments such as hot sensitivity, cold sensitivity, oral checkup, dental implants, gum swelling, tooth ache, tooth pain, composite veneers, porcelain veneers, zirconia porcelain veneers, dental porcelain laminates, teeth bonding treatment, dental bonding or any other dentistry treatments & our AI will negotiate in real-time with top dentists & clinics nearest to you to get the best price in real time. </p>
                         <p className="peragraph-text">  Avail upto 50% discount instantly at dental clinics & hospitals in Delhi NCR through Plunes!
                             </p>
                     </div>
-                    <div className="col-sm-1"></div>
+                    <div className="col-sm-1"></div>    
                 </div><br></br><br></br>
                 <hr width="80%"></hr>
                 <div className="container-fluid">

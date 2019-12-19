@@ -41,7 +41,7 @@ return (
 <img className="dentist-image" src="/PEDIATRICIAN.png" alt=".." />
 </div>
 <div className="col-sm-9 view-more-align">
-<h3 className="header-font">Pediatrics</h3>
+<h1 className="header-font">Pediatrics</h1>
 <p className="peragraph-text">
 Pediatrics is the branch of medicine dealing with the health and medical care of infants, children, and adolescents from birth up to the age of 18. The word “pediatrics” means “healer of children”.
 
@@ -64,7 +64,7 @@ Pediatricians are doctors who manage the health of your child, including physica
 </div>
 <div className="col-sm-10 header-size">
 <br></br><br></br>
-<h3 className="header-font">Why Plunes? </h3>
+<h2 className="header-font">Why Plunes? </h2>
 <p className="peragraph-text">
 We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your pediatric procedures/treatments in Delhi NCR. </p>
 <p className="peragraph-text"> Search for the desired tests such as nursemaid’s elbow, heart murmur treatment, vaccination,venipuncture or any other pediatric procedures & our AI will negotiate in real-time with top pediatric hospitals & child specialists nearest to you to get the best price in real time.</p>
@@ -79,7 +79,7 @@ We help you find the best price solutions to all your medical concerns with just
 </div>
 <div className="col-sm-11">
 <br></br>
-<h3 className="header-font align-text">Procedure</h3>
+<h2 className="header-font align-text">Procedure</h2>
 </div>
 
 </div>
@@ -88,7 +88,7 @@ We help you find the best price solutions to all your medical concerns with just
         <div className="col-sm-1">
             </div>
             <div className="col-sm-3">
-            <p className="header-font">1. Pediatric Consultation:</p>
+            <h3 className="header-font">1. Pediatric Consultation:</h3>
 <p className="peragraph-text">
 A Pediatric Consultation is a service provided by a Pediatrician.  It can be sometimes for free, or for patients who are seeking the desired advice. 
 <br></br>

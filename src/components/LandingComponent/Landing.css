@@ -141,9 +141,6 @@
     width: 35px !important;
     outline: none !important;
   }
-  .footer-margin{
-   margin-left: 0px !important;
-  }
   .footerfont{
     
     font-size: 15px !important;
@@ -732,6 +729,7 @@ width: 190px !important;
     .ftr3{
       margin-left:3px;
       margin-top: 40px;
+      margin-bottom: 5px;
     }
     .footer{
       padding-top: 0px;
@@ -981,28 +979,16 @@ margin-top: 70px !important
 .icon{
 padding-right: 10px;
 }
-.footer-margin{
-
-  margin-top: -17px;
-}
-.footer-margin2{
-  margin-top: -12px;
-
-}
-
 .cardRow 
 {
     margin-top: 5%;
     width: 100%;
 }
-
-
 .arrowClass{
     padding-top: 12%;
     position: relative !important;
     left: -10px;
 }
-
 .card{
     border: none !important;
     
@@ -1302,7 +1288,7 @@ height: 40px !important;
   }
   .policies-text{
 
-    margin-top: 38px;
+    margin-top: 13px;
   }
   .procedure-text{
     text-align: center;
@@ -1342,6 +1328,7 @@ height: 40px !important;
 }
 .why-plunes-align{
   list-style-type:none;
+  line-height:3;
 }
 .why-plunes-img{
   height: 25px;

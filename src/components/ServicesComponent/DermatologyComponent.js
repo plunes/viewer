@@ -36,7 +36,7 @@ export default class DermatologyComponent extends Component {
                                 <img className="dentist-image" src="/Dermat.png" alt=".." />
                             </div>
                             <div className="col-sm-9 view-more-align">
-                                <h3 className="header-font">Dermatology</h3>
+                                <h1 className="header-font">Dermatology</h1>
                                 <p className="peragraph-text">Dermatology is the branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects.
                                 </p>
                                 <p className="peragraph-text">A dermatologist is a specialist doctor that manages diseases, in the widest sense, and some cosmetic problems of the skin.</p>
@@ -50,7 +50,7 @@ export default class DermatologyComponent extends Component {
                     </div>
                     <div className="col-sm-10 header-size">
                         <br></br><br></br>
-                        <h3 className="header-font">Why Plunes? </h3>
+                        <h2 className="header-font">Why Plunes? </h2>
                         <p className="peragraph-text">
                             We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dermatological & skin procedures in Delhi NCR. </p>
                         <p className="peragraph-text"> Search for the desired procedure such as laser hair reduction, skin rash treatment, eyebrow thread lift, anti-aging treatments, acne treatment or any other skin problems & our AI will negotiate in real-time with top dermatology clinics nearest to you to get the best price in real time. </p>
@@ -65,7 +65,7 @@ export default class DermatologyComponent extends Component {
                     </div>
                     <div className="col-sm-11">
                         <br></br>
-                        <h3 className="header-font align-text">Procedure</h3>
+                        <h2 className="header-font align-text">Procedure</h2>
                     </div>
                 </div>
                 <div className="container-fluid">
@@ -73,12 +73,12 @@ export default class DermatologyComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">1. Dermatology Consultation:</p>
+                            <h3 className="header-font">1. Dermatology Consultation:</h3>
                             <p className="peragraph-text">A dermatology consultation is a service provided by a dermatologist or dermatology clinic. It can be sometimes for free, or for patients who are seeking the desired advice. <br></br>
                                 The consultation can be regarding existing problems that affect the skin, lips, mouth, etc. It is advised to visit a dermatologist after every one year.</p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">2. Laser Hair Reduction:</p>
+                            <h3 className="header-font">2. Laser Hair Reduction:</h3>
                             <p className="peragraph-text">
                                 It is one of the most commonly done cosmetic procedures to remove hair follicles; it beams highly concentrated light into hair follicles. The pigment in the follicles absorbs the light. That destroys the hair.
                           </p>

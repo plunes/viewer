@@ -43,7 +43,7 @@ return (
 <img className="dentist-image" src="/Physiotherapy.png" alt=".."/>
 </div>
 <div className="col-sm-9 view-more-align">
-<h3 className="header-font">Physiotherapy</h3>
+<h1 className="header-font">Physiotherapy</h1>
 <p className="peragraph-text">
 Physiotherapy, also referred to as physical therapy, is an allied health profession that makes use of bio – mechanics or kinesiology, manual therapy, exercise therapy and electrotherapy, to help patients restore, maintain and increase their physical mobility, strength and function.
 </p>
@@ -65,7 +65,7 @@ Physiotherapists help people affected by injury, illness or disability through m
 </div>
 <div className="col-sm-10 header-size">
 <br></br><br></br>
-<h3 className="header-font">Why Plunes? </h3>
+<h2 className="header-font">Why Plunes? </h2>
 <p className="peragraph-text">
 We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your physiotherapy treatments or pain relief therapies in Delhi NCR. </p>
 <p className="peragraph-text">Search for the desired therapy such as cranial electrotherapy, pain relief, spine pain treatment, frozen shoulder, ankle displacement, knee pain, shoulder pain, knee replacement, total knee replacement or any other physiotherapy treatments & our AI will negotiate in real-time with top physiotherapy specialists & hospitals nearest to you to get the best price in real time. </p>
@@ -80,7 +80,7 @@ We help you find the best price solutions to all your medical concerns with just
 </div>
 <div className="col-sm-11">
 <br></br>
-<h3 className="header-font align-text">Procedure</h3>
+<h2 className="header-font align-text">Procedure</h2>
 </div>
 
 </div>
@@ -89,7 +89,7 @@ We help you find the best price solutions to all your medical concerns with just
         <div className="col-sm-1">
             </div>
             <div className="col-sm-3">
-            <p className="header-font">1. Physiotherapist Consultation:</p>
+            <h3 className="header-font">1. Physiotherapist Consultation:</h3>
 <p className="peragraph-text">
 A physical therapy consultation is an appointment between a physical therapist and a patient. Incorporating physical therapy into a medical treatment plan for pain or injury can help reduce the need for prescription drugs (which can cause side effects) and surgical intervention.
 </p>

@@ -43,7 +43,7 @@ class DentalComplicationsComponent extends Component {
                         <div className="col-sm-1"></div>
 
                         <div className="col-sm-10">
-                            <h1 className="tooth-font">1) Tooth Decay:</h1>
+                            <h3 className="tooth-font">1) Tooth Decay:</h3>
                             <p className="tooth-decay-font">Tooth decay is popularly known as a dental cavity. It happens when any sticky substance that forms on teeth in which bacteria proliferate. In general, anyone can be caused by this problem, especially among children and aged people because of the large sugar intake or starch of the food that we eat.</p>
                             <h1  className="tooth-font">Healthy Suggestions: </h1>
                             <p className="tooth-decay-font">• Avoid drinks with high sugar intake and eat healthy foods;

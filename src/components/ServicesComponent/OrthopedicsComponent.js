@@ -40,7 +40,7 @@ export default class OrthopedicsComponent extends Component {
                                 <img className="dentist-image" src="/Orthopedics.png" alt=".."/>
                             </div>
                             <div className="col-sm-9 view-more-align">
-                                <h3 className="header-font">Orthopedics</h3>
+                                <h1 className="header-font">Orthopedics</h1>
                                 <p className="peragraph-text">Orthopedics is a medical specialty that focuses on the diagnosis, correction, prevention, and treatment of patients with skeletal deformities.
 
 </p>
@@ -61,7 +61,7 @@ export default class OrthopedicsComponent extends Component {
                     </div>
                     <div className="col-sm-10 header-size">
                         <br></br><br></br>
-                        <h3 className="header-font">Why Plunes? </h3>
+                        <h2 className="header-font">Why Plunes? </h2>
                         <p className="peragraph-text">
                         We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your orthopedic procedures & treatments in Delhi NCR.</p>
                         <p className="peragraph-text"> Search for the desired orthopedic treatments & procedures such as bone fusion surgery, Internal Fixation of Bones, Joint Replacement Procedures, bone pain, bone replacement, joint replacement, back pain or any other orthopedic treatments & our AI will negotiate in real-time with top orthopedists & clinics nearest to you to get the best price in real time. </p>
@@ -76,7 +76,7 @@ export default class OrthopedicsComponent extends Component {
                     </div>
                     <div className="col-sm-11">
                         <br></br>
-                        <h3 className="header-font align-text">Procedure</h3>
+                        <h2 className="header-font align-text">Procedure</h2>
                     </div>
 
                 </div>
@@ -85,8 +85,8 @@ export default class OrthopedicsComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">1. Hip Surgery:
-</p>
+                            <h3 className="header-font">1. Hip Surgery:
+</h3>
                             <p className="peragraph-text">During surgery, a doctor will reshape your hip socket so it better covers the ball of your hip joint.
 
 </p>

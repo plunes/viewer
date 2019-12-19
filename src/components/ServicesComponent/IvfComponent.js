@@ -36,7 +36,7 @@ export default class IvfComponent extends Component {
                                 <img className="dentist-image" src="/IVF.png" alt=".."/>
                             </div>
                             <div className="col-sm-9 view-more-align">
-                                <h3 className="header-font">IVF</h3>
+                                <h1 className="header-font">IVF</h1>
                                 <p className="peragraph-text">
                                     IVF stands for in vitro fertilization. It’s one of the more widely known types of assisted reproductive technology (ART).  IVF works by using a combination of medicines and surgical procedures to help sperm fertilize an egg, and help the fertilized egg implant in your uterus.                                </p>
                                 <p className="peragraph-text">
@@ -52,10 +52,10 @@ export default class IvfComponent extends Component {
                     </div>
                     <div className="col-sm-10 header-size">
                         <br></br><br></br>
-                        <h3 className="header-font">Why Plunes? </h3>
-                        <p className="peragraph-text">
+                        <h2 className="header-font">Why Plunes? </h2>
+                        <h3 className="peragraph-text">
                             We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your gynecological treatments & procedures in Delhi NCR.
-                        </p>
+                        </h3>
                         <p className="peragraph-text">
                             Search for the desired IVF procedure such as Infertility & Artificial Insemination, Hysteroscopy IVF, Egg Retrieval, Male Infertility (Varicocelectomy) or any other gynecological treatments & our AI will negotiate in real-time with top IVF specialists & clinics nearest to you to get the best price in real time.
                         </p>

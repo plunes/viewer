@@ -40,11 +40,11 @@ export default class PathologyComponent extends Component {
                                                                 <img className="dentist-image" src="/Pathology.png" alt=".."/>
                                                         </div>
                                                         <div className="col-sm-9 view-more-align">
-                                                                <h3 className="header-font">Pathology</h3>
-                                                                <p className="peragraph-text">
+                                                                <h1 className="header-font">Pathology</h1>
+                                                                <h3 className="peragraph-text">
                                                                         Pathology is the study of the causes and effects of disease or injury. The word pathology also refers to the study of disease in general, incorporating a wide range of bioscience research fields and medical practices.
 
-</p>
+</h3>
                                                                 <p className="peragraph-text">
                                                                         A pathologist is a physician who studies body fluids and tissues, helps your primary care doctor make a diagnosis about your health or any medical problems you have, and uses laboratory tests to monitor the health of patients with chronic conditions.
 
@@ -63,7 +63,7 @@ export default class PathologyComponent extends Component {
                                         </div>
                                         <div className="col-sm-10 header-size">
                                                 <br></br><br></br>
-                                                <h3 className="header-font">Why Plunes? </h3>
+                                                <h2 className="header-font">Why Plunes? </h2>
                                                 <p className="peragraph-text">
                                                 We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your pathology or blood tests in Delhi NCR.</p>
                                                 <p className="peragraph-text"> Search for the desired tests such as Blood tests, CBC, LFT/KFT, Thyroid profile, Pregnancy tests, Dengue tests, Widal tests or any other lab tests & our AI will negotiate in real-time with top pathology labs nearest to you to get the best price in real time. </p>
@@ -87,8 +87,8 @@ export default class PathologyComponent extends Component {
                                                 <div className="col-sm-1">
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">1. Pathology Tests:
-</p>
+                                                        <h3 className="header-font">1. Pathology Tests:
+</h3>
                                                         <p className="peragraph-text">
                                                                 The clinician requests a second opinion from another pathologist and/or the patient requests their slides be reviewed elsewhere, potentially where they may be seeking second or third opinions regarding their treatment options. You can have the best price
 <br></br>
@@ -96,8 +96,8 @@ export default class PathologyComponent extends Component {
 </p>
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">2. Blood Urea Test:
-</p>
+                                                        <h3  className="header-font">2. Blood Urea Test:
+</h3>
                                                         <p className="peragraph-text">
                                                                 A blood urea nitrogen (BUN) test measures the amount of nitrogen in your blood that comes from the waste product urea. Urea is made when protein is broken down in your body.
 </p>
