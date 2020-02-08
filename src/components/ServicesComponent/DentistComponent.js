@@ -10,11 +10,10 @@ export default class DentistComponent extends Component {
 
             <div>
                 <Helmet>
-                    <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/dentist" />
-                    <title>A Complete Guide To Dentistry: All You Need To Know</title>
+                    <title>Dentist in Gurgaon for Tooth Whitening, Tooth Scaling/Polishing, RCT in Gurgaon, Plunes</title>
                     <meta name='keywords' content='dental clinic in gurgaon, dentist in gurgaon, best dental clinic in gurgaon, dental implants in gurgaon, orthodontist in gurgaon, root canal treatment in gurgaon, best dental implants in gurgaon, best orthodontist in gurgaon, braces treatment in gurgaon, ceramic braces cost in gurgaon, cosmetic dentist in gurgaon, dental braces cost in gurgaon, dental surgeon in gurgaon, dentist near me gurgaon, kids dentist in gurgaon, dental treatment'></meta>
-                    <meta name="description" content="Search for the desired dental treatment such as hot sensitivity, cold sensitivity, dental implants etc & avail upto 50% discount.">
+                    <meta name="description" content="Find out the Best Dentist in Gurgaon. Treatment includes Tooth Whitening, Tooth Scaling/Polishing, RCT in Gurgaon. Get Free Consultation. Free app Download Plunes">
                     </meta>
                 </Helmet>
                 <LandingHeader />
@@ -22,9 +21,9 @@ export default class DentistComponent extends Component {
                 <div className="row">
                     <div className="col-sm-1"></div>
                     <div className="col-sm-11">
-                        <ul class="breadcrumb">
-                            <li><a href="/">Home</a></li>
-                            <li className="header-font2" ><a className="breadcrumb-text" href="">Dentistry</a></li>
+                        <ul className="breadcrumb">
+                            <li><a href="/" title='Home'>Home</a></li>
+                            <li className="header-font2"> <a className="breadcrumb-text" href="/dentist" title='Dentistry'>Dentistry</a></li>
                         </ul>
                     </div>
                 </div>
@@ -33,10 +32,10 @@ export default class DentistComponent extends Component {
                     </div>
                     <div className="col-sm-11 header2-text">
                         <div className="row">
-                            <div className="col-sm-2">
+                            <div className="col-sm-3">
                                 <img className="dentist-image" src="/dent.png" alt=".." />
                             </div>
-                            <div className="col-sm-9 view-more-align">
+                            <div className="col-sm-8 view-more-align">
                                 <h1 className="header-font">Dentistry</h1>
                                 <h3 className="peragraph-text">Dentistry, also known as Dental and Oral Medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity.
                                 </h3>
@@ -45,28 +44,17 @@ export default class DentistComponent extends Component {
                         </div>
                     </div>
                 </div>
-                <hr  style={{width:'80%'}}></hr>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
-                    <div className="col-sm-10 header-size">
-                        <br></br><br></br>
-                        <h1 className="header-font">Why Plunes? </h1>
-                        <h3 className="peragraph-text">
-                            We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dentistry procedures & treatments in Delhi NCR.</h3>
-                        <p className="peragraph-text"> Search for the desired dental treatments such as hot sensitivity, cold sensitivity, oral checkup, dental implants, gum swelling, tooth ache, tooth pain, composite veneers, porcelain veneers, zirconia porcelain veneers, dental porcelain laminates, teeth bonding treatment, dental bonding or any other dentistry treatments & our AI will negotiate in real-time with top dentists & clinics nearest to you to get the best price in real time. </p>
-                        <p className="peragraph-text">  Avail upto 50% discount instantly at dental clinics & hospitals in Delhi NCR through Plunes!
-                            </p>
-                    </div>
-                    <div className="col-sm-1"></div>    
-                </div><br></br><br></br>
-                <hr style={{width:'80%'}}></hr>
+
+                    <div className="col-sm-1"></div>
+                </div>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-11">
-                            <br></br>
                             <h1 className="header-font align-text">Procedure</h1>
                         </div>
                     </div>
@@ -103,28 +91,29 @@ export default class DentistComponent extends Component {
                             <h2 className="header-font">5. Gold Fillings:</h2>
                             <p className="peragraph-text">
                                 A small amount of gold that a dentist puts in a hole in a tooth to prevent further decay.
-                                        </p>
+                            </p>
                         </div>
-                        <div className="col-sm-3"><h2 className="header-font">6. Glass Ionomer:</h2>
+                        <div className="col-sm-3">
+                            <h2 className="header-font">6. Glass Ionomer:</h2>
                             <p className="peragraph-text">It is made from acrylic and fluoroaluminosilicate, a component of glass. </p>
-
                         </div>
                         <div className="col-sm-2">
                         </div>
-                    </div> <div className="row">
+                    </div> 
+                    <div className="row">
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <h2 className="header-font">7. Root Canal Treatment: </h2>
+                            <h3 className="header-font">7. Root Canal Treatment: </h3>
                             <p className="peragraph-text">It is a treatment sequence for the infected pulp of a tooth which results in the elimination of infection and the protection of the decontaminated tooth from future microbial attacks.</p>
                         </div>
                         <div className="col-sm-3">
-                            <h2 className="header-font">8. Wisdom Teeth Removal / Impaction: </h2>
+                            <h3 className="header-font">8. Wisdom Teeth Removal / Impaction: </h3>
                             <p className="peragraph-text">
                                 The treatment involves removal of wisdom teeth. It can also reduce inflammation of the gums associated with wisdom teeth development.</p>
                         </div>
                         <div className="col-sm-3">
-                            <h2 className="header-font">9. Braces & Aligners:</h2>
+                            <h3 className="header-font">9. Braces & Aligners:</h3>
                             <p className="peragraph-text">They are appliances which are used to align or straighten the teeth to guide the teeth for better & corrected position.
                           </p>
                         </div>
@@ -163,12 +152,12 @@ export default class DentistComponent extends Component {
                             <h2 className="header-font">13. Lingual Braces:</h2>
                             <p className="peragraph-text">
                                 They are heavy metal braces which are placed behind the teeth. It can be made even of silver or gold. The individual Bracket is customized using CAD-CAM / 3D designing.
-                               </p>
+                            </p>
                         </div>
                         <div className="col-sm-3">
                             <h2 className="header-font">14. Aligners:</h2>
                             <p className="peragraph-text">It is medical grade plastic trays that do not require any braces or wire. They are totally invisible and also hide existing gaps.
-                               </p>
+                            </p>
                         </div>
                         <div className="col-sm-3">
                             <h2 className="header-font">15. Dental Implants:</h2>
@@ -241,7 +230,7 @@ export default class DentistComponent extends Component {
                         </div>
                         <div className="col-sm-2">
                         </div>
-                     </div> <div className="row">
+                    </div> <div className="row">
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
@@ -320,7 +309,7 @@ export default class DentistComponent extends Component {
                         <div className="col-sm-3">
                             <p className="header-font">35. Bone Graft:</p>
                             <p className="peragraph-text">
-                                This method is used to regenerate the bone. The dentist use fragments of synthetic bone donated bone or your own bone which is used to replace the bone destroyed due to gum disease                            .
+                                This method is used to regenerate the bone. The dentist use fragments of synthetic bone donated bone or your own bone which is used to replace the bone destroyed due to gum disease.
                             </p>
                         </div>
                         <div className="col-sm-3">
@@ -334,7 +323,7 @@ export default class DentistComponent extends Component {
                 </div>
                 <div>
                     <div>
-                        <div>  <LandingFooter /> </div>
+                        <div><LandingFooter /></div>
                     </div>
                 </div>
             </div>

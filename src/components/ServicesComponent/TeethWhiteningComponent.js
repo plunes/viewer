@@ -9,11 +9,10 @@ class TeethWhiteningComponent extends Component {
         return (
             <div className='container-fluid'>
                 <Helmet>
-                    <meta charSet="utf-8" />
-                    <link rel="canonical" href="https://www.plunes.com/plockr" />
-                    <title>How Teeth Whitening Can Improve Your Daily Lifestyle | Blog </title>
+                    <link rel="canonical" href="https://www.plunes.com/teeth-whitening" />
+                    <title>Teeth Whitening in Gurgaon, Improve Your Lifestyle, Plunes</title>
                     <meta name='keywords' content='dentist consultation, hot sensitivity, sensitivity, cold sensitivity, oral checkup, implant, gum swelling, tooth ache, tooth pain, Invisalign therapy, teeth bleaching, teeth whitening strips, vital teeth whitening, cosmetic dentistry'></meta>
-                    <meta name="description" content="Tooth whitening lightens teeth and helps to remove teeth stains and discoloration. It primarily focuses on the improvement of the overall smile appearance. ">
+                    <meta name="description" content="Get the Best Teeth Whitening Clinic in Gurgaon. Plunes help to find the best solution for our dentistry procedures & treatments in Gurgaon.">
                     </meta>
                 </Helmet>
                 <div>
@@ -21,7 +20,7 @@ class TeethWhiteningComponent extends Component {
                 </div>
                 <div className="container-fluid dental-margin">
 
-                    <h1 className="key-benefits">How Teeth Whitening Can Improve Your Lifestyle</h1>
+                    <h1 className="key-benefits">A Complete Guide To Teeth Whitening</h1>
 
                     <div className="row">
                         
@@ -51,9 +50,9 @@ class TeethWhiteningComponent extends Component {
                             <p className="tooth-decay-font">2. Drinking dark-colored liquids such as coffee, cola, tea and red wine,</p>
                             <p className="tooth-decay-font">3. Not taking good care of your teeth.</p>
                             
-                            
+                            <br></br>
                             <h1 className="tooth-font">The Plunes Advantage  </h1>
-                            <p className="tooth-decay-font">We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dentistry procedures & treatments in Delhi NCR. <br></br><br></br>
+                            <p className="tooth-decay-font">We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dental procedures & treatments in Delhi NCR. <br></br><br></br>
                              Search for the desired dental treatments such as teeth whitening, hot sensitivity, cold sensitivity, oral checkup, dental implants, gum swelling, or any other dentistry treatments & our AI will negotiate in real-time with top dentists & clinics nearest to you to get the best price in real time. Avail Upto 50% discount on instant booking!</p>
 
                         </div>

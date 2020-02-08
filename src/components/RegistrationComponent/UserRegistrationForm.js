@@ -59,7 +59,7 @@ class UserRegistrationForm extends Component {
         const { showLogin } = this.state
         if (showLogin) {
             return <Redirect to={{
-                pathname: "/login",
+                pathname: "/log-in/",
 
             }} />;
         }
@@ -67,43 +67,43 @@ class UserRegistrationForm extends Component {
             <div >
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <input className="form-control2" name="fullName" placeholder="Name" onChange={this.handleChange} required />
+                        <input className="form-control2 plockr-app-form" name="fullName" placeholder="Name" onChange={this.handleChange} required />
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" value='M' name="gender" onChange={this.handleChange} />Male
+                            <input type="radio" class="form-check-input plockr-app-form" value='M' name="gender" onChange={this.handleChange} />Male
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" value='F' name="gender" onChange={this.handleChange} />Female
+                            <input type="radio" class="form-check-input plockr-app-form" value='F' name="gender" onChange={this.handleChange} />Female
                         </label>
                     </div>
                     <div className="form-group">
-                        <input className="form-control2" name="phoneNumber" placeholder="Mobile Number" onChange={this.handleChange} required />
+                        <input className="form-control2 plockr-app-form" name="phoneNumber" placeholder="Mobile Number" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group">
-                        <input className="form-control2" name="emailId" placeholder="Email id" onChange={this.handleChange} required />
+                        <input className="form-control2 plockr-app-form" name="emailId" placeholder="Email id" onChange={this.handleChange} required />
                     </div>
 
                     <div class="form-group">
-                        <input class="form-control2" type='date' name='dob' id="example-datetime-local-input" onChange={this.handleChange} required />
+                        <input class="form-control2 plockr-app-form" type='date' name='dob' id="example-datetime-local-input" onChange={this.handleChange} required />
                     </div>
                     <div className="form-group"><span>
-                        <input type="password" className="form-control2" placeholder="Password" onChange={this.handleChange} name="password" required /></span>
+                        <input type="password" className="form-control2 plockr-app-form" placeholder="Password" onChange={this.handleChange} name="password" required /></span>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control2" rows="3" placeholder='Address' name='address' onChange={this.handleChange}></textarea>
+                        <textarea class="form-control2 plockr-app-form" rows="3" placeholder='Address' name='address' onChange={this.handleChange}></textarea>
                     </div>
                     <div className="form-group">
-                        <input className="form-control2 " placeholder="Enter Referal Code (Optional)" onChange={this.handleChange} name="refCode" />
+                        <input className="form-control2 plockr-app-form" placeholder="Enter Referal Code (Optional)" onChange={this.handleChange} name="refCode" />
                     </div>
-                    <div className="form-group" className='buttonSignUp'>
+                    <div className="form-group" className='button'>
                         <button type="submit" className="btn btn-success btn-lg btn-block">Sign Up</button>
                     </div>
                 </form>
                 <div>
-                    <p className="last-text">By registering, you agree to our<br></br><a href="/termsofuse" >T&C </a> </p>
+                    <p className="last-text">By registering, you agree to our<br></br><a href="/terms-of-use" >T&C </a> </p>
                 </div>
             </div>
         );

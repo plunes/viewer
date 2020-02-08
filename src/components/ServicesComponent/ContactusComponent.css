@@ -26,13 +26,13 @@
 }
 .contact-img{
     width: 90px;
-    margin-left: 35%;
+    margin-left: 21%;
 }
 .font{
     font-size: 28px;
 }
 .contact-textarea{
-    height: 20%;
+    height: 115%;
     width: 95%;
     outline: none !important;
 }
@@ -75,6 +75,9 @@
  }
  .info-align{
      margin-top: -7px !important;
+ }
+ .cont{
+    width: '18rem';
  }
  @media only screen and (max-width: 768px) and (min-width: 320px){
 .contact-img{

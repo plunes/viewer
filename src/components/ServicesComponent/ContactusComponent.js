@@ -6,41 +6,41 @@ import { Helmet } from "react-helmet";
 import axios from 'axios'
 
 class ContactusComponent extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
-        this.state={
-            name : '',
-            email : '',
-            message : ''
+        this.state = {
+            name: '',
+            email: '',
+            message: ''
         }
 
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    handleChange(e){
+    handleChange(e) {
         this.setState({
-            [e.target.name] : e.target.value
+            [e.target.name]: e.target.value
         })
     }
 
-    handleSubmit(e){
+    handleSubmit(e) {
         e.preventDefault();
         let data = {
-            name : this.state.name,
-            email : this.state.email,
-            message : this.state.message
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
         }
         axios.post('https://plunes.co/v4/notification/contact', data)
-        .then(res => { // then print response status
-            console.log(res.statusText)
-            if(res.status === 201){
-                this.setState({
-                    name : '',
-                    email : '',
-                    message : ''
-                })
-            }
+            .then(res => { // then print response status
+                console.log(res.statusText)
+                if (res.status === 201) {
+                    this.setState({
+                        name: '',
+                        email: '',
+                        message: ''
+                    })
+                }
             })
     }
 
@@ -49,11 +49,10 @@ class ContactusComponent extends Component {
         return (
             <div className='container-fluid'>
                 <Helmet>
-                    <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/contact" />
-                    <title>Contact Us - Plunes</title>
+                    <title>Contact Us Plunes India's First Utility Network </title>
                     <meta name='keywords' content='contact us, email id, you can ask us, phone number, comment, get in touch'></meta>
-                    <meta name="description" content="Got any suggestions or have queries regarding our product? Contact Us or Just let us know and we will get right back to you!">
+                    <meta name="description" content="For more information Contact Us at Plunes India's First Utility Network.">
                     </meta>
                 </Helmet>
                 <div>
@@ -62,48 +61,44 @@ class ContactusComponent extends Component {
 
                 <div className='container-fluid contact-align'>
                     <div className='row justify-content-center'>
-
                         <h1 className="ploker-header">CONTACT US</h1>
                     </div>
                     <div className="section">
                         <div className="row contact-us justify-content-center">
-                            
-                            <div class="card" style={{ width: '18rem' }}>
-                                <img className="contact-img" src="/inbox.png" alt=".."/>
+                            <div className="card" className="cont">
+                                <img className="contact-img" src="/inbox.png" alt=".." />
                                 <div className="card-body font">
-                                    <h5 class="card-title email-align">Email</h5>
-                                    <p class="card-text info-align">info@plunes.com</p>
+                                    <h5 className="card-title email-align">Email</h5>
+                                    <p className="card-text info-align">info@plunes.com</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="section">
-                        <form onSubmit= {this.handleSubmit}>
+                        <form onSubmit={this.handleSubmit}>
                             <div className='row justify-content-center'>
                                 <h1 className="contact-header">Get In Touch</h1>
                             </div>
-                            <hr style={{width:'10%'}} ></hr>
+                            <hr width="10%"></hr>
                             <div className="row">
-                                <div className = 'col-sm-3'></div>
-                                <div className = 'col-sm-6'>
-                                    <div className = 'row'>
-                                        <div className = 'col'>
-                                        <input className="contact-us-form" name="name" placeholder="Name" value = {this.state.name} onChange = {this.handleChange} />
+                                <div className='col-sm-3'></div>
+                                <div className='col-sm-6'>
+                                    <div className='row'>
+                                        <div className='col'>
+                                            <input className="contact-us-form" name="name" placeholder="Name" value={this.state.name} onChange={this.handleChange} />
                                         </div>
-                                        <div className = 'col'>
-                                        <input className="contact-us-form" name="email" placeholder="Email ID" value = {this.state.email} onChange = {this.handleChange} />
+                                        <div className='col'>
+                                            <input className="contact-us-form" name="email" placeholder="Email ID" value={this.state.email} onChange={this.handleChange} />
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className = 'col'>
-                                        <textarea placeholder="Message" name='message' className="contact-textarea" value = {this.state.message} onChange = {this.handleChange}></textarea>
+                                        <div className='col'>
+                                            <textarea placeholder="Message" name='message' className="contact-textarea" value={this.state.message} onChange={this.handleChange}></textarea>
                                         </div>
                                     </div>
                                 </div>
-                                <div className = 'col-sm-3'></div>
-                               
+                                <div className='col-sm-3'></div>
                             </div>
-                           
                             <div className="row">
                                 <div className="col-sm-4">
                                 </div>
@@ -115,8 +110,6 @@ class ContactusComponent extends Component {
                             </div>
                         </form>
                     </div>
-
-
                 </div>
                 <LandingFooter />
             </div>

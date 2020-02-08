@@ -2,18 +2,16 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
-import {Helmet} from "react-helmet";
-
+import {Helmet} from "react-helmet"
 export default class OphthalmologyComponent extends Component {
 render() {
 return (
 <div>
 <Helmet>
-    <meta charSet="utf-8" />
-        <link rel="canonical" href="https://www.plunes.com/ophthalmology" />
-        <title>A Complete Guide To Ophthalmology: All You Need To Know</title>
+        <link rel="canonical" href="https://www.plunes.com/ophthalmology"/>
+        <title>Best Eye Clinic, Hospital & Specialists in Gurgaon, Plunes.</title>
         <meta name='keywords' content='eye hospital in gurgaon, eye specialist in gurgaon, eye clinic in gurgaon, ophthalmologist in gurgaon, cataract surgery in gurgaon, lasik eye surgery in gurgaon, lasik surgery in gurgaon, Ophthalmology'></meta>
-    <meta name="description" content="Search for the desired procedure under ophthalmology such as cataract eye surgery, corneal repair, prosthetic eye surgery etc & avail upto 50% discount. ">
+       <meta name="description" content="Find out the best Ophthalmologists in Gurgaon. Treatment includes Cataract Eye Surgery, Injuries and trauma, Refractive errors. Get Free Consultation. Free app Download, Plunes.">
     </meta>
 </Helmet>
 <LandingHeader />
@@ -23,8 +21,8 @@ return (
 
 <div className="col-sm-11">
 <ul class="breadcrumb">
-<li><a href="/">Home</a></li>
-<li className="header-font2" ><a className="breadcrumb-text" href="#">Ophthalmology</a></li>
+<li><a href="/" title='Home'>Home</a></li>
+<li className="header-font2" ><a className="breadcrumb-text" href="/ophthalmology" title='Ophthalmology'>Ophthalmology</a></li>
 
 </ul>
 </div>
@@ -37,10 +35,10 @@ return (
 </div>
 <div className="col-sm-11 header2-text">
 <div className="row">
-<div className="col-sm-2">
-<img className="dentist-image" src="/OPHTHAMOLOGIST.png" alt=".." />
+<div className="col-sm-3">
+<img className="dentist-image1" src="/OPHTHAMOLOGIST.png" alt=".." />
 </div>
-<div className="col-sm-9 view-more-align">
+<div className="col-sm-8 view-more-align">
 <h1 className="header-font">Ophthalmology</h1>
 <p className="peragraph-text">Ophthalmology is a branch of medicine and surgery which deals with the diagnosis and treatment of eye disorders.
 </p>
@@ -54,27 +52,15 @@ return (
 
 </div>
 
-<hr style={{width:'80%'}}></hr>
 <div className="row">
 <div className="col-sm-1">
 </div>
-<div className="col-sm-10 header-size">
-<br></br><br></br>
-<h2 className="header-font">Why Plunes? </h2>
-<p className="peragraph-text">
-We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your ophthalmology treatments & procedures in Delhi NCR. </p>
-<p className="peragraph-text"> Search for the desired procedure such as cataract eye surgery, corneal repair, prosthetic eye surgery or any other ophthalmology treatments & our AI will negotiate in real-time with top ophthalmologists & clinics nearest to you to get the best price in real time.  </p>
-<p className="peragraph-text"> Avail upto 50% discount instantly at ophthalmology clinics in Delhi NCR through Plunes! 
-</p>
-</div>
 <div className="col-sm-1"></div>
-</div><br></br><br></br>
-<hr style={{width:'80%'}}></hr>
+</div>
 <div className="row">
 <div className="col-sm-1">
 </div>
 <div className="col-sm-11">
-<br></br>
 <h2 className="header-font align-text">Procedure</h2>
 </div>
 
@@ -99,8 +85,8 @@ Cataract surgery is a procedure to remove the lens of an eye and in most cases, 
 </p>
             </div>
             <div className="col-sm-3">
-            <p className="header-font">3. Chemotherapy:</p>
-<p className="peragraph-text">Chemotherapy uses drugs to kill tumor cells. Chemotherapy drugs can be taken orally in pill form or injected into a vein (intravenously). The chemotherapy drug used most often to treat brain tumors is temozolomide (Temodar), which is taken as a pill.
+            <p className="header-font">3. Oculoplasty:</p>
+<p className="peragraph-text">Plastic surgery of the eye and for short sightedness (such as the tear ducts or eyelids)
 
 </p>
             </div>
@@ -153,12 +139,8 @@ Implantable Phakic contact Lens (EyePCL) is like a soft contact lens, single pie
             <div className="col-sm-2">
             </div>
             
-        </div>
-        
-        
+        </div>      
 </div>
-
-
 <div>
 <div>
 <LandingFooter />

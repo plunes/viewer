@@ -3,6 +3,19 @@
     .career-img{
         width: 300px !important;
     }
+    .softwareeng{
+        margin-left: 37px !important;
+    }
+    .business {
+        margin-left: 3% !important;
+        width: 117% !important;
+    }
+    .markwareeng{
+        margin-left: 30% !important;
+    }
+    .bus-int {
+        margin-left: 6% !important;
+        width:109% !important}
     .grid-box-align{
         margin-left: 10% !important;
     }
@@ -11,6 +24,9 @@
     }
     .lable{
         margin-left: 4% !important;
+    }
+    .box-content{
+        margin-left: 17% !important;
     }
 .career-pera{
     margin-left: 15px;
@@ -26,7 +42,7 @@
     width: 99% !important;
 }
 .career-button{
-    margin-left:26% !important;
+    margin-left:13% !important;
 }
 .carers-button{
     margin-left: 30% !important;
@@ -122,7 +138,7 @@
     margin-bottom: -10px;
 }
 .lable{
-    margin-left: -13%;
+    margin-left: 15%;
 }
 .career-grid{
     margin-top: 40px;
@@ -158,9 +174,9 @@
     width: 140px;
     height: 37px;
     color:white !important;
-    margin-left: 14% ;
-    margin-top: 20px;
-
+   position: absolute;
+   top: 71%;
+   left: 13%;
   }
   .carers-button{
     background-color: #01d35a !important;
@@ -182,11 +198,19 @@
   .career-table-align{
       margin-top: 40px;
   }
+  .career-td{
+      background-color: #f8f8f8;
+      font-weight: 100;
+  }
   .box-content{
       font-size: 16px ;
       color: #717171;
       text-align: center;
       margin-left: 3%;
+      position: absolute;
+    top: 99px;
+    left: 32px;
+
   }
   .careers-grid3{
     margin-top:40px;
@@ -203,6 +227,50 @@
 }
 .full-life-alin{
     margin-left: 0px;
+}
+.modal-title {
+    text-align: center !important;
+    margin-top: 7%;
+    line-height: 40px !important;
+}
+.modal-body {
+    overflow: auto;
+    height: 450px;
+}
+.bus-int{
+    font-size: 30px;
+text-align: center;
+    margin-left: 20%;
+}
+.markwareeng{
+    font-size: 30px;
+
+    margin-left: 55%;
+    width: 100%;
+}
+.business{
+    font-size: 30px;
+text-align: center;
+    margin-left: 21%;
+}
+.softwareeng{
+    font-size: 30px;
+
+    margin-left: 45%;
+    width: 100%;
+}
+.close
+{
+    font-size: 35px !important;
+    padding-left: 40px !important;
+
+}
+.modal-header{
+    border: 0px solid white !important;
+}
+.ablity{
+    color: grey;
+    font-size: 20px;
 }
 .table-button{
     background-color: #01d35a !important;

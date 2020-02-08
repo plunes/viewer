@@ -9,11 +9,10 @@ export default class DermatologyComponent extends Component {
         return (
             <div>
                 <Helmet>
-                    <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/dermatology" />
-                    <title>A Complete Guide To Dermatology: All You Need To Know</title>
+                    <title>Best Dermatologist in Gurgaon for Hair Fall Treatment & Acne Treatment in Gurgaon, PRP Therapy, Plunes</title>
                     <meta name='keywords' content='dermatologist in gurgaon, dermatology clinic in gurgaon, dermatology hospital in gurgaon, allergy rashes cure gurgaon, best skin treatment for wrinkles gurgaon, best treatment for fine lines and wrinkles gurgaon, dermatological treatments'></meta>
-                    <meta name="description" content="Search for the desired dermatological treatments such as laser hair reduction, skin rash treatment, eyebrow thread lift etc & avail upto 50% discount. ">
+                    <meta name="description" content="Check out the Best Dermatologist in Gurgaon for Hair Fall Treatment & Acne Treatment in Gurgaon. Best PRP Therapy. Plunes Download Free app.">
                     </meta>
                 </Helmet>
                 <LandingHeader />
@@ -21,9 +20,9 @@ export default class DermatologyComponent extends Component {
                 <div className="row">
                     <div className="col-sm-1"></div>
                     <div className="col-sm-11">
-                        <ul class="breadcrumb">
-                            <li><a href="/">Home</a></li>
-                            <li className="header-font2" ><a className="breadcrumb-text" href="#">Dermatology</a></li>
+                        <ul className="breadcrumb">
+                            <li><a href="/" title='home'>Home</a></li>
+                            <li className="header-font2" ><a className="breadcrumb-text" href="/dermatology">Dermatology</a></li>
                         </ul>
                     </div>
                 </div>
@@ -32,10 +31,10 @@ export default class DermatologyComponent extends Component {
                     </div>
                     <div className="col-sm-11 header2-text">
                         <div className="row">
-                            <div className="col-sm-2">
+                            <div className="col-sm-3">
                                 <img className="dentist-image" src="/Dermat.png" alt=".." />
                             </div>
-                            <div className="col-sm-9 view-more-align">
+                            <div className="col-sm-8 view-more-align">
                                 <h1 className="header-font">Dermatology</h1>
                                 <p className="peragraph-text">Dermatology is the branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects.
                                 </p>
@@ -44,27 +43,17 @@ export default class DermatologyComponent extends Component {
                         </div>
                     </div>
                 </div>
-                <hr style={{width:'80%'}}></hr>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
-                    <div className="col-sm-10 header-size">
-                        <br></br><br></br>
-                        <h2 className="header-font">Why Plunes? </h2>
-                        <p className="peragraph-text">
-                            We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your dermatological & skin procedures in Delhi NCR. </p>
-                        <p className="peragraph-text"> Search for the desired procedure such as laser hair reduction, skin rash treatment, eyebrow thread lift, anti-aging treatments, acne treatment or any other skin problems & our AI will negotiate in real-time with top dermatology clinics nearest to you to get the best price in real time. </p>
-                        <p className="peragraph-text"> Avail upto 50% discount instantly at dermatology clinics in Delhi NCR through Plunes!
-                      </p>
-                    </div>
+                    
                     <div className="col-sm-1"></div>
-                </div><br></br><br></br>
-                <hr style={{width:'80%'}}></hr>
+                </div>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
                     <div className="col-sm-11">
-                        <br></br>
+                        
                         <h2 className="header-font align-text">Procedure</h2>
                     </div>
                 </div>

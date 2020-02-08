@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router'
 import Modal from 'react-modal';
-
+// import MDBFileupload from 'mdb-react-fileupload';
 const customStyles = {
     content: {
         top: '50%',
@@ -17,11 +17,12 @@ const customStyles = {
 class PlockrProfileComponent extends Component {
     constructor(props) {
         super(props);
+        // console.log(this.props.user.specialities)
         this.state = {
-            name: this.props.user.name ? this.props.user.name : 'General user',
-            email: this.props.user.email ? this.props.user.email : 'generaluser@plunes.com',
+            name: this.props.user ? this.props.user.name : 'General user',
+            email: this.props.user ? this.props.user.email : 'generaluser@plunes.com',
             userId: localStorage.getItem('uploaderUserId'),
-            patientMobileNumber: this.props.user.mobileNumber,
+            patientMobileNumber: this.props.user ? this.props.user.mobileNumber : '',
             problemAreaDiagnosis: '',
             reasonDiagnosis: '',
             consumptionDiet: '',
@@ -35,7 +36,8 @@ class PlockrProfileComponent extends Component {
             speciality: '',
             reportName: '',
             test:'',
-            imgUrl: this.props.user.imageUrl ? this.props.user.imageUrl : 'https://profile-image-plunes.s3.amazonaws.com/profilephotos/default_img.png'
+            specialities : this.props.user ? this.props.user.specialities : [],
+            imgUrl: this.props.user ? this.props.user.imageUrl : 'https://profile-image-plunes.s3.amazonaws.com/profilephotos/default_img.png'
         }
         this.handleLogout = this.handleLogout.bind(this)
         this.handleChange = this.handleChange.bind(this);
@@ -45,7 +47,6 @@ class PlockrProfileComponent extends Component {
     handleLogout(e) {
         e.preventDefault();
         let token = localStorage.getItem('auth');
-        // console.log(token, 'token')
         axios.post('https://plunes.co/v4/user/logout', "", { headers: { "Authorization": `Bearer ${token}`, "Content-Type": "application/json" } })
             .then((response) => {
                 localStorage.removeItem('auth');
@@ -65,7 +66,6 @@ class PlockrProfileComponent extends Component {
         const data = new FormData();
         data.append('file', this.state.file)
         axios.post("https://plunes.co/v4/upload", data, {
-            // multipart/form-data
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
@@ -88,15 +88,12 @@ class PlockrProfileComponent extends Component {
                         test: this.state.test,
                         reportUrl: "https://plunes.co/v4/" + res.data.path
                     }
-                    console.log(body, 'body')
                     let token = localStorage.getItem('auth')
-                    console.log(token, 'token')
                     axios.post('https://plunes.co/v4/report', body, { headers: { "Authorization": `Bearer ${token}`, "Content-Type": "application/json" } })
                         .then(res => {
                             this.setState({
                                 modalIsOpen: true
                             })
-                            // console.log(res.status)
                         })
                 }
             })
@@ -104,11 +101,10 @@ class PlockrProfileComponent extends Component {
 
     handleChange(e) {
         if (e.target.name === 'file') {
-            this.setState({
+           this.setState({
                 file: e.target.files[0]
             })
         } else {
-            console.log(e.target.value, 'value')
             this.setState({
                 [e.target.name]: e.target.value
             })
@@ -117,10 +113,7 @@ class PlockrProfileComponent extends Component {
     }
 
     render() {
-
         const { showLogin } = this.state;
-        // console.log(this.state.docList, 'doclist')
-        console.log(showLogin)
         if (showLogin) {
             return <Redirect to={{
                 pathname: "/plockrapp",
@@ -159,66 +152,41 @@ class PlockrProfileComponent extends Component {
                                 </div>
                             </div>
                             <form onSubmit={this.handleSubmit}>
-                                <div class="form-group ">
-                                    <select class="form-control plockr-app-form" onChange={this.handleChange} name='speciality' required >
+                                <div className="form-group ">
+                                    <select className="form-control plockr-app-form" onChange={this.handleChange} name='speciality' required >
                                         <option value=''>Speciality</option>
-                                        <option value='5de4218d6a2be815b9e215e0'>Dentist</option>
-                                        <option value='5de4218d6a2be815b9e215e2' >Psychologist</option>
-                                        <option value='5de4218d6a2be815b9e215e7'>Gynaecologist</option>
-                                        <option value='5de4218d6a2be815b9e215e5'>Dermatologist</option>
-                                        <option value='5de4218d6a2be815b9e215e3'>Pediatrician</option>
-                                        <option value='5de4218d6a2be815b9e215ec'>Cardiologist</option>
-                                        <option value='5de4218d6a2be815b9e215f1'>IVF</option>
-                                        <option value='5de4218d6a2be815b9e215ea'>Pathologists</option>
-                                        <option value='5de4218d6a2be815b9e215e1'>Physiotherapist</option>
-                                        <option value='5de4218d6a2be815b9e215e4'>Ophthalmologist</option>
-                                        <option value='5de4218d6a2be815b9e215e8'>Ayurveda</option>
-                                        <option value='5de4218d6a2be815b9e215e6'>ENT Specialist</option>
-                                        <option value='5de4218d6a2be815b9e215ef'>Gastroenterologist</option>
-                                        <option value='5de4218d6a2be815b9e215e9'>Orthopedist</option>
-                                        <option value='5de4218d6a2be815b9e215ed'>Aesthetics</option>
-                                        <option value='5de4218d6a2be815b9e215eb'>Radiologists</option>
-                                        <option value='5de4218d6a2be815b9e215ee'>Neurosurgeon</option>
-                                        <option value='5de4218d6a2be815b9e215f0'>Pulmonologist</option>
-                                        <option value='5df796595250b4295c3d18e2'>Optometrist</option>
-                                        <option value='5df781f3e3668a281ecee2a4'>General Physician</option>
+                                        {
+                                            this.state.specialities.map((speciality, index) => (
+                                            <option value={speciality.id} key={index}>{speciality.name}</option>
+                                            ))
+                                        }
                                     </select>
                                 </div><br></br>
                                 <div className="form-group">
-
                                     <textarea className="form-control plockr-app-form" placeholder="Report Name" rows="2" name='reportName' onChange={this.handleChange} ></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-
                                     <textarea className="form-control plockr-app-form" placeholder="Problem Area (Diagnosis)" rows="2" name='problemAreaDiagnosis' onChange={this.handleChange} ></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-
                                     <textarea className="form-control plockr-app-form" placeholder="Diagnosis" rows="2" name='reasonDiagnosis' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-
                                     <textarea className="form-control plockr-app-form" placeholder="Medicine" rows="2" name='medicines' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-
                                     <textarea className="form-control plockr-app-form" placeholder="Test" rows="2" name='test' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-
                                     <textarea className="form-control plockr-app-form" placeholder="Consumption (Diet)" rows="2" name='consumptionDiet' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-
                                     <textarea className="form-control plockr-app-form" placeholder="Avoid (Diet)" rows="2" name='avoidDiet' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className="form-group">
-
                                     <textarea className="form-control plockr-app-form" placeholder="Precautions" rows="2" name='precautions' onChange={this.handleChange}></textarea>
                                 </div><br></br>
-
                                 <div className="form-group">
-
                                     <textarea className="form-control plockr-app-form" placeholder="Remarks" rows="2" name='remarks' onChange={this.handleChange}></textarea>
                                 </div><br></br>
                                 <div className='form-group '>
@@ -227,6 +195,7 @@ class PlockrProfileComponent extends Component {
                                     {/* <label className="lable2">(.doc, .docx, .pdf, .jpeg only)</label> */}
                                     <input type="file" name='file' onChange={this.handleChange} title="Choose a file please" id='fileinput' required />
                                     <label >(.doc, .docx, .pdf, .jpeg only)</label>
+                                    {/* <img style={{ width: "100%" }} src={this.state.file} /> */}
                                     {/* </div> */}
                                 </div>
                                 <button type="submit" className="btn profile-button">Submit</button>

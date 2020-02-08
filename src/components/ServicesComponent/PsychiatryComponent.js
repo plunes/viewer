@@ -9,11 +9,10 @@ render() {
 return (
 <div>
 <Helmet>
-    <meta charSet="utf-8" />
         <link rel="canonical" href="https://www.plunes.com/psychiatry" />
-        <title>A Complete Guide To Psychiatry: All You Need To Know</title>
+        <title>Best Psychologist in Gurgaon Include Child Psychologist, Marriage Counselor & Psychotherapist, Plunes</title>
         <meta name= 'keywords' content = 'psychologist in gurgaon, best psychologist in gurgaon, child psychologist in gurgaon, marriage counselor in gurgaon, counseling with psychologist in gurgaon, psychotherapist in gurgaon, family counselling gurgaon, psychiatry'></meta>
-    <meta name="description" content="Search for the desired procedure under psychiatry such as stress management, marriage counseling, autism disorder etc & avail upto 50% discount.">
+    <meta name="description" content="Check out leading Psychologist in Gurgaon. Also find the Child Psychologist, Marriage Counselor & Psychotherapist. Get Free Psychiatry Consultation, Plunes.">
     </meta>
 </Helmet>
 <LandingHeader />
@@ -23,8 +22,8 @@ return (
 
 <div className="col-sm-11">
 <ul class="breadcrumb">
-<li><a href="/">Home</a></li>
-<li className="header-font2" ><a className="breadcrumb-text" href="#">Psychiatry</a></li>
+<li><a href="/" title='Home'>Home</a></li>
+<li className="header-font2" ><a className="breadcrumb-text" href="/psychiatry" title='Psychiatry'>Psychiatry</a></li>
 
 </ul>
 </div>
@@ -37,10 +36,10 @@ return (
 </div>
 <div className="col-sm-11 header2-text">
 <div className="row">
-<div className="col-sm-2">
-<img className="dentist-image" src="/PSYCHIATRISTS.png" alt=".."/>
+<div className="col-sm-3">
+<img className="dentist-image1" src="/PSYCHIATRISTS.png" alt=".."/>
 </div>
-<div className="col-sm-9 view-more-align">
+<div className="col-sm-8 view-more-align">
 <h1 className="header-font">Psychiatry</h1>
 <p className="peragraph-text">
 Psychiatry is the branch of medicine focused on the diagnosis, treatment and prevention of mental, emotional and behavioral disorders. 
@@ -57,28 +56,16 @@ A psychiatrist is a medical doctor who specializes in mental health, including s
 
 
 </div>
-
-<hr style={{width:'80%'}}></hr>
 <div className="row">
 <div className="col-sm-1">
 </div>
-<div className="col-sm-10 header-size">
-<br></br><br></br>
-<h2 className="header-font">Why Plunes? </h2>
-<p className="peragraph-text">
-We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your psychiatric treatments & procedures in Delhi NCR. </p>
-<p className="peragraph-text"> Search for the desired procedure such as stress management, marriage counseling, autism disorder, brain wave therapy or any other psychiatric problems & our AI will negotiate in real-time with top psychologist & clinics nearest to you to get the best price in real time. </p>
-<p className="peragraph-text"> Avail upto 50% discount instantly at psychology clinics in Delhi NCR through Plunes!  
-</p>
-</div>
+
 <div className="col-sm-1"></div>
-</div><br></br><br></br>
-<hr style={{width:'80%'}}></hr>
+</div>
 <div className="row">
 <div className="col-sm-1">
 </div>
 <div className="col-sm-11">
-<br></br>
 <h2 className="header-font align-text">Procedure</h2>
 </div>
 

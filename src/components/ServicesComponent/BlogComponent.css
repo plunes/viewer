@@ -1,23 +1,4 @@
-@media only screen and (max-width: 768px) and (min-width: 320px){
-.card-blog{
-    margin-left: -3px !important;
-    margin-right: -3px !important ;
-}
-.blog-button{
-    margin-left: 28% !important;
-}
-.blog-margin{
-    margin-bottom: -18% !important;
-}
 
-.blog-front-img{
-    margin-top: 14% !important;
-    height: 150px !important;
-}
-.blog-header{
-    margin-top: 40px !important;
-}
-}
 .card-blog{
     margin-left: 40px;
     margin-right: 40px;
@@ -31,9 +12,6 @@
     width: 140px;
     height: 37px;
     color:white !important;
-    
-   
-
 } 
 .blog-img{
     width: 80% !important;
@@ -41,7 +19,7 @@
 }
 .blog-front-img{
     width: 100%;
-    margin-top: 3%;
+    margin-top: 5%;
     height: 400px;
 }
 .blog-header{
@@ -57,3 +35,23 @@
 .blog-margin{
     margin-bottom: -5%;
 }
+@media only screen and (max-width: 768px) and (min-width: 320px){
+    .card-blog{
+        margin-left: -3px !important;
+        margin-right: -3px !important ;
+    }
+    .blog-button{
+        margin-left: 28% !important;
+    }
+    .blog-margin{
+        margin-bottom: -18% !important;
+    }
+    
+    .blog-front-img{
+        margin-top: 21% !important;
+        height: 150px !important;
+    }
+    .blog-header{
+        margin-top: 40px !important;
+    }
+    }

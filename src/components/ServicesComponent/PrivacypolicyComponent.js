@@ -10,11 +10,10 @@ class PrivacypolicyComponent extends Component {
         return (
             <div className='container-fluid'>
                 <Helmet>
-                    <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/policy" />
-                    <title>Privacy Policy | Plunes</title>
+                    <title>Privacy Policy Plunes India's First Utility Network </title>
                     <meta name='keywords' content='policy, confidentiality, personal information, data, terms of use, privacy policy'></meta>
-                    <meta name="description" content="Upon registration, Plunes will access non-personally & will respect the privacy of all the users. Kindly go through our Privacy Policy for any further details.">
+                    <meta name="description" content="Check out the privacy policy of Plunes India's first utility network.">
                     </meta>
                 </Helmet>
                 <div>
@@ -275,9 +274,7 @@ class PrivacypolicyComponent extends Component {
                                 <li className="ul-privacy-align">Rights in relation to automated decision making and profiling; the User(s) has the right not to be subject to a decision based solely on automated processing.</li>
                                 
                             </ul>
-                            <p className="medical-text attime-align">
-                            3 - Transferring data internationally 
-                             </p>
+                            <h1 className=" collection"> 3 - Transferring data internationallys</h1>
                              <p className="medical-text attime-align">
                              In order to provide our services, we may need to transfer your information from your country of residence to another country in the usual course of our business. By dealing with us and submitting your personal information, you agree to the transfer, storage, and/or processing of your personal information outside of your country of residence as set out above.
 

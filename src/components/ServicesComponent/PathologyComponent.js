@@ -2,20 +2,19 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 export default class PathologyComponent extends Component {
         render() {
                 return (
                         <div>
                                 <Helmet>
-                <meta charSet="utf-8" />
-                <link rel="canonical" href="https://www.plunes.com/pathology" />
-                <title>A Complete Guide To Pathology: All You Need To Know</title>
-                <meta name = 'keywords' content = 'pathology in gurgaon, csf fluid examination, dengue test in gurgaon, pathology clinic in gurgaon, pathology hospital in gurgaon, biopsy test gurgaon, blood sugar test gurgaon, kidney function test gurgaon'></meta>
-                <meta name="description" content="Search for the desired tests under pathology such as Blood tests, Dengue tests, Widal tests, Thyroid profile, Pregnancy tests & avail upto 50% discount.">
-                </meta>
-                </Helmet>
+                                        <link rel="canonical" href="https://www.plunes.com/pathology" />
+                                        <title>Diagnostic Centers & Pathology Labs in Gurgaon. LIPID, CBC, HIV, Blood Urea & More, Plunes.</title>
+                                        <meta name='keywords' content='pathology in gurgaon, csf fluid examination, dengue test in gurgaon, pathology clinic in gurgaon, pathology hospital in gurgaon, biopsy test gurgaon, blood sugar test gurgaon, kidney function test gurgaon'></meta>
+                                        <meta name="description" content="Find out the Best Thyroid test in Gurgaon, Other tests include Sugar Test, Whole Body Check Up & Senior Citizen Health Checkups in Gurgaon & Healthy women check-up in Gurgaon at Plunes.">
+                                        </meta>
+                                </Helmet>
                                 <LandingHeader />
                                 <br></br>
                                 <div className="row">
@@ -23,72 +22,48 @@ export default class PathologyComponent extends Component {
 
                                         <div className="col-sm-11">
                                                 <ul class="breadcrumb">
-                                                        <li><a href="/">Home</a></li>
-                                                        <li className="header-font2" ><a className="breadcrumb-text" href="#">Pathology</a></li>
+                                                        <li><a href="/" title='Home'>Home</a></li>
+                                                        <li className="header-font2" ><a className="breadcrumb-text" href="/pathology" title='Pathology'>Pathology</a></li>
 
                                                 </ul>
                                         </div>
-
                                 </div>
-
                                 <div className="row">
                                         <div className="col-sm-1">
                                         </div>
                                         <div className="col-sm-11 header2-text">
                                                 <div className="row">
-                                                        <div className="col-sm-2">
-                                                                <img className="dentist-image" src="/Pathology.png" alt=".."/>
+                                                        <div className="col-sm-3">
+                                                                <img className="dentist-image" src="/pathology.png" alt=".." />
                                                         </div>
-                                                        <div className="col-sm-9 view-more-align">
+                                                        <div className="col-sm-8 view-more-align">
                                                                 <h1 className="header-font">Pathology</h1>
                                                                 <h3 className="peragraph-text">
-                                                                        Pathology is the study of the causes and effects of disease or injury. The word pathology also refers to the study of disease in general, incorporating a wide range of bioscience research fields and medical practices.
-
-</h3>
+                                                                        Pathology is the study of the causes and effects of disease or injury. The word pathology also refers to the study of disease in general, incorporating a wide range of bioscience research fields and medical practices.</h3>
                                                                 <p className="peragraph-text">
-                                                                        A pathologist is a physician who studies body fluids and tissues, helps your primary care doctor make a diagnosis about your health or any medical problems you have, and uses laboratory tests to monitor the health of patients with chronic conditions.
-
-</p>
+                                                                        A pathologist is a physician who studies body fluids and tissues, helps your primary care doctor make a diagnosis about your health or any medical problems you have, and uses laboratory tests to monitor the health of patients with chronic conditions.</p>
                                                         </div>
                                                 </div>
                                         </div>
-
-
-
                                 </div>
-
-                                <hr style={{width:'80%'}}></hr>
                                 <div className="row">
                                         <div className="col-sm-1">
                                         </div>
-                                        <div className="col-sm-10 header-size">
-                                                <br></br><br></br>
-                                                <h2 className="header-font">Why Plunes? </h2>
-                                                <p className="peragraph-text">
-                                                We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your pathology or blood tests in Delhi NCR.</p>
-                                                <p className="peragraph-text"> Search for the desired tests such as Blood tests, CBC, LFT/KFT, Thyroid profile, Pregnancy tests, Dengue tests, Widal tests or any other lab tests & our AI will negotiate in real-time with top pathology labs nearest to you to get the best price in real time. </p>
-                                                <p className="peragraph-text">Avail upto 50% discount instantly at pathology labs in Delhi NCR through Plunes!   
-</p>
-                                        </div>
                                         <div className="col-sm-1"></div>
-                                </div><br></br><br></br>
-                                <hr style={{width:'80%'}}></hr>
+                                </div>
                                 <div className="row">
                                         <div className="col-sm-1">
                                         </div>
                                         <div className="col-sm-11">
-                                                <br></br>
                                                 <h3 className="header-font align-text">Procedure</h3>
                                         </div>
-
                                 </div>
                                 <div className="container-fluid">
                                         <div className="row">
                                                 <div className="col-sm-1">
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <h3 className="header-font">1. Pathology Tests:
-</h3>
+                                                        <h3 className="header-font">1. Pathology Tests:</h3>
                                                         <p className="peragraph-text">
                                                                 The clinician requests a second opinion from another pathologist and/or the patient requests their slides be reviewed elsewhere, potentially where they may be seeking second or third opinions regarding their treatment options. You can have the best price
 <br></br>
@@ -96,11 +71,11 @@ export default class PathologyComponent extends Component {
 </p>
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <h3  className="header-font">2. Blood Urea Test:
-</h3>
+                                                        <h3 className="header-font">2. Blood Urea Test:
+                                                        </h3>
                                                         <p className="peragraph-text">
                                                                 A blood urea nitrogen (BUN) test measures the amount of nitrogen in your blood that comes from the waste product urea. Urea is made when protein is broken down in your body.
-</p>
+                                                        </p>
                                                 </div>
                                                 <div className="col-sm-3">
                                                         <p className="header-font">3. Blood Culture Test:
@@ -116,24 +91,18 @@ export default class PathologyComponent extends Component {
                                                 <div className="col-sm-1">
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">4. Bleeding Time (BT) Test:
-</p>
+                                                        <p className="header-font">4. Bleeding Time (BT) Test:</p>
                                                         <p className="peragraph-text">
-                                                                The time from the beginning of incision until the termination of bleeding is considered as the Bleeding Time. A standard filter paper should be used every 30 seconds to draw it off until the blood completely stops.
-</p>
+                                                                The time from the beginning of incision until the termination of bleeding is considered as the Bleeding Time. A standard filter paper should be used every 30 seconds to draw it off until the blood completely stops.</p>
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">5. C-Peptide Test:
-</p>
+                                                        <p className="header-font">5. C-Peptide Test:</p>
                                                         <p className="peragraph-text">
                                                                 C-reactive protein (CRP) is a blood test marker for inflammation in the body. CRP is produced in the liver and its level is measured by testing the blood.
-                                                                CRP is classified as an acute phase reactant, which means that its levels will rise in response to inflammation or burning sensations.
-
-</p>
+                                                                CRP is classified as an acute phase reactant, which means that its levels will rise in response to inflammation or burning sensations.</p>
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">6. Malaria Serology Test:
-</p>
+                                                        <p className="header-font">6. Malaria Serology Test:</p>
                                                         <p className="peragraph-text">
                                                                 Serology detects antibodies against malaria parasites, using either indirect immunofluorescence (IFA) or enzyme-linked immune sorbent assay (ELISA).
                                                                 Serology does not detect current infection but rather measures past exposure.
@@ -146,27 +115,21 @@ export default class PathologyComponent extends Component {
                                                 <div className="col-sm-1">
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">7. Occult Blood (Stool ) Examination:
- </p>
+                                                        <h3 className="header-font">7. Occult Blood (Stool ) Examination: </h3>
                                                         <p className="peragraph-text">
-                                                                The fecal occult blood test (FOBT) is a lab test used to check stool samples for occult blood. Occult blood in the stool may indicate colon cancer or polyps in the colon or rectum — though not all cancers or polyps bleed.
-
-</p>
+                                                                The fecal occult blood test (FOBT) is a lab test used to check stool samples for occult blood. Occult blood in the stool may indicate colon cancer or polyps in the colon or rectum — though not all cancers or polyps bleed.</p>
                                                 </div>
                                                 <div className="col-sm-3">
                                                         <p className="header-font">8. Albumin Test: </p>
                                                         <p className="peragraph-text">
-                                                                An albumin blood test measures the amount of albumin in your blood. Albumin is a protein made by your liver. It helps keep fluid in your bloodstream so it doesn't leak into other tissues.
-<br></br>
+                                                                An albumin blood test measures the amount of albumin in your blood. Albumin is a protein made by your liver. It helps keep fluid in your bloodstream so it doesn't leak into other tissues.<br></br>
                                                                 Albumin also carries various substances throughout your body, including hormones, vitamins, and enzymes.
 </p>
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">9. Acid-Fast Bacilli (AFB) Stain Test:
-</p>
+                                                        <h3 className="header-font">9. Acid-Fast Bacilli (AFB) Stain Test:</h3>
                                                         <p className="peragraph-text">
-                                                                This procedure includes the microscopic examination of a person's sputum, a mixture of saliva and mucus coughed up from the respiratory tract, to detect acid-fast bacteria.
-</p>
+                                                                This procedure includes the microscopic examination of a person's sputum, a mixture of saliva and mucus coughed up from the respiratory tract, to detect acid-fast bacteria.</p>
                                                 </div>
                                                 <div className="col-sm-2">
                                                 </div>
@@ -175,8 +138,7 @@ export default class PathologyComponent extends Component {
                                                 <div className="col-sm-1">
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">10. Semen Carcinoma In-Situ (CIS) Test:
-</p>
+                                                        <h2 className="header-font">10. Semen Carcinoma In-Situ (CIS) Test:</h2>
                                                         <p className="peragraph-text">
                                                                 Carcinoma In-situ, a group of abnormal cells that remain in the place where they are first formed.  These abnormal cells may become cancer and spread into nearby normal tissue. This is also known as ‘Stage O’ disease.
 </p>
@@ -267,12 +229,10 @@ export default class PathologyComponent extends Component {
 </p>
                                                 </div>
                                                 <div className="col-sm-3">
-                                                        <p className="header-font">20. Hepatitis-B Virus Surface Antigen (HbsAg) Elisa Test:
-</p>
+                                                        <h3 className="header-font">20. Hepatitis-B Virus Surface Antigen (HbsAg) Elisa Test:
+</h3>
                                                         <p className="peragraph-text">
-                                                                This test is used to detect the actual presence of Hepatitis B virus (called the surface antigen) in your blood.
-
-. </p>
+                                                                This test is used to detect the actual presence of Hepatitis B virus (called the surface antigen) in your blood. </p>
                                                 </div>
                                                 <div className="col-sm-3">
                                                         <p className="header-font">21. Fitting Of Orthosis:
@@ -304,113 +264,15 @@ export default class PathologyComponent extends Component {
                                                                 Glucose comes from the foods you eat and drink. It is your body's main source of energy.
 </p>
                                                 </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">24. Skeletal Muscle Therapy:</p>
-                                                        <p className="peragraph-text">
-                                                                This procedure includes treatment of skeletal muscles and bones through manual and automated means. These cell types operate via distinct modes of action, and they demonstrate varying levels of feasibility for muscle regeneration depending, to an extent, on the muscle injury model used.
-</p>
-                                                </div>
-                                                <div className="col-sm-2">
-                                                </div>
-                                        </div>
-                                        <div className="row">
-                                                <div className="col-sm-1">
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">25. Dry Needling Therapy:
-</p>
-                                                        <p className="peragraph-text">
-                                                                This is a treatment technique whereby a sterile, single-use, fine filament needle (acupuncture needle) is inserted into the muscle to assist with decreasing pain and improving function through the release of myofascial trigger points (knots in the muscle).
-</p>
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">26. Muscle Stimulation Therapy:</p>
-                                                        <p className="peragraph-text">
-                                                                Help treat musculoskeletal injuries or ailments and Reduces muscle spasms, restores muscle tone and rehabilitate parts of the body
-</p>
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">27. Sciatica Pain Treatment:
-</p>
-                                                        <p className="peragraph-text">
-                                                                Physical therapy exercises incorporating a combination of strengthening, stretching, and aerobic conditioning are a central component of almost any sciatica treatment plan.
-</p>
-                                                </div>
-                                                <div className="col-sm-2">
-                                                </div>
-                                        </div>
-                                        <div className="row">
-                                                <div className="col-sm-1">
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">28. Gait Analysis:</p>
-                                                        <p className="peragraph-text">
-                                                                It is an orthopedic neurosurgical procedure that removes part of the lamina of a vertebral arch in order to relieve pressure in the vertebral canal.
-</p>
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">29. Electrotherapy:</p>
-                                                        <p className="peragraph-text">
-                                                                Electrotherapy uses electrical signals to interfere with the transmission of neural pain signals into the brain. It effectively slows down or distracts the message from the nerve to the brain.
-</p>
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">
-                                                                30. Epiphysiodesis:
-</p>
-                                                        <p className="peragraph-text">
-                                                                It's a pediatric surgical procedure in which the epiphyseal plate of a bone is fused either temporarily or permanently to delay growth of a long bone .
-</p>
 
-                                                </div>
                                                 <div className="col-sm-2">
                                                 </div>
                                         </div>
-                                        <div className="row">
-                                                <div className="col-sm-1">
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">31. Brostrom procedure:</p>
-                                                        <p className="peragraph-text">
-                                                                It's a repair of ligaments on lateral ankle. It is designed to address ankle instability. More importantly, it is primarily used to repair the anterior talofibular ligament in the ankle.
-</p>
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">32. Bursectomy:</p>
-                                                        <p className="peragraph-text">
-                                                                It's the removal of a bursa, which is a small sac filled with synovial fluid that cushions adjacent bone structures and reduces friction in joint movement.
-</p>
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">33. Shoulder surgery:</p>
-                                                        <p className="peragraph-text">
-                                                                It's the treatment for injured shoulders. Many surgeries have been developed to repair the muscles, connective tissue, or damaged joints that can arise from traumatic or overuse injuries to the shoulder.
-</p>
-                                                </div>
-                                                <div className="col-sm-2">
-                                                </div>
-                                        </div>
-                                        <div className="row">
-                                                <div className="col-sm-1">
-                                                </div>
-                                                <div className="col-sm-3">
-                                                        <p className="header-font">34. Ponseti method:</p>
-                                                        <p className="peragraph-text">
-                                                                The Ponseti method is a manipulative technique that corrects congenital clubfoot without invasive surgery.
-                                                                .
-</p>
-                                                </div>
-                                                <div className="col-sm-3">
-                                                </div>
-                                                <div className="col-sm-3">
-                                                </div>
-                                                <div className="col-sm-2">
-                                                </div>
-                                        </div>
+
                                 </div>
                                 <div>
-                            <LandingFooter />
-                        </div>
+                                        <LandingFooter />
+                                </div>
 
 
                         </div>

@@ -18,12 +18,7 @@
   width: 100% !important ;
 }
 
-
-
-
 }
-
-
   .box1{
       
       padding:10px 0px 10px 35px;
@@ -144,4 +139,7 @@
     border:  1px solid #ced4da;
     outline: none;
 
+  }
+  .loginImage{
+    margin-top: 80px;
   }

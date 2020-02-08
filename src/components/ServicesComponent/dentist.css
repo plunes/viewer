@@ -7,8 +7,12 @@
 
 
 .dentist-image{
-    height: 138px;
-    width: 150px;
+    height: 232px;
+    width: 300px;
+}
+.dentist-image1{
+  height: 202px;
+  width: 220px;
 }
 .breadcrumb {
     padding: 10px 16px;
@@ -61,7 +65,7 @@ color:  #06DF86 !important;
       margin-bottom: 12px;
   }
   .align-text{
-    margin-top: 11px;
+    margin-top: -15px;
   }
   .button-align{
       margin-top: 30px !important;
@@ -86,9 +90,9 @@ color:  #06DF86 !important;
         margin-left: 9px;
         
     }
-    /* .button-align{
-      margin-left: 20px !important;
-    } */
+    .derm-box{
+      width: auto !important;
+    }
     .peragraph-text{
       margin-left: 15px !important;
     }

@@ -10,11 +10,10 @@ class TermsOfUseComponent extends Component {
         return (
             <div className='container-fluid'>
                  <Helmet>
-                <meta charSet="utf-8" />
                 <link rel="canonical" href="https://www.plunes.com/policy" />
-                <title>Terms | Plunes</title>
+                <title>Know the Terms of Use of Members Plunes</title>
                 <meta name='keywords' content='T&C, Terms, Personal Information, Member, policy, confidentiality, personal information, data, terms of use, privacy policy, terms and condition'></meta>
-                <meta name="description" content="Plunes shall post such content subject to following Terms and Conditions.">
+                <meta name="description" content="Check out the Terms of use of Members Plunes India's first utility network.">
                 </meta>
                 </Helmet>
                 <div>
@@ -73,8 +72,7 @@ class TermsOfUseComponent extends Component {
                             17. Plunes reserves the right to update the terms of membership, the commercial terms and the by-laws from time to time at its sole discretion. Although Plunes will use reasonable effort to notify the members of any material change(s) made in the terms of membership or by-laws by means of electronic mail, it is the responsibility of the Members to keep themselves informed of the membership terms and by-laws. If the Members do not raise objections or terminate their membership in writing within 10 days of any such change(s) made, the Members shall be deemed to have accepted the modified terms of Membership and/or by-laws and shall adhere to the same.
                             <br></br><br></br>
                             18. These Basic Terms and Conditions for Members shall be read together with the Terms of Use and the Privacy Policy respectively.
-                            
-                            </p><br></br><br></br><br></br>
+                            </p><br></br><br></br>
                             <div className='row justify-content-center'>
                         
                                  <h1 className=" collection">Declaration</h1>
@@ -87,9 +85,7 @@ class TermsOfUseComponent extends Component {
                         </div>
                         <div className='col-sm-1'>
                         </div>
-
                     </div>
-                  
                 </div>
                 <LandingFooter />
             </div>

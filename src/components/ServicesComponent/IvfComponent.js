@@ -9,11 +9,10 @@ export default class IvfComponent extends Component {
         return (
             <div>
                 <Helmet>
-                    <meta charSet="utf-8" />
                     <link rel="canonical" href="https://www.plunes.com/ivf" />
-                    <title>A Complete Guide To IVF: All You Need To Know</title>
+                    <title>Specialist IVF/ICSI in Gurgaon, IUI & Embryo Preservation. Plunes</title>
                     <meta name = 'keywords' content= 'test tube baby, ivf, embryo transfer, ivf, in vitro fertilization, female infertility, infertility, pregnancy, artificial pregnancy, egg transfer, infertility, male infertility'></meta>
-                    <meta name="description" content="Search for the desired IVF procedure such as Infertility & Artificial Insemination, Hysteroscopy IVF, Egg Retrieval, etc & avail upto 50% discount. ">
+                    <meta name="description" content="Know the Best specialist for IVF/ICSI in Gurgaon. Also, include a specialist for IUI in Gurgaon & Embryo Preservation in Gurgaon. Download free app Plunes.">
                     </meta>
                 </Helmet>
                 <LandingHeader />
@@ -22,8 +21,8 @@ export default class IvfComponent extends Component {
                     <div className="col-sm-1"></div>
                     <div className="col-sm-11">
                         <ul class="breadcrumb">
-                            <li><a href="/">Home</a></li>
-                            <li className="header-font2" ><a className="breadcrumb-text" href="#">IVF</a></li>
+                            <li><a href="/" title='Home'>Home</a></li>
+                            <li className="header-font2" ><a className="breadcrumb-text" href="/ivf" title='IVF'>IVF</a></li>
                         </ul>
                     </div>
                 </div>
@@ -32,10 +31,10 @@ export default class IvfComponent extends Component {
                     </div>
                     <div className="col-sm-11 header2-text">
                         <div className="row">
-                            <div className="col-sm-2">
-                                <img className="dentist-image" src="/IVF.png" alt=".."/>
+                            <div className="col-sm-3">
+                                <img className="dentist-image1" src="/ivf.png" alt=".."/>
                             </div>
-                            <div className="col-sm-9 view-more-align">
+                            <div className="col-sm-8 view-more-align">
                                 <h1 className="header-font">IVF</h1>
                                 <p className="peragraph-text">
                                     IVF stands for in vitro fertilization. It’s one of the more widely known types of assisted reproductive technology (ART).  IVF works by using a combination of medicines and surgical procedures to help sperm fertilize an egg, and help the fertilized egg implant in your uterus.                                </p>
@@ -46,49 +45,35 @@ export default class IvfComponent extends Component {
                         </div>
                     </div>
                 </div>
-                <hr style={{width:'80%'}}></hr>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
-                    <div className="col-sm-10 header-size">
-                        <br></br><br></br>
-                        <h2 className="header-font">Why Plunes? </h2>
-                        <h3 className="peragraph-text">
-                            We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your gynecological treatments & procedures in Delhi NCR.
-                        </h3>
-                        <p className="peragraph-text">
-                            Search for the desired IVF procedure such as Infertility & Artificial Insemination, Hysteroscopy IVF, Egg Retrieval, Male Infertility (Varicocelectomy) or any other gynecological treatments & our AI will negotiate in real-time with top IVF specialists & clinics nearest to you to get the best price in real time.
-                        </p>
-                        <p className="peragraph-text">
-                            Avail upto 50% discount instantly at IVF clinics & hospitals in Delhi NCR through Plunes!
-                        </p>
-                    </div>
+                 
                     <div className="col-sm-1"></div>
-                </div><br></br><br></br>
-                <hr style={{width:'80%'}}></hr>
+                </div>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
                     <div className="col-sm-11">
-                        <br></br>
+                        
                         <h3 className="header-font align-text">Procedure</h3>
                     </div>
                 </div>
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-sm-1'></div>
-                        <div className='col-sm-3'><p className="header-font">1. Infertility & Artificial Insemination:
-                        </p>
+                        <div className='col-sm-3'><h3 className="header-font">1. Infertility & Artificial Insemination:
+                        </h3>
                             <p className="peragraph-text">
                                 Artificial insemination is a method of treating infertility by inserting semen directly into a womb. Medical Scientists have adapted this technique to use in humans since the late 70s & operated quite successfully till now.
                         </p></div>
-                        <div className='col-sm-3'> <p className="header-font">2. T.E.S.A (Testicular Sperm Aspiration): </p>
+                        <div className='col-sm-3'> <h3 className="header-font">2. T.E.S.A (Testicular Sperm Aspiration): </h3>
                             <p className="peragraph-text">
                                 Testicular Sperm Aspiration can be used as a diagnostic procedure to detect Azoospermia (a condition whereby a man has no sperm in his seminal fluid).
                                 This procedure is also being used as a process to recover sperm from the testicles of men with ejaculatory problems.
                         </p>
                         </div>
-                        <div className='col-sm-3'><p className="header-font">3. Blastocyst Culture & Transfer:</p>
+                        <div className='col-sm-3'><h3 className="header-font">3. Blastocyst Culture & Transfer:</h3>
                             <p className="peragraph-text">
                                 It is a technique in which an embryo is developed in the laboratory for 4-6 days after fertilization before being placed in the womb. The embryo gains many cells as a result of being developed for so many days. The embryo developed for 4-6 days are much more advanced than the ones developed for just three days. These embryos are called blastocysts.
                         </p></div>
@@ -103,7 +88,7 @@ export default class IvfComponent extends Component {
                                 Egg retrieval is the process in which eggs are removed from the ovarian follicles via a thin needle for use in an IVF procedure.
                         </p>
                         </div>
-                        <div className='col-sm-3'> <p className="header-font">5. Follicular Dynamic Ultrasound (FD):</p>
+                        <div className='col-sm-3'> <h3 className="header-font">5. Follicular Dynamic Ultrasound (FD):</h3>
                             <p className="peragraph-text">
                                 Follicular Dynamic Ultrasounds (FD) is used to track follicle growth. It is used to measure the size. This procedure helps to identify the dominant follicle or follicles.
                         </p>
@@ -140,8 +125,8 @@ export default class IvfComponent extends Component {
                     <div className='row'>
                         <div className='col-sm-1'></div>
                         <div className='col-sm-3'>
-                            <p className="header-font">10. Elective Single Embryo Transfer (eSET):
-                        </p>
+                            <h3 className="header-font">10. Elective Single Embryo Transfer (eSET):
+                        </h3>
                             <p className="peragraph-text">
                             Elective Single Embryo Transfer (eSET) is the transfer of one embryo when you have more than one embryo to choose from. Elective Single Embryo Transfer is another way to make In Vitro Fertilization (IVF) safer and the goal of IVF is to have a healthy baby and eSET helps achieve that goal of a successful pregnancy.
                         </p>

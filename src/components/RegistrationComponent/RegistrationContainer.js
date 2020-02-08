@@ -60,14 +60,14 @@ class RegistrationComponent extends React.Component {
         console.log(serviceList, 'serviceList');
 
         if (showLogin) {
-            return <Redirect to='/login' />
+            return <Redirect to='/log-in/' />
         }
 
         return (
             <div className="container">
                 <div className='row'>
                     <div className='col-md-6'>
-                        <img className="signImage" style={{ marginTop: '80px' }} src="/signup.png" alt=".."/>
+                        <img className="signImage" src="/signup.png" alt=".."/>
                     </div>
                     <div className='col-md-6'>
                         <div className='col-md-1'>
@@ -77,7 +77,7 @@ class RegistrationComponent extends React.Component {
                                 <h1 class="signUpText">Sign up</h1>
                             </div>
                             <div class="form-group">
-                                <select class="form-control2 option-signup" onChange = {this.handleChange}>
+                                <select class="form-control2 plockr-app-form option-signup" onChange = {this.handleChange}>
                                     <option value= 'userForm'>General User</option>
                                     <option value= 'docForm'>Doctors</option>
                                     <option value= 'hospitalForm'>Hospitals</option>

@@ -11,11 +11,10 @@ render() {
 return (
 <div>
 <Helmet>
-    <meta charSet="utf-8" />
         <link rel="canonical" href="https://www.plunes.com/physiotherapy" />
-        <title>A Complete Guide To Physiotherapy: All You Need To Know</title>
+        <title>Best Physiotherapist in Gurgaon, Physiotherapy Center, Plunes</title>
         <meta name= 'keywords' content= 'physiotherapist in gurgaon, best physiotherapist in gurgaon, physiotherapy at home in gurgaon, physiotherapy clinic in gurgaon, female physiotherapist in gurgaon, best physiotherapy clinic in gurgaon, physiotherapy center in gurgaon, charitable physiotherapy in gurgaon, neuro physiotherapist in gurgaon, home physiotherapy in gurgaon, sports physiotherapist in gurgaon, physiotherapist in gurgaon sector 14, physiotherapist in gurgaon sector 56, physiotherapy in gurgaon sohna road'></meta>
-    <meta name="description" content="Search for the desired therapy under physiotherapy such as cranial electrotherapy, pain relief, spine pain treatment etc & avail upto 50% discount.">
+    <meta name="description" content="Get to know the Physiotherapy Center in Gurgaon. Also, know the Best Physiotherapist in Gurgaon at Plunes. Download Free app & get Free Consultation.">
     </meta>
 </Helmet>
 <LandingHeader />
@@ -25,8 +24,8 @@ return (
 
 <div className="col-sm-11">
 <ul class="breadcrumb">
-<li><a href="/">Home</a></li>
-<li className="header-font2" ><a className="breadcrumb-text" href="#">Physiotherapy</a></li>
+<li><a href="/" title='Home'>Home</a></li>
+<li className="header-font2" ><a className="breadcrumb-text" href="/physiotherapy" title='Physiotherapy'>Physiotherapy</a></li>
 
 </ul>
 </div>
@@ -39,10 +38,10 @@ return (
 </div>
 <div className="col-sm-11 header2-text">
 <div className="row">
-<div className="col-sm-2">
-<img className="dentist-image" src="/Physiotherapy.png" alt=".."/>
+<div className="col-sm-3">
+<img className="dentist-image1" src="/physiotherapy.png" alt=".."/>
 </div>
-<div className="col-sm-9 view-more-align">
+<div className="col-sm-8 view-more-align">
 <h1 className="header-font">Physiotherapy</h1>
 <p className="peragraph-text">
 Physiotherapy, also referred to as physical therapy, is an allied health profession that makes use of bio – mechanics or kinesiology, manual therapy, exercise therapy and electrotherapy, to help patients restore, maintain and increase their physical mobility, strength and function.
@@ -58,28 +57,16 @@ Physiotherapists help people affected by injury, illness or disability through m
 
 
 </div>
-
-<hr style={{width:'80%'}}></hr>
 <div className="row">
 <div className="col-sm-1">
 </div>
-<div className="col-sm-10 header-size">
-<br></br><br></br>
-<h2 className="header-font">Why Plunes? </h2>
-<p className="peragraph-text">
-We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your physiotherapy treatments or pain relief therapies in Delhi NCR. </p>
-<p className="peragraph-text">Search for the desired therapy such as cranial electrotherapy, pain relief, spine pain treatment, frozen shoulder, ankle displacement, knee pain, shoulder pain, knee replacement, total knee replacement or any other physiotherapy treatments & our AI will negotiate in real-time with top physiotherapy specialists & hospitals nearest to you to get the best price in real time. </p>
-<p className="peragraph-text">Avail upto 50% discount instantly at physiotherapy hospitals in Delhi NCR through Plunes!  
-</p>
-</div>
+
 <div className="col-sm-1"></div>
-</div><br></br><br></br>
-<hr style={{width:'80%'}}></hr>
+</div>
 <div className="row">
 <div className="col-sm-1">
 </div>
 <div className="col-sm-11">
-<br></br>
 <h2 className="header-font align-text">Procedure</h2>
 </div>
 
@@ -95,7 +82,7 @@ A physical therapy consultation is an appointment between a physical therapist a
 </p>
             </div>
             <div className="col-sm-3">
-            <p className="header-font">2. Transcutaneous Electrical Nerve Stimulation (TENS):</p>
+            <h3 className="header-font">2. Transcutaneous Electrical Nerve Stimulation (TENS):</h3>
 <p className="peragraph-text">
 It is essentially a deeper form of TENS.  It utilizes two high frequency currents which are slightly out of phase, and are passed through the skin at the same time where they are set up so that their paths cross and simply interfere with each other.
 <br></br>
@@ -118,8 +105,8 @@ It is an orthopedic neurosurgical procedure that removes part of the lamina of a
         <div className="col-sm-1">
             </div>
             <div className="col-sm-3">
-            <p className="header-font">4. Percutaneous electrical nerve stimulation (PENS):
-</p>
+            <h3 className="header-font">4. Percutaneous electrical nerve stimulation (PENS):
+</h3>
 <p className="peragraph-text">
 A small device delivers painless electrical pulses to the nerves through acupuncture needles.
   
@@ -127,7 +114,7 @@ A small device delivers painless electrical pulses to the nerves through acupunc
             </div>
             <div className="col-sm-3">
 
-<p className="header-font">5. RTMS (Repetitive transcranial magnetic stimulation):</p>
+<h3 className="header-font">5. RTMS (Repetitive transcranial magnetic stimulation):</h3>
 <p className="peragraph-text">
 It uses magnetic fields to send electrical impulses into the brain, blocking pain signals.
 

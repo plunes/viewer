@@ -9,11 +9,10 @@ export default class GynaeComponent extends Component {
         return (
             <div>
                 <Helmet>
-                <meta charSet="utf-8" />
                 <link rel="canonical" href="https://www.plunes.com/gynae" />
-                <title>A Complete Guide To Gynaecology: All You Need To Know</title>
+                <title>Best Gynecologist in Gurgaon, Ovarian Cyst Removal, Plunes</title>
                 <meta name='keywords' content='gynecologist in gurgaon, gynecology clinic gurgaon, gynecology hospital gurgaon'></meta>
-                <meta name="description" content="Search for the desired procedures under gynecology such as vulvar biopsy, ovarian cyst removal, laparotomy, C-section/cesarean etc & avail upto 50% discount.">
+                <meta name="description" content="Find the best Gynecologist in Gurgaon for Ovarian Cyst Removal Gurgaon from the leading Uitility network Plunes. Also, Get Free Consultation. ">
                 </meta>
                 </Helmet>
                 <LandingHeader />
@@ -22,9 +21,9 @@ export default class GynaeComponent extends Component {
                     <div className="col-sm-1"></div>
 
                     <div className="col-sm-11">
-                        <ul class="breadcrumb">
-                            <li><a href="/">Home</a></li>
-                            <li className="header-font2" ><a className="breadcrumb-text" href="#">Gynecology</a></li>
+                        <ul className="breadcrumb">
+                            <li><a href="/" title='Home'>Home</a></li>
+                            <li className="header-font2" ><a className="breadcrumb-text" href="/gynae" title='Gynecology'>Gynecology</a></li>
 
                         </ul>
                     </div>
@@ -37,13 +36,12 @@ export default class GynaeComponent extends Component {
                     </div>
                     <div className="col-sm-11 header2-text">
                         <div className="row">
-                            <div className="col-sm-2">
+                            <div className="col-sm-3">
                                 <img className="dentist-image" src="/Gyneco.png" alt=".." />
                             </div>
-                            <div className="col-sm-9 view-more-align">
+                            <div className="col-sm-8 view-more-align">
                                 <h1 className="header-font">Gynecology</h1>
-                                <p className="peragraph-text">Gynecology or gynecology is the medical practice dealing with the health of the female reproductive systems (vagina, uterus, and ovaries) and the breasts.
-</p>
+                                <p className="peragraph-text">Gynecology or gynecology is the medical practice dealing with the health of the female reproductive systems (vagina, uterus, and ovaries) and the breasts.</p>
                                 <p className="peragraph-text">A Gynecologist is a person who treats patients with female reproductive organs, whether or not they identify as women.</p>
                             </div>
                         </div>
@@ -52,28 +50,17 @@ export default class GynaeComponent extends Component {
 
 
                 </div>
-
-                <hr style={{width:'80%'}}></hr>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
-                    <div className="col-sm-10 header-size">
-                        <br></br><br></br>
-                        <h2 className="header-font">Why Plunes? </h2>
-                        <p className="peragraph-text">
-                        We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your gynecological treatments & procedures in Delhi NCR. </p>
-                        <p className="peragraph-text">Search for the desired procedure such as vulvar biopsy, ovarian cyst removal, laparotomy, C-section/cesarean, or any other gynecological treatments & our AI will negotiate in real-time with top gynecologists & clinics nearest to you to get the best price in real time.  </p>
-                        <p className="peragraph-text"> Avail upto 50% discount instantly at gynecology clinics in Delhi NCR through Plunes!
-</p>
-                    </div>
+                 
                     <div className="col-sm-1"></div>
-                </div><br></br><br></br>
-                <hr style={{width:'80%'}}></hr>
+                </div>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
                     <div className="col-sm-11">
-                        <br></br>
+                    
                         <h3 className="header-font align-text">Procedure</h3>
                     </div>
 

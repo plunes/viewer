@@ -210,7 +210,6 @@ class SolutionSearchComponent extends React.Component {
                                         <button type='submit' > Proceed </button>
                                     </form> : null
                                 }
-
                             </ul>
                         </div>
                     </div>

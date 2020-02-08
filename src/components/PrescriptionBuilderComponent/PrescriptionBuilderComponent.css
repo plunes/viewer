@@ -1,0 +1,252 @@
+.sidebar-prescription {
+    border: 1px solid #C9C8C8;
+    border-radius: 10px;
+    opacity: 1;
+    width: 250px !important;
+    height: 276px;
+    margin-right: 1%;
+}
+
+.docTemplates {
+    width: 100%
+}
+.address{
+    font-size: 13px !important;
+    color: #333333;
+
+}
+.send-box{
+    width: 165px;
+    height: auto;
+}
+.fileContainer2{
+    margin-left: 11% !important;
+    list-style: none;
+    padding-left: 0%;
+        margin-top: 5%;
+    height: 400px;
+    overflow-y: scroll;
+    width : 100%;
+}
+.add-field{
+    width: 32%;
+    font-size: 12px;
+    background-color: snow;
+    outline: none;
+    border: 1px solid white;
+    color: #333333;
+    margin-top: 5%;
+}
+.add-png{
+    width: 42px;
+    padding: 6%;
+}
+.name{
+    line-height: 70px;
+    font-weight: 400 !important;
+    font-size: 16px;
+}
+.saveButton {
+    box-shadow: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    background: #01D35A 0% 0% no-repeat padding-box;
+    border-radius: 40px !important;
+    border: 1px solid ;
+    width: 40%;
+    height: 38px;
+    margin-bottom: 8px;
+    margin-top: 31px;
+}
+.bottom-address{
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+}
+
+.show-prescription-input{
+    background-color: white !important;
+}
+.imageClass {
+    height: 60px;
+    width: auto;
+}
+.enter-patient-no{
+    margin-top: 25px;
+}
+.inputLogo {
+    visibility: hidden;
+}
+textarea {
+    resize: none !important;
+  }
+.uploadBtn {
+    border-radius: 35px !important;
+    font-size: 14px;
+    color: white !important;
+    width: 44%;
+    background-color: #01D35A !important;
+    margin-left: 14%;
+    border: 1px solid white !important;
+}
+.age{
+    margin-left: 27px !important;
+}
+.edit{
+    color: #01d35a;
+}
+.send-prescription{
+    margin-top: 15%;
+    font-size: 24px;
+    color: #474747;
+    margin-bottom: 40px;
+}
+.breadcrumb-style{
+    margin-top: 6px !important;
+}
+.uploadBtn1 {
+    border: 1px solid  #818181 !important ;
+    border-radius: 35px !important;
+    font-size: 14px;
+    color: #818181 !important;
+    width: 38%;
+    margin-left: 27px;
+}
+.view-plockr-builder{
+    text-align: center;
+    width: 100%;
+}
+.line-height{
+    line-height: 50px;
+}
+.builder-button{
+    color: #FFFFFF !important;
+    width: 100%;
+    border-radius: 33px !important ;
+    outline: none;
+    background-color: #01d35a !important;
+}
+.doctorname {
+    font-size: 14px;
+    color:#333333 !important;
+
+}
+
+.addField {
+    width: 50%;
+    margin-left: 10px
+}
+
+.createBuilder {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #C9C8C8;
+    opacity: 1;
+}
+.prescriptionField:focus{
+outline: none;
+}
+.send-prescription-div{
+    margin-top: 40px;
+}
+.form-control{
+    border: none !important;
+    border-bottom: 1px solid #C9C8C8 !important;
+}
+.logoButton {
+    border: 1px solid #818181 !important;
+    border-radius: 35px !important;
+    opacity: 1 !important;
+}
+
+.doclist {
+    list-style-type: none;
+    column-count: 3;
+    column-gap: 18%;
+    margin-top: 6%;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+.prescriptionField {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #C9C8C8;
+    
+}
+
+.userAge {
+    padding-left: 9% !important;
+}
+
+.signatureUpload {
+    padding-left: 9% !important;
+}
+
+/* .prescriptionList{
+
+} */
+
+.prescriptionField {
+    list-style-type: none;
+    padding-left: 2%;
+}
+
+.createBuilder {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #C9C8C8;
+    opacity: 1;
+    padding-top: 2%;
+}
+
+.noBorder {
+    border: 0 !important;
+    background-color: white;
+    outline: none;
+    padding: 0px 22px ;
+}
+.noBorder2 {
+    border: 0 !important;
+    outline: none;
+    background-color: white;
+    width: 12%;
+}
+
+
+.main-prescription {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #C9C8C8;
+    opacity: 1;
+}
+
+.createBuilder {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #C9C8C8;
+    opacity: 1;
+}
+
+ul.example {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+}
+
+li.example {
+    list-style: none;
+    display: inline-block;
+    width: calc(100% / 3);
+    height: 120px;
+    text-align: center;
+}
+
+.example {
+    width: 50%;
+    border: 1px solid #000;
+    margin: 1em 0;
+}
+
+.text-center {
+    color: #474747;
+    font-size: 20px;
+}

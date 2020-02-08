@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
-import PlockrProfileComponent from './PlockrProfileComponent';
+import ContainerComponent from './ContainerComponent'
 import axios from 'axios'
 import './PlockrAppComponent.css'
+import PlockrProfileEditComponent from './PlockrProfileEditComponent'
+import PlockrHeaderComponent from './PlockrHeaderComponent'
+import MyComponent from './MyComponent';
+import Downloader from 'js-file-downloader';
+
 
 class PlockrAppComponent extends Component {
     constructor(props) {
@@ -10,146 +15,155 @@ class PlockrAppComponent extends Component {
             showNumber: false,
             userDetails: {},
             mobileNo: '',
-            patientMobileNo : '',
+            patientMobileNo: '',
             showLogin: true,
-            password: ''
+            password: '',
+            specialities: [],
+            fileType: '',
+            fileUrl: '',
+            reportDet: {},
+            showFile : false,
+            failed: false
+
         }
-        this.handleNumberSubmit = this.handleNumberSubmit.bind(this);
+        
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handlelogout = this.handlelogout.bind(this);
+        this.handleSelection = this.handleSelection.bind(this);
+        this.handleDownload = this.handleDownload.bind(this);
     }
 
-    componentDidMount(){
-        if(localStorage.getItem('isAuth')){
+
+    async handleDownload() {
+        const res = await axios.get('https://plunes.co/v4/installer/' + localStorage.getItem('uploaderUserId'));
+        if (res.status === 201) {
+                new Downloader({
+                    url: res.data.downloadUrl
+                })
+                .then(function () {
+                    // Called when download ended
+                })
+                .catch(function (error) {
+                    // Called when an error occurred
+                });
+        }
+    }
+
+    handleSelection(select) {
+        //console.log(select, 'select')
+        this.setState({
+            reportDet: select,
+            showFile: true
+        })
+    }
+
+    componentWillMount(){
+    }
+
+    async componentDidMount() {
+        if (localStorage.getItem('isAuth')) {
             this.setState({
                 showNumber: true,
-                showLogin : false
+                showLogin: false
             })
         }
-    }
-
-    handlelogout(e){
-        e.preventDefault();
-        let token = localStorage.getItem('auth');
-        console.log(token, 'token')
-        axios.post('https://plunes.co/v4/user/logout', "",  { headers: { "Authorization": `Bearer ${token}` , "Content-Type" : "application/json" } })
-        .then((response) => {
-            localStorage.removeItem('auth')
-            localStorage.removeItem('isAuth')
-            localStorage.removeItem('uploaderUserId')
-            this.setState({
-                showNumber: false,
-                showLogin : true
-            })
-        })
-        .catch(error => {
-            console.log(error, 'error')
-        })
-    }
-    handleSubmit(e) {
-        e.preventDefault();
-        let data = {
-            mobileNumber : this.state.mobileNo,
-            password : this.state.password
-        }
-        axios.post('https://plunes.co/v4/user/login', data)
-        .then((res) => {
-            if(res.status === 201){
-                console.log(res.data)
-                localStorage.setItem('isAuth', true)
-                localStorage.setItem('auth', res.data.token)
-                localStorage.setItem('uploaderUserId' , res.data.user._id)
-                this.setState({
-                    showLogin : false,
-                    showNumber : true
-                })
-            }
-        })
-    }
-    handleChange(e) {
-        this.setState({
-            [e.target.name]: e.target.value
-        })
-    }
-    handleNumberSubmit(e) {
-        e.preventDefault();
-        axios.get('https://plunes.co/v4/user?mobileNumber=' + this.state.patientMobileNo)
-            .then(res => {
-                if (res.status === 201) {
-                    console.log(res.data.user, 'user')
+        await axios.get('https://plunes.co/v4/catalogue')
+            .then((res) => {
+                if (res.status == 201) {
+                    let catalogue = res.data;
+                    let specArray = [];
+                    catalogue.forEach((c) => {
+                        let speciality = {
+                            id: c._id,
+                            name: c.speciality
+                        }
+                        specArray.push(speciality)
+                    })
+                    localStorage.setItem('specialities', JSON.stringify(specArray))
                     this.setState({
-                        showNumber : false,
-                        userDetails: res.data.user
+                        specialities: specArray
                     })
                 }
             })
     }
+
+    handleLogout(select){
+        this.setState({
+            showLogin : select,
+        })
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        let data = {
+            mobileNumber: this.state.mobileNo,
+            password: this.state.password
+        }
+        axios.post('https://plunes.co/v4/user/login', data)
+            .then((res) => {
+                console.log(res.status)
+                if (res.status === 201) {
+                    //console.log(res.status)
+                    localStorage.setItem('isAuth', true)
+                    localStorage.setItem('auth', res.data.token)
+                    localStorage.setItem('uploaderUserId', res.data.user._id)
+                    this.setState({
+                        showLogin: false,
+                        showNumber: true
+                    })
+                }
+            })
+            .catch((e)=> {
+                    this.setState({
+                        failed : true,
+                        mobileNo : '',
+                        password : ''
+                    })
+            })
+    }
+
+
+    handleChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value.trim()
+        })
+    }
+
+   
     render() {
-        if (this.state.showLogin) {
-            return (
+            return (<div>
                 <div className='container-fluid'>
-                    <div className="navbar navbar-expand-lg navbar-light ">
-                     <a href="/"> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
-                    </div>
-                    <div>
-                     <div className='row'>
-                        <div className='col-4'>                        
-                        </div>
-                        <div className='col-4' style={{paddingLeft: '4%', paddingTop: '13%'}}>
-                            <h1 className="plockr-app-login" >Login here</h1>
-                            <form onSubmit={this.handleSubmit}>
-                                <div className="form-group">
-                                    <input type="tel" className="form-control-app plockr-app-form" name='mobileNo' placeholder="Mobile No" onChange={this.handleChange} />
-                                </div><br></br>
-                                <div className="form-group">
-                                    <input type="password" className="form-control-app plockr-app-form" name='password' placeholder="Password" onChange={this.handleChange} />
-                                </div>
-                                <button type="submit" className="btn plockrapp-button">Login</button>
-                            </form>
-                        </div>
-                        <div className='col-4'>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            )
-        } else {
-            return (
-                <div className='container-fluid'>
-                    {
-                        this.state.showNumber ? 
-                        <div className="container-fluid">
-                            <div className="navbar navbar-expand-lg navbar-light ">
-                           <a href="/"> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
-                            </div>
-                            <form onSubmit={this.handleNumberSubmit}>
-                            <div className='row row-align'>
-                              <div className='col-sm-4'>
-                                </div>
-                                <div className="col-sm-4 col-align">
-                                <div class="form-group">
-                                    <h1 className="plockr-app-login">Enter patient's mobile number</h1>
-                                    <input type="tel" className="form-control-app plockr-app-form" name='patientMobileNo' placeholder=" Mobile Number" onChange={this.handleChange} />
-                                </div>
-                                <button type="submit" className="btn plockrapp-button"> Submit</button>
-                                <div className="row">
-                                <button type="button" className="btn logout" onClick = {this.handlelogout}>Logout</button>
-                                  </div>
-                                </div>
-                                <div className="col-sm-4">
+                    <div className='row'>
+                    <PlockrHeaderComponent />
+
+                        <div className='col-md-8 viewFile'>
+                        {
+                                this.state.showFile ?
+                                    <div>
+                                        <div className='pdfContainer'>
+                                            <MyComponent className='viewFile' key={Math.random().toString()} data={this.state.reportDet} />
+                                        </div>
+                                        <div className='row'>
+                                            <PlockrProfileEditComponent key={Math.random().toString()} data={this.state.reportDet} />
+                                        </div>
                                     </div>
-                                  </div>
-                                </form>
-                        </div> : <PlockrProfileComponent user={this.state.userDetails} />
-                    }
-                </div>
+                                    : <div className='row'>
+                                        <div className="col-sm-2"></div>
+                                        <div className="dummy">
+                                            <img className="dummy-img" src="/dummy.svg" />
+                                        </div>
+                                        <PlockrProfileEditComponent key={Math.random().toString()} data={this.state.reportDet} />
+                                    </div>
+                            }
+                        </div>
+                        <div className='col-md-4'>
+                            <ContainerComponent handleSelection={this.handleSelection} />
+                        </div>
+                    </div>
+                </div></div>
             );
         }
-
-
-
-    }
+    
 }
 
 export default PlockrAppComponent;

@@ -33,14 +33,22 @@ height: 88px  !important;
 }
 .last-text{
     text-align: center;
-
-    padding-left: 46px;
+width: 92%;
+    margin-left: 39px;
     font-size: 14px;
     margin-top: 10px;
+}
+.form-check-label {
+    margin-top: 13px;
+    margin-bottom: 13px !important;
+    margin-left: 11px;
 }
 .address-input{
      height:90px !important;
    
+}
+textarea{
+    padding: 10px;
 }
 .hospital-text{
      text-align: center;
@@ -72,7 +80,9 @@ height: 88px  !important;
 .option-signup{
     height: 45px;
 }
-
+.signImage{
+    margin-top: 80px;
+}
 
 @media(max-width: 576px){
 

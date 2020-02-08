@@ -74,7 +74,7 @@ class ForgotPassword extends Component {
                                     </div>
                                     <div className='row'>
                                         <div className='col'>
-                                        <a class="btn" href="/login" role="button">Link</a>
+                                        <a class="btn" href="/log-in/" role="button">Link</a>
                                         </div>
                                         <div className='col'>
                                             <button type='submit' >Reset</button>

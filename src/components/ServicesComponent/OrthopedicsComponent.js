@@ -2,19 +2,18 @@ import React, { Component } from 'react'
 import '../ServicesComponent/dentist.css'
 import LandingFooter from '../LandingComponent/LandingFooter'
 import LandingHeader from '../LandingComponent/LandingHeader'
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 export default class OrthopedicsComponent extends Component {
     render() {
         return (
             <div>
                 <Helmet>
-                <meta charSet="utf-8" />
-                <link rel="canonical" href="https://www.plunes.com/orthopedics" />
-                <title>A Complete Guide To Orthopedics: All You Need To Know</title>
-                <meta name='keywords' content='orthopaedic clinic gurgaon, orthopedic doctor in gurgaon, orthopaedic doctor gurgaon'></meta>
-                <meta name="description" content="Search for the desired orthopedics treatment such as bone fusion surgery, Bone Internal Fixation, Joint Replacement etc & avail upto 50% discount.">
-                </meta>
+                    <link rel="canonical" href="https://www.plunes.com/orthopedics"/>
+                    <title>Orthopedic Doctor in Gurgaon for Knee Surgery, Arthoplasty & Ankle Replacement, Plunes</title>
+                    <meta name='keywords' content='orthopaedic clinic gurgaon, orthopedic doctor in gurgaon, orthopaedic doctor gurgaon'></meta>
+                    <meta name="description" content="Check out the Best Orthopaedic Doctors in Gurgaon, Treatment for Knee Surgery in Gurgaon. Treatment for Arthoplasty in Gurgaon. Orthopaedic Doctors in Gurgaon at Plunes app.">
+                    </meta>
                 </Helmet>
                 <LandingHeader />
                 <br></br>
@@ -22,8 +21,8 @@ export default class OrthopedicsComponent extends Component {
                     <div className="col-sm-1"></div>
                     <div className="col-sm-11">
                         <ul class="breadcrumb">
-                            <li><a href="/">Home</a></li>
-                            <li className="header-font2" ><a className="breadcrumb-text" href="#">Orthopedics</a></li>
+                            <li><a href="/" title='Home'>Home</a></li>
+                            <li className="header-font2" ><a className="breadcrumb-text" href="/orthopedics" title='Orthopedics'>Orthopedics</a></li>
 
                         </ul>
                     </div>
@@ -36,10 +35,10 @@ export default class OrthopedicsComponent extends Component {
                     </div>
                     <div className="col-sm-11 header2-text">
                         <div className="row">
-                            <div className="col-sm-2">
-                                <img className="dentist-image" src="/Orthopedics.png" alt=".."/>
+                            <div className="col-sm-3">
+                                <img className="dentist-image" src="/orthopedics.png" alt=".." />
                             </div>
-                            <div className="col-sm-9 view-more-align">
+                            <div className="col-sm-8 view-more-align">
                                 <h1 className="header-font">Orthopedics</h1>
                                 <p className="peragraph-text">Orthopedics is a medical specialty that focuses on the diagnosis, correction, prevention, and treatment of patients with skeletal deformities.
 
@@ -55,27 +54,15 @@ export default class OrthopedicsComponent extends Component {
 
                 </div>
 
-                <hr style={{width:'80%'}}></hr>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
-                    <div className="col-sm-10 header-size">
-                        <br></br><br></br>
-                        <h2 className="header-font">Why Plunes? </h2>
-                        <p className="peragraph-text">
-                        We help you find the best price solutions to all your medical concerns with just one click. Our AI will help you search instant solutions for all your orthopedic procedures & treatments in Delhi NCR.</p>
-                        <p className="peragraph-text"> Search for the desired orthopedic treatments & procedures such as bone fusion surgery, Internal Fixation of Bones, Joint Replacement Procedures, bone pain, bone replacement, joint replacement, back pain or any other orthopedic treatments & our AI will negotiate in real-time with top orthopedists & clinics nearest to you to get the best price in real time. </p>
-                        <p className="peragraph-text"> Avail upto 50% discount instantly at orthopedic clinics & hospitals in Delhi NCR through Plunes!  
-</p>
-                    </div>
                     <div className="col-sm-1"></div>
-                </div><br></br><br></br>
-                <hr style={{width:'80%'}}></hr>
+                </div>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
                     <div className="col-sm-11">
-                        <br></br>
                         <h2 className="header-font align-text">Procedure</h2>
                     </div>
 
@@ -142,7 +129,7 @@ export default class OrthopedicsComponent extends Component {
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">8. Anterior Cruciate Ligament Reconstruction:</p>
+                            <h2 className="header-font">8. Anterior Cruciate Ligament Reconstruction:</h2>
                             <p className="peragraph-text">
                                 It is a surgical tissue graft replacement of the anterior cruciate ligament, located in the knee, to restore its function after an injury.
 </p>
@@ -197,10 +184,10 @@ export default class OrthopedicsComponent extends Component {
 </p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">14. Arthrodesis (Joint Fusion Surgery):</p>
+                            <h2 className="header-font">14. Arthrodesis (Joint Fusion Surgery):</h2>
                             <p className="peragraph-text">
                                 It is also known as artificial ankylosis or syndesis, is the artificial induction of joint ossification between two bones by surgery. This is done to relieve intractable pain in a joint which cannot be managed by pain medication, splints.
-. </p>
+ </p>
                         </div>
                         <div className="col-sm-3">
                             <p className="header-font">15. Shoulder Replacement: </p>
@@ -250,20 +237,17 @@ export default class OrthopedicsComponent extends Component {
                         <div className="col-sm-3">
                             <p className="header-font">20. Foraminotomy:</p>
                             <p className="peragraph-text">
-                                Foraminotomy is a medical operation used to relieve pressure on nerves that are being compressed by the intervertebral foramina, the passages through the bones of the vertebrae of the spine that pass nerve bundles to the body from the spinal cord.
-
-. </p>
+                                Foraminotomy is a medical operation used to relieve pressure on nerves that are being compressed by the intervertebral foramina, the passages through the bones of the vertebrae of the spine that pass nerve bundles to the body from the spinal cord.</p>
                         </div>
                         <div className="col-sm-3">
-                            <p className="header-font">21. Unicompartmental Knee Arthroplasty:
-</p>
+                            <h3 className="header-font">21. Unicompartmental Knee Arthroplasty:
+</h3>
                             <p className="peragraph-text">
                                 Unicompartmental knee arthroplasty is a surgical procedure used to relieve arthritis in one of the knee compartments in which the damaged parts of the knee are replaced.
 </p>
                         </div>
                         <div className="col-sm-2">
                         </div>
-
                     </div>
                     <div className="row">
                         <div className="col-sm-1">
@@ -347,59 +331,45 @@ export default class OrthopedicsComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                        <p className="header-font">31. Brostrom Procedure:</p>
+                            <p className="header-font">31. Brostrom Procedure:</p>
                             <p className="peragraph-text">
                                 It's a repair of ligaments on lateral ankle. It is designed to address ankle instability. More importantly, it is primarily used to repair the anterior talofibular ligament in the ankle.
 </p>
                         </div>
                         <div className="col-sm-3">
-                        <p className="header-font">32. Bursectomy:</p>
+                            <p className="header-font">32. Bursectomy:</p>
                             <p className="peragraph-text">
                                 It's the removal of a bursa, which is a small sac filled with synovial fluid that cushions adjacent bone structures and reduces friction in joint movement.
 </p>
                         </div>
                         <div className="col-sm-3">
-                        <p className="header-font">33. Shoulder Surgery:</p>
+                            <p className="header-font">33. Shoulder Surgery:</p>
                             <p className="peragraph-text">
-                                It's the treatment for injured shoulders. Many surgeries have been developed to repair the muscles, connective tissue, or damaged joints that can arise from traumatic or overuse injuries to the shoulder.
-</p>
+                                It's the treatment for injured shoulders. Many surgeries have been developed to repair the muscles, connective tissue, or damaged joints that can arise from traumatic or overuse injuries to the shoulder.</p>
                         </div>
                         <div className="col-sm-2">
                         </div>
-                        
+
 
                     </div>
                     <div className="row">
-                            <div className="col-sm-1">
-                                </div>
-                                <div className="col-sm-3">
-                                <p className="header-font">34. Ponseti Method:</p>
+                        <div className="col-sm-1">
+                        </div>
+                        <div className="col-sm-3">
+                            <p className="header-font">34. Ponseti Method:</p>
                             <p className="peragraph-text">
-                                The Ponseti method is a manipulative technique that corrects congenital clubfoot without invasive surgery.                             .
-</p>
-                                </div>
-                                <div className="col-sm-3">
-                                    </div>
-                                    <div className="col-sm-3">
-                                    </div>
-                                    <div className="col-sm-2">
-                                    </div>
-
-
-                            </div>
-
-
-
+                                The Ponseti method is a manipulative technique that corrects congenital clubfoot without invasive surgery.
+                                  </p>
+                        </div>
+                        <div className="col-sm-3">
+                        </div>
+                        <div className="col-sm-3">
+                        </div>
+                        <div className="col-sm-2">
+                        </div>
+                    </div>
                 </div>
-                
-           
-
                 <div>
-
-
-                    
-
-
                     <div>
                         <div>
                             <LandingFooter />

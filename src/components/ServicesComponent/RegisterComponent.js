@@ -10,7 +10,6 @@ class RegisterComponent extends Component {
         return (
             <div className='container-fluid'>
                 <Helmet>
-                <meta charSet="utf-8" />
                 <link rel="canonical" href="https://www.plunes.com/register" />
                 <title>Register With Us</title>
                 <meta name='keywords' content='register, automated appointments, instant payments, pre-paid clients, free registration, digital profile, free registration'></meta>
@@ -59,7 +58,7 @@ class RegisterComponent extends Component {
                              <div className="row">
                                 <div className="col-sm-5"></div>
                                 <div className="col-sm-2">                          
-                             <a href="/signup" className="btn register-button">Register </a>
+                             <a href="/" className="btn register-button">Register </a>
                               </div>
                               <div className="col-sm-2">
                                   </div>

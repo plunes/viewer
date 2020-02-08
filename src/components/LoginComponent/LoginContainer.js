@@ -35,7 +35,7 @@ handleSubmit(event) {
             // "device_id": ""
         }
     }
-    console.log(data, 'data');
+    // console.log(data, 'data');
 
     axios.post(this.baseUrl + 'user/login', data)
         .then(({ data }) => {
@@ -57,30 +57,30 @@ handleSubmit(event) {
 
     render() {
         return (
-            <div class="container">
-            <div class="row">
-                <div class="col-xl-6"><div>
-                  <img className="loginImage" style={{marginTop: '80px'}} src="/login.png"  alt=".."/>
+            <div className="container">
+            <div className="row">
+                <div className="col-xl-6"><div>
+                  <img className="loginImage"  src="/login.png"  alt=".."/>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div className="col-xl-6">
                   <div className = 'row'>
                     <div className = 'col-md-1'>
 
                     </div>
                     <div className = 'col-md-6'>
-                    <h1 class="login-text">Login</h1>
+                    <h1 className="login-text">Login</h1>
                      <form action="" onSubmit ={this.handleSubmit}>
-                      <div  class=" form-group">
-                        <input class="form-controlll inputLogin"   name="emailId" placeholder="Email id or Phone Number" onChange={this.handleChange} id="myInput" />
+                      <div  className=" form-group">
+                        <input className="form-controlll inputLogin"   name="emailId" placeholder="Email id or Phone Number" onChange={this.handleChange} id="myInput" />
                       </div>
-                      <div  class="form-group">
-                        <input class="form-controlll inputLogin" type='password' name="password" placeholder="Password" onChange = {this.handleChange} id="myInput" />
-                          <button class="button-login" type='submit'>Login</button>
+                      <div  className="form-group">
+                        <input className="form-controlll inputLogin" type='password' name="password" placeholder="Password" onChange = {this.handleChange} id="myInput" />
+                          <button className="button-login" type='submit'>Login</button>
                       </div>
                     </form>
                     <a href="/" ><h6 className="forgotPassword" >Forgot Password?</h6></a>
-                    <h6 className="signupClass" >Don't have an account?<a href="/signup" >Signup</a> </h6>
+                    <h6 className="signupClass" >Don't have an account?<a href="/sign-up" >Signup</a> </h6>
                   </div>
                 </div>
             </div>
