@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../PrescriptionBuilderComponent/PrescriptionBuilderComponent.css'
-
+import AvatarEditor from 'react-avatar-editor'
 class SendPrescriptionComponent extends Component {
     constructor(props) {
         super(props);
@@ -166,6 +166,15 @@ class SendPrescriptionComponent extends Component {
                           <div className='col-sm-2'></div>
                             <div className='col-sm-6 enter-patient-no'>
                                 <span className="form-group">
+                                {/* <AvatarEditor
+        image="/blog2.png"
+        width={250}
+        height={250}
+        border={50}
+        color={[255, 255, 255, 0.6]} 
+        scale={1.2}
+        rotate={0}
+      /> */}
                                     <input className="show-prescription-input" type="nunmber" name='patientMobileNumber' value={this.state.patientMobileNumber || ''}  placeholder='Enter Patient Number' className="form-control" onChange={this.handleChange} />
                                 </span>
                             </div>
@@ -183,9 +192,11 @@ class SendPrescriptionComponent extends Component {
                             <div>
                                 <img className='imageClass' src={this.state.prescriptionDocDetails.logoUrl} alt='No Image'></img>
                             </div>
-                            <br></br>
-                            <div>
-                                Experience : {this.state.prescriptionDocDetails.experience} Years of Experience
+                            <div className='row '>
+                              <span>  Experience:
+                                    <input className="noBorder2" name='experience' value={this.state.experience || ''} onChange={this.handleChange} />
+                                    <span>Years of Experience</span>
+                                </span>
                             </div>
                         </div>
                         <div className='col'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios'
+import axios from 'axios';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Redirect } from 'react-router'
@@ -43,11 +43,11 @@ import PlockrProfileEditComponent from './components/PlockrAppComponent/PlockrPr
 import SendReportsComponent from './components/PlockrAppComponent/SendReportsComponent'
 import MyComponent from './components/PlockrAppComponent/MyComponent'
 import IntoductoryblogComponent from './components/ServicesComponent/IntoductoryblogComponent'
-import MentalhealthComponent from './components/ServicesComponent/MentalhealthComponent'
 import SavetoothblogComponent from './components/ServicesComponent/SavetoothblogComponent'
 import PrescriptionBuilderComponent from './components/PrescriptionBuilderComponent/PrescriptionBuilderComponent'
 import PrescriptionDashboardComponent from './components/PrescriptionBuilderComponent/PrescriptionDashboardComponent'
 import PlockrUploaderComponent from './components/PlockrAppComponent/UploaderComponent';
+import MentalhealthComponent from './components/ServicesComponent/MentalhealthComponent'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -60,7 +60,7 @@ export default class App extends React.Component {
       <div className='container-fluid'>
         <BrowserRouter>
           <Switch>
-            <Redirect strict from={'https://www.plunes.com' + '/'} to={'https://www.plunes.com'} />
+            <Redirect strict from={'https://www.plunes.com' + '/'} to={'https://www.plunes.com'}/>
             <Route path={'https://www.plunes.com'} component={App} />
             <Route exact path='/' component={() => (<LandingPage root={this.root} />)} />
             <Route exact path='/signup' component={() => (<RegistrationComponent root={this.root} />)} />
@@ -72,8 +72,8 @@ export default class App extends React.Component {
             <Route exact path='/enquiry' component={() => (<EnquiryComponent root={this.root} />)} />
             <Route exact path='/enquiryresult' component={() => (<EnquiryResultComponent root={this.root} />)} />
             <Route exact path='/profile' component={() => (<DermatologyComponent root={this.root} />)} />
-            <Route exact path='/dentist/' component={() => (<DentistComponent />)} />
-            <Route exact path='/ent' component={() => (<ENTComponent />)} />
+            <Route exact path='/dentist' component={() => (<DentistComponent />)} />
+            <Route exact path='/ent' component={() => (<ENTComponent/>)} />
             <Route exact path='/ayurveda' component={() => (<AyurvedaComponent />)} />
             <Route exact path='/dermatology' component={() => (<DermatologyComponent />)} />
             <Route exact path='/ophthalmology' component={() => (<OphthalmologyComponent />)} />
@@ -103,11 +103,16 @@ export default class App extends React.Component {
             <Route exact path='/plockr_profile_edit' render={(props) => <PlockrProfileEditComponent {...props} />} />
             <Route exact path='/send_reports' render={(props) => <SendReportsComponent {...props} />} />
             <Route exact path='/mycomponent' component={() => (<MyComponent />)} />
-            <Route exact path='/intoductoryblog' component={() => (<IntoductoryblogComponent />)} />
             <Route exact path='/mentalhealth' component={() => (<MentalhealthComponent />)} />
             <Route exact path='/savetooth' component={() => (<SavetoothblogComponent />)} />
             <Route exact path='/prescription_builder' component={() => (<PrescriptionBuilderComponent />)} />
             <Route exact path='/prescription-dashboard' render={(props) => <PrescriptionDashboardComponent {...props} />} />
+            <Route  path='/an-era-of-a-new-healthcare' component={() => (<IntoductoryblogComponent />)} />
+            <Route  path='/mental-health-quick-counselling' component={() => (<MentalhealthComponent />)} />
+            <Route  path='/save-your-tooth-best-dentist' component={() => (<SavetoothblogComponent />)} />
+            <Route  path='/dental-complications-and-healthy-suggestions' component={() => (<DentalComplicationsComponent />)} />
+            <Route  path='/dental-care-root-canal-treatment' component={() => (<RootCanalComponent />)} />
+            <Route  path='/teeth-whitening-complete-guide' component={() => (<TeethWhiteningComponent />)} />
           </Switch>
         </BrowserRouter>
       </div>

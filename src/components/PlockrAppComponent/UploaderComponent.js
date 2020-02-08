@@ -20,7 +20,7 @@ class ContainerComponent extends Component {
             active: true,
             showRecieved: true,
             modalIsOpen: false,
-            file: null,
+            file: [],
             reportUrl: '',
             data: {},
             modalIsOpen: false,
@@ -71,11 +71,11 @@ class ContainerComponent extends Component {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
-            }).then(res => {
+              }).then(res => {
                 if (res.status === 200) {
                     this.setState({
-                        reportUrl: "https://plunes.co/v4/" + res.data.path
-                    })
+                    reportUrl: "https://plunes.co/v4/" + res.data.path
+                })
                 }
             });
         });
@@ -180,13 +180,13 @@ class ContainerComponent extends Component {
                     onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.closeModal}
                     style={customStyles}
-                >
+                  >
                     <h2>Upload Report</h2>
                     <button onClick={this.closeModal}>close</button>
                     <form onSubmit={this.handleSubmit}>
                         <div className="input-group">
                                 <div className='row'>
-                                    <input id='uploadFile' className="input-uploader file-path-wrapper" name='file' onChange={this.handleChange} type="file" />
+                                    <input id='uploadFile' className="input-uploader file-path-wrapper" name='file' multiple onChange={this.handleChange} type="file" />
                                 </div>
                             </div>
                             <div className='input-group'>
@@ -219,7 +219,7 @@ class ContainerComponent extends Component {
                                         <p className='fileName'>{b.reportName}</p>
                                     </li>
                                 </div>
-                            ))
+                              ))
                                 : this.state.businessSentReports.map((b, index) => (
                                     <div className='fileList' key={Math.random().toString()}>
                                         <li className='headTab' key={Math.random().toString()} data-url={b.reportUrl} data-filename={b.reportName} data-id={b._id} onClick={this.handleClick}>

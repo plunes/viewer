@@ -55,7 +55,7 @@ class ShowEditPrescriptionComponent extends Component {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
-            }).then(res => {
+                 }).then(res => {
                 if (res.status === 200) {
                     this.setState({
                         logoUrl: "https://plunes.co/v4/" + res.data.path
@@ -263,7 +263,6 @@ class ShowEditPrescriptionComponent extends Component {
                             </div>
                             <div className='row age'>
                               <span>  Experience:
-                                
                                     <input className="noBorder2" name='experience' value={this.state.experience || ''} onChange={this.handleChange} />
                                     <span>Years of Experience</span>
                                 </span>

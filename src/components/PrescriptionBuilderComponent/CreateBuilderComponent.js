@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import axios from 'axios'
 import { Redirect } from 'react-router-dom';
 
+
 // const customStyles = {
 //     content: {
 //         top: '50%',
@@ -246,7 +247,7 @@ class CreateBuilderComponent extends Component {
                     onRequestClose={this.closeModal}
                     style={customStyles}
                     contentLabel="Example Modal"
-                >
+                 >
                     <h2 >Please add element</h2>
                     <button onClick={this.closeModal}>close</button>
                     <form onSubmit={this.handleInputSubmit}>
@@ -263,11 +264,10 @@ class CreateBuilderComponent extends Component {
                                 <input id="files" style={{ visibility: "hidden" }} className='inputLogo' type="file" name='file' onChange={this.onFileChangeHandlerLogo} />
                             </div>
                             <div className='row age'>
-                                Experience:
-                                <div>
-                                    <input className="noBorder" name='experience' value={this.state.experience || ''} onChange={this.handleChange} />
+                              <span>  Experience:
+                                    <input className="noBorder2" name='experience' value={this.state.experience || ''} onChange={this.handleChange} />
                                     <span>Years of Experience</span>
-                                </div>
+                                </span>
                             </div>
                         </div>
                         <div className='col'>
@@ -303,7 +303,9 @@ class CreateBuilderComponent extends Component {
                     <br></br>
                     <br></br>
                     <div className='row'>
-                        <div className='col'></div>
+                        <div className='col'>
+                            
+                        </div>
                         <div className='col '>
                             <div>
                                 <input className="form-control noBorder doctorname" name='name' onChange={this.handleChange} value={this.state.name || ''} />
