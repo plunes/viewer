@@ -9,6 +9,7 @@ export default class DentistComponent extends Component {
         return (
 
             <div>
+                <div>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/dentist" />
                     <title>Dentist in Gurgaon for Tooth Whitening, Tooth Scaling/Polishing, RCT in Gurgaon, Plunes</title>
@@ -27,29 +28,24 @@ export default class DentistComponent extends Component {
                         </ul>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    <div className="col-sm-11 header2-text">
+                   
                         <div className="row">
+                        <div className="col-sm-1">
+                    </div>
                             <div className="col-sm-3">
                                 <img className="dentist-image" src="/dent.png" alt=".." />
                             </div>
-                            <div className="col-sm-8 view-more-align">
+                            <div className="col-sm-7 view-more-align">
                                 <h1 className="header-font">Dentistry</h1>
                                 <h3 className="peragraph-text">Dentistry, also known as Dental and Oral Medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral cavity.
                                 </h3>
                                 <p className="peragraph-text">Dentists are trained to diagnose, treat and prevent oral diseases; promote oral health. </p>
                             </div>
+                            <div className="col-sm-1">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-
-                    <div className="col-sm-1"></div>
-                </div>
+                             </div>       
+             <br/>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-1">

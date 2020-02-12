@@ -8,6 +8,7 @@ export default class GynaeComponent extends Component {
     render() {
         return (
             <div>
+                <div>
                 <Helmet>
                 <link rel="canonical" href="https://www.plunes.com/gynae" />
                 <title>Best Gynecologist in Gurgaon, Ovarian Cyst Removal, Plunes</title>
@@ -30,38 +31,29 @@ export default class GynaeComponent extends Component {
 
                 </div>
 
-
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    <div className="col-sm-11 header2-text">
+            
+                  
                         <div className="row">
+                        <div className="col-sm-1">
+                    </div>
                             <div className="col-sm-3">
                                 <img className="dentist-image" src="/Gyneco.png" alt=".." />
                             </div>
-                            <div className="col-sm-8 view-more-align">
+                            <div className="col-sm-7 view-more-align">
                                 <h1 className="header-font">Gynecology</h1>
                                 <p className="peragraph-text">Gynecology or gynecology is the medical practice dealing with the health of the female reproductive systems (vagina, uterus, and ovaries) and the breasts.</p>
                                 <p className="peragraph-text">A Gynecologist is a person who treats patients with female reproductive organs, whether or not they identify as women.</p>
                             </div>
+                            <div className="col-sm-1">
+                            </div>
                         </div>
-                    </div>
-
-
-
-                </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                 
-                    <div className="col-sm-1"></div>
-                </div>
+                    
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
                     <div className="col-sm-11">
                     
-                        <h3 className="header-font align-text">Procedure</h3>
+                        <h3 className="header-font">Procedure</h3>
                     </div>
 
                 </div>
@@ -70,7 +62,7 @@ export default class GynaeComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-            <h3 className="header-font">1. Gynecologist Consultation:</h3>
+                       <h3 className="header-font">1. Gynecologist Consultation:</h3>
                             <p className="peragraph-text">Gynecology consultation is a routine and often diagnostic procedure performed by gynecologists to assess the general condition of the female reproductive system and determine the presence of diseases and infections.</p>
                         </div>
                         <div className="col-sm-3">
@@ -156,20 +148,10 @@ An abdominal hysterectomy is a surgical procedure that removes your uterus throu
                         </div>
                     </div>
                 </div>
-                
-               
-
-                <div>
-
-
-                    
-
-                    <div>
-                        <LandingFooter />
-                    </div>
-                </div>
-
-            </div>
+                <div></div> 
+     <LandingFooter/>
+</div>
+</div>
         )
     }
 }

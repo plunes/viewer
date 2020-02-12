@@ -8,6 +8,7 @@ export default class DermatologyComponent extends Component {
     render() {
         return (
             <div>
+                <div>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/dermatology" />
                     <title>Best Dermatologist in Gurgaon for Hair Fall Treatment & Acne Treatment in Gurgaon, PRP Therapy, Plunes</title>
@@ -26,29 +27,24 @@ export default class DermatologyComponent extends Component {
                         </ul>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    <div className="col-sm-11 header2-text">
+                  
                         <div className="row">
+                        <div className="col-sm-1">
+                    </div>
                             <div className="col-sm-3">
                                 <img className="dentist-image" src="/Dermat.png" alt=".." />
                             </div>
-                            <div className="col-sm-8 view-more-align">
+                            <div className="col-sm-7 view-more-align">
                                 <h1 className="header-font">Dermatology</h1>
                                 <p className="peragraph-text">Dermatology is the branch of medicine dealing with the skin. It is a specialty with both medical and surgical aspects.
                                 </p>
                                 <p className="peragraph-text">A dermatologist is a specialist doctor that manages diseases, in the widest sense, and some cosmetic problems of the skin.</p>
                             </div>
+                            <div className="col-sm-1">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    
-                    <div className="col-sm-1"></div>
-                </div>
+                      
+               <br/>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
@@ -221,7 +217,7 @@ export default class DermatologyComponent extends Component {
                     </div>
 
 
-                    <div>
+                    <div></div>
                         <LandingFooter />
                     </div>
                 </div>

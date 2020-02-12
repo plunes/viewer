@@ -9,11 +9,12 @@ export default class ENTComponent extends Component {
         return (
 
             <div>
+                <div>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/dentist"/>
-                    <title>Dentist in Gurgaon for Tooth Whitening, Tooth Scaling/Polishing, RCT in Gurgaon, Plunes</title>
-                    <meta name='keywords' content='dental clinic in gurgaon, dentist in gurgaon, best dental clinic in gurgaon, dental implants in gurgaon, orthodontist in gurgaon, root canal treatment in gurgaon, best dental implants in gurgaon, best orthodontist in gurgaon, braces treatment in gurgaon, ceramic braces cost in gurgaon, cosmetic dentist in gurgaon, dental braces cost in gurgaon, dental surgeon in gurgaon, dentist near me gurgaon, kids dentist in gurgaon, dental treatment'></meta>
-                    <meta name="description" content="Find out the Best Dentist in Gurgaon. Treatment includes Tooth Whitening, Tooth Scaling/Polishing, RCT in Gurgaon. Get Free Consultation. Free app Download Plunes">
+                    <title>Best ENT Specialists in Gurgaon, India's First Utility Network, Plunes</title>
+                    <meta name='keywords' content='ent, ent treatments, ear surgery, snoring surgery, ent doctors, ent specialists'></meta>
+                    <meta name="description" content="Search for the desired ENT procedure such as cataract, nasal endoscopy, ear micro surgery etc & avail upto 50% discount.">
                     </meta>
                 </Helmet>
                 <LandingHeader />
@@ -23,33 +24,28 @@ export default class ENTComponent extends Component {
                     <div className="col-sm-11">
                         <ul className="breadcrumb">
                             <li><a href="/" title='Home'>Home</a></li>
-                            <li className="header-font2"> <a className="breadcrumb-text" href="/ent" title='ENT'>ENT</a></li>
+                            <li className="header-font2"><a className="breadcrumb-text" href="/ent" title='ENT'>ENT</a></li>
                         </ul>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    <div className="col-sm-11 header2-text">
+                   
                         <div className="row">
+                        <div className="col-sm-1">
+                    </div>
                             <div className="col-sm-3">
                                 <img className="dentist-image" src="/ent.png" alt=".." />
                             </div>
-                            <div className="col-sm-8 view-more-align">
+                            <div className="col-sm-7 view-more-align">
                                 <h1 className="header-font">ENT</h1>
                                 <h3 className="peragraph-text">A complete ENT examination includes inspection of the face, ears, nose, throat and neck. Commonly performed for patients with complaints of hearing loss, ringing in the ears, or balance disorders. 
                                 </h3>
                                 <p className="peragraph-text">An ENT Doctor is a medical specialist who is concerned with the diagnosis & treatment of disorders of the head & neck, including particularly the ears, nose, and throat. </p>
                             </div>
+                            <div className="col-sm-1">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-
-                    <div className="col-sm-1"></div>
-                </div>
+                     </div>
+                    <br/>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-1">
@@ -103,14 +99,13 @@ export default class ENTComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <h3 className="header-font">7. Ear Drum Repair: </h3>
+                            <h3 className="header-font">7. Ear Drum Repair:</h3>
                             <p className="peragraph-text">Eardrum repair is a surgical procedure used to fix a hole or tear in the eardrum.</p>
                         </div>
                         <div className="col-sm-3">
-                            <h3 className="header-font">8. Vocal Cord Treatment: </h3>
+                            <h3 className="header-font">8. Vocal Cord Treatment:</h3>
                             <p className="peragraph-text">
-                            Treatment may include voice therapy, bulk injections, surgery or a combination of treatments. 
-</p>                        </div>
+                            Treatment may include voice therapy, bulk injections, surgery or a combination of treatments. </p>                        </div>
                         <div className="col-sm-3">
                             <h3 className="header-font">9. Vocal cord Repositioning:</h3>
                             <p className="peragraph-text">In this procedure, a surgeon moves a window of your own tissue from the outside of your voice box inward, pushing the paralyzed vocal cord toward the middle of your voice box.
@@ -122,11 +117,10 @@ export default class ENTComponent extends Component {
                         <div className="col-sm-1">
                         </div>
                         <div className="col-sm-3">
-                            <h2 className="header-font">10. Ear Lobe Correction :
+                            <h2 className="header-font">10. Ear Lobe Correction:
                                 </h2>
                             <p className="peragraph-text">
-                            Earlobe repair ideals with the correction, repair, and reshaping of earlobes per ear that have been split, stretched, or are oversized
-                             </p>
+                            Earlobe repair ideals with the correction, repair, and reshaping of earlobes per ear that have been split, stretched, or are oversized                             </p>
                         </div>
                         <div className="col-sm-3">
                             <h2 className="header-font">11. Split Earlobe Repair:
@@ -209,11 +203,11 @@ export default class ENTComponent extends Component {
                         </div>
                         <div className="col-sm-3">
                             <p className="header-font">22. Foreign Body Removal Ear:</p>
-                            <p className="peragraph-text">Most ear and nose foreign bodies can be removed by a skilled physician in the office with minimal risk of complications. </p>
+                            <p className="peragraph-text"> Most ear and nose foreign bodies can be removed by a skilled physician in the office with minimal risk of complications. </p>
                         </div>
                        </div>
-                    <div>
-                        <div><LandingFooter /></div>
+                       <div>
+                       <div><LandingFooter/></div>
                     </div>
                 </div>
             </div>

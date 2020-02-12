@@ -8,6 +8,7 @@ export default class PediatricsComponent extends Component {
 render() {
 return (
 <div>
+    <div>
 <Helmet>
         <link rel="canonical" href="https://www.plunes.com/pediatrics" />
         <title>Get Leading Pediatrician Gurgaon, India's First Utility Network, Plunes</title>
@@ -31,15 +32,14 @@ return (
 </div>
 
 
+
 <div className="row">
 <div className="col-sm-1">
 </div>
-<div className="col-sm-11 header2-text">
-<div className="row">
 <div className="col-sm-3">
 <img className="dentist-image1" src="/PEDIATRICIAN.png" alt=".." />
 </div>
-<div className="col-sm-8 view-more-align">
+<div className="col-sm-7 view-more-align">
 <h1 className="header-font">Pediatrics</h1>
 <p className="peragraph-text">
 Pediatrics is the branch of medicine dealing with the health and medical care of infants, children, and adolescents from birth up to the age of 18. The word “pediatrics” means “healer of children”.
@@ -50,19 +50,11 @@ Pediatricians are doctors who manage the health of your child, including physica
 
 </p>
 </div>
-</div>
-</div>
-
-
-
-</div>
-
-<div className="row">
 <div className="col-sm-1">
+     </div>
 </div>
 
-<div className="col-sm-1"></div>
-</div>
+<br/>
 <div className="row">
 <div className="col-sm-1">
 </div>
@@ -161,7 +153,7 @@ It is the process of obtaining intravenous access for intravenous therapy or blo
 
 
 
-
+</div>
 
 <div>
 <div>

@@ -8,49 +8,46 @@ export default class PathologyComponent extends Component {
         render() {
                 return (
                         <div>
-                                <Helmet>
-                                        <link rel="canonical" href="https://www.plunes.com/pathology" />
-                                        <title>Diagnostic Centers & Pathology Labs in Gurgaon. LIPID, CBC, HIV, Blood Urea & More, Plunes.</title>
-                                        <meta name='keywords' content='pathology in gurgaon, csf fluid examination, dengue test in gurgaon, pathology clinic in gurgaon, pathology hospital in gurgaon, biopsy test gurgaon, blood sugar test gurgaon, kidney function test gurgaon'></meta>
-                                        <meta name="description" content="Find out the Best Thyroid test in Gurgaon, Other tests include Sugar Test, Whole Body Check Up & Senior Citizen Health Checkups in Gurgaon & Healthy women check-up in Gurgaon at Plunes.">
-                                        </meta>
-                                </Helmet>
-                                <LandingHeader />
-                                <br></br>
-                                <div className="row">
-                                        <div className="col-sm-1"></div>
+                                <div>
+                                        <Helmet>
+                                                <link rel="canonical" href="https://www.plunes.com/pathology" />
+                                                <title>Diagnostic Centers & Pathology Labs in Gurgaon. LIPID, CBC, HIV, Blood Urea & More, Plunes.</title>
+                                                <meta name='keywords' content='pathology in gurgaon, csf fluid examination, dengue test in gurgaon, pathology clinic in gurgaon, pathology hospital in gurgaon, biopsy test gurgaon, blood sugar test gurgaon, kidney function test gurgaon'></meta>
+                                                <meta name="description" content="Find out the Best Thyroid test in Gurgaon, Other tests include Sugar Test, Whole Body Check Up & Senior Citizen Health Checkups in Gurgaon & Healthy women check-up in Gurgaon at Plunes.">
+                                                </meta>
+                                        </Helmet>
+                                        <LandingHeader />
+                                        <br></br>
+                                        <div className="row">
+                                                <div className="col-sm-1"></div>
 
-                                        <div className="col-sm-11">
-                                                <ul class="breadcrumb">
-                                                        <li><a href="/" title='Home'>Home</a></li>
-                                                        <li className="header-font2" ><a className="breadcrumb-text" href="/pathology" title='Pathology'>Pathology</a></li>
+                                                <div className="col-sm-11">
+                                                        <ul class="breadcrumb">
+                                                                <li><a href="/" title='Home'>Home</a></li>
+                                                                <li className="header-font2" ><a className="breadcrumb-text" href="/pathology" title='Pathology'>Pathology</a></li>
 
-                                                </ul>
-                                        </div>
-                                </div>
-                                <div className="row">
-                                        <div className="col-sm-1">
-                                        </div>
-                                        <div className="col-sm-11 header2-text">
-                                                <div className="row">
-                                                        <div className="col-sm-3">
-                                                                <img className="dentist-image" src="/pathology.png" alt=".." />
-                                                        </div>
-                                                        <div className="col-sm-8 view-more-align">
-                                                                <h1 className="header-font">Pathology</h1>
-                                                                <h3 className="peragraph-text">
-                                                                        Pathology is the study of the causes and effects of disease or injury. The word pathology also refers to the study of disease in general, incorporating a wide range of bioscience research fields and medical practices.</h3>
-                                                                <p className="peragraph-text">
-                                                                        A pathologist is a physician who studies body fluids and tissues, helps your primary care doctor make a diagnosis about your health or any medical problems you have, and uses laboratory tests to monitor the health of patients with chronic conditions.</p>
-                                                        </div>
+                                                        </ul>
                                                 </div>
                                         </div>
-                                </div>
-                                <div className="row">
-                                        <div className="col-sm-1">
-                                        </div>
-                                        <div className="col-sm-1"></div>
-                                </div>
+
+                                        <div className="row">
+                                                <div className="col-sm-1">
+                                                </div>
+                                                <div className="col-sm-3">
+                                                        <img className="dentist-image" src="/pathology.png" alt=".." />
+                                                </div>
+                                                <div className="col-sm-7 view-more-align">
+                                                        <h1 className="header-font">Pathology</h1>
+                                                        <h3 className="peragraph-text">
+                                                                Pathology is the study of the causes and effects of disease or injury. The word pathology also refers to the study of disease in general, incorporating a wide range of bioscience research fields and medical practices.</h3>
+                                                        <p className="peragraph-text">
+                                                                A pathologist is a physician who studies body fluids and tissues, helps your primary care doctor make a diagnosis about your health or any medical problems you have, and uses laboratory tests to monitor the health of patients with chronic conditions.</p>
+                                                </div>
+                                                <div className="col-sm-1">
+                                                </div>
+        
+
+                                </div><br />
                                 <div className="row">
                                         <div className="col-sm-1">
                                         </div>
@@ -270,7 +267,7 @@ export default class PathologyComponent extends Component {
                                         </div>
 
                                 </div>
-                                <div>
+                                <div></div>
                                         <LandingFooter />
                                 </div>
 

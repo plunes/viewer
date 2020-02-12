@@ -266,7 +266,7 @@ class CreateBuilderComponent extends Component {
                             <div className='row age'>
                               <span>  Experience:
                                     <input className="noBorder2" name='experience' value={this.state.experience || ''} onChange={this.handleChange} />
-                                    <span>Years of Experience</span>
+                                    <span>Years</span>
                                 </span>
                             </div>
                         </div>

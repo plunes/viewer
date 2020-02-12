@@ -8,57 +8,45 @@ export default class OrthopedicsComponent extends Component {
     render() {
         return (
             <div>
-                <Helmet>
-                    <link rel="canonical" href="https://www.plunes.com/orthopedics"/>
-                    <title>Orthopedic Doctor in Gurgaon for Knee Surgery, Arthoplasty & Ankle Replacement, Plunes</title>
-                    <meta name='keywords' content='orthopaedic clinic gurgaon, orthopedic doctor in gurgaon, orthopaedic doctor gurgaon'></meta>
-                    <meta name="description" content="Check out the Best Orthopaedic Doctors in Gurgaon, Treatment for Knee Surgery in Gurgaon. Treatment for Arthoplasty in Gurgaon. Orthopaedic Doctors in Gurgaon at Plunes app.">
-                    </meta>
-                </Helmet>
-                <LandingHeader />
-                <br></br>
-                <div className="row">
-                    <div className="col-sm-1"></div>
-                    <div className="col-sm-11">
-                        <ul class="breadcrumb">
-                            <li><a href="/" title='Home'>Home</a></li>
-                            <li className="header-font2" ><a className="breadcrumb-text" href="/orthopedics" title='Orthopedics'>Orthopedics</a></li>
+                <div>
+                    <Helmet>
+                        <link rel="canonical" href="https://www.plunes.com/orthopedics" />
+                        <title>Orthopedic Doctor in Gurgaon for Knee Surgery, Arthoplasty & Ankle Replacement, Plunes</title>
+                        <meta name='keywords' content='orthopaedic clinic gurgaon, orthopedic doctor in gurgaon, orthopaedic doctor gurgaon'></meta>
+                        <meta name="description" content="Check out the Best Orthopaedic Doctors in Gurgaon, Treatment for Knee Surgery in Gurgaon. Treatment for Arthoplasty in Gurgaon. Orthopaedic Doctors in Gurgaon at Plunes app.">
+                        </meta>
+                    </Helmet>
+                    <LandingHeader />
+                    <br></br>
+                    <div className="row">
+                        <div className="col-sm-1"></div>
+                        <div className="col-sm-11">
+                            <ul class="breadcrumb">
+                                <li><a href="/" title='Home'>Home</a></li>
+                                <li className="header-font2" ><a className="breadcrumb-text" href="/orthopedics" title='Orthopedics'>Orthopedics</a></li>
 
-                        </ul>
-                    </div>
-
-                </div>
-
-
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    <div className="col-sm-11 header2-text">
-                        <div className="row">
-                            <div className="col-sm-3">
-                                <img className="dentist-image" src="/orthopedics.png" alt=".." />
-                            </div>
-                            <div className="col-sm-8 view-more-align">
-                                <h1 className="header-font">Orthopedics</h1>
-                                <p className="peragraph-text">Orthopedics is a medical specialty that focuses on the diagnosis, correction, prevention, and treatment of patients with skeletal deformities.
-
-</p>
-                                <p className="peragraph-text">Orthopedic surgeons are devoted to the prevention, diagnosis, and treatment of disorders of the bones, joints, ligaments, tendons and muscles. Some orthopedists are generalists, while others specialize in certain areas of the body, such as hip and knee.
-
-</p>
-                            </div>
+                            </ul>
                         </div>
+
                     </div>
+                    <div className="row">
+                        <div className="col-sm-1">
+                        </div>
+                        <div className="col-sm-3">
+                            <img className="dentist-image" src="/orthopedics.png" alt=".." />
+                        </div>
+                        <div className="col-sm-7 view-more-align">
+                            <h1 className="header-font">Orthopedics</h1>
+                            <p className="peragraph-text">Orthopedics is a medical specialty that focuses on the diagnosis, correction, prevention, and treatment of patients with skeletal deformities.
 
+</p>
+                            <p className="peragraph-text">Orthopedic surgeons are devoted to the prevention, diagnosis, and treatment of disorders of the bones, joints, ligaments, tendons and muscles. Some orthopedists are generalists, while others specialize in certain areas of the body, such as hip and knee.
 
-
-                </div>
-
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    <div className="col-sm-1"></div>
-                </div>
+</p>
+                        </div>
+                        <div className="col-sm-1">
+                        </div>
+                </div><br />
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
@@ -371,7 +359,7 @@ export default class OrthopedicsComponent extends Component {
                 </div>
                 <div>
                     <div>
-                        <div>
+                        <div></div>
                             <LandingFooter />
                         </div>
                     </div>

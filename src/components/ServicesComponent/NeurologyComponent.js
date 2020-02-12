@@ -9,6 +9,7 @@ export default class NeurologyComponent extends Component {
     render() {
         return (
             <div>
+                <div>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/neurology" />
                     <title>Best Nurologiest Gurgaon, India's First Utility Network, Plunes</title>
@@ -29,29 +30,23 @@ export default class NeurologyComponent extends Component {
                         </ul>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    <div className="col-sm-11 header2-text">
+                  
                         <div className="row">
+                        <div className="col-sm-1">
+                    </div>
                             <div className="col-sm-3">
                                 <img className="dentist-image1" src="/Neurologist.png" alt=".." />
                             </div>
-                            <div className="col-sm-8 view-more-align">
+                            <div className="col-sm-7 view-more-align">
                                 <h1 className="header-font">Neurology</h1>
                                 <p className="peragraph-text">Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system.
                                 </p>
                                 <p className="peragraph-text">A neurologist is a medical doctor who specializes in treating diseases of the nervous system. </p>
                             </div>
+                            <div className="col-sm-1">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    
-                    <div className="col-sm-1"></div>
-                </div>
+            <br/>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
@@ -130,7 +125,7 @@ export default class NeurologyComponent extends Component {
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div></div>
                         <LandingFooter />
                     </div>
                 </div>

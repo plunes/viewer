@@ -16,13 +16,13 @@ class LandingHeader extends React.Component {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          < ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav ml-auto">
             <li className="nav2 nav-item downApp">
               <div className="dropdown ">
                 <button type="button" className="btn dropdown-toggle" data-toggle="dropdown" >
                   Download the App
                     </button>
-                <ul className="dropdown-menu" role="tree" aria-expanded="true" aria-hidden="false">
+                  <ul className="dropdown-menu" role="tree" aria-expanded="true" aria-hidden="false">
                   <li><a href="https://apps.apple.com/us/app/plunes/id1463747553/" title="app store">
                     <img className="ios" src="/ios.png" alt=".." />
                     <span className="ios-img-header">iOS</span></a>

@@ -162,6 +162,7 @@ export default class LandingFooter extends Component {
           </div>
         </div>
       </div>
+   
     )
   }
 }

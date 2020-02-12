@@ -9,11 +9,12 @@ export default class AyurvedaComponent extends Component {
         return (
 
             <div>
+                <div>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/dentist" />
-                    <title>Dentist in Gurgaon for Tooth Whitening, Tooth Scaling/Polishing, RCT in Gurgaon, Plunes</title>
-                    <meta name='keywords' content='dental clinic in gurgaon, dentist in gurgaon, best dental clinic in gurgaon, dental implants in gurgaon, orthodontist in gurgaon, root canal treatment in gurgaon, best dental implants in gurgaon, best orthodontist in gurgaon, braces treatment in gurgaon, ceramic braces cost in gurgaon, cosmetic dentist in gurgaon, dental braces cost in gurgaon, dental surgeon in gurgaon, dentist near me gurgaon, kids dentist in gurgaon, dental treatment'></meta>
-                    <meta name="description" content="Find out the Best Dentist in Gurgaon. Treatment includes Tooth Whitening, Tooth Scaling/Polishing, RCT in Gurgaon. Get Free Consultation. Free app Download Plunes">
+                    <title>Best Ayurveda doctor Gurgaon, India's First Utility Network, Plunes</title>
+                    <meta name='keywords' content='Ayurvedic treatment, ayurveda, ayurvedic medical treatments, vasthi, vasthi treatments'></meta>
+                    <meta name="description" content="Search for the desired Ayurvedic procedure such as panchkarma, pizhichil, navarakizhi, dhara etc & avail upto 50% discount.">
                     </meta>
                 </Helmet>
                 <LandingHeader />
@@ -27,29 +28,23 @@ export default class AyurvedaComponent extends Component {
                         </ul>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                    <div className="col-sm-11 header2-text">
+            
                         <div className="row">
+                            <div className="col-sm-1">
+                            </div>
                             <div className="col-sm-3">
                                 <img className="dentist-image" src="/ayurveda.png" alt=".." />
                             </div>
-                            <div className="col-sm-8 view-more-align">
+                            <div className="col-sm-7 view-more-align">
                                 <h1 className="header-font">Ayurveda</h1>
                                 <h3 className="peragraph-text">Ayurveda or Ayurvedic medicine is a system of traditional medicine native to India, which uses a range of treatments, including panchakarma ('five actions'), yoga, massage, acupuncture and herbal medicine, to encourage health and wellbeing.
                                 </h3><br/>
                                 <p className="peragraph-text">An Ayurvedic doctor specialises in the range of ayurvedic treatments of health, well-being & mental stability.</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-
-                    <div className="col-sm-1"></div>
-                </div>
+                            <div className="col-sm-1">
+                            </div>
+                        </div></div>
+              <br/>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-1">

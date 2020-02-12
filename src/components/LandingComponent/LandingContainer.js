@@ -94,7 +94,7 @@ class LandingContainer extends React.Component {
                                             <p className="card-text2">Gynecologist Consultation<br></br>Cesarean / C-section <br></br>Ovarian Cyst Removal</p>
                                         </div>
                                     </div></a>
-                            </div>
+                             </div>
                             <div className="item">
                                 <a href="/radiology" title='Radiology Diagnosis'>
                                     <div className="card" >
@@ -109,7 +109,7 @@ class LandingContainer extends React.Component {
                             <div className="item">
                                 <a href="/dentist" title='Dentistry Procedures'>
                                     <div className="card" >
-                                        <img className="card-align" src="/dent.png" alt=".." />
+                                        <img className="card-align" src="/dent.png" alt=".."/>
                                         <div className="card-body ">
                                             <h2 className="card-title2 ">Dentistry Procedures</h2>
                                             <p className="card-text2">Tooth Removal, Tooth Whitening<br></br>Root Canal Treatment<br></br>Dental Implant, Braces</p>
@@ -120,7 +120,7 @@ class LandingContainer extends React.Component {
                             <div className="item">
                                 <a href="/pathology" title='Pathology Tests'>
                                     <div className="card" >
-                                        <img className=" card-align" src="/pathology.png" alt=".." />
+                                        <img className=" card-align" src="/pathology.png" alt=".."/>
                                         <div className="card-body ">
                                             <h2 className="card-title2 ">Pathology Tests</h2>
                                             <p className="card-text2">Complete Blood Count Test<br></br>LIPID Profile<br></br>HIV Test</p>

@@ -8,6 +8,7 @@ export default class IvfComponent extends Component {
     render() {
         return (
             <div>
+                <div>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/ivf" />
                     <title>Specialist IVF/ICSI in Gurgaon, IUI & Embryo Preservation. Plunes</title>
@@ -34,7 +35,7 @@ export default class IvfComponent extends Component {
                             <div className="col-sm-3">
                                 <img className="dentist-image1" src="/ivf.png" alt=".."/>
                             </div>
-                            <div className="col-sm-8 view-more-align">
+                            <div className="col-sm-7 view-more-align">
                                 <h1 className="header-font">IVF</h1>
                                 <p className="peragraph-text">
                                     IVF stands for in vitro fertilization. It’s one of the more widely known types of assisted reproductive technology (ART).  IVF works by using a combination of medicines and surgical procedures to help sperm fertilize an egg, and help the fertilized egg implant in your uterus.                                </p>
@@ -42,15 +43,12 @@ export default class IvfComponent extends Component {
                                     An IVF Specialist is a person who treats patients that focuses on diagnosing and treating male and female infertility. These doctors have completed four years of medical school and at least four years of residency training in obstetrics/gynecology (OB/GYN) or urology. In addition, reproductive endocrinologists are board-certified in reproductive endocrinology and infertility.
                                 </p>
                             </div>
+                            <div className="col-sm-1">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-1">
-                    </div>
-                 
-                    <div className="col-sm-1"></div>
-                </div>
+                 <br/>
                 <div className="row">
                     <div className="col-sm-1">
                     </div>
@@ -132,7 +130,7 @@ export default class IvfComponent extends Component {
                         </p>
                         </div>
                     </div>
-                </div>
+                </div></div>
                 <LandingFooter />
             </div>
         )

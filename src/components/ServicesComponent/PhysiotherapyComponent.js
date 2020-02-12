@@ -10,6 +10,7 @@ export default class PhysiotherapyComponent extends Component {
 render() {
 return (
 <div>
+    <div>
 <Helmet>
         <link rel="canonical" href="https://www.plunes.com/physiotherapy" />
         <title>Best Physiotherapist in Gurgaon, Physiotherapy Center, Plunes</title>
@@ -33,15 +34,14 @@ return (
 </div>
 
 
+
 <div className="row">
 <div className="col-sm-1">
 </div>
-<div className="col-sm-11 header2-text">
-<div className="row">
 <div className="col-sm-3">
 <img className="dentist-image1" src="/physiotherapy.png" alt=".."/>
 </div>
-<div className="col-sm-8 view-more-align">
+<div className="col-sm-7 view-more-align">
 <h1 className="header-font">Physiotherapy</h1>
 <p className="peragraph-text">
 Physiotherapy, also referred to as physical therapy, is an allied health profession that makes use of bio – mechanics or kinesiology, manual therapy, exercise therapy and electrotherapy, to help patients restore, maintain and increase their physical mobility, strength and function.
@@ -51,18 +51,10 @@ Physiotherapists help people affected by injury, illness or disability through m
 
 </p>
 </div>
-</div>
-</div>
-
-
-
-</div>
-<div className="row">
 <div className="col-sm-1">
+                            </div>
 </div>
-
-<div className="col-sm-1"></div>
-</div>
+<br/>
 <div className="row">
 <div className="col-sm-1">
 </div>
@@ -344,7 +336,7 @@ Physical therapy exercises incorporating a combination of strengthening, stretch
 </div>
 
 <div>
-<div>
+<div></div>
 <LandingFooter />
 </div>
 </div>

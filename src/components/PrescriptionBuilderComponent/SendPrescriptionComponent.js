@@ -192,12 +192,9 @@ class SendPrescriptionComponent extends Component {
                             <div>
                                 <img className='imageClass' src={this.state.prescriptionDocDetails.logoUrl} alt='No Image'></img>
                             </div>
-                            <div className='row '>
-                              <span>  Experience:
-                                    <input className="noBorder2" name='experience' value={this.state.experience || ''} onChange={this.handleChange} />
-                                    <span>Years of Experience</span>
-                                </span>
-                            </div>
+                            <br></br>
+                            <div>
+                                Experience : {this.state.prescriptionDocDetails.experience} Years                            </div>
                         </div>
                         <div className='col'>
                             <div>
