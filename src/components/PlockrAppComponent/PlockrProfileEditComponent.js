@@ -41,24 +41,20 @@ class PlockrProfileEditComponent extends Component {
     }
 
     componentDidMount() {
-        // console.log(this.props.data.id)
-        // console.log(this.props.data.fileName)
-        
         this.setState({
             reportId: this.props.data.id,
             reportName: this.props.data.fileName
         })
         let specialities = JSON.parse(localStorage.getItem('specialities'))
-        console.log(specialities)
         let speciality = specialities.filter((s) => {
-            if(s.name === 'Radiologists' || s.name === 'Pathologists'){
-                return true 
-            }else{
+            if (s.name === 'Radiologists' || s.name === 'Pathologists') {
+                return true
+            } else {
                 return false
             }
         })
         this.setState({
-            specialities : speciality
+            specialities: speciality
         })
     }
 
@@ -105,6 +101,11 @@ class PlockrProfileEditComponent extends Component {
                     modalIsOpen: true
                 })
             })
+            .catch((e) => {
+                console.log(e)
+                alert('Not Sent!!! Please Check Plunes Patient Phone Number ....')
+            }
+            )
     }
 
     handleChange(e) {
@@ -171,8 +172,6 @@ class PlockrProfileEditComponent extends Component {
                                         <div className="form-group">
                                             <textarea className="form-control plockr-app-form" placeholder="Diagnosis" name='reasonDiagnosis' onChange={this.handleChange}></textarea>
                                         </div><br></br>
-                    
-                                   
                                         <div className="form-group">
                                             <textarea className="form-control plockr-app-form" placeholder="Remarks" name='remarks' onChange={this.handleChange}></textarea>
                                         </div><br></br>
@@ -180,12 +179,11 @@ class PlockrProfileEditComponent extends Component {
                                     </div>
                                     <div className='col-md-6'>
                                         <div className="form-group">
-                                            <textarea className="form-control plockr-app-form" placeholder="Enter Patient's Mobile Number" name='patientMobileNumber' onChange={this.handleChange} ></textarea>
+                                            <textarea className="form-control plockr-app-form" placeholder="Enter Patient's Mobile Number" name='patientMobileNumber' onChange={this.handleChange} required></textarea>
                                         </div><br></br>
                                         <div className="form-group">
                                             <textarea className="form-control plockr-app-form" placeholder="Problem Area (Diagnosis)" name='problemAreaDiagnosis' onChange={this.handleChange} ></textarea>
                                         </div><br></br>
-                                     
                                         <div className="form-group">
                                             <textarea className="form-control plockr-app-form" placeholder="Precautions" name='precautions' onChange={this.handleChange}></textarea>
                                         </div><br></br>

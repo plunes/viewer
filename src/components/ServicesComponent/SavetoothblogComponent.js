@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 class SavetoothblogComponent extends Component {
     render() {
         return (
+            <div>
             <div className='container-fluid'>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/Save-toothblogComponent" />
@@ -89,7 +90,7 @@ class SavetoothblogComponent extends Component {
 
 
 
-
+                </div>
                 </div>
                 <LandingFooter />
             </div>

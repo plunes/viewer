@@ -135,7 +135,6 @@ class PlockrAppComponent extends Component {
                 <div className='container-fluid'>
                     <div className='row'>
                     <PlockrHeaderComponent />
-
                         <div className='col-md-8 viewFile'>
                         {
                                 this.state.showFile ?

@@ -69,18 +69,19 @@ class PrescriptionHeaderComponent extends Component {
             <div className='container-fluid'>
                 <div className="navbar navbar-expand-lg navbar-light row">
                     <div className='col-md-3'>
-                        <a href="/" title='Home'> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
+                        <a href="/plockrapp" title='Home'> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
                     </div>
                     <div className='col-md-3 text-right'>
                     </div>
+                    <div className='col-md-2'></div>
                     <div className='col-md-2 text-right'>
                         <a href="/plockr-dashboard">
                             <button type="button" className="btn builder-button">Create Report</button>
                         </a>
                     </div>
-                    <div className='col-md-2 text-right'>
+                    {/* <div className='col-md-2 text-right'>
                         <button type="button" className="btn builder-button" onClick={this.handleDownload}>Download PLOCKR</button>
-                    </div>
+                    </div> */}
                     <div className='col-md-2'>
                         <button type="button" className="btn logout" onClick={this.handlelogout}>Logout</button>
                     </div>

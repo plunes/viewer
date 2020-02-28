@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Redirect } from 'react-router'
 import LandingPage from './components/LandingComponent/LandingPage';
 import RegistrationComponent from './components/RegistrationComponent/RegistrationComponent';
-import DashboardComponent from './components/DashboardComponent/DashboardComponent'
+import DashboardComponent from './components/DashboardComponent/DashboardComponent';
 import SolutionResultComponent from './components/SolutionSearchComponent/SolutionResultComponent'
 import ConfirmBookingComponent from './components/ConfirmBooking/ConfirmBookingComponent'
 import EnquiryComponent from './components/EnquiryComponent/EnquiryComponent'
@@ -14,7 +14,16 @@ import LoginComponent from './components/LoginComponent/LoginComponent'
 import ForgotPasswordComponent from './components/LoginComponent/ForgotPassword'
 import DentistComponent from './components/ServicesComponent/DentistComponent'
 import ENTComponent from './components/ServicesComponent/ENTComponent'
-import AyurvedaComponent from './components/ServicesComponent/AyurvedaComponent'
+// import AyurvedaComponent from './components/ServicesComponent/AyurvedaComponent'
+import DailyYogaComponent from './components/blog/DailyYogaComponent'
+import PMSComponent from './components/blog/PMSComponent'
+
+// import AllergiesTypeComponent from './components/ServicesComponent/AllergiesTypeComponent'
+// import EarInfectionComponent from './components/ServicesComponent/EarInfectionComponent'
+// import AntiAgingComponent from './components/ServicesComponent/AntiAgingComponent'
+// import ArthritisComponent from './components/ServicesComponent/ArthritisComponent'
+// import SmokingWomanComponent from './components/ServicesComponent/SmokingWomanComponent'
+// import CoughandColdComponent from './components/ServicesComponent/CoughandColdComponent'
 import OphthalmologyComponent from './components/ServicesComponent/OphthalmologyComponent'
 import NeurologyComponent from './components/ServicesComponent/NeurologyComponent'
 import GynaeComponent from './components/ServicesComponent/GynaeComponent'
@@ -31,23 +40,32 @@ import AboutusComponent from './components/ServicesComponent/AboutusComponent'
 import RegisterComponent from './components/ServicesComponent/RegisterComponent'
 import ContactusComponent from './components/ServicesComponent/ContactusComponent'
 import TermsOfUseComponent from './components/ServicesComponent/TermsOfUseComponent'
-import BlogComponent from './components/ServicesComponent/BlogComponent'
+import BlogComponent from './components/blog/BlogComponent';
 import IvfComponent from './components/ServicesComponent/IvfComponent'
 import PrivacypolicyComponent from './components/ServicesComponent/PrivacypolicyComponent'
-import TeethWhiteningComponent from './components/ServicesComponent/TeethWhiteningComponent'
-import RootCanalComponent from './components/ServicesComponent/RootCanalComponent'
-import DentalComplicationsComponent from './components/ServicesComponent/DentalComplicationsComponent'
+import TeethWhiteningComponent from './components/blog/TeethWhiteningComponent'
+import AcneComponent from './components/blog/AcneComponent'
+import HighBloodPressureComponent from './components/blog/HighBloodPressureComponent'
+import HyperthyroidismComponent from './components/blog/HyperthyroidismComponent'
+import HairLossComponent from './components/blog/HairLossComponent'
+import VitamincBenefitsComponent from './components/blog/VitamincBenefitsComponent'
+import PcosComponent from './components/blog/PcosComponent'
+import LovePetsComponent from './components/blog/LovePetsComponent'
+import OutcomesonPregnancyComponent from './components/blog/OutcomesonPregnancyComponent'
+import RootCanalComponent from './components/blog/RootCanalComponent'
+import DentalComplicationsComponent from './components/blog/DentalComplicationsComponent'
 import PlockrMainComponent from './components/PlockrAppComponent/PlockrMainComponent'
 import PlockrAppComponent from './components/PlockrAppComponent/PlockrAppComponent'
 import PlockrProfileEditComponent from './components/PlockrAppComponent/PlockrProfileEditComponent'
 import SendReportsComponent from './components/PlockrAppComponent/SendReportsComponent'
 import MyComponent from './components/PlockrAppComponent/MyComponent'
-import IntoductoryblogComponent from './components/ServicesComponent/IntoductoryblogComponent'
-import SavetoothblogComponent from './components/ServicesComponent/SavetoothblogComponent'
+import IntoductoryblogComponent from './components/blog/IntoductoryblogComponent'
+import SavetoothblogComponent from './components/blog/SavetoothblogComponent'
 import PrescriptionBuilderComponent from './components/PrescriptionBuilderComponent/PrescriptionBuilderComponent'
 import PrescriptionDashboardComponent from './components/PrescriptionBuilderComponent/PrescriptionDashboardComponent'
 import PlockrUploaderComponent from './components/PlockrAppComponent/UploaderComponent';
-import MentalhealthComponent from './components/ServicesComponent/MentalhealthComponent'
+import SelectedBlog from './components/blog/SelectedBlog'
+import MentalhealthComponent from './components/blog/MentalhealthComponent'
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -69,12 +87,19 @@ export default class App extends React.Component {
             <Route exact path='/profile' component={() => (<DermatologyComponent root={this.root}/>)}/>
             <Route exact path='/dentist' component={() => (<DentistComponent/>)}/>
             <Route exact path='/ent' component={() => (<ENTComponent/>)}/>
-            <Route exact path='/ayurveda' component={() => (<AyurvedaComponent/>)}/>
+            {/* <Route exact path='/ayurveda' component={() => (<AyurvedaComponent/>)}/> */}
             <Route exact path='/dermatology' component={() => (<DermatologyComponent/>)}/>
             <Route exact path='/ophthalmology' component={() => (<OphthalmologyComponent/>)}/>
             <Route exact path='/neurology' component={() => (<NeurologyComponent/>)}/>
             <Route exact path='/gynae' component={() => (<GynaeComponent/>)}/>
             <Route exact path='/psychiatry' component={() => (<PsychiatryComponent />)}/> 
+             <Route exact path='/key-benefits-of-daily-yoga' component={() => (<DailyYogaComponent />)}/> 
+            {/*<Route exact path='/anti-aging' component={() => (<AntiAgingComponent />)}/> 
+            <Route exact path='/allergies-types-causes-and-healthy-tips' component={() => (<AllergiesTypeComponent />)}/> 
+            <Route exact path='/Smoking-woman' component={() => (<SmokingWomanComponent />)}/> 
+            <Route exact path='/ear-infection' component={() => (<EarInfectionComponent />)}/> 
+            <Route exact path='/cough-and-cold' component={() => (<CoughandColdComponent />)}/> 
+            <Route exact path='/arthritis' component={() => (<ArthritisComponent />)}/>  */}
             <Route exact path='/radiology' component={() => (<RadiologyComponent />)}/>
             <Route exact path='/orthopedics' component={() => (<OrthopedicsComponent/>)}/>
             <Route exact path='/physiotherapy' component={() => (<PhysiotherapyComponent/>)}/>
@@ -89,7 +114,7 @@ export default class App extends React.Component {
             <Route exact path='/blog' component={() => (<BlogComponent/>)}/>
             <Route exact path='/ivf' component={() => (<IvfComponent/>)}/>
             <Route exact path='/privacy' component={() => (<PrivacypolicyComponent/>)}/>
-            <Route exact path='/dentalcomplications' component={() => (<DentalComplicationsComponent/>)}/>
+            {/* <Route exact path='/dentalcomplications' component={() => (<DentalComplicationsComponent/>)}/> */}
             <Route exact path='/rootcanal' component={() => (<RootCanalComponent/>)}/>
             <Route exact path='/teethwhitening' component={() => (<TeethWhiteningComponent/>)}/>
             <Route exact path='/plockrapp' component={() => (<PlockrMainComponent/>)}/>
@@ -98,16 +123,27 @@ export default class App extends React.Component {
             <Route exact path='/plockr_profile_edit' render={(props) => <PlockrProfileEditComponent {...props} />}/>
             <Route exact path='/send_reports' render={(props) => <SendReportsComponent {...props}/>}/>
             <Route exact path='/mycomponent' component={() => (<MyComponent/>)}/>
-            <Route exact path='/mentalhealth' component={() => (<MentalhealthComponent/>)}/>
-            <Route exact path='/savetooth' component={() => (<SavetoothblogComponent/>)}/>
+            {/* <Route exact path='/mentalhealth' component={() => (<MentalhealthComponent/>)}/> */}
+            {/* <Route exact path='/savetooth' component={() => (<SavetoothblogComponent/>)}/> */}
             <Route exact path='/prescription_builder' component={() => (<PrescriptionBuilderComponent/>)}/>
             <Route exact path='/prescription-dashboard' render={(props) => <PrescriptionDashboardComponent {...props}/>}/>
-            <Route  path='/an-era-of-a-new-healthcare' component={() => (<IntoductoryblogComponent/>)} />
+            <Route exact path='/selected-blog' render={(props) => <SelectedBlog {...props}/>}/>
+            <Route  path='/pet-love-benefits' component={() => (<LovePetsComponent/>)} />
+             <Route  path='/an-era-of-a-new-healthcare' component={() => (<IntoductoryblogComponent/>)} />
             <Route  path='/mental-health-quick-counselling' component={() => (<MentalhealthComponent/>)}/>
             <Route  path='/save-your-tooth-best-dentist' component={() => (<SavetoothblogComponent/>)}/>
-            <Route  path='/dental-complications-and-healthy-suggestions' component={() => (<DentalComplicationsComponent/>)}/>
-            <Route  path='/dental-care-root-canal-treatment' component={() => (<RootCanalComponent/>)}/>
-            <Route  path='/teeth-whitening-complete-guide' component={() => (<TeethWhiteningComponent/>)}/>
+          <Route  path='/dental-complications-and-healthy-suggestions' component={() => (<DentalComplicationsComponent/>)}/>
+          <Route  path='/how-electronic-gadgets-effects-pregnancy' component={() => (<OutcomesonPregnancyComponent/>)}/> 
+          <Route  path='/dental-care-root-canal-treatment' component={() => (<RootCanalComponent/>)}/> 
+            <Route  path='/teeth-whitening-complete-guide' component={() => (<TeethWhiteningComponent/>)}/> 
+            <Route  path='/myths-and-reality-of-pcos' component={() => (<PcosComponent/>)}/> 
+            <Route  path='/hyperthyroidism' component={() => (<HyperthyroidismComponent/>)}/> 
+            <Route  path='/hair-loss-treatment' component={() => (<HairLossComponent/>)}/> 
+            <Route  path='/vitamin-c-benefits' component={() => (<VitamincBenefitsComponent/>)}/> 
+            <Route  path='/how-to-get-rid-of-acne' component={() => (<AcneComponent/>)}/> 
+            <Route  path='/symptoms-and-treatments-high-blood-pressure' component={() => (<HighBloodPressureComponent/>)}/> 
+            <Route  path='/prementrual-syndrome-preventionsand-guide' component={() => (<PMSComponent/>)}/> 
+
           </Switch>
         </BrowserRouter>
       </div>

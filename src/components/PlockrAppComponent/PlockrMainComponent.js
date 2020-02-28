@@ -15,15 +15,37 @@ class PlockrMainComponent extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleLogout = this.handleLogout.bind(this);
+        this.handlelogout = this.handlelogout.bind(this);
     }
 
-    handleLogout(select) {
-        this.setState({
-            showLogin: select,
-            mobileNo: '',
-            password: ''
-        })
+    handlelogout(e) {
+        e.preventDefault();
+        let token = localStorage.getItem('auth');
+        axios.post('https://plunes.co/v4/user/logout', "", { headers: { "Authorization": `Bearer ${token}`, "Content-Type": "application/json" } })
+            .then((response) => {
+                localStorage.removeItem('auth')
+                localStorage.removeItem('isAuth')
+                localStorage.removeItem('uploaderUserId')
+                localStorage.removeItem('docDetails')
+                this.setState({
+                    showLogin: true,
+                    mobileNo: '',
+                    password: ''
+                })
+
+            })
+            .catch(error => {
+                localStorage.removeItem('auth')
+                localStorage.removeItem('isAuth')
+                localStorage.removeItem('uploaderUserId')
+                localStorage.removeItem('docDetails')
+                this.setState({
+                    showLogin: true,
+                    mobileNo: '',
+                    password: ''
+                })
+                console.log(error, 'error')
+            })
     }
 
     handleSubmit(e) {
@@ -34,13 +56,19 @@ class PlockrMainComponent extends Component {
         }
         axios.post('https://plunes.co/v4/user/login', data)
             .then((res) => {
-                if (res.status === 201) {
+                if (res.status === 201 && res.data.user.userType !== 'User') {
                     localStorage.setItem('isAuth', true)
                     localStorage.setItem('auth', res.data.token)
                     localStorage.setItem('uploaderUserId', res.data.user._id)
                     localStorage.setItem('docDetails', JSON.stringify(res.data.user))
                     this.setState({
                         showLogin: false,
+                    })
+                }else{
+                    this.setState({
+                        failed: true,
+                        mobileNo: '',
+                        password: ''
                     })
                 }
             })
@@ -59,17 +87,12 @@ class PlockrMainComponent extends Component {
         })
     }
 
-
-
-
     async componentDidMount() {
-
         if (localStorage.getItem('isAuth')) {
             this.setState({
                 showLogin: false
             })
         }
-        //console.log('anshul')
         await axios.get('https://plunes.co/v4/catalogue')
             .then((res) => {
                 if (res.status == 201) {
@@ -126,7 +149,7 @@ class PlockrMainComponent extends Component {
                             An Intelligent Cloud Solution allowing you to share all of the Reports or Prescriptions<br></br>
                             with your patients in one click.
                         <br></br>
-                            Unlimited cloud storage for free; Save on all your stationery costs.
+                            Unlimited cloud storage for free; Save on all your stationary costs.
                         </p>
                         <br></br>
                         <div className='row'>
@@ -168,27 +191,51 @@ class PlockrMainComponent extends Component {
                 </div>
             )
         } else {
-            return (<div>
-                <div className='container-fluid'>
-                    <PlockrHeaderComponent />
-                    <div className='row'>
-                        <div className='col-sm-4'></div>
-                        <div className='col-sm-4'>
-                            <button className="prescription-button2"> <a href='/prescription_builder'>Create Prescription</a></button>
+            return (
+                <div>
+                    <div className='container-fluid'>
+                        <div className='container-fluid'>
+                            <div className="navbar navbar-expand-lg navbar-light row">
+                                <div className='col-md-3'>
+                                    <a href="/plockrapp" title='Home'> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
+                                </div>
+                                <div className='col-md-7'>
+                                </div>
+                                {/* <div className='col-md-2 text-right'>
+                        <a href="/prescription_builder">
+                            <button type="button" className="btn builder-button">Create Prescription</button>
+                        </a>
+                    </div> */}
+                                <div className='col-md-2'>
+                                    <button type="button" className="btn logout" onClick={this.handlelogout}>Logout</button>
+                                </div>
+                            </div>
                         </div>
-                        <div className='col-sm-4'></div>
-                    </div>
-                    <div className='row'>
-                        <div className='col-sm-4'></div>
-                        <div className='col-sm-4'>
-                            <button className="prescription-button"><a href='/plockr-dashboard'>Create Diagnostic Reports</a></button>
+                        <div className='row'>
+                            <div className='col'>
+                                <div className='row'>
+                                    <div className='col-sm-2'></div>
+                                    <div className='col-sm-8'>
+                                        <button className="prescription-button2"> <a href='/prescription_builder'>Prescriptions</a></button>
+                                    </div>
+                                    <div className='col-sm-2'></div>
+                                </div>
+                                <div className='row'>
+                                    <div className='col-sm-2'></div>
+                                    <div className='col-sm-8'>
+                                        <button className="prescription-button"><a href='/plockr-dashboard'>Diagnostic Reports</a></button>
+                                    </div>
+                                    <div className='col-sm-2'></div>
+                                </div>
+                            </div>
+                            <div className='col prescription-img'>
+                            <img className="prescription-img1" src="prescription.png" alt=".."/>
+                            </div>
                         </div>
-                        <div className='col-sm-4'></div>
                     </div>
-                </div></div>
+                </div>
             )
         }
-
     }
 }
 

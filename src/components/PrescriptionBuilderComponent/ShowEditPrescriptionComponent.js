@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../PrescriptionBuilderComponent/PrescriptionBuilderComponent'
 import axios from 'axios'
 import { Redirect } from 'react-router-dom';
+import Modal from 'react-modal';
 
 
 class ShowEditPrescriptionComponent extends Component {
@@ -16,7 +17,6 @@ class ShowEditPrescriptionComponent extends Component {
             logoUrl: '',
             signatureUrl: '',
             prescriptionField: [
-                'Prescription',
                 'Diagnosis',
                 'Medicine',
                 'Test',
@@ -30,7 +30,12 @@ class ShowEditPrescriptionComponent extends Component {
             mobileNumber: this.props.doctor.mobileNumber,
             field: '',
             userType: '',
-            showSavePrescription: false
+            showSavePrescription: false,
+            showTextLogo : true,
+            logoText: '',
+            hasLogoUrl : false,
+            showStoreTextLogo : true,
+            showElementForm : false
         }
         this.openModal = this.openModal.bind(this);
         this.afterOpenModal = this.afterOpenModal.bind(this);
@@ -41,6 +46,27 @@ class ShowEditPrescriptionComponent extends Component {
         this.handleTemplateSubmit = this.handleTemplateSubmit.bind(this);
         this.onFileChangeHandlerLogo = this.onFileChangeHandlerLogo.bind(this);
         this.onFileChangeHandlerSignature = this.onFileChangeHandlerSignature.bind(this);
+        this.showElementModal = this.showElementModal.bind(this)
+    }
+
+
+    showElementModal(){
+        console.log('anshul')
+        this.setState({
+            showElementForm :  true
+        })
+    }
+
+    handleLogoImage(){
+        this.setState({
+            showTextLogo : true
+        })
+    }
+
+    handleTextLogo(){
+        this.setState({
+            showTextLogo : false
+        })
     }
 
     onFileChangeHandlerLogo = (e) => {
@@ -104,7 +130,8 @@ class ShowEditPrescriptionComponent extends Component {
                     experience: this.state.experience,
                     signatureUrl: this.state.signatureUrl,
                     address: this.state.address,
-                    otherFields: this.state.prescriptionField
+                    otherFields: this.state.prescriptionField,
+                    logoText: this.state.logoText
                 }
             }
         } else {
@@ -116,7 +143,8 @@ class ShowEditPrescriptionComponent extends Component {
                     experience: this.state.experience,
                     signatureUrl: this.state.signatureUrl,
                     address: this.state.address,
-                    otherFields: this.state.prescriptionField
+                    otherFields: this.state.prescriptionField,
+                    logoText: this.state.logoText
                 }
             }
         }
@@ -148,7 +176,7 @@ class ShowEditPrescriptionComponent extends Component {
         let field = this.state.field;
         this.setState({
             prescriptionField: [...this.state.prescriptionField, field],
-            modalIsOpen: false
+            showElementForm: false
         });
     }
 
@@ -161,7 +189,7 @@ class ShowEditPrescriptionComponent extends Component {
     }
 
     closeModal() {
-        this.setState({ modalIsOpen: false });
+        this.setState({ showElementForm: false });
     }
 
 
@@ -180,27 +208,12 @@ class ShowEditPrescriptionComponent extends Component {
 
 
     componentWillReceiveProps(nextProps){
-//         address: "  Vikas Marg, Sector 47, Gurugram, 122018, Haryana, India"
-// doctorName: "Dr Yogendra Singh Rajput jbbjb"
-// experience: "10"
-// logoUrl: ""
-// otherFields: (5) ["Prescription", "Diagnosis", "Medicine", "Test", "Remarks"]
-// qualification: "MBBS , MD , DM ( CARDIOLOGY)"
-// signatureUrl: ""
-        // this.setState({
-        //     name : this.props.doctor.prescription.doctorName,
-        //     address : this.props.doctor.prescription.address,
-        //     experience : this.props.doctor.prescription.experience,
-        //     education : this.props.doctor.prescription.education
-        // })
-        console.log(this.props.doctor, 'hhhhh');
         this.setState({
             name : nextProps.doctor.prescription.doctorName,
             address : nextProps.doctor.prescription.address,
             experience : nextProps.doctor.prescription.experience,
             education : nextProps.doctor.prescription.qualification
         })
-        console.log(nextProps.doctor , 'jjj')
     }
 
     async componentDidMount() {
@@ -215,21 +228,33 @@ class ShowEditPrescriptionComponent extends Component {
         }
         this.setState({
             address: hospital.address,
-            userType: hospital.userType
+            userType: hospital.userType,
+            
         });
-        console.log(this.props.doctor, 'doctor')
         if(hospital.userType === 'Hospital'){
             this.setState({
                 name : this.props.doctor.prescription.doctorName
             })
         }
+        if(hospital.userType === 'Hospital'){
+            // console.log(hospital.logoUrl, 'logo url')
+            if(hospital.hasOwnProperty('logoUrl') && hospital.logoUrl.length > 0){
+                this.setState({
+                    hasLogoUrl : false,
+                    logoUrl : hospital.logoUrl
+                })
+            }else if(hospital.hasOwnProperty('logoText') && hospital.logoText.length > 0){
+                this.setState({
+                    hasLogoUrl : false,
+                    showStoreTextLogo : false,
+                    logoText : hospital.logoText
+                })
+            }
+        }
     }
 
     render() {
         const { showSavePrescription } = this.state
-        // this.setState({
-        //     docDetails : this.props.doctor
-        // })
         if (showSavePrescription) {
             return <Redirect to={{
                 pathname: '/prescription-dashboard',
@@ -239,11 +264,10 @@ class ShowEditPrescriptionComponent extends Component {
         return (
             <div>
             <div className='container-fluid createBuilder'>
-                {/* <Modal
+                <Modal
                     isOpen={this.state.modalIsOpen}
                     onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.closeModal}
-                    style={customStyles}
                     contentLabel="Example Modal"
                 >
                     <h2 >Please add element</h2>
@@ -252,16 +276,38 @@ class ShowEditPrescriptionComponent extends Component {
                         <input name='field' onChange={this.handleChange} />
                         <button type='submit'>Submit</button>
                     </form>
-                </Modal> */}
+                </Modal>
                 <form onSubmit={this.handleTemplateSubmit}>
                     <div className='row'>
                         <div className='col'>
-                            <div>
-                                <label htmlFor="files" className="btn uploadBtn1">Upload Logo</label>
-                                <span>{this.state.fileNameLogo}</span>
-                                <input className="form-control" id="files" style={{ visibility: "hidden" }} className='inputLogo' type="file" name='file' onChange={this.onFileChangeHandlerLogo} />
+                            {
+                                this.state.hasLogoUrl ?  
+                                <div>
+                                    <span>
+                                        <button type="button" className="btn btn-link textLogo" onClick={this.handleTextLogo}>Add Text Logo /</button>
+                                        <button type="button" className="btn btn-link" onClick={this.handleLogoImage}>Upload Logo</button>
+                                    </span>
+                                {
+                                    this.state.showTextLogo ?  <div className='uploadLogoDiv'>
+                                    <label htmlFor="files" className="btn uploadBtn1">Upload Logo</label>
+                                    <span>{this.state.fileNameLogo}</span>
+                                    <input id="files" style={{ visibility: "hidden" }} className='inputLogo' type="file" name='file' onChange={this.onFileChangeHandlerLogo} />
+                                    </div> : <div><input className="form-control noBorder doctorname" name='logoText' placeholder='Please Enter Text Logo'  onChange={this.handleChange}/></div> 
+                                } 
+                                </div> 
+                                : <div>
+                                {
+                                    this.state.showStoreTextLogo ? <div>
+                                    <img className='imageClass' src={this.state.logoUrl} alt='No Image'></img>
+                                    </div> 
+                                    : <div className="show-edit-prescription-logo">
+                                        <input className="noBorderLogoText" name='logoText' value={this.state.logoText || ''} onChange={this.handleChange} />
+                                        {/* <b>{this.state.logoText}</b> */}
+                                    </div>
+                                }
                             </div>
-                            <div className='row age'>
+                           }
+                            <div className='row age editage'>
                               <span>  Experience:
                                     <input className="noBorder2" name='experience' value={this.state.experience || ''} onChange={this.handleChange} />
                                     <span>Years</span>
@@ -269,7 +315,7 @@ class ShowEditPrescriptionComponent extends Component {
                             </div>
                         </div>
                         <div className='col'>
-                            <div className='row age'>
+                            <div className='row age editrow1col2'>
                                 <div className='col' >
                                     <input className="form-control noBorder doctorname" name='name' onChange={this.handleChange} value={this.state.name || ''} />
                                     <input className="form-control noBorder address" name='education' onChange={this.handleChange} value={this.state.education || ''} />
@@ -283,7 +329,7 @@ class ShowEditPrescriptionComponent extends Component {
                             <div><p>Name </p></div>
                             <div>Gender</div>
                         </div>
-                        <div className='col userAge'>
+                        <div className='col userAge edituserAge'>
                             <div><p>Age </p></div>
                             <div><p>Date</p></div>
                         </div>
@@ -295,9 +341,19 @@ class ShowEditPrescriptionComponent extends Component {
                             ))
                         }
                     </ul>
-                    {/* <div className='row' className='addField'>
-                       <button className="add-field" type='button' onClick={this.openModal}><span><img className="add-png" src="/add.png"/>Add Field</span></button>
-                    </div> */}
+                    <div className='row' className='addField'>
+                       <button className="add-field" type='button' onClick={this.showElementModal}><span><img className="add-png" src="/add.png"/>Add Field</span></button>
+                       {
+                            this.state.showElementForm ? <div>
+                                 
+                            <div className="showElementModal-form" onSubmit={this.handleInputSubmit}>
+                                <input className="showElementModal-input"  name='field' onChange={this.handleChange} placeholder='Advice :'/>
+                                <button className="showElementModal-btn" onClick={this.closeModal}><img src="/Path18.svg"></img></button>
+                                <button className="showElementModal-btn" type='submit' onClick = {this.handleInputSubmit}><img src="/Path17.svg"></img></button>
+                            </div>
+                            </div> : false
+                        }                  
+                    </div>
                     <br></br>
                     <br></br>
                     <div className='row'>

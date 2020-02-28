@@ -27,9 +27,6 @@ class PrescriptionBuilderComponent extends Component {
             forDoctor: false,
             docUserDetails: {}
         }
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleChange = this.handleChange.bind(this);
-        this.handlelogout = this.handlelogout.bind(this);
         this.handleSelection = this.handleSelection.bind(this)
         this.handleClick = this.handleClick.bind(this);
     }
@@ -46,22 +43,6 @@ class PrescriptionBuilderComponent extends Component {
     }
 
 
-    handlelogout(e) {
-        e.preventDefault();
-        let token = localStorage.getItem('docAuth');
-        axios.post('https://plunes.co/v4/user/logout', "", { headers: { "Authorization": `Bearer ${token}`, "Content-Type": "application/json" } })
-            .then((response) => {
-                localStorage.removeItem('docAuth')
-                localStorage.removeItem('docDetails')
-                this.setState({
-                    showNumber: false,
-                    showLogin: true
-                })
-            })
-            .catch(error => {
-                console.log(error, 'error')
-            })
-    }
 
     getDocDetails() {
         return new Promise(function (resolve, reject) {
@@ -90,40 +71,6 @@ class PrescriptionBuilderComponent extends Component {
 
     }
 
-    handleChange(e) {
-        this.setState({
-            [e.target.name]: e.target.value.trim()
-        })
-    }
-
-
-    handleSubmit(e) {
-        e.preventDefault();
-        let data = {
-            mobileNumber: this.state.mobileNo,
-            password: this.state.password
-        }
-        axios.post('https://plunes.co/v4/user/login', data)
-            .then((res) => {
-                // console.log(res.status)
-                if (res.status === 201) {
-                    localStorage.setItem('isAuth', true)
-                    localStorage.setItem('docAuth', res.data.token)
-                    localStorage.setItem('docDetails', JSON.stringify(res.data.user))
-                    this.setState({
-                        showLogin: false,
-                    })
-                }
-            })
-            .catch((e) => {
-                this.setState({
-                    failed: true,
-                    mobileNo: '',
-                    password: ''
-                })
-            })
-    }
-    
 
     render() {
         const { forDoctor } = this.state

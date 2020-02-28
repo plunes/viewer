@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import '../PrescriptionBuilderComponent/PrescriptionBuilderComponent.css'
 import AvatarEditor from 'react-avatar-editor'
+
 class SendPrescriptionComponent extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +16,8 @@ class SendPrescriptionComponent extends Component {
             otherFields: [],
             patientAge : '',
             patientGender: '',
-            docId : ''
+            docId : '',
+            showLogoText : true
         }
         this.myRef = React.createRef();
         this.handleChange = this.handleChange.bind(this);
@@ -50,15 +52,20 @@ class SendPrescriptionComponent extends Component {
         let array = [];
         let state = this.state;
         var obj = {};
+        // console.log(this.state, 'state');
         for (var key in state) {
             if (key !== 'docId' && key !== 'patientGender'  && key !== 'patientMobileNumber' && key !== 'patientAge' && key !== 'patientDetails' && key !== 'prescriptionDocDetails' && key !== 'patientName' && key !== 'date' && key !== 'disable' && key !== 'otherFields') {
-                obj[key] = state[key];
+               let data = {
+                   [key] : state[key]
+               }
+               array.push(data)
             }
         }
         obj['patientName'] = this.state.patientName;
         obj['patientGender'] = this.state.patientGender;
         obj['patientAge'] = this.state.patientAge;
         obj['date'] = this.state.date;
+        obj['fields'] = array
         let data = {};
         let userDoc = JSON.parse(localStorage.getItem('docDetails'));
         // console.log(obj, 'userDoc' )
@@ -77,9 +84,8 @@ class SendPrescriptionComponent extends Component {
                 doctorId : this.state.docId
             }
         }
-        console.log(data, "data")
         let token = localStorage.getItem('auth')
-        axios.post('https://plunes.co/v4/prescription', data, { headers: { "Authorization": `Bearer ${token}` } })
+        axios.post('https://plunes.co/v4/prescription/test', data, { headers: { "Authorization": `Bearer ${token}` } })
             .then((res) => {
                 if(res.data.success){
                     this.props.handleSentPrescription(true)
@@ -146,6 +152,12 @@ class SendPrescriptionComponent extends Component {
         this.setState({
             prescriptionDocDetails: this.props.doctor.prescription,
             docId: this.props.doctor._id
+        }, () => {
+        if(this.state.prescriptionDocDetails.hasOwnProperty('logoText') && this.state.prescriptionDocDetails.logoText.length > 0){
+            this.setState({
+                showLogoText : false
+            })
+        }
         })
         let d = new Date();
         let day = d.getDate();
@@ -166,15 +178,6 @@ class SendPrescriptionComponent extends Component {
                           <div className='col-sm-2'></div>
                             <div className='col-sm-6 enter-patient-no'>
                                 <span className="form-group">
-                                {/* <AvatarEditor
-        image="/blog2.png"
-        width={250}
-        height={250}
-        border={50}
-        color={[255, 255, 255, 0.6]} 
-        scale={1.2}
-        rotate={0}
-      /> */}
                                     <input className="show-prescription-input" type="nunmber" name='patientMobileNumber' value={this.state.patientMobileNumber || ''}  placeholder='Enter Patient Number' className="form-control" onChange={this.handleChange} />
                                 </span>
                             </div>
@@ -189,12 +192,15 @@ class SendPrescriptionComponent extends Component {
                 <div className='createBuilder'>
                     <div className='row age send-prescription-div'>
                         <div className='col'>
-                            <div>
+                            {
+                                this.state.showLogoText ? <div>
                                 <img className='imageClass' src={this.state.prescriptionDocDetails.logoUrl} alt='No Image'></img>
-                            </div>
+                            </div> : <div className="send-prescription-logo" ><b>{this.state.prescriptionDocDetails.logoText}</b></div>
+                            }
+                            
                             <br></br>
                             <div>
-                                Experience : {this.state.prescriptionDocDetails.experience} Years                            </div>
+                                Experience : {this.state.prescriptionDocDetails.experience} Years</div>
                         </div>
                         <div className='col'>
                             <div>

@@ -21,7 +21,7 @@ function _defineProperties(target, props) {
   }
 }
 
-function _createClass(Constructor, protoProps, staticProps) {
+function _createclass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
@@ -45,10 +45,10 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
+function _inheritsLoose(subclass, superclass) {
+  subclass.prototype = Object.create(superclass.prototype);
+  subclass.prototype.constructor = subclass;
+  subclass.__proto__ = superclass;
 }
 
 /**
@@ -219,13 +219,13 @@ var Alert = function ($$$1) {
     CLOSED: "closed" + EVENT_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   };
-  var ClassName = {
+  var className = {
     ALERT: 'alert',
     FADE: 'fade',
     SHOW: 'show'
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -271,7 +271,7 @@ var Alert = function ($$$1) {
       }
 
       if (!parent) {
-        parent = $$$1(element).closest("." + ClassName.ALERT)[0];
+        parent = $$$1(element).closest("." + className.ALERT)[0];
       }
 
       return parent;
@@ -286,9 +286,9 @@ var Alert = function ($$$1) {
     _proto._removeElement = function _removeElement(element) {
       var _this = this;
 
-      $$$1(element).removeClass(ClassName.SHOW);
+      $$$1(element).removeclass(className.SHOW);
 
-      if (!Util.supportsTransitionEnd() || !$$$1(element).hasClass(ClassName.FADE)) {
+      if (!Util.supportsTransitionEnd() || !$$$1(element).hasclass(className.FADE)) {
         this._destroyElement(element);
 
         return;
@@ -330,7 +330,7 @@ var Alert = function ($$$1) {
       };
     };
 
-    _createClass(Alert, null, [{
+    _createclass(Alert, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION;
@@ -382,7 +382,7 @@ var Button = function ($$$1) {
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
   var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
-  var ClassName = {
+  var className = {
     ACTIVE: 'active',
     BUTTON: 'btn',
     FOCUS: 'focus'
@@ -399,7 +399,7 @@ var Button = function ($$$1) {
     FOCUS_BLUR_DATA_API: "focus" + EVENT_KEY + DATA_API_KEY + " " + ("blur" + EVENT_KEY + DATA_API_KEY)
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -426,13 +426,13 @@ var Button = function ($$$1) {
 
         if (input) {
           if (input.type === 'radio') {
-            if (input.checked && $$$1(this._element).hasClass(ClassName.ACTIVE)) {
+            if (input.checked && $$$1(this._element).hasclass(className.ACTIVE)) {
               triggerChangeEvent = false;
             } else {
               var activeElement = $$$1(rootElement).find(Selector.ACTIVE)[0];
 
               if (activeElement) {
-                $$$1(activeElement).removeClass(ClassName.ACTIVE);
+                $$$1(activeElement).removeclass(className.ACTIVE);
               }
             }
           }
@@ -442,7 +442,7 @@ var Button = function ($$$1) {
               return;
             }
 
-            input.checked = !$$$1(this._element).hasClass(ClassName.ACTIVE);
+            input.checked = !$$$1(this._element).hasclass(className.ACTIVE);
             $$$1(input).trigger('change');
           }
 
@@ -452,11 +452,11 @@ var Button = function ($$$1) {
       }
 
       if (addAriaPressed) {
-        this._element.setAttribute('aria-pressed', !$$$1(this._element).hasClass(ClassName.ACTIVE));
+        this._element.setAttribute('aria-pressed', !$$$1(this._element).hasclass(className.ACTIVE));
       }
 
       if (triggerChangeEvent) {
-        $$$1(this._element).toggleClass(ClassName.ACTIVE);
+        $$$1(this._element).toggleclass(className.ACTIVE);
       }
     };
 
@@ -481,7 +481,7 @@ var Button = function ($$$1) {
       });
     };
 
-    _createClass(Button, null, [{
+    _createclass(Button, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION;
@@ -500,14 +500,14 @@ var Button = function ($$$1) {
     event.preventDefault();
     var button = event.target;
 
-    if (!$$$1(button).hasClass(ClassName.BUTTON)) {
+    if (!$$$1(button).hasclass(className.BUTTON)) {
       button = $$$1(button).closest(Selector.BUTTON);
     }
 
     Button._jQueryInterface.call($$$1(button), 'toggle');
   }).on(Event.FOCUS_BLUR_DATA_API, Selector.DATA_TOGGLE_CARROT, function (event) {
     var button = $$$1(event.target).closest(Selector.BUTTON)[0];
-    $$$1(button).toggleClass(ClassName.FOCUS, /^focus(in)?$/.test(event.type));
+    $$$1(button).toggleclass(className.FOCUS, /^focus(in)?$/.test(event.type));
   });
   /**
    * ------------------------------------------------------------------------
@@ -582,7 +582,7 @@ var Carousel = function ($$$1) {
     LOAD_DATA_API: "load" + EVENT_KEY + DATA_API_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   };
-  var ClassName = {
+  var className = {
     CAROUSEL: 'carousel',
     ACTIVE: 'active',
     SLIDE: 'slide',
@@ -602,7 +602,7 @@ var Carousel = function ($$$1) {
     DATA_RIDE: '[data-ride="carousel"]'
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -826,12 +826,12 @@ var Carousel = function ($$$1) {
 
     _proto._setActiveIndicatorElement = function _setActiveIndicatorElement(element) {
       if (this._indicatorsElement) {
-        $$$1(this._indicatorsElement).find(Selector.ACTIVE).removeClass(ClassName.ACTIVE);
+        $$$1(this._indicatorsElement).find(Selector.ACTIVE).removeclass(className.ACTIVE);
 
         var nextIndicator = this._indicatorsElement.children[this._getItemIndex(element)];
 
         if (nextIndicator) {
-          $$$1(nextIndicator).addClass(ClassName.ACTIVE);
+          $$$1(nextIndicator).addclass(className.ACTIVE);
         }
       }
     };
@@ -848,21 +848,21 @@ var Carousel = function ($$$1) {
       var nextElementIndex = this._getItemIndex(nextElement);
 
       var isCycling = Boolean(this._interval);
-      var directionalClassName;
-      var orderClassName;
+      var directionalclassName;
+      var orderclassName;
       var eventDirectionName;
 
       if (direction === Direction.NEXT) {
-        directionalClassName = ClassName.LEFT;
-        orderClassName = ClassName.NEXT;
+        directionalclassName = className.LEFT;
+        orderclassName = className.NEXT;
         eventDirectionName = Direction.LEFT;
       } else {
-        directionalClassName = ClassName.RIGHT;
-        orderClassName = ClassName.PREV;
+        directionalclassName = className.RIGHT;
+        orderclassName = className.PREV;
         eventDirectionName = Direction.RIGHT;
       }
 
-      if (nextElement && $$$1(nextElement).hasClass(ClassName.ACTIVE)) {
+      if (nextElement && $$$1(nextElement).hasclass(className.ACTIVE)) {
         this._isSliding = false;
         return;
       }
@@ -893,22 +893,22 @@ var Carousel = function ($$$1) {
         to: nextElementIndex
       });
 
-      if (Util.supportsTransitionEnd() && $$$1(this._element).hasClass(ClassName.SLIDE)) {
-        $$$1(nextElement).addClass(orderClassName);
+      if (Util.supportsTransitionEnd() && $$$1(this._element).hasclass(className.SLIDE)) {
+        $$$1(nextElement).addclass(orderclassName);
         Util.reflow(nextElement);
-        $$$1(activeElement).addClass(directionalClassName);
-        $$$1(nextElement).addClass(directionalClassName);
+        $$$1(activeElement).addclass(directionalclassName);
+        $$$1(nextElement).addclass(directionalclassName);
         $$$1(activeElement).one(Util.TRANSITION_END, function () {
-          $$$1(nextElement).removeClass(directionalClassName + " " + orderClassName).addClass(ClassName.ACTIVE);
-          $$$1(activeElement).removeClass(ClassName.ACTIVE + " " + orderClassName + " " + directionalClassName);
+          $$$1(nextElement).removeclass(directionalclassName + " " + orderclassName).addclass(className.ACTIVE);
+          $$$1(activeElement).removeclass(className.ACTIVE + " " + orderclassName + " " + directionalclassName);
           _this3._isSliding = false;
           setTimeout(function () {
             return $$$1(_this3._element).trigger(slidEvent);
           }, 0);
         }).emulateTransitionEnd(TRANSITION_DURATION);
       } else {
-        $$$1(activeElement).removeClass(ClassName.ACTIVE);
-        $$$1(nextElement).addClass(ClassName.ACTIVE);
+        $$$1(activeElement).removeclass(className.ACTIVE);
+        $$$1(nextElement).addclass(className.ACTIVE);
         this._isSliding = false;
         $$$1(this._element).trigger(slidEvent);
       }
@@ -960,7 +960,7 @@ var Carousel = function ($$$1) {
 
       var target = $$$1(selector)[0];
 
-      if (!target || !$$$1(target).hasClass(ClassName.CAROUSEL)) {
+      if (!target || !$$$1(target).hasclass(className.CAROUSEL)) {
         return;
       }
 
@@ -980,7 +980,7 @@ var Carousel = function ($$$1) {
       event.preventDefault();
     };
 
-    _createClass(Carousel, null, [{
+    _createclass(Carousel, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION;
@@ -1060,7 +1060,7 @@ var Collapse = function ($$$1) {
     HIDDEN: "hidden" + EVENT_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   };
-  var ClassName = {
+  var className = {
     SHOW: 'show',
     COLLAPSE: 'collapse',
     COLLAPSING: 'collapsing',
@@ -1075,7 +1075,7 @@ var Collapse = function ($$$1) {
     DATA_TOGGLE: '[data-toggle="collapse"]'
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -1105,7 +1105,7 @@ var Collapse = function ($$$1) {
       this._parent = this._config.parent ? this._getParent() : null;
 
       if (!this._config.parent) {
-        this._addAriaAndCollapsedClass(this._element, this._triggerArray);
+        this._addAriaAndCollapsedclass(this._element, this._triggerArray);
       }
 
       if (this._config.toggle) {
@@ -1118,7 +1118,7 @@ var Collapse = function ($$$1) {
 
     // Public
     _proto.toggle = function toggle() {
-      if ($$$1(this._element).hasClass(ClassName.SHOW)) {
+      if ($$$1(this._element).hasclass(className.SHOW)) {
         this.hide();
       } else {
         this.show();
@@ -1128,7 +1128,7 @@ var Collapse = function ($$$1) {
     _proto.show = function show() {
       var _this = this;
 
-      if (this._isTransitioning || $$$1(this._element).hasClass(ClassName.SHOW)) {
+      if (this._isTransitioning || $$$1(this._element).hasclass(className.SHOW)) {
         return;
       }
 
@@ -1168,17 +1168,17 @@ var Collapse = function ($$$1) {
 
       var dimension = this._getDimension();
 
-      $$$1(this._element).removeClass(ClassName.COLLAPSE).addClass(ClassName.COLLAPSING);
+      $$$1(this._element).removeclass(className.COLLAPSE).addclass(className.COLLAPSING);
       this._element.style[dimension] = 0;
 
       if (this._triggerArray.length > 0) {
-        $$$1(this._triggerArray).removeClass(ClassName.COLLAPSED).attr('aria-expanded', true);
+        $$$1(this._triggerArray).removeclass(className.COLLAPSED).attr('aria-expanded', true);
       }
 
       this.setTransitioning(true);
 
       var complete = function complete() {
-        $$$1(_this._element).removeClass(ClassName.COLLAPSING).addClass(ClassName.COLLAPSE).addClass(ClassName.SHOW);
+        $$$1(_this._element).removeclass(className.COLLAPSING).addclass(className.COLLAPSE).addclass(className.SHOW);
         _this._element.style[dimension] = '';
 
         _this.setTransitioning(false);
@@ -1200,7 +1200,7 @@ var Collapse = function ($$$1) {
     _proto.hide = function hide() {
       var _this2 = this;
 
-      if (this._isTransitioning || !$$$1(this._element).hasClass(ClassName.SHOW)) {
+      if (this._isTransitioning || !$$$1(this._element).hasclass(className.SHOW)) {
         return;
       }
 
@@ -1215,7 +1215,7 @@ var Collapse = function ($$$1) {
 
       this._element.style[dimension] = this._element.getBoundingClientRect()[dimension] + "px";
       Util.reflow(this._element);
-      $$$1(this._element).addClass(ClassName.COLLAPSING).removeClass(ClassName.COLLAPSE).removeClass(ClassName.SHOW);
+      $$$1(this._element).addclass(className.COLLAPSING).removeclass(className.COLLAPSE).removeclass(className.SHOW);
 
       if (this._triggerArray.length > 0) {
         for (var i = 0; i < this._triggerArray.length; i++) {
@@ -1225,8 +1225,8 @@ var Collapse = function ($$$1) {
           if (selector !== null) {
             var $elem = $$$1(selector);
 
-            if (!$elem.hasClass(ClassName.SHOW)) {
-              $$$1(trigger).addClass(ClassName.COLLAPSED).attr('aria-expanded', false);
+            if (!$elem.hasclass(className.SHOW)) {
+              $$$1(trigger).addclass(className.COLLAPSED).attr('aria-expanded', false);
             }
           }
         }
@@ -1237,7 +1237,7 @@ var Collapse = function ($$$1) {
       var complete = function complete() {
         _this2.setTransitioning(false);
 
-        $$$1(_this2._element).removeClass(ClassName.COLLAPSING).addClass(ClassName.COLLAPSE).trigger(Event.HIDDEN);
+        $$$1(_this2._element).removeclass(className.COLLAPSING).addclass(className.COLLAPSE).trigger(Event.HIDDEN);
       };
 
       this._element.style[dimension] = '';
@@ -1273,7 +1273,7 @@ var Collapse = function ($$$1) {
     };
 
     _proto._getDimension = function _getDimension() {
-      var hasWidth = $$$1(this._element).hasClass(Dimension.WIDTH);
+      var hasWidth = $$$1(this._element).hasclass(Dimension.WIDTH);
       return hasWidth ? Dimension.WIDTH : Dimension.HEIGHT;
     };
 
@@ -1294,17 +1294,17 @@ var Collapse = function ($$$1) {
 
       var selector = "[data-toggle=\"collapse\"][data-parent=\"" + this._config.parent + "\"]";
       $$$1(parent).find(selector).each(function (i, element) {
-        _this3._addAriaAndCollapsedClass(Collapse._getTargetFromElement(element), [element]);
+        _this3._addAriaAndCollapsedclass(Collapse._getTargetFromElement(element), [element]);
       });
       return parent;
     };
 
-    _proto._addAriaAndCollapsedClass = function _addAriaAndCollapsedClass(element, triggerArray) {
+    _proto._addAriaAndCollapsedclass = function _addAriaAndCollapsedclass(element, triggerArray) {
       if (element) {
-        var isOpen = $$$1(element).hasClass(ClassName.SHOW);
+        var isOpen = $$$1(element).hasclass(className.SHOW);
 
         if (triggerArray.length > 0) {
-          $$$1(triggerArray).toggleClass(ClassName.COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
+          $$$1(triggerArray).toggleclass(className.COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
         }
       }
     }; // Static
@@ -1341,7 +1341,7 @@ var Collapse = function ($$$1) {
       });
     };
 
-    _createClass(Collapse, null, [{
+    _createclass(Collapse, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION;
@@ -1740,7 +1740,7 @@ var classCallCheck = function (instance, Constructor) {
   }
 };
 
-var createClass = function () {
+var createclass = function () {
   function defineProperties(target, props) {
     for (var i = 0; i < props.length; i++) {
       var descriptor = props[i];
@@ -3755,7 +3755,7 @@ var Popper = function () {
   // class prototype and break stuff like Sinon stubs
 
 
-  createClass(Popper, [{
+  createclass(Popper, [{
     key: 'update',
     value: function update$$1() {
       return update.call(this);
@@ -3871,7 +3871,7 @@ var Dropdown = function ($$$1) {
     KEYDOWN_DATA_API: "keydown" + EVENT_KEY + DATA_API_KEY,
     KEYUP_DATA_API: "keyup" + EVENT_KEY + DATA_API_KEY
   };
-  var ClassName = {
+  var className = {
     DISABLED: 'disabled',
     SHOW: 'show',
     DROPUP: 'dropup',
@@ -3909,7 +3909,7 @@ var Dropdown = function ($$$1) {
     boundary: '(string|element)'
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -3933,13 +3933,13 @@ var Dropdown = function ($$$1) {
 
     // Public
     _proto.toggle = function toggle() {
-      if (this._element.disabled || $$$1(this._element).hasClass(ClassName.DISABLED)) {
+      if (this._element.disabled || $$$1(this._element).hasclass(className.DISABLED)) {
         return;
       }
 
       var parent = Dropdown._getParentFromElement(this._element);
 
-      var isActive = $$$1(this._menu).hasClass(ClassName.SHOW);
+      var isActive = $$$1(this._menu).hasclass(className.SHOW);
 
       Dropdown._clearMenus();
 
@@ -3969,8 +3969,8 @@ var Dropdown = function ($$$1) {
 
         var element = this._element; // For dropup with alignment we use the parent as popper container
 
-        if ($$$1(parent).hasClass(ClassName.DROPUP)) {
-          if ($$$1(this._menu).hasClass(ClassName.MENULEFT) || $$$1(this._menu).hasClass(ClassName.MENURIGHT)) {
+        if ($$$1(parent).hasclass(className.DROPUP)) {
+          if ($$$1(this._menu).hasclass(className.MENULEFT) || $$$1(this._menu).hasclass(className.MENURIGHT)) {
             element = parent;
           }
         } // If boundary is not `scrollParent`, then set position to `static`
@@ -3979,7 +3979,7 @@ var Dropdown = function ($$$1) {
 
 
         if (this._config.boundary !== 'scrollParent') {
-          $$$1(parent).addClass(ClassName.POSITION_STATIC);
+          $$$1(parent).addclass(className.POSITION_STATIC);
         }
 
         this._popper = new Popper(element, this._menu, this._getPopperConfig());
@@ -3997,8 +3997,8 @@ var Dropdown = function ($$$1) {
 
       this._element.setAttribute('aria-expanded', true);
 
-      $$$1(this._menu).toggleClass(ClassName.SHOW);
-      $$$1(parent).toggleClass(ClassName.SHOW).trigger($$$1.Event(Event.SHOWN, relatedTarget));
+      $$$1(this._menu).toggleclass(className.SHOW);
+      $$$1(parent).toggleclass(className.SHOW).trigger($$$1.Event(Event.SHOWN, relatedTarget));
     };
 
     _proto.dispose = function dispose() {
@@ -4054,17 +4054,17 @@ var Dropdown = function ($$$1) {
       var $parentDropdown = $$$1(this._element).parent();
       var placement = AttachmentMap.BOTTOM; // Handle dropup
 
-      if ($parentDropdown.hasClass(ClassName.DROPUP)) {
+      if ($parentDropdown.hasclass(className.DROPUP)) {
         placement = AttachmentMap.TOP;
 
-        if ($$$1(this._menu).hasClass(ClassName.MENURIGHT)) {
+        if ($$$1(this._menu).hasclass(className.MENURIGHT)) {
           placement = AttachmentMap.TOPEND;
         }
-      } else if ($parentDropdown.hasClass(ClassName.DROPRIGHT)) {
+      } else if ($parentDropdown.hasclass(className.DROPRIGHT)) {
         placement = AttachmentMap.RIGHT;
-      } else if ($parentDropdown.hasClass(ClassName.DROPLEFT)) {
+      } else if ($parentDropdown.hasclass(className.DROPLEFT)) {
         placement = AttachmentMap.LEFT;
-      } else if ($$$1(this._menu).hasClass(ClassName.MENURIGHT)) {
+      } else if ($$$1(this._menu).hasclass(className.MENURIGHT)) {
         placement = AttachmentMap.BOTTOMEND;
       }
 
@@ -4147,7 +4147,7 @@ var Dropdown = function ($$$1) {
 
         var dropdownMenu = context._menu;
 
-        if (!$$$1(parent).hasClass(ClassName.SHOW)) {
+        if (!$$$1(parent).hasclass(className.SHOW)) {
           continue;
         }
 
@@ -4169,8 +4169,8 @@ var Dropdown = function ($$$1) {
         }
 
         toggles[i].setAttribute('aria-expanded', 'false');
-        $$$1(dropdownMenu).removeClass(ClassName.SHOW);
-        $$$1(parent).removeClass(ClassName.SHOW).trigger($$$1.Event(Event.HIDDEN, relatedTarget));
+        $$$1(dropdownMenu).removeclass(className.SHOW);
+        $$$1(parent).removeclass(className.SHOW).trigger($$$1.Event(Event.HIDDEN, relatedTarget));
       }
     };
 
@@ -4201,13 +4201,13 @@ var Dropdown = function ($$$1) {
       event.preventDefault();
       event.stopPropagation();
 
-      if (this.disabled || $$$1(this).hasClass(ClassName.DISABLED)) {
+      if (this.disabled || $$$1(this).hasclass(className.DISABLED)) {
         return;
       }
 
       var parent = Dropdown._getParentFromElement(this);
 
-      var isActive = $$$1(parent).hasClass(ClassName.SHOW);
+      var isActive = $$$1(parent).hasclass(className.SHOW);
 
       if (!isActive && (event.which !== ESCAPE_KEYCODE || event.which !== SPACE_KEYCODE) || isActive && (event.which === ESCAPE_KEYCODE || event.which === SPACE_KEYCODE)) {
         if (event.which === ESCAPE_KEYCODE) {
@@ -4244,7 +4244,7 @@ var Dropdown = function ($$$1) {
       items[index].focus();
     };
 
-    _createClass(Dropdown, null, [{
+    _createclass(Dropdown, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION;
@@ -4342,7 +4342,7 @@ var Modal = function ($$$1) {
     MOUSEDOWN_DISMISS: "mousedown.dismiss" + EVENT_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   };
-  var ClassName = {
+  var className = {
     SCROLLBAR_MEASURER: 'modal-scrollbar-measure',
     BACKDROP: 'modal-backdrop',
     OPEN: 'modal-open',
@@ -4358,7 +4358,7 @@ var Modal = function ($$$1) {
     NAVBAR_TOGGLER: '.navbar-toggler'
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -4394,7 +4394,7 @@ var Modal = function ($$$1) {
         return;
       }
 
-      if (Util.supportsTransitionEnd() && $$$1(this._element).hasClass(ClassName.FADE)) {
+      if (Util.supportsTransitionEnd() && $$$1(this._element).hasclass(className.FADE)) {
         this._isTransitioning = true;
       }
 
@@ -4415,7 +4415,7 @@ var Modal = function ($$$1) {
 
       this._adjustDialog();
 
-      $$$1(document.body).addClass(ClassName.OPEN);
+      $$$1(document.body).addclass(className.OPEN);
 
       this._setEscapeEvent();
 
@@ -4456,7 +4456,7 @@ var Modal = function ($$$1) {
       }
 
       this._isShown = false;
-      var transition = Util.supportsTransitionEnd() && $$$1(this._element).hasClass(ClassName.FADE);
+      var transition = Util.supportsTransitionEnd() && $$$1(this._element).hasclass(className.FADE);
 
       if (transition) {
         this._isTransitioning = true;
@@ -4467,7 +4467,7 @@ var Modal = function ($$$1) {
       this._setResizeEvent();
 
       $$$1(document).off(Event.FOCUSIN);
-      $$$1(this._element).removeClass(ClassName.SHOW);
+      $$$1(this._element).removeclass(className.SHOW);
       $$$1(this._element).off(Event.CLICK_DISMISS);
       $$$1(this._dialog).off(Event.MOUSEDOWN_DISMISS);
 
@@ -4507,7 +4507,7 @@ var Modal = function ($$$1) {
     _proto._showElement = function _showElement(relatedTarget) {
       var _this3 = this;
 
-      var transition = Util.supportsTransitionEnd() && $$$1(this._element).hasClass(ClassName.FADE);
+      var transition = Util.supportsTransitionEnd() && $$$1(this._element).hasclass(className.FADE);
 
       if (!this._element.parentNode || this._element.parentNode.nodeType !== Node.ELEMENT_NODE) {
         // Don't move modal's DOM position
@@ -4524,7 +4524,7 @@ var Modal = function ($$$1) {
         Util.reflow(this._element);
       }
 
-      $$$1(this._element).addClass(ClassName.SHOW);
+      $$$1(this._element).addclass(className.SHOW);
 
       if (this._config.focus) {
         this._enforceFocus();
@@ -4599,7 +4599,7 @@ var Modal = function ($$$1) {
       this._isTransitioning = false;
 
       this._showBackdrop(function () {
-        $$$1(document.body).removeClass(ClassName.OPEN);
+        $$$1(document.body).removeclass(className.OPEN);
 
         _this7._resetAdjustments();
 
@@ -4619,15 +4619,15 @@ var Modal = function ($$$1) {
     _proto._showBackdrop = function _showBackdrop(callback) {
       var _this8 = this;
 
-      var animate = $$$1(this._element).hasClass(ClassName.FADE) ? ClassName.FADE : '';
+      var animate = $$$1(this._element).hasclass(className.FADE) ? className.FADE : '';
 
       if (this._isShown && this._config.backdrop) {
         var doAnimate = Util.supportsTransitionEnd() && animate;
         this._backdrop = document.createElement('div');
-        this._backdrop.className = ClassName.BACKDROP;
+        this._backdrop.className = className.BACKDROP;
 
         if (animate) {
-          $$$1(this._backdrop).addClass(animate);
+          $$$1(this._backdrop).addclass(animate);
         }
 
         $$$1(this._backdrop).appendTo(document.body);
@@ -4652,7 +4652,7 @@ var Modal = function ($$$1) {
           Util.reflow(this._backdrop);
         }
 
-        $$$1(this._backdrop).addClass(ClassName.SHOW);
+        $$$1(this._backdrop).addclass(className.SHOW);
 
         if (!callback) {
           return;
@@ -4665,7 +4665,7 @@ var Modal = function ($$$1) {
 
         $$$1(this._backdrop).one(Util.TRANSITION_END, callback).emulateTransitionEnd(BACKDROP_TRANSITION_DURATION);
       } else if (!this._isShown && this._backdrop) {
-        $$$1(this._backdrop).removeClass(ClassName.SHOW);
+        $$$1(this._backdrop).removeclass(className.SHOW);
 
         var callbackRemove = function callbackRemove() {
           _this8._removeBackdrop();
@@ -4675,7 +4675,7 @@ var Modal = function ($$$1) {
           }
         };
 
-        if (Util.supportsTransitionEnd() && $$$1(this._element).hasClass(ClassName.FADE)) {
+        if (Util.supportsTransitionEnd() && $$$1(this._element).hasclass(className.FADE)) {
           $$$1(this._backdrop).one(Util.TRANSITION_END, callbackRemove).emulateTransitionEnd(BACKDROP_TRANSITION_DURATION);
         } else {
           callbackRemove();
@@ -4771,7 +4771,7 @@ var Modal = function ($$$1) {
     _proto._getScrollbarWidth = function _getScrollbarWidth() {
       // thx d.walsh
       var scrollDiv = document.createElement('div');
-      scrollDiv.className = ClassName.SCROLLBAR_MEASURER;
+      scrollDiv.className = className.SCROLLBAR_MEASURER;
       document.body.appendChild(scrollDiv);
       var scrollbarWidth = scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth;
       document.body.removeChild(scrollDiv);
@@ -4802,7 +4802,7 @@ var Modal = function ($$$1) {
       });
     };
 
-    _createClass(Modal, null, [{
+    _createclass(Modal, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION;
@@ -4889,8 +4889,8 @@ var Tooltip = function ($$$1) {
   var EVENT_KEY = "." + DATA_KEY;
   var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
   var TRANSITION_DURATION = 150;
-  var CLASS_PREFIX = 'bs-tooltip';
-  var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
+  var class_PREFIX = 'bs-tooltip';
+  var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + class_PREFIX + "\\S+", 'g');
   var DefaultType = {
     animation: 'boolean',
     template: 'string',
@@ -4942,7 +4942,7 @@ var Tooltip = function ($$$1) {
     MOUSEENTER: "mouseenter" + EVENT_KEY,
     MOUSELEAVE: "mouseleave" + EVENT_KEY
   };
-  var ClassName = {
+  var className = {
     FADE: 'fade',
     SHOW: 'show'
   };
@@ -4958,7 +4958,7 @@ var Tooltip = function ($$$1) {
     MANUAL: 'manual'
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -5028,7 +5028,7 @@ var Tooltip = function ($$$1) {
           context._leave(null, context);
         }
       } else {
-        if ($$$1(this.getTipElement()).hasClass(ClassName.SHOW)) {
+        if ($$$1(this.getTipElement()).hasclass(className.SHOW)) {
           this._leave(null, this);
 
           return;
@@ -5087,14 +5087,14 @@ var Tooltip = function ($$$1) {
         this.setContent();
 
         if (this.config.animation) {
-          $$$1(tip).addClass(ClassName.FADE);
+          $$$1(tip).addclass(className.FADE);
         }
 
         var placement = typeof this.config.placement === 'function' ? this.config.placement.call(this, tip, this.element) : this.config.placement;
 
         var attachment = this._getAttachment(placement);
 
-        this.addAttachmentClass(attachment);
+        this.addAttachmentclass(attachment);
         var container = this.config.container === false ? document.body : $$$1(this.config.container);
         $$$1(tip).data(this.constructor.DATA_KEY, this);
 
@@ -5128,7 +5128,7 @@ var Tooltip = function ($$$1) {
             _this._handlePopperPlacementChange(data);
           }
         });
-        $$$1(tip).addClass(ClassName.SHOW); // If this is a touch-enabled device we add extra
+        $$$1(tip).addclass(className.SHOW); // If this is a touch-enabled device we add extra
         // empty mouseover listeners to the body's immediate children;
         // only needed because of broken event delegation on iOS
         // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
@@ -5151,7 +5151,7 @@ var Tooltip = function ($$$1) {
           }
         };
 
-        if (Util.supportsTransitionEnd() && $$$1(this.tip).hasClass(ClassName.FADE)) {
+        if (Util.supportsTransitionEnd() && $$$1(this.tip).hasclass(className.FADE)) {
           $$$1(this.tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(Tooltip._TRANSITION_DURATION);
         } else {
           complete();
@@ -5170,7 +5170,7 @@ var Tooltip = function ($$$1) {
           tip.parentNode.removeChild(tip);
         }
 
-        _this2._cleanTipClass();
+        _this2._cleanTipclass();
 
         _this2.element.removeAttribute('aria-describedby');
 
@@ -5191,7 +5191,7 @@ var Tooltip = function ($$$1) {
         return;
       }
 
-      $$$1(tip).removeClass(ClassName.SHOW); // If this is a touch-enabled device we remove the extra
+      $$$1(tip).removeclass(className.SHOW); // If this is a touch-enabled device we remove the extra
       // empty mouseover listeners we added for iOS support
 
       if ('ontouchstart' in document.documentElement) {
@@ -5202,7 +5202,7 @@ var Tooltip = function ($$$1) {
       this._activeTrigger[Trigger.FOCUS] = false;
       this._activeTrigger[Trigger.HOVER] = false;
 
-      if (Util.supportsTransitionEnd() && $$$1(this.tip).hasClass(ClassName.FADE)) {
+      if (Util.supportsTransitionEnd() && $$$1(this.tip).hasclass(className.FADE)) {
         $$$1(tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(TRANSITION_DURATION);
       } else {
         complete();
@@ -5222,8 +5222,8 @@ var Tooltip = function ($$$1) {
       return Boolean(this.getTitle());
     };
 
-    _proto.addAttachmentClass = function addAttachmentClass(attachment) {
-      $$$1(this.getTipElement()).addClass(CLASS_PREFIX + "-" + attachment);
+    _proto.addAttachmentclass = function addAttachmentclass(attachment) {
+      $$$1(this.getTipElement()).addclass(class_PREFIX + "-" + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
@@ -5234,7 +5234,7 @@ var Tooltip = function ($$$1) {
     _proto.setContent = function setContent() {
       var $tip = $$$1(this.getTipElement());
       this.setElementContent($tip.find(Selector.TOOLTIP_INNER), this.getTitle());
-      $tip.removeClass(ClassName.FADE + " " + ClassName.SHOW);
+      $tip.removeclass(className.FADE + " " + className.SHOW);
     };
 
     _proto.setElementContent = function setElementContent($element, content) {
@@ -5325,7 +5325,7 @@ var Tooltip = function ($$$1) {
         context._activeTrigger[event.type === 'focusin' ? Trigger.FOCUS : Trigger.HOVER] = true;
       }
 
-      if ($$$1(context.getTipElement()).hasClass(ClassName.SHOW) || context._hoverState === HoverState.SHOW) {
+      if ($$$1(context.getTipElement()).hasclass(className.SHOW) || context._hoverState === HoverState.SHOW) {
         context._hoverState = HoverState.SHOW;
         return;
       }
@@ -5423,19 +5423,19 @@ var Tooltip = function ($$$1) {
       return config;
     };
 
-    _proto._cleanTipClass = function _cleanTipClass() {
+    _proto._cleanTipclass = function _cleanTipclass() {
       var $tip = $$$1(this.getTipElement());
-      var tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX);
+      var tabclass = $tip.attr('class').match(BSCLS_PREFIX_REGEX);
 
-      if (tabClass !== null && tabClass.length > 0) {
-        $tip.removeClass(tabClass.join(''));
+      if (tabclass !== null && tabclass.length > 0) {
+        $tip.removeclass(tabclass.join(''));
       }
     };
 
     _proto._handlePopperPlacementChange = function _handlePopperPlacementChange(data) {
-      this._cleanTipClass();
+      this._cleanTipclass();
 
-      this.addAttachmentClass(this._getAttachment(data.placement));
+      this.addAttachmentclass(this._getAttachment(data.placement));
     };
 
     _proto._fixTransition = function _fixTransition() {
@@ -5446,7 +5446,7 @@ var Tooltip = function ($$$1) {
         return;
       }
 
-      $$$1(tip).removeClass(ClassName.FADE);
+      $$$1(tip).removeclass(className.FADE);
       this.config.animation = false;
       this.hide();
       this.show();
@@ -5479,7 +5479,7 @@ var Tooltip = function ($$$1) {
       });
     };
 
-    _createClass(Tooltip, null, [{
+    _createclass(Tooltip, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION;
@@ -5553,8 +5553,8 @@ var Popover = function ($$$1) {
   var DATA_KEY = 'bs.popover';
   var EVENT_KEY = "." + DATA_KEY;
   var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
-  var CLASS_PREFIX = 'bs-popover';
-  var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
+  var class_PREFIX = 'bs-popover';
+  var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + class_PREFIX + "\\S+", 'g');
   var Default = _extends({}, Tooltip.Default, {
     placement: 'right',
     trigger: 'click',
@@ -5564,7 +5564,7 @@ var Popover = function ($$$1) {
   var DefaultType = _extends({}, Tooltip.DefaultType, {
     content: '(string|element|function)'
   });
-  var ClassName = {
+  var className = {
     FADE: 'fade',
     SHOW: 'show'
   };
@@ -5585,7 +5585,7 @@ var Popover = function ($$$1) {
     MOUSELEAVE: "mouseleave" + EVENT_KEY
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -5607,8 +5607,8 @@ var Popover = function ($$$1) {
       return this.getTitle() || this._getContent();
     };
 
-    _proto.addAttachmentClass = function addAttachmentClass(attachment) {
-      $$$1(this.getTipElement()).addClass(CLASS_PREFIX + "-" + attachment);
+    _proto.addAttachmentclass = function addAttachmentclass(attachment) {
+      $$$1(this.getTipElement()).addclass(class_PREFIX + "-" + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
@@ -5628,7 +5628,7 @@ var Popover = function ($$$1) {
       }
 
       this.setElementContent($tip.find(Selector.CONTENT), content);
-      $tip.removeClass(ClassName.FADE + " " + ClassName.SHOW);
+      $tip.removeclass(className.FADE + " " + className.SHOW);
     }; // Private
 
 
@@ -5636,12 +5636,12 @@ var Popover = function ($$$1) {
       return this.element.getAttribute('data-content') || this.config.content;
     };
 
-    _proto._cleanTipClass = function _cleanTipClass() {
+    _proto._cleanTipclass = function _cleanTipclass() {
       var $tip = $$$1(this.getTipElement());
-      var tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX);
+      var tabclass = $tip.attr('class').match(BSCLS_PREFIX_REGEX);
 
-      if (tabClass !== null && tabClass.length > 0) {
-        $tip.removeClass(tabClass.join(''));
+      if (tabclass !== null && tabclass.length > 0) {
+        $tip.removeclass(tabclass.join(''));
       }
     }; // Static
 
@@ -5671,7 +5671,7 @@ var Popover = function ($$$1) {
       });
     };
 
-    _createClass(Popover, null, [{
+    _createclass(Popover, null, [{
       key: "VERSION",
       // Getters
       get: function get() {
@@ -5762,7 +5762,7 @@ var ScrollSpy = function ($$$1) {
     SCROLL: "scroll" + EVENT_KEY,
     LOAD_DATA_API: "load" + EVENT_KEY + DATA_API_KEY
   };
-  var ClassName = {
+  var className = {
     DROPDOWN_ITEM: 'dropdown-item',
     DROPDOWN_MENU: 'dropdown-menu',
     ACTIVE: 'active'
@@ -5783,7 +5783,7 @@ var ScrollSpy = function ($$$1) {
     POSITION: 'position'
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -5949,17 +5949,17 @@ var ScrollSpy = function ($$$1) {
       });
       var $link = $$$1(queries.join(','));
 
-      if ($link.hasClass(ClassName.DROPDOWN_ITEM)) {
-        $link.closest(Selector.DROPDOWN).find(Selector.DROPDOWN_TOGGLE).addClass(ClassName.ACTIVE);
-        $link.addClass(ClassName.ACTIVE);
+      if ($link.hasclass(className.DROPDOWN_ITEM)) {
+        $link.closest(Selector.DROPDOWN).find(Selector.DROPDOWN_TOGGLE).addclass(className.ACTIVE);
+        $link.addclass(className.ACTIVE);
       } else {
         // Set triggered link as active
-        $link.addClass(ClassName.ACTIVE); // Set triggered links parents as active
+        $link.addclass(className.ACTIVE); // Set triggered links parents as active
         // With both <ul> and <nav> markup a parent is the previous sibling of any nav ancestor
 
-        $link.parents(Selector.NAV_LIST_GROUP).prev(Selector.NAV_LINKS + ", " + Selector.LIST_ITEMS).addClass(ClassName.ACTIVE); // Handle special case when .nav-link is inside .nav-item
+        $link.parents(Selector.NAV_LIST_GROUP).prev(Selector.NAV_LINKS + ", " + Selector.LIST_ITEMS).addclass(className.ACTIVE); // Handle special case when .nav-link is inside .nav-item
 
-        $link.parents(Selector.NAV_LIST_GROUP).prev(Selector.NAV_ITEMS).children(Selector.NAV_LINKS).addClass(ClassName.ACTIVE);
+        $link.parents(Selector.NAV_LIST_GROUP).prev(Selector.NAV_ITEMS).children(Selector.NAV_LINKS).addclass(className.ACTIVE);
       }
 
       $$$1(this._scrollElement).trigger(Event.ACTIVATE, {
@@ -5968,7 +5968,7 @@ var ScrollSpy = function ($$$1) {
     };
 
     _proto._clear = function _clear() {
-      $$$1(this._selector).filter(Selector.ACTIVE).removeClass(ClassName.ACTIVE);
+      $$$1(this._selector).filter(Selector.ACTIVE).removeclass(className.ACTIVE);
     }; // Static
 
 
@@ -5993,7 +5993,7 @@ var ScrollSpy = function ($$$1) {
       });
     };
 
-    _createClass(ScrollSpy, null, [{
+    _createclass(ScrollSpy, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION;
@@ -6066,7 +6066,7 @@ var Tab = function ($$$1) {
     SHOWN: "shown" + EVENT_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   };
-  var ClassName = {
+  var className = {
     DROPDOWN_MENU: 'dropdown-menu',
     ACTIVE: 'active',
     DISABLED: 'disabled',
@@ -6083,7 +6083,7 @@ var Tab = function ($$$1) {
     DROPDOWN_ACTIVE_CHILD: '> .dropdown-menu .active'
     /**
      * ------------------------------------------------------------------------
-     * Class Definition
+     * class Definition
      * ------------------------------------------------------------------------
      */
 
@@ -6103,7 +6103,7 @@ var Tab = function ($$$1) {
     _proto.show = function show() {
       var _this = this;
 
-      if (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && $$$1(this._element).hasClass(ClassName.ACTIVE) || $$$1(this._element).hasClass(ClassName.DISABLED)) {
+      if (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && $$$1(this._element).hasclass(className.ACTIVE) || $$$1(this._element).hasclass(className.DISABLED)) {
         return;
       }
 
@@ -6177,7 +6177,7 @@ var Tab = function ($$$1) {
       }
 
       var active = activeElements[0];
-      var isTransitioning = callback && Util.supportsTransitionEnd() && active && $$$1(active).hasClass(ClassName.FADE);
+      var isTransitioning = callback && Util.supportsTransitionEnd() && active && $$$1(active).hasclass(className.FADE);
 
       var complete = function complete() {
         return _this2._transitionComplete(element, active, callback);
@@ -6192,11 +6192,11 @@ var Tab = function ($$$1) {
 
     _proto._transitionComplete = function _transitionComplete(element, active, callback) {
       if (active) {
-        $$$1(active).removeClass(ClassName.SHOW + " " + ClassName.ACTIVE);
+        $$$1(active).removeclass(className.SHOW + " " + className.ACTIVE);
         var dropdownChild = $$$1(active.parentNode).find(Selector.DROPDOWN_ACTIVE_CHILD)[0];
 
         if (dropdownChild) {
-          $$$1(dropdownChild).removeClass(ClassName.ACTIVE);
+          $$$1(dropdownChild).removeclass(className.ACTIVE);
         }
 
         if (active.getAttribute('role') === 'tab') {
@@ -6204,20 +6204,20 @@ var Tab = function ($$$1) {
         }
       }
 
-      $$$1(element).addClass(ClassName.ACTIVE);
+      $$$1(element).addclass(className.ACTIVE);
 
       if (element.getAttribute('role') === 'tab') {
         element.setAttribute('aria-selected', true);
       }
 
       Util.reflow(element);
-      $$$1(element).addClass(ClassName.SHOW);
+      $$$1(element).addclass(className.SHOW);
 
-      if (element.parentNode && $$$1(element.parentNode).hasClass(ClassName.DROPDOWN_MENU)) {
+      if (element.parentNode && $$$1(element.parentNode).hasclass(className.DROPDOWN_MENU)) {
         var dropdownElement = $$$1(element).closest(Selector.DROPDOWN)[0];
 
         if (dropdownElement) {
-          $$$1(dropdownElement).find(Selector.DROPDOWN_TOGGLE).addClass(ClassName.ACTIVE);
+          $$$1(dropdownElement).find(Selector.DROPDOWN_TOGGLE).addclass(className.ACTIVE);
         }
 
         element.setAttribute('aria-expanded', true);
@@ -6249,7 +6249,7 @@ var Tab = function ($$$1) {
       });
     };
 
-    _createClass(Tab, null, [{
+    _createclass(Tab, null, [{
       key: "VERSION",
       get: function get() {
         return VERSION;

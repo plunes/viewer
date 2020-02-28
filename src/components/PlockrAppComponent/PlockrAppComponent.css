@@ -15,14 +15,15 @@ opacity: 1;
     width: 50%;margin-left: 21%;
     margin-top: 51%;
     margin-bottom: 29px;
-    background-color:#01D35A;
+    background-color:white;
     border-radius: 42px !important;
-    border: 1px solid white;
+    border: 1px solid grey;
     margin-left: 21%;
     margin-top: 51%;
     margin-bottom: 29px;
     font-size: 18px;
 }
+
 .prescription-button{
     text-align: center;
     padding: 10px;
@@ -133,6 +134,18 @@ button:focus{
 .fileName{
     text-align: center;
     padding-top: 5%;
+}
+.prescription-img{
+    background-color: #A9E9F3;
+    padding-bottom: 13%;
+    margin-top: -15px;
+
+}
+.prescription-img1{
+    width: 350px;
+    height: 343px;
+    margin-top: 15%;
+    margin-left: 70px;
 }
 
 .form-control-app{
@@ -296,13 +309,11 @@ input:-webkit-autofill:active {
   .pdf-controlls-container{
       display : none !important
   }
-
   .pdfContainer{
     border: 1px solid #D1D1D1 !important;
     border-radius: 2px !important;
     margin-left: 20% !important;
   }
-
   .fileList{
       padding: 5%;
       width: 50%;

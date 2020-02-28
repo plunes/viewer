@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 class TeethWhiteningComponent extends Component {
     render() {
         return (
+            <div>
             <div className='container-fluid'>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/teeth-whitening" />
@@ -77,7 +78,7 @@ class TeethWhiteningComponent extends Component {
 
 
 
-
+                </div>
                 </div>
                 <LandingFooter />
             </div>

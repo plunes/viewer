@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 class DentalComplicationsComponent extends Component {
     render() {
         return (
+            <div>
             <div className='container-fluid'>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/dental-complications" />
@@ -109,7 +110,7 @@ class DentalComplicationsComponent extends Component {
                         </div>
                         <div className="col-sm-7">
                         </div>
-                    </div>
+                    </div></div>
                 </div>
                 <LandingFooter />
             </div>

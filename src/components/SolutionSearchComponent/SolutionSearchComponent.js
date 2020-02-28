@@ -76,9 +76,7 @@ class SolutionSearchComponent extends React.Component {
     }
 
     async settingBid(proceduresArray) {
-        // console.log(proceduresArray);
         let proceduresString = proceduresArray.join();
-        // console.log(proceduresString);
         let body = {
             "Userid": '5db92f2d5ea63a232301ac18',
             "Username": "Demo user",
@@ -139,9 +137,7 @@ class SolutionSearchComponent extends React.Component {
     }
 
     onSearchQuery(e) {
-        // console.log('anshul')
         this.setState({ filter: e.target.value });
-
         if (this.state.filter.length > 1) {
             const { filter, proceduresList } = this.state;
             const lowercasedFilter = filter.toLowerCase();
@@ -163,7 +159,6 @@ class SolutionSearchComponent extends React.Component {
 
     render() {
         const { searchInput } = this.state;
-        console.log(this.state.docList, 'doclist')
         if (searchInput) {
             return <Redirect to={{
                 pathname: "/solutionResult",

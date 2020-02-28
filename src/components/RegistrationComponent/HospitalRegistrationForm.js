@@ -8,12 +8,12 @@ class HospitalRegistrationForm extends Component {
           <div class="form-check-inline">
             <label class="form-check-label">
               <input type="radio" class="form-check-input plockr-app-form" value='M' name="gender" onChange={this.handleChange} />Male
-                        </label>
+            </label>
           </div>
           <div class="form-check-inline">
             <label class="form-check-label">
               <input type="radio" class="form-check-input plockr-app-form" value='F' name="gender" onChange={this.handleChange} />Female
-                        </label>
+            </label>
           </div>
           <div className="form-group">
 

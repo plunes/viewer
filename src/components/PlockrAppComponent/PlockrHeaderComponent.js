@@ -54,7 +54,8 @@ class PlockrHeaderComponent extends Component {
                     // Called when an error occurred
                 });
         }
-    }
+    }                // console.log(error, 'error')
+
 
     render() {
         const { navigate } = this.state
@@ -68,10 +69,14 @@ class PlockrHeaderComponent extends Component {
             <div className='container-fluid'>
                 <div className="navbar navbar-expand-lg navbar-light row">
                     <div className='col-md-3'>
-                        <a href="/" title='Home'> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
+                        <a href="/plockrapp" title='Home'> <img className="logo-img-sizeing" src="/logo.png" alt=".." /></a>
                     </div>
-                    <div className='col-md-7 text-right'>
-                        <button type="button" className="btn downloadPlockr" onClick={this.handleDownload}>Download PLOCKR</button>
+                    <div className='col-md-5'>
+                    </div>
+                    <div className='col-md-2 text-right'>
+                        <a href="/prescription_builder">
+                            <button type="button" className="btn builder-button">Create Prescription</button>
+                        </a>
                     </div>
                     <div className='col-md-2'>
                         <button type="button" className="btn logout" onClick={this.handlelogout}>Logout</button>

@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 class RootCanalComponent extends Component {
     render() {
         return (
+            <div>
             <div className='container-fluid'>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/root-canal"/>
@@ -54,7 +55,7 @@ class RootCanalComponent extends Component {
                         <div className="col-sm-7">
                         </div>
                     </div>
-                </div>
+                </div></div>
                 <LandingFooter />
             </div>
         );

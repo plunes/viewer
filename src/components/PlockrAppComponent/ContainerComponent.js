@@ -21,10 +21,12 @@ class ContainerComponent extends Component {
             showRecieved: true,
             modalIsOpen: false,
             file: null,
-            reportUrl: '',
+            report: [],
             data: {},
             modalIsOpen: false,
-            sent: false
+            sent: false,
+            disabled : true,
+            pleaseWait : false
         }
         this.openModal = this.openModal.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -39,50 +41,67 @@ class ContainerComponent extends Component {
         this.openModal = this.openModal.bind(this);
         this.afterOpenModal = this.afterOpenModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
-        //this.handleImage = this.handleImage.bind(this);
     }
+
+
     async handleSubmit(e) {
         e.preventDefault();
         let user = JSON.parse(localStorage.getItem('docDetails'))
         let token = localStorage.getItem('auth')
         let data = {
-            reportUrl: this.state.reportUrl,
+            report: this.state.report,
             userId: user._id,
             self: false
         }
-        await axios.post('https://plunes.co/v4/report', data, { headers: { "Authorization": `Bearer ${token}` } })
+        console.log(data, 'data')
+        await axios.post('https://plunes.co/v4/report/test', data, { headers: { "Authorization": `Bearer ${token}` } })
             .then((res) => {
-                console.log(res.data)
-                // const file = document.querySelector('.file');
-                // file.value = '';
-                document.getElementById('uploadFile').value = "";
+                this.getReports();
                 this.setState({
-                    sent: true
+                    modalIsOpen : false,
+                    report : []
                 })
             })
             .catch((e) => {
                 console.log(e)
             })
     }
+
+
     handleChange = (e) => {
         e.preventDefault();
         this.setState({
-            file: e.target.files[0],
-        }, () => {
-            const data = new FormData();
-            data.append('file', this.state.file)
-            axios.post("https://plunes.co/v4/upload", data, {
-                headers: {
-                    'Content-Type': 'multipart/form-data'
-                }
-            }).then(res => {
-                if (res.status === 200) {
-                    this.setState({
-                        reportUrl: "https://plunes.co/v4/" + res.data.path
-                    })
-                }
-            });
+            file: e.target.files,
+        }, async () => {
+            this.setState({
+                pleaseWait :  true
+            })
+            for(let i = 0; i<this.state.file.length; i++){
+                const data = new FormData();
+                data.append('file', this.state.file[i])
+               await axios.post("https://plunes.co/v4/upload", data, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                }).then(res => {
+                    if (res.status === 200) {
+                        let report = {
+                            reportUrl : "https://plunes.co/v4/" + res.data.path,
+                            reportName : res.data.originalname
+                        }
+                        this.setState({
+                            report: [...this.state.report, report],
+                        })
+                    }
+                });
+            }
+            this.setState({
+                disabled : false,
+                pleaseWait :  false,
+                sendReports :  true
+            })
         });
+       
     };
     openModal() {
         this.setState({ modalIsOpen: true });
@@ -92,9 +111,9 @@ class ContainerComponent extends Component {
         // this.subtitle.style.color = '#f00';
     }
     closeModal() {
-        console.log('anshul')
         this.setState({ modalIsOpen: false });
     }
+
     handleClick(e) {
         let fileType = this.getExtension(e.currentTarget.dataset.url)
         let data = {
@@ -106,6 +125,7 @@ class ContainerComponent extends Component {
         }
         this.props.handleSelection(data)
     }
+
     getExtension(url) {
         var extStart = url.indexOf('.', url.lastIndexOf('/') + 1);
         if (extStart == -1) return false;
@@ -113,9 +133,7 @@ class ContainerComponent extends Component {
             extEnd = ext.search(/$|[?#]/);
         return ext.substring(0, extEnd);
     }
-    componentWillUnmount() {
-        clearInterval(this.interval);
-    }
+   
     handleReports(e) {
         if (e == 'r') {
             this.setState({
@@ -131,7 +149,7 @@ class ContainerComponent extends Component {
     }
     async componentDidMount() {
         this.getReports();
-        this.interval = setInterval(this.getReports, 10000);
+        // this.interval = setInterval(this.getReports, 10000);
     }
     async getReports() {
         let token = localStorage.getItem('auth')
@@ -146,6 +164,7 @@ class ContainerComponent extends Component {
                         var now = datetime.toLocaleString();
                         r.createdTime = now;
                         r.reportName = r.reportName ? r.reportName.split('_').join(' ') : '';
+                        // console.log(r.reportUrl, 'report url')
                     })
                     sentReports.forEach((r) => {
                         var datetime = new Date(r.createdTime);
@@ -180,6 +199,7 @@ class ContainerComponent extends Component {
             marginTop: '0 !important',
             marginBottom: '0 !important'
         }
+        
         const greyStyle = {
             background: "#DCDCDC 0% 0% no-repeat padding-box",
             opacity: 1,
@@ -187,6 +207,7 @@ class ContainerComponent extends Component {
             marginTop: '0 !important',
             marginBottom: '0 !important'
         }
+
         return (
             <div className='container-fluid'>
                 <div>
@@ -200,23 +221,28 @@ class ContainerComponent extends Component {
                 >
                     <h2 className="upload-report-button">Upload Report</h2>
                     {
-                        this.state.sent ?
+                        this.state.pleaseWait ?
                             <div className='fail'>
-                                <p style={{ color: "red" }}>Successfully sent</p>
+                                <p style={{ color: "red" }}>Please wait for a minute to send reports...</p>
                             </div> : false
+                    }
+                    {
+                        this.state.sendReports ? <div>
+                            <p style={{color : "green"}}>Now Press Send button</p>
+                        </div> : false
                     }
                     <form onSubmit={this.handleSubmit}>
                         <div className="input-group">
                             <div className='row'>
-                                <input id='uploadFile' className=" file-path-wrapper" name='file' onChange={this.handleChange} type="file" />
+                                <input id='uploadFile' className=" file-path-wrapper" name='file' onChange={this.handleChange} type="file" multiple />
                             </div>
                         </div>
                         <div className='row'>
                             <div className='col'>
-                                <button className="uploader-button-modal" type="submit">Send</button>
+                                <button className="uploader-button-modal" type="submit" disabled = {this.state.disabled}>Send</button>
                             </div>
                             <div className='col'>
-                                <button type='button' className='send-button-modal' onClick={this.closeModal}>Close</button>
+                                <button type='button' className='send-button-modal' onClick={this.closeModal} >Close</button>
                             </div>
                         </div>
                     </form>
@@ -226,12 +252,12 @@ class ContainerComponent extends Component {
                     <div className='text-center row'>
                         <div className='col-md-1'>
                         </div>
-                        <div className='col-md-5 colhead'>
-                            <li className='tabReport' onClick={(e) => this.handleReports('r')}>New</li>
+                        <div className='col-md-5 colhead' onClick={(e) => this.handleReports('r')}>
+                            <li className='tabReport' >New</li>
                             <hr style={this.state.active ? greenStyle : greyStyle}></hr>
                         </div>
-                        <div className='col-md-5 colhead'>
-                            <li className='tabReport' onClick={(e) => this.handleReports('s')}>Sent</li>
+                        <div className='col-md-5 colhead' onClick={(e) => this.handleReports('s')}>
+                            <li className='tabReport' >Sent</li>
                             <hr style={this.state.active ? greyStyle : greenStyle}></hr>
                         </div>
                         <div className='col-md-1'>
@@ -242,7 +268,7 @@ class ContainerComponent extends Component {
                             this.state.showRecieved ? this.state.businessRecievedReports.map((b, index) => (
                                 <div className='fileList' key={Math.random().toString()}>
                                     <li className='headTab' key={Math.random().toString()} data-url={b.reportUrl} data-filename={b.reportName} data-id={b._id} onClick={this.handleClick}>
-                                        <img src={b.reportUrl + '.thumbnail.png'} height='112' width='150' onError={(e) => { e.target.onerror = null; e.target.src = "/screenshot.svg" }}></img>
+                                        <img className="file-report-img" src={b.reportUrl + '.thumbnail.png'} height='112' width='150' onError={(e) => { e.target.onerror = null; e.target.src = "/screenshot.svg" }}></img>
                                         <p className='fileName'>{b.reportName}</p>
                                     </li>
                                 </div>
@@ -250,7 +276,7 @@ class ContainerComponent extends Component {
                                 : this.state.businessSentReports.map((b, index) => (
                                     <div className='fileList' key={Math.random().toString()}>
                                         <li className='headTab' key={Math.random().toString()} data-url={b.reportUrl} data-filename={b.reportName} data-id={b._id} onClick={this.handleClick}>
-                                            <img src={b.reportUrl + '.thumbnail.png'} height='112' width='150' onError={(e) => { e.target.onerror = null; e.target.src = "/screenshot.svg" }}></img>
+                                            <img className="file-report-img" src={b.reportUrl + '.thumbnail.png'} height='112' width='150' onError={(e) => { e.target.onerror = null; e.target.src = "/screenshot.svg" }}></img>
                                             <p className='fileName'>{b.reportName}</p>
                                         </li>
                                     </div>

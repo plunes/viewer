@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 class IntoductoryblogComponent extends Component {
     render() {
         return (
+            <div>
             <div className='container-fluid'>
                 <Helmet>
                     <link rel="canonical" href="https://www.plunes.com/Mental-healthComponent" />
@@ -81,7 +82,7 @@ Even people in their adolescent years need help to understand their behaviour, f
 
 
 
-                </div>
+            </div>  </div>
                 <LandingFooter />
             </div>
         );
