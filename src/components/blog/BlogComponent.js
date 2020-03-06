@@ -56,19 +56,20 @@ class BlogComponent extends Component {
   render() {
     return (
       <div>
-
         <LandingHeader />
-        <div className='row'>
-          <div className="container-fluid">
-            <img className="blog-front-img" src="/blog2.png" alt=".." />
+        <div>
+          <div className='row'>
+            <div className="container-fluid">
+              <img className="blog-front-img" src="/blog2.png" alt=".." />
+            </div>
+              <div className='col-md-8'>
+                <BlogMonthComponent monthBlogs={this.state.monthBlogs} />
+                </div>
+              <div className='col-md-4 '>
+                <BlogMonthList handleMonth={this.handleMonth} />
+              </div>
           </div>
-          <div className='col-md-8'>
-            <BlogMonthComponent monthBlogs={this.state.monthBlogs} />
           </div>
-          <div className='col-md-4 '>
-            <BlogMonthList handleMonth={this.handleMonth} />
-          </div>
-        </div>
         <LandingFooter />
       </div>
     )

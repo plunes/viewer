@@ -141,7 +141,7 @@ class PrescriptionDashboardComponent extends Component {
                 })
             }
         } else if (checkSavedPrescription.userType === 'Hospital') {
-            console.log(this.state.docDetails, 'doc details')
+            // console.log(this.state.docDetails, 'doc details')
             let data = checkSavedPrescription.doctors.filter((doc) => this.state.docDetails._id === doc._id ? true : false)
 
             if (data.length > 0 && Object.entries(data[0].prescription).length > 1) {

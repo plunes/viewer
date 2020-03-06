@@ -54,7 +54,7 @@ class SendPrescriptionComponent extends Component {
         var obj = {};
         // console.log(this.state, 'state');
         for (var key in state) {
-            if (key !== 'docId' && key !== 'patientGender'  && key !== 'patientMobileNumber' && key !== 'patientAge' && key !== 'patientDetails' && key !== 'prescriptionDocDetails' && key !== 'patientName' && key !== 'date' && key !== 'disable' && key !== 'otherFields') {
+            if (key !== 'showLogoText' && key !== 'docId' && key !== 'patientGender'  && key !== 'patientMobileNumber' && key !== 'patientAge' && key !== 'patientDetails' && key !== 'prescriptionDocDetails' && key !== 'patientName' && key !== 'date' && key !== 'disable' && key !== 'otherFields') {
                let data = {
                    [key] : state[key]
                }
@@ -103,6 +103,9 @@ class SendPrescriptionComponent extends Component {
                                 [key] : ''
                             })
                         }
+                        this.setState({
+                            showLogoText : true
+                        })
                     }
                 }
             })
