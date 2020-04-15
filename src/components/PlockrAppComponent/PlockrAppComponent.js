@@ -139,7 +139,7 @@ class PlockrAppComponent extends Component {
                         {
                                 this.state.showFile ?
                                     <div>
-                                        <div className='pdfContainer'>
+                                        <div className=''>
                                             <MyComponent className='viewFile' key={Math.random().toString()} data={this.state.reportDet} />
                                         </div>
                                         <div className='row'>
